@@ -1,0 +1,107 @@
+a:3:{s:4:"time";i:1721491939;s:3:"ttl";s:2:"60";s:4:"data";a:8:{i:0;a:26:{s:2:"id";s:4:"5397";s:5:"title";s:2:"gh";s:4:"slug";s:7:"gh-5397";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"577";s:5:"price";s:5:"12300";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:2:"26";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2022-12-15 00:30:44";s:11:"description";s:0:"";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2022-12-15 00:30:44";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";N;s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:1;a:26:{s:2:"id";s:2:"21";s:5:"title";s:33:"Erkek Dınatale Merdane Ayakkabı";s:4:"slug";s:34:"erkek-dinatale-merdane-ayakkabi-21";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"495";s:5:"price";s:1:"0";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"310";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-02-20 09:29:24";s:11:"description";s:345:"<p>&Uuml;r&uuml;n Adı:North Of Wıld 22ym-dınatalle Erkek Dınatale Merdane Ayakkabı</p>
+
+<p>&Uuml;r&uuml;n Kodu : 22YM-DINATALLE</p>
+
+<p>Renk : Siyah</p>
+
+<p>Marka : NORTH OF WILD</p>
+
+<p>Cinsiyet : Erkek</p>
+
+<p>&Uuml;r&uuml;n Kategorisi : Erkek&gt;Ayakkabı&gt;Spor</p>
+
+<p>Garanti Şartları</p>
+
+<p>İade Ve Değişim</p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2022-04-29 23:30:23";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:52:"local::img_x300_626c4bcfe57ab7-36880801-56024155.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:2;a:26:{s:2:"id";s:4:"5402";s:5:"title";s:4:"test";s:4:"slug";s:9:"test-5402";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"491";s:5:"price";s:5:"50000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:2:"48";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:2:"24";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2022-12-20 06:50:28";s:11:"description";s:13:"<p>test</p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2022-12-20 06:50:28";s:13:"user_username";s:11:"denemehesap";s:9:"shop_name";s:11:"denemehesap";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:11:"denemehesap";s:5:"image";s:52:"local::img_x300_63a131755d6df0-22566214-87240745.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:3;a:26:{s:2:"id";s:3:"690";s:5:"title";s:26:"Quantum Kol Saati Koyu Gri";s:4:"slug";s:30:"quantum-kol-saati-koyu-gri-690";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:16:"ordinary_listing";s:11:"category_id";s:3:"562";s:5:"price";s:5:"19999";s:8:"currency";s:3:"USD";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"351";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-06-19 18:31:14";s:11:"description";s:0:"";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2022-10-01 01:08:00";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:52:"local::img_x300_62969c1693d0c8-30676022-58822118.jpg";s:12:"image_second";s:52:"local::img_x300_62969c15dac8c1-78220161-97763530.jpg";s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:4;a:26:{s:2:"id";s:2:"15";s:5:"title";s:18:"3'LÜ ANKASTRE SET";s:4:"slug";s:19:"3lu-ankastre-set-15";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"598";s:5:"price";s:6:"500050";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"12";s:7:"user_id";s:1:"3";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"280";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2022-06-07 02:29:19";s:11:"description";s:2137:"<p>ALVEUS VİTRO 641SİYAH ELEKTRİKLİ ANKASTRE OCAK 60 CM</p>
+
+<p>4 G&Ouml;ZL&Uuml; VİTROSERAMİK<br />
+9 SEVİYE<br />
+DOKUNMATİK KONTROL<br />
+3000W<br />
+DİJİTAL ISI G&Ouml;STERGESİ<br />
+&Ccedil;OCUK KİLİDİ<br />
+ARTIK ISI G&Ouml;STERGESİ<br />
+KOLAY TEMİZLENEBİLİR Y&Uuml;ZEY<br />
+2 X 145 mm H-LIGHT 1200W<br />
+2 X 180 mm H-LIGHT 1800W<br />
+**&Uuml;CRETSİZ KURULUM.<br />
+**SERVİS AĞIMIZ T&Uuml;M İLLERDE MEVCUTTUR. YETKİLİ SERVİS LİSTESİ KULLANIM KILAVUZU İ&Ccedil;ERİSİNDE BULUNMAKTADIR. KURULUM İ&Ccedil;İN ARAYARAK RANDEVU ALABİLİRSİNİZ.<br />
+**24 AY GARANTİLİDİR.<br />
+**KURULUM YETKİLİ SERVİS TARAFINDAN YAPILMADIĞINDA &Uuml;R&Uuml;N GARANTİ KAPSAMINDAN &Ccedil;IKAR.<br />
+NET 7.7 KG</p>
+
+<p>ALVEUS MFA 614 SİYAH ANKASTRE FIRIN</p>
+
+<p>&nbsp;</p>
+
+<p>Ankastre Statik Fırın&nbsp;</p>
+
+<p>&nbsp;Siyah Kumanda Paneli&nbsp;</p>
+
+<p>*Siyah emaye i&ccedil; y&uuml;zey</p>
+
+<p>&nbsp;6 + 1 Fonksiyon&nbsp;</p>
+
+<p>Turbo Fan&nbsp;</p>
+
+<p>A Sınıfı Enerji&nbsp;</p>
+
+<p>71 lt XL Fırın</p>
+
+<p>*A sınıfı enerji</p>
+
+<p>*1 Tepsi , 1 Tel ızgara</p>
+
+<p>*Fırın i&ccedil;i aydınlatma lambası</p>
+
+<p>*Mekanik zamanlayıcı</p>
+
+<p>&nbsp;</p>
+
+<p>ALVEUS MOD 3000 SİYAH DAVLUMBAZ</p>
+
+<p>&nbsp;</p>
+
+<p>GENİŞLİK &nbsp; :60 cm</p>
+
+<p>BACA &Ccedil;IKIŞ &Ccedil;API :120 mm</p>
+
+<p>MOTOR G&Uuml;C&Uuml; &nbsp; :190W</p>
+
+<p>AYDINLATMA &nbsp; &nbsp; :2x1W LED</p>
+
+<p>KONTROL :Dokunmatik - Uzaktan Kumanda</p>
+
+<p>HAVA DEBİSİ :650 m&sup3;/h</p>
+
+<p>FİLTRE TİPİ :Al&uuml;minyum</p>
+
+<p>SES SEVİYESİ :56 Dba</p>
+
+<p>RENK : Siyah</p>
+
+<p>*KARBON FİLTRE İLE BACASIZ OLARAK KULLANILABİLİR.</p>
+
+<p>E SINIFI ENERJİ</p>
+
+<p>**&Uuml;CRETSİZ KURULUM.</p>
+
+<p>**SERVİS AĞIMIZ T&Uuml;M İLLERDE MEVCUTTUR. YETKİLİ SERVİS LİSTESİ KULLANIM KILAVUZU İ&Ccedil;ERİSİNDE BULUNMAKTADIR. KURULUM İ&Ccedil;İN ARAYARAK RANDEVU ALABİLİRSİNİZ.</p>
+
+<p>**24 AY GARANTİLİDİR.</p>
+
+<p>**KURULUM YETKİLİ SERVİS TARAFINDAN YAPILMADIĞINDA &Uuml;R&Uuml;N GARANTİ KAPSAMINDAN &Ccedil;IKAR.</p>
+";s:17:"product_condition";s:13:"new_with_tags";s:10:"created_at";s:19:"2020-07-02 02:08:20";s:13:"user_username";s:14:"kayaelektronik";s:9:"shop_name";s:15:"Kaya Elektronik";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:14:"kayaelektronik";s:5:"image";s:52:"local::img_x300_624193b8b6b409-68913942-23854837.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:5;a:26:{s:2:"id";s:2:"17";s:5:"title";s:25:"Realme C 25s Cep Telefonu";s:4:"slug";s:28:"realme-c-25s-cep-telefonu-17";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"574";s:5:"price";s:6:"150080";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"25";s:7:"user_id";s:1:"3";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"5";s:3:"hit";s:3:"335";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2022-06-07 02:28:35";s:11:"description";s:1095:"<p>Realme C 25s 128 GB Mavi Cep Telefonu i&ccedil;in &uuml;r&uuml;n &ouml;zellikleri</p>
+
+<p>Belirtilen t&uuml;m &ouml;zellikler bilgilendirme ama&ccedil;lı olup, farklı nitelikte &ouml;zellikler olabilir. &Uuml;r&uuml;n&uuml; satın almadan evvel &uuml;r&uuml;n&uuml; satan satıcı ile teyit etmenizi &ouml;neririz.<br />
+Realme C 25s 128 GB Mavi<br />
+MarkaRealmeSeriCModel25sDahili Hafıza128 GBRenkMaviStilBarİşletim SistemiAndroidİşletim Sistemi VersiyonuAndroid 11&Ccedil;ıkış Yılı2021<br />
+Kamera<br />
+Kamera &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;48 MPFlashVarY&uuml;z AlgılamaVarKonum İşaretlemeVarOtomatik OdaklamaVar&Ouml;n KameraVarİkinci Arka KameraVarİkinci Arka Kamera &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;2 MP&Ouml;n Kamera &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;8 MPVideo &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;1080pKare Hızı60 fps<br />
+&Ouml;zellikler<br />
+&Ccedil;oklu SimVarKablosuz ŞarjYokHızlı ŞarjVarParmak İzi OkumaVarIşık Sens&ouml;r&uuml;VarUSB Giriş TipiUSB CUSB Versiyonu2.0Pakete Dahil KablolarUSB C</p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2020-07-02 02:14:55";s:13:"user_username";s:14:"kayaelektronik";s:9:"shop_name";s:15:"Kaya Elektronik";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:14:"kayaelektronik";s:5:"image";s:52:"local::img_x300_626c526716ce79-77411623-82185162.jpg";s:12:"image_second";s:52:"local::img_x300_62418b480f0350-23284196-84788733.jpg";s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:6;a:26:{s:2:"id";s:4:"5403";s:5:"title";s:4:"test";s:4:"slug";s:9:"test-5403";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"491";s:5:"price";s:5:"20000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:2:"48";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:2:"36";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2022-12-20 18:21:19";s:11:"description";s:13:"<p>test</p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2022-12-20 18:21:19";s:13:"user_username";s:11:"denemehesap";s:9:"shop_name";s:11:"denemehesap";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:11:"denemehesap";s:5:"image";N;s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:7;a:26:{s:2:"id";s:4:"5411";s:5:"title";s:23:"2.5 OZ TEK DUVAR BARDAK";s:4:"slug";s:27:"25-oz-tek-duvar-bardak-5411";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:7:"bidding";s:11:"category_id";s:3:"621";s:5:"price";s:1:"0";s:8:"currency";s:3:"USD";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:1:"6";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-04-13 18:06:30";s:11:"description";s:169:"<p><img alt="" src="https://demo1.utopiayazilim.com/uploads/images-file-manager/img_64381a08c7cfa5-14489787-88955532.jpg" style="width: 1181px; height: 1181px;" /></p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2023-04-13 18:06:30";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:52:"local::img_x300_64381944c8f3e7-71728637-89412742.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}}}

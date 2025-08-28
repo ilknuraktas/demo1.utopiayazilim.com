@@ -1,0 +1,37 @@
+UPDATE `siteConfig` SET `version` = '3.6' WHERE `siteConfig`.`ID` =1;
+CREATE TABLE IF NOT EXISTS `cache` (
+	  `name` varchar(32) NOT NULL,
+	  `result` text NOT NULL,
+	  `tarih` datetime NOT NULL,
+	  KEY `name` (`name`)
+	) ENGINE=InnoDB DEFAULT CHARSET=latin5;
+
+ALTER TABLE `cache` ADD INDEX ( `name` ) ;
+ALTER TABLE `cache` CHANGE `result` `result` MEDIUMTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `kargoBolge` ADD `sure` INT NOT NULL ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kargo_sure', 'TR', 'Tahmini teslim süresi <b>{%SURE%}</b> iş günüdür.');
+ALTER TABLE `siteConfig` ADD `onKural` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `footer`;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemeOnay', 'TR', '<a target="_blank" href="page.php?act=onay&tp=onsatis">Ön satış bilgilendirme</a> ve <a target="_blank" href="page.php?act=onay&tp=satinalma">satın alma kurallarını</a> okudum ve onaylıyorum.');
+UPDATE `lang` SET `value` = 'No''lu Sipariş - Satın Alma Kuralları' WHERE `lang`.`ID` =4;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_pageSiparisSozlesme2', 'TR', 'No''lu Sipariş - Mesafeli Satış Sözleşmesi');
+ALTER TABLE `urun` ADD `seo` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `name` ;
+ALTER TABLE `kategori` ADD `seo` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `name` ;
+ALTER TABLE `marka` ADD `seo` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `name` ;
+ALTER TABLE `siteConfig` CHANGE `seoURL` `seoURL` SMALLINT NOT NULL ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_onayliyorum', 'TR', 'Onaylıyorum');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_gonder', 'TR', 'Gönder');
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Sepet_Bilgi', '', '', 'Sepet Zaman Asimi', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz {%randStr%} nolu siparişiniz sepet zaman aşımınına uğradı. Sipariş sırasında bir problem ile karışalaştıysanız, lütfen hemen <a href="{%siteAdresiFull%}page.php?act=iletisim" target="_blank">bizimle iletişim geçin</a>. Görüş ve önerileriniz bizim için çok değerli.<br /><br />Sipariş Ürünleriniz :<br />
+<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">
+{%siparisListe%} 
+<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">
+<br><br>
+Teşekkür ederiz,');
+ALTER TABLE `siteConfig`  ADD `kargo_mngID` INT NOT NULL AFTER `kargo_arasCustomerCode`,  ADD `kargo_mngMusteriNo` VARCHAR(16) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_mngID`,  ADD `kargo_mngSifre` VARCHAR(16) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_mngMusteriNo`;
+UPDATE `lang` SET `value` = '<a class="viewStnOB" href="page.php?act=onay&tp=onsatis">Ön satış bilgilendirme</a> ve <a class="viewStnSAK" href="page.php?act=onay&tp=satinalma">satın alma kurallarını</a> okudum ve onaylıyorum.' WHERE `lang`.`ID` =443;
+ALTER TABLE `mailing` ADD `sendToOrder` BOOLEAN NOT NULL ;
+update sablonEmail set email='';
+ALTER TABLE `siteConfig` ADD `siparisMail` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `adminMail` ,
+ADD `iletisimMail` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `siparisMail` ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_uyelikOnay', 'TR', 'Üyelik kurallarını okudum ve onaylıyorum.');
+UPDATE `lang` SET `value` = '<a class="viewStnOB" href="page.php?act=onay&tp=onsatis">Ön satış bilgilendirme</a> ve <a class="viewStnSAK" href="page.php?act=onay&tp=satinalma">satın alma kurallarını</a> okudum ve onaylıyorum.' WHERE `lang`.`key` ='_lang_odemeOnay';
+UPDATE `lang` SET `value` = 'No''lu Sipariş - Mesafeli Satış Sözleşmesi' WHERE `lang`.`key` ='_lang_pageSiparisSozlesme2';

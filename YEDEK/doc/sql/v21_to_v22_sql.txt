@@ -1,0 +1,30 @@
+CREATE TABLE `kampanyakategori` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`catID` INT NOT NULL ,
+`banner` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`baslangic` DATETIME NOT NULL ,
+`bitis` DATETIME NOT NULL ,
+`active` BOOL NOT NULL 
+) ENGINE = MYISAM ;
+UPDATE `adminmenu` SET `Sira` = '60' WHERE `adminmenu`.`ID` =25 LIMIT 1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '19', 'Kategori Kampanyaları', '', 'kampanyaKategori.php', '0', '70');
+ALTER TABLE `siteConfig` ADD `sadeceUye` BOOL NOT NULL AFTER `urunOnay` ;
+ALTER TABLE `siteConfig` ADD `digerparabirim` VARCHAR( 16 ) NOT NULL AFTER `euro` ;
+UPDATE `odemeDurum` SET `mailCode` = 'Odeme_Onayi' WHERE `odemeDurum`.`ID` =2;
+UPDATE `adminmenu` SET `Adi` = 'Ucuzu' WHERE `adminmenu`.`ID` =78 LIMIT 1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Metro XML', '', 'XML/xml_metro.php&y=e', '1', '75');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Ses Müzik Aletleri XML', '', 'XML/xml_sesmuzikaletleri.php&y=e', '1', '95');
+ALTER TABLE `urun` ADD `userID` INT NOT NULL ;
+ALTER TABLE `urun`  ADD `fiyat1` DOUBLE NOT NULL AFTER `fiyat`,  ADD `fiyat2` DOUBLE NOT NULL AFTER `fiyat1`,  ADD `fiyat3` DOUBLE NOT NULL AFTER `fiyat2`,  ADD `fiyat4` DOUBLE NOT NULL AFTER `fiyat3`,  ADD `fiyat5` DOUBLE NOT NULL AFTER `fiyat4`;
+ALTER TABLE `userGroups` ADD `fiyatAlani` INT NOT NULL;
+ALTER TABLE `userGroups` ADD `urunEkleyebilir` BOOL NOT NULL ,
+ADD `urunKategorileri` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `maxUrun` INT NOT NULL ;
+ALTER TABLE `user` ADD `resim` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `ID` ;
+UPDATE `odemeDurum` SET `mailCode` = 'Odeme_Onayi' WHERE `odemeDurum`.`ID` =2 LIMIT 1 ;
+ALTER TABLE `siteConfig` ADD `fiyatUyelikZorunlu` BOOL NOT NULL AFTER `sadeceUye` ;
+UPDATE `siteConfig` SET `listelemeUrun` = '10' WHERE `siteConfig`.`ID` =1 LIMIT 1 ;
+ALTER TABLE `siteConfig` ADD `uyeOnay` BOOL NOT NULL AFTER `urunOnay`;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Kullanici_Onay', '', 'Kullanıcı Onayı', 'Üyeliginiz Onaylandı', 'Sayın {%name%} {%lastname%},<br><br>Sitemize üyeliğiniz onaylanmıştır. Şimdi giriş yapıp alışverişe başlayabilirsiniz. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}
+<br /><br />Bilginize,');
+ALTER TABLE `kategori` ADD `resim` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `name` ;

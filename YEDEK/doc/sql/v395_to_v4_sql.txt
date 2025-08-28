@@ -1,0 +1,306 @@
+UPDATE `siteConfig` SET `version` = '4.0' WHERE `siteConfig`.`ID` =1;
+
+CREATE TABLE IF NOT EXISTS `modgallery_cat` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `kargoapi` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `siparisID` int(11) NOT NULL,
+  `fields` text CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `result` text CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `modgallery_image` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `catID` int(11) NOT NULL,
+  `image` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+ALTER TABLE `userGroups` ADD `filcat` TEXT NOT NULL AFTER `xmlmarka`, ADD `filmarka` TEXT NOT NULL AFTER `filcat`, ADD `filurun` TEXT NOT NULL AFTER `filmarka`; 
+ALTER TABLE `siteConfig` ADD `facebook_URL` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `facebook_secret`; 
+ALTER TABLE `xmlcatcache` ADD `remoteID` INT NOT NULL AFTER `name`; 
+CREATE TABLE IF NOT EXISTS `urunvars` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `urunID` int(11) NOT NULL,
+  `varID` int(11) NOT NULL,
+  `var` varchar(16) CHARACTER SET latin5 NOT NULL,
+  `fark` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+ALTER TABLE `urunvars` ADD `up` BOOLEAN NOT NULL ; 
+
+CREATE TABLE IF NOT EXISTS `urunvarstok` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `urunID` int(11) NOT NULL,
+  `var1` varchar(16) CHARACTER SET latin5 NOT NULL,
+  `var2` varchar(16) CHARACTER SET latin5 NOT NULL, 
+  `kod` varchar(16) CHARACTER SET latin5 NOT NULL, 
+  `stok` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `adminlog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `db` varchar(16) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `dbID` int(11) NOT NULL,
+  `field` varchar(16) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `icerik` varchar(255) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `pages` ADD `seo` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `parentID`; 
+ALTER TABLE `makaleler` ADD `seo` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `ID`; 
+ALTER TABLE `makalekategori` ADD `seo` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `metaDescription`; 
+ALTER TABLE `haberler` ADD `seo` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ; 
+ALTER TABLE `modgallery_cat` ADD `seo` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ; 
+
+ALTER TABLE `urunvarstok` ADD `up` BOOLEAN NOT NULL ; 
+ALTER TABLE `bannerlar` ADD `cats` TEXT NOT NULL AFTER `aktif`; 
+ALTER TABLE `sepet` ADD `ytlFiyatAlis` DOUBLE NOT NULL AFTER `ytlFiyat`; 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_siparisFormunuEksiksizDoldurun', 'TR', 'Lütfen sipariş önce sipariş formunu doldurun.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_teslimatDegistir', 'TR', '<a class="uyari" href="page.php?act=satinal&op=adres">Teslimat bilgilerini değiştirmek istiyorum.</a>');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_onaySepet', 'TR', 'Onay şıkkını işaretlemeden, ürünü sepete atamazsınız.'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_urunVarSecim', 'TR', 'Lütfen ürün varyasyon seçiminizi yapın.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_urunAnaVarSecim', 'TR', 'Lütfen öbce ürün ana varyasyon seçiminizi yapın.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_urunDefaIncelendi', 'TR', '<strong>%urunadi%</strong> son 24 saatte <strong>%gosterim%</strong> defa incelendi.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_karsilastirmaEklendi', 'TR', 'Ürün karşılaştırma listesine eklendi.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_listeEklendi', 'TR', 'Ürün listenize eklendi.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_secimStokYok', 'TR', 'İlgili seçim stokta bulunmamaktadır.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_ilceGonderimYok', 'TR', 'Bu ilceye gonderimimiz yoktur.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_ilceKargoFark', 'TR', 'Bu ilceye %fark% TL kargo farki uygulanmaktadır.' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_hataliKullaniciVeyaSifre', 'TR', 'Hatalı kullanıcı adı ve/veya şifre' );
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_eksiksizDoldurun', 'TR', 'Lütfen bilgileri eksiksiz doldurun');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_hataliEposta', 'TR', 'Hatalı e-posta adresi.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_js_iletisimOK', 'TR', 'Sizinle ek kısa sürede iletişime geçeceğiz. Teşekkürler.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitInfo_1', 'TR', 'Sipariş formunu doldurmadan, hızlı alışveriş yapmak,');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitInfo_2', 'TR', 'Kampanyalarda öncelikli haberdar olmak,');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitInfo_3', 'TR', 'Alışverişlerden puan kazanmak,');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitInfo_4', 'TR', 'Sacece üyelere özel indirimlerden yararlanmak');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitInfo_5', 'TR', 've daha fazlası için ... ');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitUcretsizKayit', 'TR', 'ÜCRETSİZ KAYIT OL');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepetiOnaylaveSatinAl','TR', 'Sepeti Onayla ve Satın Al');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepetKuponKullan','TR', 'Kupon Kullan');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_inaktif_urun_veya_kategori','TR', 'İlgili ürün bulunamadı veya satışa kapalı. Lütfen daha sonra tekrar deneyin.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_formEpostaSpam','TR', 'E-Posta adresinizi kimseyle paylaşmıyoruz.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_formEpostaAdresiniz','TR', 'e-posta @ adresiniz');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_bankaAdi','TR', 'Banka Adı');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_bankaHesapAdi','TR', 'Banka Hesap Adı');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_bankaIbanNo','TR', 'Banka IBAN No');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_aff_siteAdresi','TR', 'Affilate Kullanılacak Site Adresi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_aff_not','TR', 'Affilate Notu');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_aff_kural','TR', 'Affilate Üyelik Kuralları');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_BaslangicTarihi','TR', 'Başlangıç Tarihi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_BitisTarihi','TR', 'Bitiş Tarihi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepet','TR', 'Sepet');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_adres','TR', 'Adres');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemeSecim','TR', 'Ödeme Seçim');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemeGiris','TR', 'Ödeme Giriş');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_onay','TR', 'Önay');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_video','TR', 'Video');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_bankaOzelTaksit','TR', 'Bankalara özel taksit seçenekleri :');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kampanyaBitis','TR', 'Kampanya bitmesine kalan süre :');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kampanyaBaslangic','TR', 'Kampanya başlamasına kalan süre :');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kampanyaYakinda','TR', 'Yakında');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_hesabim','TR', 'Hesabım');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_arama','TR', 'Arama');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_menu','TR', 'Menü');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepeteEkle','TR', 'Sepete Ekle');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_devam','TR', 'Devamı...');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_musteriHizmetleri','TR', 'Müşteri Hizmetleri');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_hakkimizda','TR', 'Hakkımızda');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_ebulten','TR', 'E-Bülten');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_ebultenInfo','TR', 'İndirim ve kampanyalardan öncelikli haberdar olmak için ücretsiz e-bülten kaydınızı yapın.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_titleVitrin','TR', 'Sizin için Seçtiklerimiz');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sayfa','TR', 'Sayfa');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_copyright','TR', 'Tüm hakları saklıdır.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_titleGaleri', 'TR', 'Galeri'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_tr', 'TR', 'Türkçe'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepetKargoOneri', 'TR', 'Sepetinize {%TUTAR%} daha ürün ekleyin, kargonuzu <strong>Ücretsiz</strong> gönderelim.'); 
+
+
+CREATE TABLE IF NOT EXISTS `n11` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `urunID` int(11) NOT NULL,
+  `filter` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `gittigidiyor` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `urunID` int(11) NOT NULL,
+  `filter` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ; 
+
+ALTER TABLE `urun` ADD `barkodNo_n11` VARCHAR(32) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `barkodNo`; 
+
+delete from adminmenu;
+
+
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES
+(1, 0, 'Ayarlar', 'fa-asterisk', '', 1, 10, ''),
+(3, 1, 'SMS Ayarları', '', 'smsAyarlari.php', 1, 25, ''),
+(2, 1, 'Genel Ayarlar', '', 'siteAyarlari.php', 1, 10, ''),
+(10, 0, 'Siparişler', 'fa-cart-arrow-down', '', 1, 20, ''),
+(4, 1, 'Sepet Ayarları', '', 'sepetAyarlari.php', 1, 30, ''),
+(5, 0, 'Ürünler', 'fa-bars', '', 1, 30, ''),
+(6, 5, 'Ürün Yönetimi', '', 'urun.php', 1, 10, ''),
+(7, 5, 'Kategori Yönetimi', '', 'kategori.php', 1, 11, ''),
+(8, 5, 'Ürün Yorumları', '', 'urunYorum.php', 1, 15, ''),
+(9, 10, 'Gelen Siparişler', '', 'gelenSiparisler.php', 1, 10, ''),
+(11, 10, 'Havale Bildirimleri', '', 'havaleBildirim.php', 1, 20, ''),
+(12, 10, 'Arıza Takip', '', 'arizaBildirim.php', 1, 30, ''),
+(13, 10, 'Gönderilen Siparişler', '', 'gonderilenSiparisler.php', 1, 15, ''),
+(14, 10, 'Serial Takibi', '', 'serial.php', 1, 40, ''),
+(15, 0, 'Kargo', 'fa-truck', '', 1, 40, ''),
+(16, 15, 'Kargo Grupları', '', 'kargoBolge.php', 1, 10, ''),
+(17, 15, 'Kargo İlleri', '', 'kargoIl.php', 1, 20, ''),
+(18, 15, 'Kargo Ücretleri', '', 'kargoDesi.php', 1, 30, ''),
+(19, 0, 'Reklam', 'fa-star-half-o', '', 1, 50, ''),
+(20, 19, 'Firmalar', '', 'firma.php', 1, 10, ''),
+(21, 19, 'Banner Bilgileri', '', 'banner.php', 1, 20, ''),
+(22, 19, 'Banner Yönetimi', '', 'bannerYonetim.php', 1, 30, ''),
+(23, 19, 'Banner İstatistikleri', '', 'bannerIstatistik.php', 1, 40, ''),
+(24, 19, 'Vitrin Ayarları', '', 'kampanyaBannerAyarlari.php', 1, 50, ''),
+(25, 19, 'Vitrin Resimleri', '', 'kampanyaBannerResim.php', 1, 60, ''),
+(26, 0, 'İçerik', 'fa-copy', '', 1, 60, ''),
+(28, 26, 'İçerik Sayfaları', '', 'page.php', 1, 10, ''),
+(29, 26, 'Sıkça Sorulan Sorular ', '', 'sss.php', 1, 20, ''),
+(30, 26, 'Anket Soruları', '', 'anketSoru.php', 1, 30, ''),
+(31, 26, 'Anket Cevapları', '', 'anketCevap.php', 1, 40, ''),
+(32, 26, 'Haberler', '', 'haberler.php', 1, 50, ''),
+(33, 26, 'Makaleler', '', 'makaleler.php', 1, 60, ''),
+(34, 0, 'Kullanıcılar', 'fa-user', '', 1, 70, ''),
+(35, 34, 'Bayi Grupları', '', 'userGroups.php', 1, 20, ''),
+(36, 34, 'Kullanıcı Yonetimi', '', 'users.php', 1, 10, ''),
+(37, 34, 'Bayi Üyeleri', '', 'userGroupMembers.php', 1, 30, ''),
+(38, 0, 'Şablon', 'fa-desktop', '', 1, 80, ''),
+(39, 38, 'Genel Şablon', '', 'edit.php&file=templates/{%session.templateName%}/temp.php', 1, 10, ''),
+(40, 38, 'Blok Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/blocks/DefaultBlock.php', 1, 10, ''),
+(41, 38, 'Listeleme Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/lists/MenuList.php', 1, 30, ''),
+(42, 38, 'Sistem Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/systemDefault/UrunListShow.php', 1, 40, ''),
+(43, 38, 'Stylesheet', '', 'edit.php&file=templates/{%session.templateName%}/css/', 1, 50, ''),
+(44, 0, 'SMS', 'fa-mobile', '', 1, 90, ''),
+(46, 44, 'Toplu SMS Gönderimi', '', 'sms.php', 1, 10, ''),
+(47, 44, 'SMS Şablonları ', '', 'smsTemp.php', 1, 20, ''),
+(156, 1, 'Watermark Ayarları', '', 'watermarkAyarlari.php', 1, 70, ''),
+(155, 10, 'Kupon Sitesi Kayıtları', '', 'kuponKayitlari.php', 1, 50, ''),
+(53, 0, 'E-Posta', 'fa-envelope', '', 1, 100, ''),
+(54, 53, 'E-bülten Kayıt Listesi', '', 'maillist.php', 1, 10, ''),
+(55, 53, 'Toplu Eposta Kayıt Giriş', '', 'importMaillist.php', 1, 20, ''),
+(56, 53, 'E-Bülten Gönderimi', '', 'mailing.php', 1, 30, ''),
+(57, 53, 'E-posta Şablonları', '', 'sablonEmail.php', 1, 40, ''),
+(58, 0, 'Ödeme', 'fa-credit-card', '', 1, 110, ''),
+(59, 58, 'Banka Yönetimi', '', 'banka.php', 1, 10, ''),
+(60, 58, 'Vade Oranları', '', 'bankaVade.php', 1, 20, ''),
+(61, 58, 'Havale Bilgileri ', '', 'havale.php', 1, 30, ''),
+(62, 58, 'Alışveriş Çekleri', '', 'alisverisCeki.php', 1, 40, ''),
+(63, 58, 'Promosyon Kodları', '', 'promosyon.php', 1, 50, ''),
+(64, 0, 'XML Yükle', 'fa-cloud-upload', '', 1, 120, ''),
+(74, 0, 'XML Çıktılar', 'fa-cloud-download', '', 1, 130, ''),
+(216, 181, 'Dosyaları Yedekle', '', 'yedekdosya.php', 1, 5, ''),
+(215, 34, 'Otomatik Gruplandırma', '', 'userAuto.php', 1, 40, ''),
+(214, 5, 'Ürün Paketleri', '', 'urunpaket.php', 1, 68, ''),
+(213, 80, 'Aylık Sipariş (Kar)', '', 'stats.php&type=aylik-kar', 1, 25, ''),
+(80, 0, 'İstatistikler', 'fa-bar-chart', '', 1, 140, ''),
+(81, 80, 'Kullanıcı Logları', '', 'userLog.php', 1, 120, ''),
+(82, 38, 'Dil Şablonu', '', 'dil.php', 1, 60, ''),
+(212, 26, 'Otomatik Cevaplar', '', 'iletisimCevap.php', 1, 18, ''),
+(84, 1, 'E-Posta Ayarları', '', 'epostaAyarlari.php', 1, 20, ''),
+(85, 10, 'Sipariş Arşivi', '', 'siparisArsivi.php', 1, 18, ''),
+(211, 80, 'Canlı Destek Logları', '', 'chatLog.php', 1, 125, ''),
+(88, 80, 'Aylık Sipariş (Adet)', '', 'stats.php&type=aylik-adet', 1, 10, ''),
+(89, 80, 'Aylık Sipariş (Ciro)', '', 'stats.php&type=aylik-fiyat', 1, 20, ''),
+(90, 80, 'Kategoriler', '', 'stats.php&type=kategori', 1, 30, ''),
+(91, 80, 'Ürünler', '', 'stats.php&type=urun', 1, 40, ''),
+(92, 80, 'Ziyaretçi Sayıları', '', 'stats.php&type=ziyaret', 1, 70, ''),
+(93, 80, 'Ziyaretçi İstatistikleri', '', 'stats.php&type=os-browser', 1, 80, ''),
+(94, 80, 'Arama Motorları', '', 'stats.php&type=aramaMotoru', 1, 75, ''),
+(95, 80, 'Referrer Adresler', '', 'stats.php&type=referrer', 1, 76, ''),
+(97, 5, 'Marka Yönetimi', '', 'marka.php', 1, 12, ''),
+(102, 80, 'E-posta Logları', '', 'emailLog.php', 1, 130, ''),
+(103, 38, 'E-Posta Şablonu', '', 'edit.php&file=templates/system/email/temp.php', 1, 70, ''),
+(106, 1, 'SEO Ayarları', '', 'seoAyarlari.php', 1, 40, ''),
+(110, 1, 'Puan Ayarları', '', 'puanAyarlari.php', 1, 60, ''),
+(111, 5, 'Çapraz Promosyon', '', 'esantiyon.php', 1, 40, ''),
+(112, 15, 'İller', '', 'iller.php', 1, 40, ''),
+(113, 15, 'İlçeler', '', 'ilceler.php', 1, 50, ''),
+(115, 19, 'Kategori Kampanyaları', '', 'kampanyaKategori.php', 0, 70, ''),
+(118, 15, 'Kargo Firmaları', '', 'kargofirma.php', 1, 5, ''),
+(119, 15, 'Teslimat Ayarları', '', 'teslimat.php', 1, 40, ''),
+(120, 10, 'Grup Kupon Listesi', '', 'grupListe.php', 0, 50, ''),
+(121, 5, 'Filtre Başlıkları', '', 'filitre.php', 1, 40, ''),
+(122, 5, 'Filtre Detay Sayfaları', '', 'filitredetay.php', 0, 50, ''),
+(123, 5, 'Filtre Yönetimi', '', 'urunFilitre.php', 1, 45, ''),
+(124, 5, 'İndirim Tanımlama', '', 'topluIndirim.php', 1, 70, ''),
+(125, 5, 'Sistem Toplama Özellikleri', '', 'pcToplama.php', 1, 100, ''),
+(130, 5, 'Grup Ürün Kupon Girişleri', '', 'grupKupon.php', 1, 110, 'GRUPSATIS'),
+(133, 26, 'İletişim Gönderileri', '', 'iletisim.php', 1, 15, ''),
+(135, 34, 'Profilim', '', 'profile.php', 1, 15, ''),
+(165, 1, 'Google Ayarları', '', 'googleAyarlari.php', 1, 45, ''),
+(210, 1, 'Canlı Destek Ayarları', '', 'chatAyarlari.php', 1, 80, ''),
+(209, 1, 'Sosyal Medya Ayarları', '', 'scAyarlari.php', 1, 43, ''),
+(139, 5, 'Sigorta Ücretleri', '', 'sigorta.php', 1, 95, ''),
+(140, 19, 'Kategori Vitrin', '', 'bannerKategori.php', 1, 70, ''),
+(141, 19, 'Promosyon Teklif Ayarları', '', 'promosyonTeklif.php', 1, 80, ''),
+(142, 19, 'Kampanya Puanları', '', 'kampanya.php', 1, 90, ''),
+(208, 15, 'Kargo Entegrasyon', '', 'kargoAPIAyarlari.php', 1, 35, ''),
+(144, 5, 'Toplu Fiyat Güncelleme', '', 'topluFiyatGuncelleme.php&y=e', 1, 75, ''),
+(164, 5, 'Toplu Ürün İşlemleri', '', 'topluIslemler.php&y=e', 1, 78, ''),
+(146, 74, 'GittiGidiyor', '', 'ggAyarlari.php', 1, 30, ''),
+(147, 10, 'Tamamlanamamış Sipariler', '', 'tamamlanamamisSiparisler.php', 0, 19, ''),
+(148, 10, 'Ödeme Onayı Bekleyen Siparişler', '', 'onayBekleyenSiparisler.php', 1, 5, ''),
+(149, 1, 'Para Birimleri', '', 'paraBirim.php', 1, 55, ''),
+(162, 64, 'XML Entegrasyon', '', 'XML/xml.php', 1, 10, ''),
+(152, 5, 'Ürün Varyasyon Resimleri', '', 'urunvar.php', 1, 14, ''),
+(153, 5, 'İlgili Ürünler Yönetimi', '', 'urunilgiliurunler.php', 1, 15, ''),
+(154, 5, 'Grup Ürün Kupon Satışları', '', 'grupKuponSatis.php', 1, 120, 'GRUPSATIS'),
+(158, 26, 'Makale Kateogrileri', '', 'makalekategori.php', 1, 55, ''),
+(159, 26, 'SEO Linkler', '', 'seolinks.php', 1, 27, ''),
+(160, 5, 'Adet İndirimleri', '', 'adetIndirim.php', 1, 65, ''),
+(161, 58, 'Otomatik Promosyon', '', 'otopromosyon.php', 1, 55, ''),
+(168, 0, 'Yönetim Menü', 'fa-tasks', '', 1, 200, ''),
+(169, 168, 'Yönetim Menü', '', 'yonetimMenu.php', 1, 10, ''),
+(170, 26, 'Makale Yorumları', '', 'makaleYorum.php', 1, 65, ''),
+(181, 0, 'Yedekle', 'fa-download', '', 1, 210, ''),
+(182, 181, 'Veritabanı Yedekle', '', 'yedek.php', 1, 10, ''),
+(183, 200, 'Affiliate Üyeleri', '', 'affusers.php', 1, 20, ''),
+(200, 0, 'Affiliate', 'fa-ticket', '', 1, 75, ''),
+(201, 200, 'Affiliate Ayarları', '', 'affAyarlari.php', 1, 10, ''),
+(202, 200, 'Affiliate Ödemeleri', '', 'affOdemeleri.php', 1, 30, ''),
+(203, 80, 'Site İçi Arama', '', 'stats.php&type=siteIciArama', 1, 75, ''),
+(204, 26, 'Ürün Soru Gönderileri', '', 'sorucevap.php', 1, 22, ''),
+(207, 74, 'XML Servisleri', '', 'xmlExport.php', 1, 20, ''),
+(206, 168, 'Teknik İşlemler', '', 'teknik.php', 1, 20, ''),
+(217, 19, 'Splash Reklam Ayarları', '', 'splashAyarlari.php', 1, 85, ''),
+(218, 5, 'Kombine Promosyon', '', 'kombine.php', 1, 40, ''),
+(219, 74, 'Kişisel XML Çıktı', '', 'xmlout.php', 1, 30, ''),
+(220, 1, 'Dil Seçenekleri', '', 'langs.php', 1, 51, ''),
+(221, 5, 'Ürün Varyasyonları', '', 'varyasyon.php', 1, 13, ''),
+(222, 80, 'Markalar', '', 'stats.php&type=marka', 1, 45, ''),
+(223, 80, 'Marka (Ciro)', '', 'stats.php&type=marka-ciro', 1, 25, ''),
+(224, 26, 'Teknik Servis', '', 'teknikservis.php', 1, 70, ''),
+(225, 10, 'İptal Talepleri', '', 'iptalTalepSiparisler.php', 1, 17, ''),
+(226, 10, 'Değişim Talepleri', '', 'degisimTalepSiparisler.php', 1, 16, ''),
+(227, 1, 'Firma Ayarları', '', 'firmaAyarlari.php', 1, 47, ''),
+(228, 26, 'Galeri Kategorileri', '', 'galleryCat.php', 1, 80, ''),
+(229, 26, 'Galeri Resimleri', '', 'galleryImage.php', 1, 85, '');
+
+ALTER TABLE `urun` CHANGE `detay` `detay` LONGTEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+ALTER TABLE `urun` CHANGE `onDetay` `onDetay` VARCHAR(512) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL; 
+ALTER TABLE `urun` CHANGE `name` `name` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+ALTER TABLE `kategori` CHANGE `name` `name` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+ALTER TABLE `marka` CHANGE `name` `name` VARCHAR(256) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+
+UPDATE `adminmenu` SET `Adi` = 'Admin Log', `Dosya` = 'adminLog.php' WHERE `adminmenu`.`ID` = 81; 
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '74', 'N11 Ayarları', '', 'n11Ayarlari.php', '1', '31', ''); 
+UPDATE `adminmenu` SET `Sira` = '40' WHERE `adminmenu`.`ID` = 219; 

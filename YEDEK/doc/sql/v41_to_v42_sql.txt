@@ -1,0 +1,54 @@
+UPDATE `siteConfig` SET `version` = '4.2' WHERE `siteConfig`.`ID` =1;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (null, '5', 'Ürün Varyasyon Stokları', '', 'varstok.php', '1', '14', ''); 
+ALTER TABLE `siteConfig` CHANGE `kargo_yiKullanici` `kargo_yiKullanici` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+CHANGE `kargo_yiSifre` `kargo_yiSifre` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `n11` CHANGE `filter` `filter` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL; 
+CREATE TABLE IF NOT EXISTS `sepetindirim` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `cat` text NOT NULL,
+  `marka` text NOT NULL,
+  `minadet` int(11) NOT NULL,
+  `indadet` int(11) NOT NULL,
+  `ind` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+ALTER TABLE `sepetindirim` ADD `title` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL AFTER `ID`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (null, '5', 'Sepet İndirimleri', '', 'sepetIndirim.php', '1', '68', ''); 
+ALTER TABLE `siparis` ADD `sepetIndirim` DOUBLE NOT NULL AFTER `toplamTutarTL`; 
+ALTER TABLE `siparis` ADD `sepetIndirimInfo` VARCHAR(32) NOT NULL AFTER `sepetIndirim`; 
+CREATE TABLE IF NOT EXISTS `sliderkategori` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `link` varchar(255) NOT NULL,
+  `catIDs` text NOT NULL,
+  `resim` varchar(64) NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (null, '19', 'Kategori Slider', '', 'sliderKategori.php', '1', '70', '');
+ALTER TABLE `langs` CHANGE `name` `name` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL; 
+ALTER TABLE `iller` CHANGE `name` `name` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL; 
+
+
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_ad.', 'TR', 'Ad.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_kg.', 'TR', 'Kg.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_mb_bakiyeAktarimFormu', 'TR', 'Baykiye Aktarım Formu');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_mb_kullanilabilirKrediniz', 'TR', 'Kullanılabilir Krediniz');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_mb_yuklenecekKredi', 'TR', 'Yüklenecek Kredi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_mb_oncekiKrediYukelemlerim', 'TR', 'Önceki Kredi Yüklemelerim');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_mb_oncekiKrediKullanimlarim', 'TR', 'Önceki Kredi Kullanımlarım');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_mb_krediYukleme', 'TR', 'Kredi Yükleme');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_titleSorgula', 'TR', 'Sorgula');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_titlecokArananlar', 'TR', 'Çok Arananlar');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_titleEtiket', 'TR', 'Etiket');
+
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (null, '168', 'Ödeme Durumları', '', 'odemeDurum.php', '1', '30', '');
+ALTER TABLE `kargofirma` CHANGE `name` `name` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (null, '15', 'Kargo İlleri (Yurtdışı)', '', 'kargoIl.php&allc=true&y=e', '1', '21', '');
+
+ALTER TABLE `sablonEmail` CHANGE `email` `email` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL, CHANGE `name` `name` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL, CHANGE `title` `title` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL, CHANGE `body` `body` TEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL; 
+
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_form_ulke', 'TR', 'Ülke');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_sepetMinSepetHata', 'TR', 'Bu ürünün satın alınabilmesi için gerekli asgari sepet tutarı : ');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_sepetPromosyonHata', 'TR', 'Sepete promosyon ürünlerinden 1 adet eklebebilir. Bu ürünü eklemek için diğer promosyon ürününü sepetten silmeniz gerekir.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_facebooklabaglan', 'TR', 'Facebook ile Bağlan');
+update iller set plakaID = ID where plakaID = 0;

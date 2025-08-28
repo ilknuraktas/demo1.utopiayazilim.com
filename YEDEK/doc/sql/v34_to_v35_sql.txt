@@ -1,0 +1,100 @@
+UPDATE `siteConfig` SET `version` = '3.5' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `siteConfig` ADD `templateLogo` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `templateName`;
+ALTER TABLE `siteConfig` ADD `google_clientid` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `templateName`;
+ALTER TABLE `siteConfig` ADD `google_secret` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `templateName`;
+ALTER TABLE `siteConfig` ADD `google_developerkey` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `templateName`;
+ALTER TABLE `bannerYonetim` ADD `bannerOto` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `bannerYer` ;
+delete from adminmenu where dosya like '%xmlexport.php%';
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'XML Servisleri', '', 'xmlExport.php', '1', '20', '');
+delete from xmlexport;
+ALTER TABLE `userGroups` ADD `xmlactive` BOOLEAN NOT NULL , ADD `xmlIP` INT NOT NULL , ADD `xmlcat` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL , ADD `xmlmarka` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `userGroups` CHANGE `xmlIP` `xmlIP` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+update userGroups set xmlIP = '';
+ALTER TABLE `siteConfig` ADD `gg_Kar` DOUBLE NOT NULL AFTER `gg_Vitrin` ;
+ALTER TABLE `siteConfig` ADD `kargo_arasUsername` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_Kar` ,
+ADD `kargo_arasPassword` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_arasUsername` ,
+ADD `kargo_arasCustomerCode` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_arasPassword` ;
+ALTER TABLE `siteConfig` ADD `kargo_arasID` INT NOT NULL AFTER `gg_Kar`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '15', 'Kargo Entegrasyon', '', 'kargoAPIAyarlari.php', '1', '35', '');
+INSERT INTO `lang` (`ID` ,`key` ,`code` ,`value`) VALUES ( NULL , '_lang_kargoIslemTarihi', 'TR', 'İşlem Tarihi'), (NULL , '_lang_kargoIslemBirim', 'TR', 'Birim');
+INSERT INTO `lang` (`ID` ,`key` ,`code` ,`value`) VALUES ( NULL , '_lang_kargoIslem', 'TR', 'İşlem'), (NULL , '_lang_kargoAciklama', 'TR', 'Açıklama');
+ALTER TABLE `siparis` ADD `odemeID` INT NOT NULL AFTER `promotionUsed` ;
+ALTER TABLE `siteConfig` ADD `facebook_ID` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `google_conversion` ,
+ADD `facebook_appID` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `facebook_ID` ,
+ADD `facebook_secret` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `facebook_appID`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '1', 'Social Connect Ayarları', '', 'scAyarlari.php', '1', '43', '');
+ALTER TABLE `stats_anlik` ADD `randStr` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `ID` ;
+ALTER TABLE `siteConfig` ADD `chat_active` BOOLEAN NOT NULL AFTER `seo_urunEtiket` ,
+ADD `chat_name` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `chat_active` ,
+ADD `chat_welcome` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `chat_name` ,
+ADD `chat_chattimeout` INT NOT NULL AFTER `chat_welcome` ,
+ADD `chat_logtimeout` INT NOT NULL AFTER `chat_chattimeout` ;
+ALTER TABLE `siteConfig` ADD `chat_imgonline` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `chat_active` ,
+ADD `chat_imgoffline` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `chat_imgonline` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '1', 'Canlı Destek Ayarları', '', 'chatAyarlari.php', '1', '80', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '80', 'Canlı Destek Logları', '', 'chatLog.php', '1', '125', '');
+UPDATE `siteConfig` SET `chat_imgonline` = 'CanliDestek.gif',
+`chat_imgoffline` = 'CanliDestek.gif',
+`chat_name` = 'Online Destek',
+`chat_welcome` = 'Hoşgeldiniz. ',
+`chat_chattimeout` = '1800',
+`chat_logtimeout` = '30' WHERE `siteConfig`.`ID` =1;
+CREATE TABLE IF NOT EXISTS `iletisimcevap` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `cevap` text NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin5 AUTO_INCREMENT=5 ;
+
+INSERT INTO `iletisimcevap` (`ID`, `cevap`) VALUES
+(1, 'Firmamız sadece Internet üzerinden satış yapmaktadır. Firma ofisi veya depo&prime;dan alışveriş imkanı bulunmamaktadır.'),
+(2, 'İlgili ürüm stoklarımızda bulunmaktadır. Siparişinizi takip eden gün kargoya verilebilecektir.'),
+(3, 'İlgili ürün stoklarımızda bulunmamaktadır. Üye girişi yaptıktan sonra ilgili ürün sayfasından stoğa gelince haber ver bağlantısına tıklayıp, geldiği anda haberdar olabilirsiniz.'),
+(4, 'Fiyatlarımız rekabet avantajı gereği en düşük fiyatlar ile girilmektedir. Ek bir indirim şansımız bulunmamaktadır.');
+UPDATE `adminmenu` SET `parentID` = '10',`Sira` = '50' WHERE `adminmenu`.`ID` =155;
+UPDATE `adminmenu` SET `Aktif` = '0' WHERE `adminmenu`.`ID` =147;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'Otomatik Cevaplar', '', 'iletisimCevap.php', '1', '9', '');
+ALTER TABLE `banka` ADD `userGroup` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `marka` ;
+update adminmenu set Adi = 'Filtre Başlıkları' where ID=121;
+update adminmenu set Adi = 'Filtre Detay Sayfaları' where ID=122;
+update adminmenu set Adi = 'Filtre Yönetimi' where ID=123;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '80', 'Aylık Sipariş (Kar)', '', 'stats.php&type=aylik-kar', '1', '25', '');
+ALTER TABLE `urun` ADD `filtre_gg` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `filitre` ;
+CREATE TABLE IF NOT EXISTS `urunpaket` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `urunIDs` varchar(255) NOT NULL,
+  `amount` double NOT NULL,
+  `percent` double NOT NULL,
+  `birim` varchar(16) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Ürün Paketleri', '', 'urunpaket.php', '1', '68', '');
+UPDATE `lang` SET `value` = 'toplam' WHERE `lang`.`ID` =46;
+
+CREATE TABLE IF NOT EXISTS `userauto` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `fieldname` varchar(128) NOT NULL,
+  `fieldvalue` varchar(128) NOT NULL,
+  `groupID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '34', 'Otomatik Gruplandırma', '', 'userAuto.php', '1', '40', '');
+ALTER TABLE `mailing` ADD `sendToGroup` INT NOT NULL ;
+ALTER TABLE `siteConfig` ADD `SMTP_secure` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `SMTP_password` ;
+ALTER TABLE `sepet` ADD `url` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `prefix` ;
+UPDATE `adminmenu` SET `Adi` = 'Yedekle' WHERE `adminmenu`.`ID` =181;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '181', 'Dosyaları Yedekle', '', 'yedekdosya.php', '1', '5', '');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kargo_tutar', 'TR', 'Ödeyeceğiniz kargo tutarı <b>{%TUTAR%}</b>\'dir.');
+update banka set taksitGosterimCSS = '#df1063,#fff' where taksitGosterimCSS = 'isbank_';
+update banka set taksitGosterimCSS = '#66cc33,#fff' where taksitGosterimCSS = 'garanti_';
+update banka set taksitGosterimCSS = '#68207f,#fff' where taksitGosterimCSS = 'yapikredi_';
+ALTER TABLE `urun` CHANGE `filtre_gg` `filtre_gg` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+CREATE TABLE IF NOT EXISTS `cache` (
+	  `name` varchar(32) NOT NULL,
+	  `result` text NOT NULL,
+	  `tarih` datetime NOT NULL,
+	  KEY `name` (`name`)
+	) ENGINE=InnoDB DEFAULT CHARSET=latin5;
+
+ALTER TABLE `cache` ADD INDEX ( `name` ) ;
+ALTER TABLE `cache` CHANGE `result` `result` MEDIUMTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;

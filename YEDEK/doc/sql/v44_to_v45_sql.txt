@@ -1,0 +1,5 @@
+UPDATE `siteConfig` SET `version` = '4.5' WHERE `siteConfig`.`ID` =1;
+
+ALTER TABLE `filitre` CHANGE `baslik` `baslik` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL, CHANGE `icerik` `icerik` TEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+
+ALTER TABLE `urun` CHANGE `filitre` `filitre` TEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;

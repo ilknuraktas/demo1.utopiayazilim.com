@@ -1,0 +1,20 @@
+ALTER TABLE `siparis` CHANGE `promotionUsed` `promotionUsed` DOUBLE NOT NULL;
+UPDATE `odemeDurum` SET `mailCode` = 'Siparis_Iptali' WHERE `ID` =91 LIMIT 1 ;
+ALTER TABLE `urun` DROP `ozellik6` ,
+DROP `ozellik6detay` ;
+ALTER TABLE `urun` ADD `xmlUpdateStatus` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `urun` ADD `virtualCatIDs` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `catID` ;
+UPDATE urun SET fiyatBirim = 'TL' WHERE fiyatBirim = 'YTL';
+ALTER TABLE `urun` ADD `showCatIDs` TEXT NOT NULL AFTER `virtualCatIDs` ;
+CREATE TABLE `userLog` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`userID` INT NOT NULL ,
+`key` VARCHAR( 32 ) NOT NULL ,
+`keyDetail` VARCHAR( 32 ) NOT NULL ,
+`value` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`date` DATE NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `siteConfig` ADD `mailFrom` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `metaDescription` ;
+ALTER TABLE `siteConfig` CHANGE `kargo` `kargo` DOUBLE NOT NULL; 
+ALTER TABLE `siteConfig` ADD `uyelikKural` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `satinalKural` ;
+ALTER TABLE `siparis` CHANGE `promotionUsed` `promotionUsed` DOUBLE NOT NULL 

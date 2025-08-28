@@ -1,0 +1,348 @@
+ALTER TABLE `siteConfig` ADD `tekCekimIndirim` DOUBLE NOT NULL AFTER `havaleIndirim` ;
+ALTER TABLE `siteConfig` ADD `dovizType` INT NOT NULL AFTER `updateDoviz` ;
+ALTER TABLE `siteConfig` ADD `crontabLastUpdate` DATETIME NOT NULL ;
+ALTER TABLE `kategori` ADD `hit` INT NOT NULL ;
+CREATE TABLE IF NOT EXISTS `stats` (
+  `ID` int(11) NOT NULL auto_increment,
+  `k` varchar(32) NOT NULL,
+  `v` varchar(255) NOT NULL,
+  `Toplam` int(11) NOT NULL,
+  PRIMARY KEY  (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+CREATE TABLE IF NOT EXISTS `stats_IP` (
+  `ID` int(11) NOT NULL auto_increment,
+  `IP` varchar(32) NOT NULL,
+  `Tarih` datetime NOT NULL,
+  PRIMARY KEY  (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=2 ;
+
+ALTER TABLE `siteConfig` ADD `salterInfo` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `salter`;
+ALTER TABLE `haberler` ADD `metaKeywords` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `metaDescription` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `makaleler` ADD `metaKeywords` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `metaDescription` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+CREATE TABLE `xmlexport` (
+`ID` INT NOT NULL ,
+`code` VARCHAR( 255 ) NOT NULL ,
+`file` VARCHAR( 255 ) NOT NULL ,
+`status` BOOL NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `xmlexport` ADD `data1` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `data2` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `data3` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `data4` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `data5` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `siteConfig`  ADD `uploadAllowed` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `SMS_kullan` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `SMS_originator` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `SMS_username` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `SMS_password` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+UPDATE `siteConfig` SET `uploadAllowed` = 'jpg,gif' WHERE `siteConfig`.`ID` =1 LIMIT 1 ;
+CREATE TABLE `temp` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`code` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`text` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `siparis` ADD `IP` VARCHAR( 64 ) NOT NULL;
+ALTER TABLE `urun` ADD `active` BOOL NOT NULL;
+ALTER TABLE `siteConfig` ADD `listelemeUrun` INT NOT NULL AFTER `icSayfaUrun`;
+ALTER TABLE `siteConfig` ADD `gonderilenEpostaSayisi` INT NOT NULL AFTER `SMTP_password` ;
+ALTER TABLE `userLog` ADD `IP` VARCHAR( 32 ) NOT NULL AFTER `value` ;
+ALTER TABLE `user` ADD `tckNo` VARCHAR( 16 ) NOT NULL AFTER `ceptel` ;
+ALTER TABLE `siparis` ADD `tckNo` VARCHAR( 16 ) NOT NULL AFTER `ceptel` ;
+ALTER TABLE `banka` ADD `epostaAciklama` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `odemeAciklama` ;
+UPDATE `sablonSMS` SET `code` = 'Alisveris_Onayi' WHERE `sablonSMS`.`ID` =2 LIMIT 1 ;
+ALTER TABLE `siteConfig` CHANGE `metaKeywords` `seo_metaKeywords` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+CHANGE `metaDescription` `seo_metaDescription` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `siteConfig` CHANGE `title` `seo_title` VARCHAR( 256 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `siteConfig`  ADD `seo_urunTitle` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_metaDescription`,  ADD `seo_urunMetaKeywords` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_urunTitle`,  ADD `seo_urunMetaDescription` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_urunMetaKeywords`,  ADD `seo_kategoriTitle` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_urunMetaDescription`,  ADD `seo_kategoriMetaKeywords` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_kategoriTitle`,  ADD `seo_kategoriMetaDescription` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_kategoriMetaKeywords`;
+ALTER TABLE `siteConfig`  ADD `seo_icerikTitle` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_metaDescription`,  ADD `seo_icerikMetaKeywords` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_icerikTitle`,  ADD `seo_icerikMetaDescription` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_icerikMetaKeywords`;
+ALTER TABLE `pages` ADD `metaKeywords` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `title` ;
+ALTER TABLE `pages` ADD `metaDescription` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `metaKeywords`;
+ALTER TABLE `xmlexport` ADD `izinliGruplar` VARCHAR( 255 ) NOT NULL AFTER `status` ;
+ALTER TABLE `siteConfig` ADD `watermark` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `uploadAllowed` ;
+
+CREATE TABLE IF NOT EXISTS `adminmenu` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `parentID` int(11) NOT NULL,
+  `Adi` varchar(64) NOT NULL,
+  `Icon` varchar(64) NOT NULL,
+  `Dosya` varchar(255) NOT NULL,
+  `Aktif` tinyint(1) NOT NULL,
+  `Sira` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=109 ;
+
+--
+-- Tablo döküm verisi `adminmenu`
+--
+
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES
+(1, 0, 'Ayarlar', 'settings.png', '', 1, 10),
+(3, 1, 'SMS Ayarları', '', 'smsAyarlari.php', 1, 25),
+(2, 1, 'Genel Ayarlar', '', 'siteAyarlari.php', 1, 10),
+(10, 0, 'Siparişler', 'orders.png', '', 1, 20),
+(4, 1, 'Sepet Ayarları', '', 'sepetAyarlari.php', 1, 30),
+(5, 0, 'Ürünler', 'products.png', '', 1, 30),
+(6, 5, 'Ürün Yönetimi', '', 'urun.php', 1, 10),
+(7, 5, 'Kategori Yönetimi', '', 'kategori.php', 1, 20),
+(8, 5, 'Ürün Yorumları', '', 'urunYorum.php', 1, 15),
+(9, 10, 'Gelen Siparişler', '', 'gelenSiparisler.php', 1, 10),
+(11, 10, 'Havale Bildirimleri', '', 'havaleBildirim.php', 1, 20),
+(12, 10, 'Arıza Takip', '', 'arizaBildirim.php', 1, 30),
+(13, 10, 'Gönderilen Siparişler', '', 'gonderilenSiparisler.php', 1, 15),
+(14, 10, 'Serial Takibi', '', 'serial.php', 1, 40),
+(15, 0, 'Kargo', 'shipping.png', '', 1, 40),
+(16, 15, 'Kargo Bölgeleri', '', 'kargoBolge.php', 1, 10),
+(17, 15, 'Kargo İlleri', '', 'kargoIl.php', 1, 20),
+(18, 15, 'Kargo Ücretleri', '', 'kargoDesi.php', 1, 30),
+(19, 0, 'Reklam', 'seo.png', '', 1, 50),
+(20, 19, 'Firmalar', '', 'firma.php', 1, 10),
+(21, 19, 'Banner Bilgileri', '', 'banner.php', 1, 20),
+(22, 19, 'Banner Yönetimi', '', 'bannerYonetim.php', 1, 30),
+(23, 19, 'Banner İstatistikleri', '', 'bannerIstatistik.php', 1, 40),
+(24, 19, 'Vitrin Ayarları', '', 'kampanyaBannerAyarlari.php', 1, 50),
+(25, 19, 'Vitrin Resimleri', '', 'kampanyaBannerResim.php', 1, 50),
+(26, 0, 'İçerik', 'pages.png', '', 1, 60),
+(28, 26, 'İçerik Sayfaları', '', 'page.php', 1, 10),
+(29, 26, 'Sıkça Sorulan Sorular ', '', 'sss.php', 1, 20),
+(30, 26, 'Anket Soruları', '', 'anketSoru.php', 1, 30),
+(31, 26, 'Anket Cevapları', '', 'anketCevap.php', 1, 40),
+(32, 26, 'Haberler', '', 'haberler.php', 1, 50),
+(33, 26, 'Makaleler', '', 'makaleler.php', 1, 60),
+(34, 0, 'Kullanıcılar', 'users.png', '', 1, 70),
+(35, 34, 'Bayi Grupları', '', 'userGroups.php', 1, 20),
+(36, 34, 'Kullanıcı Yonetimi', '', 'users.php', 1, 10),
+(37, 34, 'Bayi Üyeleri', '', 'userGroupMembers.php', 1, 30),
+(38, 0, 'Şablon', 'pics.png', '', 1, 80),
+(39, 38, 'Genel Şablon', '', 'edit.php&file=templates/{%session.templateName%}/temp.php', 1, 10),
+(40, 38, 'Blok Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/blocks/DefaultBlock.php', 1, 10),
+(41, 38, 'Listeleme Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/lists/MenuList.php', 1, 30),
+(42, 38, 'Sistem Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/systemDefault/UrunListShow.php', 1, 40),
+(43, 38, 'Stylesheet', '', 'edit.php&file=templates/{%session.templateName%}/style.css', 1, 50),
+(44, 0, 'SMS', 'sms.png', '', 1, 90),
+(46, 44, 'Toplu SMS Gönderimi', '', 'sms.php', 1, 10),
+(47, 44, 'SMS Şablonları ', '', 'smsTemp.php', 1, 20),
+(48, 44, 'Beklemede olan SMS&#39;ler ', '', 'smsrapor.php&filterValue=0', 1, 30),
+(49, 44, 'Gönderilen SMSler', '', 'smsrapor.php&filterValue=1', 1, 40),
+(50, 44, 'Gönderilemeyen SMSler', '', 'smsrapor.php&filterValue=3', 1, 50),
+(52, 44, 'SMS Raporlarını Güncelle', '', 'smsrapor.php&up=true', 1, 70),
+(51, 44, 'Süresi Geçen SMS''ler', '', 'smsrapor.php&filterValue=4', 1, 60),
+(53, 0, 'E-Posta', 'email.png', '', 1, 100),
+(54, 53, 'E-bülten Kayıt Listesi', '', 'maillist.php', 1, 10),
+(55, 53, 'Toplu Eposta Kayıt Giriş', '', 'importMaillist.php', 1, 20),
+(56, 53, 'E-Bülten Gönderimi', '', 'mailing.php', 1, 30),
+(57, 53, 'E-posta Şablonları', '', 'sablonEmail.php', 1, 40),
+(58, 0, 'Ödeme', 'payment.png', '', 1, 110),
+(59, 58, 'Banka Yönetimi', '', 'banka.php', 1, 10),
+(60, 58, 'Vade Oranları', '', 'bankaVade.php', 1, 20),
+(61, 58, 'Havale Bilgileri ', '', 'havale.php', 1, 30),
+(62, 58, 'Alışveriş Çekleri', '', 'alisverisCeki.php', 1, 40),
+(63, 58, 'Promosyon Kodları', '', 'promosyon.php', 1, 50),
+(64, 0, 'XML Yükle', 'modules.png', '', 1, 120),
+(65, 64, 'Arena XML', '', 'XML/xml_arena.php&y=e', 0, 10),
+(66, 64, 'Penta XML', '', 'XML/xml_penta.php&y=e', 1, 60),
+(67, 64, 'Index / Despec XML', '', 'XML/xml_index.php&y=e', 1, 50),
+(68, 64, 'Exa XML', '', 'XML/xml_exa.php&y=e', 1, 40),
+(69, 64, 'Denge XML', '', 'XML/xml_denge.php&y=e', 1, 30),
+(70, 64, 'Pozitif XML', '', 'XML/xml_pozitif.php&y=e', 1, 70),
+(71, 64, 'Oksid XML', '', 'XML/xml_oksid.php&y=e', 1, 80),
+(72, 64, 'Saat Noktası XML', '', 'XML/xml_saatnoktasi.php&y=e', 1, 90),
+(73, 64, 'Hepsi Burada XML', '', 'XML/xml_hb.php&y=e', 1, 45),
+(74, 0, 'XML Çıktılar', 'modules.png', '', 1, 130),
+(0, 74, 'Hızlı Al', '', 'xmlExport.php&code=XML_HizliAl', 1, 35),
+(76, 74, 'Cimri', '', 'xmlExport.php&code=XML_Cimri', 1, 20),
+(77, 74, 'Ne Kadar', '', 'xmlExport.php&code=XML_NeKadar', 1, 30),
+(78, 74, 'Ucuzcu', '', 'xmlExport.php&code=XML_Ucuzcu', 1, 40),
+(79, 74, 'Google Sitemap', '', 'xmlExport.php&code=XML_GoogleSitemap', 1, 5),
+(80, 0, 'İstatistikler', 'stats.png', '', 1, 140),
+(81, 80, 'Kullanıcı Logları', '', 'userLog.php', 1, 120),
+(82, 38, 'Dil Şablonu', '', 'edit.php&file=include/lang/lang-tr.php', 1, 60),
+(83, 74, 'Shopphp', '', 'xmlExport.php&code=XML_Shopphp', 1, 6),
+(84, 1, 'E-Posta Ayarları', '', 'epostaAyarlari.php', 1, 20),
+(85, 10, 'Sipariş Arşivi', '', 'siparisArsivi.php', 1, 18),
+(86, 74, 'Akıllı Fiyat', '', 'xmlExport.php&code=XML_AkilliFiyat', 1, 10),
+(87, 64, 'Modacar XML', '', 'XML/xml_modacar.php&y=e', 1, 75),
+(88, 80, 'Aylık Sipariş (Adet)', '', 'stats.php&type=aylik-adet', 1, 10),
+(89, 80, 'Aylık Sipariş (Ciro)', '', 'stats.php&type=aylik-fiyat', 1, 20),
+(90, 80, 'Kategoriler', '', 'stats.php&type=kategori', 1, 30),
+(91, 80, 'Ürünler', '', 'stats.php&type=urun', 1, 40),
+(92, 80, 'Ziyaretçi Sayıları', '', 'stats.php&type=ziyaret', 1, 70),
+(93, 80, 'Ziyaretçi İstatistikleri', '', 'stats.php&type=os-browser', 1, 80),
+(94, 80, 'Arama Motorları', '', 'stats.php&type=aramaMotoru', 1, 75),
+(95, 80, 'Referrer Adresler', '', 'stats.php&type=referrer', 1, 76),
+(96, 64, 'Ecza Deposu XML', '', 'XML/xml_eczadeposu.php&y=e', 1, 35),
+(97, 5, 'Marka Yönetimi', '', 'marka.php', 1, 30),
+(98, 64, 'Sihirli Bebekler XML', '', 'XML/xml_sihirlibebekler.php&y=e', 1, 95),
+(99, 64, 'Elma Sepeti XML', '', 'XML/xml_elmasepeti.php&y=e', 1, 37),
+(100, 64, 'Tedarik Bizden XML', '', 'XML/xml_tedarikbizden.php&y=e', 1, 100),
+(101, 64, 'Toptan Shop XML', '', 'XML/xml_toptanshop.php&y=e', 1, 110),
+(102, 80, 'E-posta Logları', '', 'emailLog.php', 1, 130),
+(103, 38, 'E-Posta Şablonu', '', 'edit.php&file=templates/system/email/temp.php', 1, 70),
+(104, 64, 'Atlas Kamp XML', '', 'XML/xml_atlaskamp.php&y=e', 1, 10),
+(105, 64, 'Toptan Mallar XML', '', 'XML/xml_toptanmallar.php&y=e', 1, 105),
+(106, 1, 'SEO Ayarları', '', 'seoAyarlari.php', 1, 40),
+(107, 64, 'Joker XML', '', 'XML/xml_joker.php&y=e', 1, 55),
+(108, 64, 'Parfüm ve Kozmetik', '', 'XML/xml_parfumvekozmetik.php&y=e', 1, 85);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bankaposurl`
+--
+
+CREATE TABLE IF NOT EXISTS `bankaposurl` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=11 ;
+
+--
+-- Tablo döküm verisi `bankaposurl`
+--
+
+INSERT INTO `bankaposurl` (`ID`, `name`, `url`) VALUES
+(1, 'Garanti Bankası 3D', 'https://ccpos.garanti.com.tr/servlet/gar3Dgate'),
+(2, 'Akbank 3D', 'https://www.sanalakpos.com/servlet/est3Dgate'),
+(3, 'Garanti Bankası', 'https://ccpos.garanti.com.tr/servlet/cc5ApiServer'),
+(4, 'Bank Asya 3D', 'https://vps.bankasya.com.tr/iposnet/sposnet.aspx?prmstr=[DATA]'),
+(5, 'Vakıfbank', 'https://subesiz.vakifbank.com.tr/vpos724v3/?'),
+(6, 'Yapı Kredi', 'http://193.254.228.52/PosnetWebService/XML'),
+(7, 'Finansbank', 'https://www.fbwebpos.com/servlet/cc5ApiServer'),
+(8, 'İş Bankası', 'https://spos.isbank.com.tr/servlet/cc5ApiServer'),
+(9, 'Akbank', 'https://vpos.est.com.tr/servlet/cc5ApiServer'),
+(10, 'İş Bankası 3D', 'https://spos.isbank.com.tr/servlet/est3Dgate');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `epostalog`
+--
+
+CREATE TABLE IF NOT EXISTS `epostalog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `from` varchar(255) NOT NULL,
+  `to` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `body` text NOT NULL,
+  `IP` varchar(32) NOT NULL,
+  `tarih` datetime NOT NULL,
+  `randStr` varchar(32) NOT NULL,
+  `durum` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=52 ;
+
+--
+CREATE TABLE IF NOT EXISTS `temp` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+
+CREATE TABLE IF NOT EXISTS `xmlexport` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) NOT NULL,
+  `file` varchar(255) NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `izinliGruplar` varchar(255) NOT NULL,
+  `data1` varchar(255) NOT NULL,
+  `data2` varchar(255) NOT NULL,
+  `data3` varchar(255) NOT NULL,
+  `data4` varchar(255) NOT NULL,
+  `data5` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `ID` (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=8 ;
+
+--
+-- Tablo döküm verisi `xmlexport`
+--
+
+INSERT INTO `xmlexport` (`ID`, `code`, `file`, `status`, `izinliGruplar`, `data1`, `data2`, `data3`, `data4`, `data5`) VALUES
+(1, 'XML_GoogleSitemap', '/sitemap_index.xml', 0, '', '', '', '', '', ''),
+(2, 'XML_Cimri', 'XML/cimri.xml', 0, '', '', '', '', '', ''),
+(3, 'XML_NeKadar', 'XML/nekadar.xml', 0, '', '', '', '', '', ''),
+(4, 'XML_Ucuzcu', 'XML/ucuzcu.xml', 0, '', '', '', '', '', ''),
+(5, 'XML_Shopphp', 'XML/shopphp.xml', 0, '', '', '', '', '', ''),
+(6, 'XML_AkilliFiyat', 'XML/akillifiyat.xml', 0, '', '', '', '', '', ''),
+(7, 'XML_HizliAl', 'XML/hizlial.xml', 0, '', '', '', '', '', '');
+
+drop table sablonEmail;
+drop table sablonSMS;
+
+CREATE TABLE IF NOT EXISTS `sablonEmail` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) NOT NULL,
+  `email` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `name` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `title` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `body` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Tablo döküm verisi `sablonEmail`
+--
+
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES
+(1, 'Kullanici_Bilgileri', 'info@shopphp.net', 'Şifremi Unuttum', 'Kullanıcı Bilgileriniz', 'Sayın {%name%} {%lastname%},<br><br>Talebiniz üzere kullanıcı bilgilerinizi aşağıda verilmiştir. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}\r\n<br /><br />Bilginize,'),
+(3, 'Odeme_Onayi', 'info@shopphp.net', 'Sipariş Onayı', 'Sipariş Ödeme Onayınız', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz için yapılan ödemeniz onaylandı.Siparişinizin kargo teslimatından sonra tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,'),
+(5, 'Urun_Tavsiye', 'info@shopphp.net', 'Arkadaşıma Gönder', 'Arkadaşınız {%ARKADAS_ADI%} size {%URUN_ADI%} ürününü tavsiye ediyor', 'Merhaba {%ALICI_ADI%},\r\n<br><br>\r\nArkadaşınız {%GONDEREN_ADI%}, size DemoShop sitesi {%KATEGORI_ADI%} kategorisinden {%URUN_ADI%} ürününü tavsiye etti.\r\n<br><br>\r\nArkadaşınızın size mesajı :<br>\r\n{%MESAJ%}<br><br>\r\n\r\n Ürüne gitmek için lütfen <a href="{%URUN_LINK%}">tıklayın</a>.'),
+(6, 'Fiyat_Guncellemesi', 'info@shopphp.net', 'Ürün Fiyat Güncellemesi', 'Ürün Fiyat Güncellemesi', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizde alarm listenize eklediğiniz {%URUN_ADI%} ürününün {%ESKI_FIYAT%} olan fiyatı {%YENI_FIYAT%} olarak güncellenmiştir. <br /><br />Bilginize, </p>\r\n<p>Bizi seçtiğiniz için teşekkür ederiz</p>'),
+(11, 'Kargo_Gonderim', '', '', 'Siparişiniz Kargoya Teslim Edildi', 'Sayın {%name%} {%lastname%},\r\n<br><br>\r\nSitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz kargoya teslim edilimiştir.<br><br>\r\nKargo Firması : {%kargoFirma%}<br>\r\nKargo Takip Numarası : {%kargoSeriNo%}<br>\r\nKargo Takip URL Adresi : <a href="{%kargoURL%}">{%kargoURL%}</a><br><br>\r\nBizi seçtiğiniz için teşekkür ederiz,'),
+(7, 'Stok_Guncellemesi', 'info@shopphp.net', 'Ürün StokGüncellemesi', 'Ürün Stok Güncellemesi', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizde alarm listenize eklediğiniz {%URUN_ADI%} ürünü stoklarımıza eklenmiştir. <br /><br />Bilginize, <br /><br />Bizi seçtiğiniz için teşekkür ederiz'),
+(12, 'Siparis_Iptali', '', '', 'Siparişiniz İptal Edildi', 'Sayın {%name%} {%lastname%},\r\n<br><br>\r\nSitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz iptal edilmiştir.\r\n\r\nBilginize,'),
+(15, 'Alisveris_Onayi', '', '', 'Siparişiniz Elimize Ulaştı', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz işleme alınmıştır.<br /><br />Sepet Bilgileriniz :<br />\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br><br>\r\n<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />\r\n<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,'),
+(13, 'Teslimat_Onayi', '', '', 'Siparişiniz Adresinize Teslim Edildi', 'Sn. {%name%} {%lastname%},\r\n<br><br>\r\nSitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz adresinize teslim edilmiş ve siparişinize sonuçlanmıştır.\r\n<br /><br />\r\nBizi seçtiğiniz için teşekkür ederiz,'),
+(16, 'Siparis_Bildirimi', '', '', 'Yeni Sipariş Bildirimi', 'Sitenizde yeni bir sipariş talebi var.<br /><br />Sepet Bilgileri :\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br /><br />\r\nÖdeme Tipi : {%odemeTipi%}\r\n<br /><br />\r\nSipariş detaylarına bakmak için <a href="{%siteAdresiFull%}/secure/s.php?f=gelenSiparisler.php&y=d&siparisID={%randStr%}">burayı tıklayın</a>.');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `sablonSMS`
+--
+
+CREATE TABLE IF NOT EXISTS `sablonSMS` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) NOT NULL,
+  `body` text NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `sablonSMS`
+--
+
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES
+(1, 'Havele_Bilgileri', 'Sn. {%ADI%} {%SOYADI%}. 	{%SIPARIS_NO%} nolu siparisiniz isleme alinmistir. Havale odemesinden sonra site uzerinden havale bildirim formunu doldurmayi unutmatin.'),
+(2, 'Alisveris_Onayi', 'Sn. {%ADI%} {%SOYADI%},{%SIPARIS_NO%} nolu siparisiniz isleme konmustur. En kisa surede gonderim bilgileri size ulastirilacaktir. ');
+
+UPDATE `siteConfig` SET `seo_icerikTitle` = '{%icerik_title%} - {%site_title%} ', `seo_icerikMetaKeywords` = '{%icerik_metaKeywords%},{%site_metaKeywords%}', `seo_icerikMetaDescription` = '{%icerik_metaDescription%}-{%site_metaDescription%}', `seo_urunTitle` = '{%URUN_ADI%} - {%URUN_FIYAT_KDV_HARIC%} {%URUN_FIYAT_BIRIM%} + KDV', `seo_urunMetaKeywords` = '{%urun_metaKeywords%},{%URUN_ADI%},{%KATEGORI_ADI%}', `seo_urunMetaDescription` = '{%urun_metaDescription%} {%URUN_ADI%} {%ONDETAY%},', `seo_kategoriTitle` = '{%MARKA_ADI%} {%KATEGORI_ADI%} ürünleri - {%site_title%}', `seo_kategoriMetaKeywords` = '{%kategori_metaKeywords%},{%KATEGORI_ADI%},{%site_metaKeywords%}', `seo_kategoriMetaDescription` = '{%kategori_metaDescription%} {%KATEGORI_ADI%}  ürünleri' WHERE `siteConfig`.`ID` = 1;
+
+UPDATE `siteConfig` SET `seo_icerikMetaKeywords` = '{%icerik_metaKeywords%},{%site_metaKeywords%}', `seo_icerikMetaDescription` = '{%icerik_metaDescription%}-{%site_metaDescription%}' WHERE `siteConfig`.`ID` = 1 LIMIT 1;
+
+CREATE TABLE IF NOT EXISTS `stats_ziyaret` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Tarih` date NOT NULL,
+  `Tekil` int(11) NOT NULL,
+  `Cogul` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=5 ;
+update urun set active=1;
+/*
+Windows sunucularda import sırasında oluşan table titlelar için
+RENAME TABLE `siteconfig`  TO `siteConfig` ;
+RENAME TABLE `stats_ip`  TO `stats_IP` ;
+RENAME TABLE `arizabildirim`  TO `arizaBildirim` ;
+RENAME TABLE `anketsoru`  TO `anketSoru` ;
+RENAME TABLE `anketip`  TO `anketIP` ;
+RENAME TABLE `kampanyabanner`  TO `kampanyaBanner` ;
+RENAME TABLE `kampanyabannerconfig`  TO `kampanyaBannerConfig`  ;
+RENAME TABLE `kampanyajsbanner` TO `kampanyaJSBanner` ;
+RENAME TABLE `odemedurum`  TO `odemeDurum` ;
+RENAME TABLE `urunyorum`  TO `urunYorum` ;
+RENAME TABLE `usergroups`  TO `userGroups` ;
+RENAME TABLE `usergroupmembers`  TO `userGroupMembers` ;
+RENAME TABLE `alarmliste`  TO `alarmListe` ;
+RENAME TABLE `userlog`  TO `userLog` ;
+*/
+

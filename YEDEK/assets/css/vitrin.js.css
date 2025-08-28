@@ -1,0 +1,16 @@
+/* Kampanya Banner CSS */
+.line1 { position:relative; font-size:14px; font-weight:bold; left:19px; top:8px; }
+.line2 { position:relative; font-size:11px; left:20px; top:8px; }
+.infoLine { background-color:#555; height:60px; width:486px; bottom:0px; position:absolute; left:0px; opacity:0.9; filter:alpha(opacity=90); z-index:1; }
+.infoMain { padding:12px; height:41px; width:462px; position:absolute; bottom:0px; left:0px; z-index:4; }
+#infoLine1,#infoLine2 { color:white; font-size:18px; font-weight:bold;  }
+#infoLine2 { font-size:12px; }
+#picture { position:relative; height:229px; width:486px; overflow:hidden; }
+div.button .line1,div.button .line2 { color:#DFDFDF; }
+div.buttonAktif .line1,div.buttonAktif .line2 { color:#FFF; }
+#c1,#c2,#c3,#c4 { position:absolute; z-index:20;}
+#c1 { left:0px; top:0px; }
+#c2 { left:0px; bottom:0px; }
+#c3 { right:0px; top:0px; }
+#c4 { right:0px; bottom:0px; }
+/* Kampanya Banner CSS */

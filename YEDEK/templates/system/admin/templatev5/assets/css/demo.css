@@ -1,0 +1,706 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+html,body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.was-validated .form-select:invalid, .form-select.is-invalid { border-color: #ff5b5c !important;}
+#google-label { width:70px; }
+.data-grid-image { max-width: 30px; max-height: 30px; margin-top:2px;}
+.overflow-x-auto { overflow-x: auto !important;}
+.clear { clear: both;}
+.bg-label-success,.btn-success,.bg-success { background-color: #0bc15c !important; color:#fff !important; }
+.bg-label-warning { background-color: #f27a1a !important; color:#fff !important; }
+.bg-label-red { background-color:red !important; color:#fff !important; }
+.btn-red { background-color: red !important; color: #fff !important;}
+.pazaryeri-pop { cursor: pointer;}
+.width-100 { width: 100% !important;}
+.border-0 { border:0 !important; box-shadow: none !important; }
+.hide { display: none !important; }
+.min-kategori { min-width: 300px !important;}
+.min-marka { min-width: 160px; max-width: 50%;}
+.min-ay { min-width: 120px;}
+.bg-ccc { background-color: #bbb !important;}
+.max-sub-input { max-width: 350px;} 
+.mr-30 { margin-right: 30px !important; }
+#anlikGezilenler tr:last-child td { border-color: #d4d8dd  !important; }
+.select2-selection__choice__remove { display: none !important;}
+html:not([dir=rtl]) .select2-container--default .select2-selection--multiple .select2-selection__choice { padding-right: 0.5em !important; }
+.form-group .badge { white-space: inherit; line-height: 16px;}
+/*
+.light-style .select2-container--default .select2-selection--multiple .select2-selection__choice:hover,.light-style .select2-container--default .select2-selection--multiple .select2-selection__choice { background-color: #5a8dee !important; color:#fff !important; }
+*/
+#urun-arama-container .alert {display: none !important;}
+#urun-arama-container .hepsini-sec, #urun-arama-container .hepsini-kaldir { top:45px !important; }
+.hepsini-sec,.hepsini-kaldir { position: absolute; right: 110px; z-index: 100; zoom:0.7; top:8px; opacity: 0.5;}
+.hepsini-kaldir { right: 65px; }
+.hepsini-sec span ,.hepsini-kaldir span { zoom:1.5; }
+.hepsini-sec:hover { opacity: 1; }
+.hepsini-kaldir:hover { opacity: 1;}
+#seopreview-google {
+  border: 1px solid #d4d8dd;
+  border-radius: 0.25rem;
+  padding: 0.469rem 0.735rem;
+}
+
+.topluSecim .form-select,.topunuSec .form-select { width: auto !important;}
+.topluSecim,.topunuSec { clear: both; display: block; margin-left: 0 !important;}
+.topunuSec { padding-left: 40px;}
+span#kargo-sonuc pre
+{
+  background-color: #eee;
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 10px;
+  color:#555;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-mb { margin-bottom: 0.5rem !important; }
+  .mobile-button { width: 48%; } 
+  .mobile-button button { width: 100%; } 
+  .mobile-row { --bs-gutter-x: auto !important; }
+  .card-header-tabs li { width:49%; border: 1px dashed #ccc;}
+  #helperSelectContainer { margin-top: 10px; margin-bottom: 10px;}
+  .col-lg-12 .col-lg-4.mobile-50 { width: 50% !important; margin-bottom:5px;}
+}
+
+
+
+.uppercase-off{ text-transform: none !important;}
+#xml-progress-bar-c,#xml-progress-bar-c > #xml-progress-bar { border-radius: 4px !important;}
+
+.manuel-button-download,.manuel-button-upload { background-color: #0bc15c !important; }
+.manuel-button-message-square-x { background-color: red !important;}
+.manuel-button-copy-alt { background-color: #f27a1a !important;}
+.manuel-button-select-multiple ,.manuel-button-transfer  { background-color: #f27a1a !important;}
+.manuel-button-select-multiple-  { background-color: #e7ebef !important; color:#69809a !important;}
+.xml-view-log {
+    display: none;
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    background-color: #000;
+    color: #bae67e;
+    font-size: 12px;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+    line-height: 20px;
+    padding: 10px;
+    border: 1px solid rgb(212, 216, 221);
+    display: none;;
+}
+
+
+.frow_select.form-select { margin-top: -5px; margin-left:-5px; font-size: 12px;}
+.go-to-product-c { transform: scale(0.57); position: absolute; display: inline-block; }
+.go-to-product {  transform-origin:left top; position: absolute; right:-25px;  top:-12px; }
+#flex1 tr:hover .go-to-product-c { display: inline-block; }
+span.frow_val .switch.switch-sm { transform: scale(0.85);  }
+.product-view-image {float: right; padding: 5px; margin-top: 7px;  border:1px solid #ccc; background-color: #fff; border-radius: 5px; height: 40px; width: 40px; text-align: center;}
+span.frow_resim, span.frow_resim span, span.frow_resim span center { max-height: 40px; margin-top: -10px; margin-bottom: -12px !important;}
+span.frow_resim,span.frow_resim span,span.frow_resim span center { display: block; width: 100%; clear: both;}
+span.frow_resim span center a { display: inline-block;}
+.product-view-image img { max-width: 30px; max-height: 30px;}
+.pr-0 { padding-right: 0 !important; }
+.frow_input.form-control { font-size: 12px; margin-top: -1px; margin-left:-4px; padding: 0; padding-left: 3px; width: calc(100% + 8px) !important; }
+.alert { position: relative;}
+.alert i { position: absolute; top:17px; left:15px;}
+.alert div { margin-left: 20px;}
+
+.btn-warning { background-color: #f27a1a !important; border-color: #f27a1a !important;}
+.select2-selection--multiple .select2-search__field{
+  width:100%!important;
+}
+.menu-item .menu-item {position: relative;}
+.menu-item .menu-item:hover > .menu-sub { display: block; }
+
+.menu-link sup {
+  padding: 0 5px 0 5px;
+  color: #fff;
+  margin-left: 10px;
+  background-color: #0bc15c;
+  min-width: 20px;
+  display: inline-block;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.mfp-hide { display: none;}
+#anlikSayacContainer { text-align: center;}
+#anlikSayac { font-size:132px; color:#0bc15c; text-align:center; font-weight:bolder; }
+#anlikSayacContainer > a:first-child{ font-weight: bold; }
+.alert-info { color:#69809a }
+.alert-warning.d-flex strong {padding-left: 5px; padding-right: 5px;}
+.light-style .swal2-popup .swal2-title { font-size: inherit !important; text-align: center;}
+h5.mb-0 { width: 100%;}
+.relative { position: relative;}
+.form-label, .col-form-label { text-transform: none;  font-size:0.9rem;  }
+.popover{
+  max-width: 640px; /* Max Width of the popover (depending on the container!) */
+}
+.ps__rail-x,
+.ps__rail-y {
+  opacity: 0.6 !important;
+}
+
+.custom-input-info { 
+  position: absolute !important;
+  top:10px;
+  right:23px;
+  background-color: white;
+  cursor: pointer;
+  color:#aaa;
+  border-radius: 50%;
+}
+.checkbox-custom-input-info { 
+  position: absolute !important;
+  top:10px;
+  left:50px;
+  background-color: white;
+  cursor: pointer;
+  color:#aaa;
+}
+
+.a-disable-color a { color:rgb(103, 119, 136) !important;}
+.light-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.app-brand-logo.demo {
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.app-brand-logo.demo svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.45px;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+/* Add here all your CSS customizations */
+.clear-space {
+  clear: both;
+}
+
+a.blue {
+  color: #0088cc !important;
+}
+.color-white {
+  color: #fff !important;
+}
+.color-red {
+  color: red;
+}
+
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+textarea.rapor-goster { padding: 10px; width: 100%; height: 400px; background-color: #000; color:#e6db74; font-family: monospace; font-size:13px; line-height: 20px; }
+.tabs-primary li { cursor: pointer; }
+.help-block .form-control.mb-md { font-weight: normal; }
+
+.select-for-session {
+  position: absolute;
+  margin-left: -75px;
+  margin-top: -10px;
+}
+.CodeMirror {
+  height: 600px !important;
+}
+.multiselect-container.dropdown-menu {
+  min-width: 640px !important;
+  overflow: auto;
+  max-height: 480px;
+}
+
+.statistics {
+  padding: 0;
+}
+.statistics li {
+  border-bottom: 1px solid #e3ebf3;
+  padding: 12px 14px;
+  display: block;
+  position: relative;
+}
+.statistics li p {
+  display: block;
+  position: absolute;
+  text-align: right;
+  right: 14px;
+  top: 12px;
+}
+.statistics .green {
+  color: #308359;
+}
+.statistics .blue {
+  color: #4b789a;
+}
+.statistics .red {
+  color: #cd6557;
+}
+.dashboard.statistics {
+  height: 285px;
+  overflow-x: auto;
+}
+.dash-activity {
+  height: 340px;
+  overflow-x: auto;
+}
+.dash-activity .timeline-simple.timeline .tm-body .tm-items > li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-height: 20px;
+}
+#treeCheckbox {
+  position: relative;
+}
+#treeCheckbox a .catCacheRow {
+  position: absolute;
+  width: 900px;
+  border-bottom: 1px dashed #ccc;
+  right: 0px;
+  margin-top: -30px;
+}
+.jstree-default .jstree-anchor { line-height: 30px !important; height: 30px !important;}
+#treeCheckbox a select {
+  float: right;
+  padding: 2px;
+  padding-left: 5px;
+  height: auto;
+  margin: 2px;
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+  width: 150px;
+}
+table.urunVarList {
+  width: 100%;
+}
+table.urunVarList > tbody > tr > td {
+  width: 50%;
+  vertical-align: top;
+}
+table.urunVarList > tbody > tr > td select {
+  width: 98%;
+}
+table.urunVarList > tbody > tr > td .fiyat-fark {
+  width: 70px;
+  margin: 0 !important;
+}
+table.urunVarList > tbody > tr td:first select {
+  float: left;
+}
+table.urunVarList > tbody > tr td:eq(1) select {
+  float: right;
+}
+#varStokTable input.stok {
+  width: 100px !important;
+}
+.update-checkbox {
+  cursor: pointer;
+}
+
+.urunVarList div.uneditable-input {
+  width:100px !important;
+  overflow: hidden;
+}
+.input-append {
+  white-space: nowrap;
+}
+.col-lg-12 .col-xl-6 .panel-actions {
+  display: none;
+}
+
+.col-lg-12 .col-lg-4 {
+  width: auto !important;
+  padding: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+table.filter td {
+  padding: 5px;
+}
+.chart.chart-md,
+.ct-chart {
+  max-width: 1000px;
+  float: left;
+}
+.ct-chart .ct-label.ct-vertical {
+  font-size: 1.2rem !important;
+  text-align: right !important;
+  vertical-align: central !important;
+}
+
+.col-lg-12 .col-xl-6.col-lg-12 {
+  width: 100% !important;
+}
+
+.col-lg-12 .col-xl-6.col-lg-12 .stats-button {
+  clear: both;
+}
+.frow_ID {
+  cursor: pointer;
+}
+.basket-item {
+  height: 120px !important;
+}
+.cart-info h3 {
+  font-size: 14px;
+}
+
+.frow_input {
+  height: 26px !important;
+  border: 1px solid #e5e7e9;
+}
+.sDiv2 select,
+.pGroup select {
+
+}
+div.pGroup {
+  height: 48px !important;
+  padding-top: 5px;
+  line-height: 40px;;
+
+}
+.frow_select {
+  padding: 4px !important;
+  height: 26px;
+  position: absolute;
+  z-index: 10;
+}
+.flexigrid div.pDiv .pPageStat,
+.flexigrid div.pDiv .pcontrol {
+  top: 0px !important;
+}
+
+.table-responsive {
+  overflow-x: visible !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+.table-responsive tbody tr {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.table-responsive tbody tr:hover {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.ac_results {
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.ac_results ul {
+  width: 100%;
+  list-style-position: outside;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ac_results li {
+  margin: 0px;
+  padding: 10px;
+  cursor: default;
+  display: block;
+  /* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+  /*width: 100%;*/
+  font: menu;
+  font-size: 12px;
+  /* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+  line-height: 16px;
+  overflow: hidden;
+  color: #698296;
+}
+
+.ac_odd {
+  background-color: #f6f9fb;
+}
+
+.ac_over {
+  background-color: #eff4f9;
+}
+
+.helper-info { color:red; }
+
+#helperSelectContainer {
+  float: right;
+  clear: both;
+  max-width: 400px;
+  width: 100%;
+  border: 2px dashed #0bc15c;
+  overflow: hidden;
+  padding: 10px;
+  height: 62px;
+  margin-bottom: 10px;
+}
+span.help-block {
+  color: green;
+  font-weight: bolder;
+}
+span.help-block div {
+  color: #777;
+  font-weight: normal;
+}
+span.help-block select {
+  color: #777;
+  font-weight: normal;
+}
+
+.progress.progress-striped.light.active.m-md {
+  padding: 10px;
+  height: 40px;
+  margin-top: 0 !important;
+}
+.progress-bar {
+  color: #fff !important;
+  font-weight: bolder;
+}
+.adminBasket {
+  padding: 10px;
+  margin: 0;
+}
+.adminBasket .basket-wrap {
+  visibility: visible !important;
+}
+td.showBasketInfo { cursor: pointer;}
+
+.simplebox .body {
+  min-height: 0px !important;
+}
+span.delete_x {
+  float: right;
+  color: #bbb;
+  font-size: 12px;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  padding: 3px;
+  padding-top: 1px;
+  line-height: 10px;
+  margin: 0;
+  border-radius: 3px;
+}
+select#teknik {
+  width: 100%;
+  max-width: 640px;
+}
+.teknik-table td {
+  padding-right: 5px;
+}
+a.cke_button__videodetector {
+  background-color: gray !important;
+}
+
+#urun-arama div.btn-group,
+#urun-arama div.btn-group button.multiselect {
+  width: 100% !important;
+}
+.panel-title {
+  cursor: pointer;
+}
+.gg-select,
+.gg-select-multi {
+  width: auto !important;
+  float: left;
+  clear: none;
+  margin-right: 5px;
+}
+.gg-select-multi {
+  min-width: 200px;
+}
+#gg-cat-specs {
+  max-height: 400px;
+  overflow: auto;
+}
+
+span.fatura-yazdir,
+span.irsaliye-yazdir,
+span.kargo-yazdir,
+span.detay-yazdir,
+span.sepet-detay,
+span.whatsapp-mesaj {
+  padding: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  display: inline-block;
+  float: right;
+}
+span.fatura-yazdir,span.irsaliye-yazdir {
+  background-color: #0099e6;
+}
+span.kargo-yazdir {
+  background-color: orange;
+}
+span.detay-yazdir {
+  background-color: #51b451;
+}
+span.sepet-detay {
+  background-color: #ccc;
+}
+span.whatsapp-mesaj {
+  background-color: #47a447;
+}
+
+#popular1 {
+  max-height: 685px;
+  padding-right: 10px;
+  overflow: auto;
+}
+div.catCacheSelect {
+  position: absolute;
+  right: 10px;
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.set-ajax {
+  min-width: 300px;
+}
+
+.decodedFormFields {
+  min-width: 100%;
+}
+.decodedFormFields td {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.decodedFormFields .td1 {
+  width: 200px;
+  font-weight: bold;
+}
+.decodedFormFields .td2 {
+  width: 20px;
+  font-weight: bold;
+}
+
+#urun-tabs > li {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+}
+table.sepet th { background-color: transparent !important; }
+
+table.tbl-affilate th { background-color: transparent !important;}

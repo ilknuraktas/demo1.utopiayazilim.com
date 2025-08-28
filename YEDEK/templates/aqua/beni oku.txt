@@ -1,0 +1,14 @@
+Merhaba
+
+şablon la ilgili bilmeniz gereken bazı detaylar aşağıda belirtilmiştir.
+
+1- anasayfada bulunan slider ları sitenizin admin panelinde bulunan reklam->vitrin resimleri kısmından düzenleyebilirsiniz. 
+2- footer da bulunan "Lorem ipsum" vs. yazıları ftpde bulunan  templates/aqua/temp.php dosyasından düzenleyebilirsiniz. 
+3- ürün detayda bulunan "teslimat ve iade" bilgilerini ise ftp den templates/aqua/systemDefaults/urunGoster.php den düzenleyebilirsiniz
+
+herhangi bir sorunla karşılaşmanız durumunda mail atarsanız yardımcı olmaya çalışırım.
+
+selamlar..
+
+HASAN BASRİ BALCI
+hasan@basribalci.com

@@ -1,0 +1,29 @@
+<config>
+	<block_templates>
+		<sepet>DefaultBlock</sepet>
+		<urundetay>DefaultBlock</urundetay>
+		<urunliste>DefaultBlock</urunliste>
+		<formlar>DefaultBlock</formlar>
+		<popup>DefaultBlock</popup>
+		<bilgi_sayfalari>DefaultBlock</bilgi_sayfalari>
+	</block_templates>
+	<urun_list>
+		<sutun>2</sutun>
+	</urun_list>
+	<urun_resim>
+		<maximum_en>50</maximum_en>
+		<maximum_boy>500</maximum_boy>
+		<maximumDetay_en>500</maximumDetay_en>
+		<maximumDetay_boy>500</maximumDetay_boy>
+		<maximumLite_en>20</maximumLite_en>
+		<maximumLite_boy>20</maximumLite_boy>
+		<maximumSepet_en>200</maximumSepet_en>
+		<maximumSepet_boy>100</maximumSepet_boy>
+		<maximumTopList_en>40</maximumTopList_en>
+		<maximumTopList_boy>40</maximumTopList_boy>
+	</urun_resim>
+	<haber_resim>
+		<maximumHaber_en>50</maximumHaber_en>
+		<maximumHaber_boy>50</maximumHaber_boy>
+	</haber_resim>
+</config>

@@ -1,0 +1,43 @@
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'Goldmaster XML', '', 'XML/xml_goldmaster.php&y=e', '1', '44', '');
+ALTER TABLE `siteConfig`  ADD `gg_DukkanNo` VARCHAR(16) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `promosyonTeklifAktif`,  ADD `gg_SayfaDuzeni` INT NOT NULL AFTER `gg_DukkanNo`,  ADD `gg_UrunFormati` VARCHAR(8) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_SayfaDuzeni`,  ADD `gg_Sure` INT NOT NULL AFTER `gg_UrunFormati`,  ADD `gg_Sehir` INT NOT NULL AFTER `gg_Sure`,  ADD `gg_Kargo` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_Sehir`,  ADD `gg_KargoUcreti` VARCHAR(8) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_Kargo`,  ADD `gg_KargoAciklamasi` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_KargoUcreti`,  ADD `gg_GonderiYapilacakAlanlar` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_KargoAciklamasi`,  ADD `gg_IsOrtakligi` BOOLEAN NOT NULL AFTER `gg_GonderiYapilacakAlanlar`,  ADD `gg_KalinYazi` BOOLEAN NOT NULL AFTER `gg_IsOrtakligi`,  ADD `gg_Katalog` BOOLEAN NOT NULL AFTER `gg_KalinYazi`,  ADD `gg_Vitrin` BOOLEAN NOT NULL AFTER `gg_Katalog`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'GittiGidiyor', '', 'ggAyarlari.php', '1', '3', '');
+ALTER TABLE `kategori` ADD `gg_Kod` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `tedarikciCode` ;
+INSERT INTO `odemeDurum` (`ID`, `title`, `mailCode`) VALUES ('-1', 'Tamamlanamamış Sipariş', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '10', 'Tamamlanamamış Sipariler', '', 'tamamlanamamisSiparisler.php', '1', '19', '');
+INSERT INTO `adminmenu` (`ID` ,`parentID` ,`Adi` ,`Icon` ,`Dosya` ,`Aktif` ,`Sira` ,`SiteTipi`) VALUES ( null, '10', 'Ödeme Onayı Bekleyen Siparişler', '', 'onayBekleyenSiparisler.php', '1', '5', ''); 
+ALTER TABLE `siparis` ADD `notYonetici` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `teslimatFark` ;
+ALTER TABLE `siparis` ADD `notAlici` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `teslimatFark` ;
+ALTER TABLE `mailing` ADD `urunID` INT NOT NULL AFTER `ID` ;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Iletisim_Mesaj', '', '', 'Mesajiniz Alindi', 'Sayın {%namelastname%}, <br /><br />İletmiş olduğunuz bilgilendirme için teşekkür ederiz. Sizlere, konuyla ilgili olarak en kısa sürede geri dönüş yapacağız.<br><br> Saygılarımızla, ');
+CREATE TABLE `fiyatbirim` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`code` VARCHAR( 8 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`name` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`value` DOUBLE NOT NULL 
+) ENGINE = InnoDB;
+INSERT INTO `fiyatbirim` (`ID`, `code`, `name`, `value`) VALUES (NULL, 'TL', 'TL', '1'),(NULL, 'USD', 'Dolar', '0'), (NULL, 'EUR', 'Euro', '0');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '1', 'Para Birimleri', '', 'paraBirim.php', '1', '55', '');
+ALTER TABLE `fiyatbirim`  ADD `data1` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `data2` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `data3` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `siteConfig`  ADD `updateAltin` BOOLEAN NOT NULL AFTER `dovizType`,  ADD `altinType` INT NOT NULL AFTER `updateAltin`;
+UPDATE `adminmenu` SET `Adi` = 'Tedarik Hizmetleri XML',`Dosya` = 'XML/xml_hizmetleri.php&y=e' WHERE `adminmenu`.`ID` =100;
+CREATE TABLE `teklif` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`randStr` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`urunID` INT NOT NULL ,
+`urunName` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`adet` INT NOT NULL ,
+`fiyat` DOUBLE NOT NULL ,
+`userID` INT NOT NULL ,
+`tarihStart` DATE NOT NULL ,
+`tarihFinish` DATE NOT NULL ,
+`konu` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`alan` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`ilgiliKisi` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`not` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`data1` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`data2` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`data3` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = InnoDB;
+
+
+

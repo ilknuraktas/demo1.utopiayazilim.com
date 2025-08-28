@@ -1,0 +1,457 @@
+/* Add here all your CSS customizations */
+.clear-space {
+  clear: both;
+}
+.b-esitle,.esitle { float:left;}
+.b-esitle { margin-top:0 !important; margin-left:5px; float: right; }
+a.blue {
+  color: #0088cc !important;
+}
+.color-white {
+  color: #fff !important;
+}
+.color-red {
+  color: red;
+}
+
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+textarea.rapor-goster { padding: 10px; width: 100%; height: 400px; background-color: #000; color:#e6db74; font-family: monospace; font-size:13px; line-height: 20px; }
+.tabs-primary li { cursor: pointer; }
+.help-block .form-control.mb-md { font-weight: normal; }
+#anlikSayac {
+  font-size: 120px;
+  height: 140px;
+  overflow: visible;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 130px;
+}
+.select-for-session {
+  position: absolute;
+  margin-left: -75px;
+  margin-top: -10px;
+}
+.CodeMirror {
+  height: 600px !important;
+}
+.multiselect-container.dropdown-menu {
+  min-width: 640px !important;
+  overflow: auto;
+  max-height: 480px;
+}
+#anlikGezilenler {
+  overflow: auto;
+  max-height: 371px;
+  min-height: 371px;
+}
+.statistics {
+  padding: 0;
+}
+.statistics li {
+  border-bottom: 1px solid #e3ebf3;
+  padding: 12px 14px;
+  display: block;
+  position: relative;
+}
+.statistics li p {
+  display: block;
+  position: absolute;
+  text-align: right;
+  right: 14px;
+  top: 12px;
+}
+.statistics .green {
+  color: #308359;
+}
+.statistics .blue {
+  color: #4b789a;
+}
+.statistics .red {
+  color: #cd6557;
+}
+.dashboard.statistics {
+  height: 285px;
+  overflow-x: auto;
+}
+.dash-activity {
+  height: 340px;
+  overflow-x: auto;
+}
+.dash-activity .timeline-simple.timeline .tm-body .tm-items > li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-height: 20px;
+}
+#treeCheckbox {
+  position: relative;
+}
+#treeCheckbox a .catCacheRow {
+  position: absolute;
+  width: 900px;
+  border-bottom: 1px dashed #ccc;
+  right: 0px;
+  margin-top: -20px;
+}
+#treeCheckbox a select {
+  float: right;
+  padding: 0;
+  height: auto;
+  margin: 2px;
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+  width: 125px;
+}
+table.urunVarList {
+  width: 100%;
+}
+table.urunVarList > tbody > tr > td {
+  width: 50%;
+  vertical-align: top;
+}
+table.urunVarList > tbody > tr > td select {
+  width: 98%;
+}
+table.urunVarList > tbody > tr > td .fiyat-fark {
+  width: 75px;
+  margin: 0 !important;
+}
+table.urunVarList > tbody > tr td:first select {
+  float: left;
+}
+table.urunVarList > tbody > tr td:eq(1) select {
+  float: right;
+}
+#varStokTable input.stok {
+  width: 100px !important;
+}
+.update-checkbox {
+  cursor: pointer;
+}
+
+.urunVarList div.uneditable-input {
+  max-width: 200px !important;
+  min-width: 30px;
+  width: auto;
+}
+.input-append {
+  white-space: nowrap;
+}
+.col-lg-12 .col-xl-6 .panel-actions {
+  display: none;
+}
+
+.col-lg-12 .col-lg-4 {
+  width: auto !important;
+  padding: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+table.filter td {
+  padding: 5px;
+}
+.chart.chart-md,
+.ct-chart {
+  max-width: 1000px;
+  float: left;
+}
+.ct-chart .ct-label.ct-vertical {
+  font-size: 1.2rem !important;
+  text-align: right !important;
+  vertical-align: central !important;
+}
+
+.col-lg-12 .col-xl-6.col-lg-12 {
+  width: 100% !important;
+}
+
+.col-lg-12 .col-xl-6.col-lg-12 .stats-button {
+  clear: both;
+}
+.frow_ID {
+  cursor: pointer;
+}
+.basket-item {
+  height: 120px !important;
+}
+.cart-info h3 {
+  font-size: 14px;
+}
+.qsbox,
+.pcontrol input {
+  height: 26px !important;
+  padding-left: 10px;
+  border: 1px solid #e5e7e9;
+  border-radius: 6px;
+}
+.frow_input {
+  height: 26px !important;
+  border: 1px solid #e5e7e9;
+}
+.sDiv2 select,
+.pGroup select {
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 26px !important;
+  border: 1px solid #e5e7e9;
+}
+div.pGroup {
+  height: auto !important;
+  padding-top: 5px;
+}
+.frow_select {
+  padding: 4px !important;
+  height: 26px;
+  position: absolute;
+  z-index: 10;
+}
+.flexigrid div.pDiv .pPageStat,
+.flexigrid div.pDiv .pcontrol {
+  top: 0px !important;
+}
+.table-responsive {
+  overflow-x: visible !important;
+}
+.table-responsive tbody tr {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.table-responsive tbody tr:hover {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.ac_results {
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.ac_results ul {
+  width: 100%;
+  list-style-position: outside;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ac_results li {
+  margin: 0px;
+  padding: 10px;
+  cursor: default;
+  display: block;
+  /* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+  /*width: 100%;*/
+  font: menu;
+  font-size: 12px;
+  /* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+  line-height: 16px;
+  overflow: hidden;
+  color: #698296;
+}
+
+.ac_odd {
+  background-color: #f6f9fb;
+}
+
+.ac_over {
+  background-color: #eff4f9;
+}
+
+#helperSelect {
+  float: right;
+  clear: both;
+  width: 400px;
+  border: 2px solid red;
+}
+span.help-block {
+  color: green;
+  font-weight: bolder;
+}
+span.help-block div {
+  color: #777;
+  font-weight: normal;
+}
+span.help-block select {
+  color: #777;
+  font-weight: normal;
+}
+
+.progress.progress-striped.light.active.m-md {
+  padding: 10px;
+  height: 40px;
+  margin-top: 0 !important;
+}
+.progress-bar {
+  color: #fff !important;
+  font-weight: bolder;
+}
+.adminBasket {
+  padding: 10px;
+  margin: 0;
+}
+.adminBasket .basket-wrap {
+  visibility: visible !important;
+}
+#dynSepet {
+  background-color: #fff;
+  border: 5px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 99000;
+  width: 500px;
+  position: absolute;
+}
+#dynSepet .basket-item {
+  height: 70px !important;
+}
+#dynSepet li.kdv,
+#dynSepet li.tutar {
+  display: none;
+}
+#dynSepet .basket-left {
+  width: 100% !important;
+}
+#dynSepet .basket-right {
+  clear: both;
+  margin-top: 20px !important;
+}
+#dynSepet .pricersmall {
+  white-space: nowrap !important;
+}
+
+.simplebox .body {
+  min-height: 0px !important;
+}
+span.delete_x {
+  float: right;
+  color: #bbb;
+  font-size: 12px;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  padding: 3px;
+  padding-top: 1px;
+  line-height: 10px;
+  margin: 0;
+  border-radius: 3px;
+}
+select#teknik {
+  width: 100%;
+  max-width: 640px;
+}
+.teknik-table td {
+  padding-right: 5px;
+}
+a.cke_button__videodetector {
+  background-color: gray !important;
+}
+
+#urun-arama div.btn-group,
+#urun-arama div.btn-group button.multiselect {
+  width: 100% !important;
+}
+.panel-title {
+  cursor: pointer;
+}
+.gg-select,
+.gg-select-multi {
+  width: auto !important;
+  float: left;
+  clear: none;
+  margin-right: 5px;
+}
+.gg-select-multi {
+  min-width: 200px;
+}
+#gg-cat-specs {
+  max-height: 400px;
+  overflow: auto;
+}
+
+span.fatura-yazdir,
+span.irsaliye-yazdir,
+span.kargo-yazdir,
+span.detay-yazdir,
+span.sepet-detay,
+span.whatsapp-mesaj {
+  padding: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  display: inline-block;
+  float: right;
+}
+span.fatura-yazdir,span.irsaliye-yazdir {
+  background-color: #0099e6;
+}
+span.kargo-yazdir {
+  background-color: orange;
+}
+span.detay-yazdir {
+  background-color: #51b451;
+}
+span.sepet-detay {
+  background-color: #ccc;
+}
+span.whatsapp-mesaj {
+  background-color: #47a447;
+}
+
+#popular1 {
+  max-height: 685px;
+  padding-right: 10px;
+  overflow: auto;
+}
+div.catCacheSelect {
+  position: absolute;
+  right: 10px;
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.set-ajax {
+  min-width: 300px;
+}
+
+.decodedFormFields {
+  min-width: 100%;
+}
+.decodedFormFields td {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.decodedFormFields .td1 {
+  width: 200px;
+  font-weight: bold;
+}
+.decodedFormFields .td2 {
+  width: 20px;
+  font-weight: bold;
+}
+
+#urun-tabs > li {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+}
+table.sepet th { background-color: #555 !important; }

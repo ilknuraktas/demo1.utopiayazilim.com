@@ -1,0 +1,6 @@
+UPDATE `siteConfig` SET `version` = '3.3' WHERE `siteConfig`.`ID` =1;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '80', 'Site İçi Arama', '', 'stats.php&type=siteIciArama', '1', '75', '');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_iconIndirimde', 'TR', 'İndirimde'), (NULL, '_lang_iconYeni', 'TR', 'Yeni Ürün'), (NULL, '_lang_karsilastirmaEklendi', 'TR', 'Ürün karşılaştırma listenize eklendi.');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_iconAnindaGonderim', 'TR', 'Hemen Kargo'), (NULL, '_lang_iconUcretsizKargo', 'TR', 'Ücretsiz Kargo');
+ALTER TABLE `promosyon`  ADD `min` DOUBLE NOT NULL AFTER `left`,  ADD `forall` BOOLEAN NOT NULL AFTER `min`;
+ALTER TABLE `topluindirim`  ADD `start` DATETIME NOT NULL,  ADD `finish` DATETIME NOT NULL;

@@ -1,0 +1,825 @@
+v5.00
+
+- Yardım sitesi yenilendi.
+- Panel tasarımı yenilendi.
+- Panel menü ağacı güncellendi.
+- Sepet tasarımı güncellendi.
+- Form tasarımları güncellendi. İkili ve üçlü sütun form seçim desteği eklendi.
+- Ödeme ekranları güncellendi.
+- Kullanıcı menüsü güncellendi.
+- Login ekranı tasarımı güncellendi.
+- Sipariş adres girişine mahalleler seçimi eklendi.
+- Banner yönetimi kolaylaştırıldı.
+- Kombine ürünler yönetimi yenilendi.
+- Paket ürünler yönetimi yenilendi.
+- Kargo firmalarına sıralama desteği eklendi.
+- İstatstikler yenilendi. İstatistiklere ek olarak excel çıktı raporları eklendi.
+- Tek kredi kartı ödeme ekranı ile, binary eşleştirmesi kullanarak birden fazla bankaya yönlendirebilme desteği eklendi.
+- Şablon ayarları paneli geliştirildi.
+- Dövize marj verebilme desteği eklendi.
+- Bayi gruplarına asgari sipariş tutarı belirleyebilme desteği eklendi.
+- Sipariş iptal kısmını açıp, kapatabilme desteği eklendi.
+- Çapraz promosyonlara, varyant seçim desteği eklendi.
+- Pazaryeri güncelleme cronları, direkt listelem üzerinden çağrabilme desteği eklendi.
+- Şablon içerisinde javascript kullanımı footer'a alındı. 
+- SEO altyapı güncellemeleri yapıldı.
+- Çoklu dil modülü güncellendi.
+- PC Toplama Sihirbazı güncellendi.
+- Ürün resimlerini toplu webp formatına çevirebilme desteği eklendi.
+- Ürün ve sipariş arama formu geliştirildi.
+- Watermark desteği geliştirildi.
+- PHP Thumb sürüm güncellemesi yapıldı.
+- Sipay custom form ile ödeme desteği eklendi.
+- Site alert ve modal ekranları güncellendi.
+- Bayi gruplarını, toplu indirimden muaf tutabilme desteği eklendi.
+- Sosyal medyada paylaşım amaçlı, özel ürün listeleri oluşturabilme desteği eklendi.
+- Şifreyi unuttum panel işleyişi güncellendi.
+- Yönetici / Ara Bayiler için "Hızlı Sipariş Oluşturma" modülü eklendi.
+- Hızlı arama (auto-complete) ekranı yenilendi.
+- Fiyatvar.com XML çıktı desteği eklendi.
+
+v4.99
+
+- XML Çıktı servislerine, bayi gruplarına bağlamadan direkt fiyat marjı ekleyebilme desteği eklendi.
+- Netahsilat sanal pos entegrasyonu eklendi.
+- Mollie sanal pos entegrasyonu eklendi.
+- Foriba (E-Arşiv) entegrasyonu eklendi.
+- Nebim v3 Muhasebe entegrasyonu eklendi.
+- Yeni premium şablon Grande eklendi.
+- Yeni premium şablon Lomami eklendi.
+- Vakıf Katılım Bankası 3D Sanal Pos entegrasyonu eklendi.
+- DIA muhasebe programı entegrasyonu eklendi.
+- Yeni premium şablon Petshop eklendi.
+- Rest API servisine, sepet fonksiyonları eklendi.
+- Yeni premium şablon Weberka eklendi.
+- FırsatBuFırsat XML servisi güncellendi.
+- Seçili ürünleri sadece belirli bayi gruplarına gösterebilme desteği eklendi.
+- Yeni premium şablon Pangolin eklendi.
+- Arena Paynet ödeme modülü güncellendi.
+- 1 SMS entegrasyonu eklendi.
+- Ürün veri alma modülüne, cep telefonu ile emoji ekleyebilme desteği eklendi.
+- Pinterest.com entegrasyon desteği eklendi.
+- UserInsider.com entegrasyon desteği eklendi.
+- Rest API servisine 2 yeni başlık eklendi.
+- Kargo çıktı (barkod) yazdırma ekranı güncellendi.
+- Ürün yönetim panelinden sosyal medyada paylaşım desteği eklendi.
+- Yeni premium şablon Rise eklendi.
+- Mobilya satış siteleri için, paket oluşturma modülü eklendi.
+- Perde satış siteleri için, perde hesaplama modülü eklendi.
+- Whatsapp destek hattı modülü eklendi.
+- Arama sonuçlarına, hızlı seçim daraltma listesi eklendi.
+- Kargo bölgelerine (Şehir/Ülke) farklı ücretsiz kargo limiti tanımlayabilme desteği eklendi.
+- Sadece ilk alışverişe özel %x indirim ve x TL üzeri ücretsiz kargo desteği eklendi.
+- İyzico taksit değerlerini otomatik güncelleme desteği eklendi.
+- Ürün istatistik paneline, filtreye göre ürün satış adet ve cirosunu Excel ile alabilme desteği eklendi.
+- Sodexo ile ödeme altyapısı eklendi.
+- Varyant ve filtreleri anlık olarak eşleştirebilme desteği eklendi.
+- İki ve üzeri ShopPHP sitesi arasında anlık stok paylaşımı desteği eklendi.
+- Google entegrasyon paneline "Data Layer" desteği eklendi.
+- Ürün paketlerini, ürünler ile otomatik olarak eşleştirilip, kategori ve arama içerisinde listeleme / pazar yerlerine gönderebilme desteği eklendi.
+- Yeni premium şablon Paradise eklendi.
+- SiPay ile ödeme desteği eklendi.
+- Yeni premium şablon Gaia eklendi.
+- Yeni premium şablon Perest eklendi.
+- Rakip fiyat analiz modülüne Trendyol desteği eklendi.
+- Kullanıcıların, önceki siparişlerin paneline sipariş detaylarını yazdırma desteği eklendi.
+- PTT Kargo API Entegrasyonu (Opsiyonel) eklendi.
+- Yapı Kredi Bankası, güncel sanal pos desteği eklendi.
+- Instagram Feed App. güncellendi.
+
+v4.95
+
+- Blog URL adresleri SEO için daha uygun olarak güncellendi.
+- Toplu sipariş durum güncelleme desteği eklendi.
+- Yurtiçi Kargo API entegrasyonu güncellendi.
+- UPS Kargo API entegrasyonu güncellendi.
+- EPTT Avm XML Servisi güncellendi.
+- Çiçeksepeti XML Servisi güncellendi.
+- Yeni Mobile Şablon Mobile v5 eklendi.
+- Setcard pos entegrasyonu eklendi.
+- Yeni Mobile Şablon Mobile v4 eklendi.
+- Lokasyon bazlı gönderim yapan market benzeri siteler için, lokasyona özel stok girebilme desteği eklendi.
+- Sipariş yorum e-posta içeriği, siparişteki ürünlere yorumlar olarak güncellendi.
+- Yeni premium şablon Pessoa eklendi.
+- Pazaryeri loglarını yönetim panelinden görüntüleyebilme desteği eklendi.
+- Ürün varyasyon başlığı seçim sayısındaki 2 limiti kaldırıldı.
+- Acron premium şablon güncellendi.
+- Her kullanıcı için tek seferlik benzersiz bir promosyon kodu oluşturabilme desteği eklendi.
+- Otomatik promosyon kodu gönderime, alışverişten X gün sonra gönderim yapabilme desteği eklendi.
+- Promosyon kodları için excel rapor desteği eklendi.
+- Yeni premium şablon Mergen eklendi.
+- ErpaPay sanal pos entegrasyon desteği eklendi.
+- GPay sanal pos entegrasyon desteği eklendi.
+- Promosyon çarkını, sipariş öncesinde de kullanıma sunabilme desteği eklendi.
+- Octet sanal pos entegrasyon desteği eklendi.
+- Yeni premium şablon Orion eklendi.
+- Ödemeleri yabancı kredi kartlarına kapatabilme desteği eklendi.
+- Bulut Tahsilat sanal pos entegrasyon desteği eklendi.
+- Kullanıcılar için özel not ekleyip, sipariş sırasında görüntüleyebilme desteği eklendi.
+- Yeni premium şablon Acron eklendi.
+- Bayi gruplarına özel asgari ve azami sipariş adet tanımlayabilme desteği eklendi.
+- Ürün yönetimine sınırsız ek içerik başlığı ekleyebilme desteği eklendi.
+- MAS GSM ile SMS entegrasyon desteği eklendi.
+- Authorize.net ile sanal pos ödeme altyapısı eklendi.
+- Payguru SMS ile ödeme altyapısı eklendi.
+- Wirecard sanal pos ve SMS ile ödeme altyapıları eklendi.
+- Yeni premium şablon Sepetio eklendi.
+- Çoklu dil modülüne, tarayıcı diline göre otomatik yönlendirme desteği eklendi.
+- Kuruş gösterimini (.00) kapatabilme desteği eklendi.
+- Yeni premium şablon Apsu eklendi.
+- XML entegrasyon güncelleme seçenekleri arttırıldı.
+- Alışverişsiz Tahsilat Modülü v2 yayınlandı.
+- FinansBank ödeme altyapısı güncellendi.
+- Yurtdışına satış yapan siteler için Paypal ödeme altyapısı güncellendi.
+- Yurtdışına satış yapan siteler için Payu Europe sanal pos altyapısı eklendi.
+- AlbarakaTürk yeni pos altyapısı eklendi.
+
+v4.90
+
+- Famous premium şablon güncellendi.
+- 5. Ürün resim boyutlandırma seçim desteği eklendi.
+- Rest API servisine 2 yeni başlık eklendi.
+- XStore premium şablon güncellendi.
+- Yeni premium şablon Modarico eklendi.
+- Rest API servisine 5 yeni başlık eklendi.
+- Ürün excel alma / yükleme bölümüne, varyasyon desteği eklendi.
+- Bayi grubuna özel excel ürün listesi alma desteği eklendi.
+- Trendyol API Entegrasyonu eklendi.
+- Akakçe XML servisine ürün varyantları desteği eklendi.
+- Finansbank yeni sanal pos altyapısı entegrasyonu tamamlandı.
+- Yurtiçi Kargo API entegrasyonu güncellendi.
+- Ürün fiyatlarındaki küsuratları toplu olarak yuvarlama desteği eklendi.
+- Ürünlere özel ekstra tab içeriği ekleyebilme desteği eklendi.
+- XML yükleme paneline yeni seçimler eklendi.
+- Ürün kopyalama desteğine, ürünlerin varyasyonları ile birlikte kopyalama desteği eklendi.
+- Trendyol için Excel Ürün Listesi desteği eklendi.
+- GittiGidiyor API modülüne, otomatik ödeme hatırlatma desteği eklendi.
+- Paraşüt entegrasyonuna e-fatura kesebilme desteği eklendi.
+- Kargo firmlarına (Kurye) kargo tutarından bağımsız ek ücret tanımlayabilme desteği eklendi.
+- Esnek Pos ödeme modülü eklendi.
+- Seçilen siparişleri toplu olarak yazdırabilme desteği eklendi.
+- GittiGidiyor API entegrasyonuna, her ürün varyasyonunu ayrı ürün olarak gönderebilme desteği eklendi.
+- Shopier altyapısı ile ödeme modülü eklendi.
+- Rest API servisine SMS gönderebilme desteği eklendi.
+- Yeni Premium Şablon Artemis eklendi.
+- Yeni Premium Şablon M-Shopping eklendi.
+- Mobil Premium Şablon Mobiles v3 eklendi.
+- Çoklu dil modülüne, her ülkeye ayrı ücretsiz kargo limiti tanımlayabilme desteği eklendi.
+- Yeni Premium Şablon Mercado eklendi.
+- Kitap siteleri için Bookshop Premium Şablon eklendi.
+- Site ayarlarına, resim boyutlandırma için crop tipi seçim desteği eklendi.
+- 4. Resim Boyutlandırma seçeneği olarak C-Image eklendi.
+- Splash reklam desteğine, HTML ile içerik girebilme desteği eklendi.
+
+v4.80
+
+- Sipariş arama formuna yeni filtreler eklendi.
+- Çoklu dosya yüklemeleri için panele "Dosya Yöneticisi" eklendi.
+- Yeni kanun uyarınca, belirli kategorilerde KDV sıfırlama desteği eklendi.
+- Kampanya tiplerine, sepet toplam tutarına göre otomatik ürün ekleme desteği eklendi. (ShopPHP Ürün Kampanyaları : 22)
+- Alternatif ödeme seçim ekranı güncellendi.
+- Artık üyeler için sipariş form ekranı yok. Mouse click ile direkt ödeme ekranına geçiş desteği eklendi.
+- Ürünlere (halı, perde vs.) en ve boy ölçüsüne göre fiyatlandırma modül desteği eklendi.
+- Multilang modülüne her dile farklı fiyat tanımlayabilme desteği eklendi.
+- Google Paneline, Tracking Conversion a ek olarak, "Google Track Purchases" desteği eklendi.
+- Çiçeksepeti.com için XML çıktı desteği eklendi.
+- Ürün varyasyon girişlerine, aynı kategorideki tüm ürünler ile eşleştirebilme desteği eklendi.
+- Ürün listleme şablonlarında, hızlı detay linki verebilme desteği eklendi. 
+- Kargo ücretleri paneline, çoklu para birimi desteği eklendi.
+- Paraşüt Muhasebe API Entegrasyonu eklendi.
+- Akakçe API Entegrasyonu eklendi.
+- Native mobile uygulamalar için manifest ayar dosyası eklendi.
+- Direkt ödeme linki oluşturabilme desteği eklendi.
+- MokaPos ile ödeme entegrasyonu eklendi.
+- Paytrek ile ödeme entegrasyonu eklendi.
+- Ürün kiralama modülü eklendi. 
+
+v4.70
+
+- PHP 7 desteği eklendi.
+- Rest API Servisi (opsiyonel) eklendi.
+- Shopica Premium Şablon eklendi.
+- Instagram feed ile sitedeki ürünleri eşleştirebilme (Instagram Shop Feed) desteği eklendi. 
+- Yüklenen resimleri online düzenleyebilmek için resim editörü eklendi.
+- Kullanıcılara, onaylı alışverişleri sonrası sunulabilecek "Promosyon Çarkı" desteği eklendi.
+- XStore Premium Şablon eklendi.
+- Google Rich Snippets için statik olarak ürün yorum sayısı ve puan değeri girebilme desteği eklendi.
+- Departman destekli ticket modülü eklendi. (Opsiyonel)
+- Varyasyon altyapısına ek olarak, ürünlere sınırsız seçenek desteği eklendi.
+- Excel kayıt / yükleme altyapısı yenilendi.
+- Kişisel 404 bulunamadı sayfa desteği eklendi.
+- Serenity Moda Premium Şablon eklendi. 
+- Gelen siparişler paneline, WhatsApp üzerinden mesaj gönderebilme desteği eklendi.
+- Türkiye Finans Bankası sanal pos modülü, yeni altyapıya göre güncellendi.
+- Aras ve MNG kargo API entegrasyon altyapıları güncellendi.
+- Üye girişi zorunluluğu olmadan, ürünlere yorum ekleyebilme desteği eklendi.
+- Shopx Premium Şablon eklendi.
+- Clickso Premium Şablon eklendi. 
+- Teslim edilen siparişlere, değerlendirme formu gönderim desteği eklendi.
+- Ürün paketlerini toplu olarak ayrı bir içerikte listeleme desteği eklendi.
+- Ürün ve kategori yönetimi çoklu tablara ayrıldı.
+
+v4.60
+
+- İzinli bayi gruplarında, kar marjlarını ekleyerek kişisel sipariş oluşturabilme desteği eklendi.
+- Ürüne özel "Peşin Fiyatına Taksit" desteği eklendi.
+- Ürün giriş ekranına, "Temel" ve "Detaylı" giriş seçim desteği eklendi.
+- Google reCaptcha v2 desteği eklendi.
+- Ürünlere otomatik GTIN tanımlama desteği eklendi.
+- ShopPHP Mobile Şablon v2 eklendi.
+- Blog yazıları için "Google Rich Snippets" desteği eklendi.
+- Ürün detay ekranına, "Telefonunuzu Bırakın, Sizi Arayalım" mod desteği eklendi.
+- Yönetici kullanıcısı yetkilendirme paneline, sipariş alt kategorilerine ayrı yetki verme desteği eklendi.
+- İstatistikler kısmına, pazar yerleri (N11,GittiGidiyor ve HepsiBurada) ciro desteği eklendi.
+- Sipariş detay yazdırma kısmına ek olarak, kargo barkod sayfası yazdırma desteği eklendi.
+- Vertigo Premium Şablon eklendi.
+- Çiçek siparişi alan siteler için, ürün detayından şehir, semt, tarih ve saat alabilme desteği eklendi.
+- Gönderilen SMS lerin takibi için, SMS Raporları paneli eklendi.
+- Gelen herhangi bir X URL adresini, otomatik Y URL adresine yönlendirebilme desteği eklendi.
+- Google Rich Snippets desteğine, Google arama sonuçlarında, site içi arama desteği eklendi.
+- Pazaryerleri entegrasyonlarına (N11,GittiGidiyor ve HepsiBurada), kar marjı ve fiyat farkına ek olarak, her ürün için ayrı fiyat tanımlayabilme desteği eklendi.
+- Google Customer Reviews desteği eklendi.
+- Rakip Fiyat Analizi mod (opsiyonel) eklendi.
+- Hazır ürün paketleri desteğine, paketteki her ürün için ayrı adet tanımlayabilme desteği eklendi.
+- Arena Paynet ödeme modülüne otomatik vade oranları güncelleme desteği eklendi.
+- Ürün detay ekranı için whatsapp sipariş button desteği eklendi.
+- Bir üründen X adet alana, Y adet ücretsiz desteği eklendi.
+- Otomatik promosyon kodu desteği eklendi. Ör : X TL üzeri siparişlerde otomatik %n indirim, veya X,Y,Z kategorilerinde / ürünlerinde en az X TL üzeri siparişlerde otomatik %n indirim.
+- Çoklu çapraz promosyon desteği eklendi. Ör : X üründen 3 adet, Y Üründen 2 adet alana Z üründen 2 adet %n indirimli veya hediye.
+- MCModa Premium Şablon eklendi.
+- Aras Kargo API entegrasyon desteğine, barkod bastırma desteği eklendi.
+- HepsiBurada API entegrasyon desteği eklendi.
+- XML çıktı servislerinine, cache desteği eklendi.
+- XML ile ürün varyasyon resimlerini çekebilme desteği eklendi.
+- Panelde ürün filtre seçimleri geliştirildi.
+- Modaca Premium Şablon eklendi.
+- Fatura yazdırma modülüne yeni makrolar eklendi.
+
+v4.50
+
+- Belirli saatler aralığında, kargo ücretsiz kampanya desteği eklendi.
+- N11 ve GG API ürün gönderim servisleri geliştirildi.
+- BirFatura.com için sipariş XML çıktı desteği eklendi.
+- HepsiBurada Excel çıktı desteği güncellendi.
+- Kurulumda, veri tabanı ext. için Mysql ve Mysqli arasında seçim desteği eklendi.
+- Site içerisindeki formları tekli veya iki sütun halinde gösterim desteği eklendi.
+- Sepet ekranına opsiyonel geri sayım sayaç desteği eklendi.
+- Sepet tasarımında güncellemeler yapıldı.
+- Twitter Cards desteği eklendi.
+- Sipariş sepet ekranı için, Kasa Önü Fırsatları desteği eklendi.
+- Albarakatürk Sanal Pos entegrasyonu eklendi.
+- Bannerları sadece belirli bayi gruplarına gösterebilme desteği eklendi.
+- N11 ürün gönderim servisleri geliştirildi.
+- E-PTT Avm XML servisi güncellendi.
+- Sürat Kargo API entegrasyon desteği genişletildi.
+- Ürün varyasyon resimlerini, direkt ürün panelinde yükleyebilme desteği eklendi.
+- Kaynak ürün resimlerini tekli veya toplu boyutlandırma desteği eklendi.
+- Iyzico için custom form ile ödeme desteği eklendi.
+- Paratika ile ödeme entegrasyonu eklendi.
+- Webticari Muahsebe-Ürün entegrasyonu eklendi.
+- Nida Telekom SMS Entegrasyon desteği eklendi.
+- Teknik işlemler paneline yeni başlıklar eklendi.
+- Ürün giriş ekranında, hızlı kategori, marka ve varyasyon tanımlama desteği eklendi.
+- Mora Store Premium Şablon eklendi.
+- Filtre sayısı yüksek siteler için, filtre yönetimine ajax desteği eklendi.
+- XML Servisleri (çıktıları) paneli geliştirildi.
+- Teknik işlemlere cron-job durum ekranı eklendi.
+- GittiGidiyor ve N11 API ent.
+- Markaron Premium Şablon eklendi.
+- Avaya Premium Şablon eklendi.
+- Facebook Pixel Code entegrasyon desteği eklendi.
+- Teknik işlemlerden, ürün varyasyonlarını filtreler ile eşleştirebilme desteği eklendi.
+- Ürün listeleme ekranlarından da varyasyon seçilebilmesi desteği eklendi..
+- G-Shop Premium Şablon eklendi.
+- W-Shop Premium Şablon eklendi.
+
+v4.40
+
+- Ürün varyasyon seçimlerine, varyasyon resmi ile seçebilme desteği eklendi.
+- Admitad.com/tr/ kampanya entegrasyon desteği eklendi.
+- Kullanıcılardan, aidat / fatura ödemesi talep eden siteler için, kullanıcı fatura giriş desteği eklendi.
+- PushCrew (Chorme / Android Notification) API desteği eklendi.
+- Biriken puan kullanımı için kullanıcıya seçim desteği eklendi.
+- Sipariş ciroları istatistiklerine, excel çıktı desteği eklendi.
+- Bayilere X TL e kadar, eksi bakiye kullandırabilme desteği eklendi.
+- Yurtiçi Kargo için sipariş XML ve Excel çıktı desteği eklendi.
+- Ürün listelemeleri üzerinden, checkbox ile karşılaştırabilme desteği eklendi.
+- Üye olmadan yapılan siparişlerde, otomatik üye oluşturabilme desteği eklendi.
+- Yurtdışına satın yapan siteler için zorunlu, "Cookie Onay Ekranı" desteği eklendi.
+- Farklı XML servislerinden gelen aynı ürünleri eşleştirebilme desteği eklendi.
+- Limit yetersizliği vs. gibi nedenlerle sonlanmayan siparişleri, panelden takip edebilme desteği eklendi.
+- Gönderilen SMS'lere otomatik ek bilgi ekleme desteği eklendi.
+- Karşılaştırma ekranını direkt URL ile çağırabilme desteği eklendi.
+- Karşılaştırma ekranına, filtreleri karşılaştırma eklendi.
+- Google XML servislerine, Image Map desteği eklendi.
+- Tescom SMS desteği eklendi.
+- Banka ve kargo yönetimine, dil seçimine göre gösterim desteği eklendi.
+- Yurtiçi Kargo Self-Servis Sipariş XML Çıktı desteği eklendi.
+- Ürün ekranına, stokta olmaması durumunda alternatif seçim formu eklendi.
+- Aras Kargo API entegrasyon altyapısı güncellendi.
+- Segment Bilgisayar üzerinden ödeme POS entegrasyon desteği eklendi.
+- Sanal pos üzerinden ilgili dile ait para birimi ile ödeyebilme desteği eklendi.
+- HepsiPay (HepsiBurada) ile ödeme entegrasyonu eklendi.
+- Affilate modülüne, kâra göre hesaplayabilme desteği eklendi.
+- Site arama altyapısı geliştirildi.
+- PayTR sanal pos entegrasyonu için, hızlı taksit gösterim ekranı desteği eklendi.
+- Arama sorgusu güncellendi.
+- Ürün listeleme sorguları güncellendi. Resmi ve stoğu olmayan ürünler varsayılan olarak sıralamada sona getirildi.
+
+v4.30
+
+- Seçilen dile göre, varsayılan para birimi desteği eklendi.
+- Kredi kartı ile ödemelerde, kredi kartı tahsilat makbuzu (PDF) desteği eklendi.
+- Seçili kargoları sadece belirli kullanıcı gruplarında listeleme desteği eklendi.
+- Ajax ile sepete ekleme desteği geliştirildi.
+- Ürün listeleme paneli geliştirildi.
+- Bayilerde, farklı fiyat ve indirim seçeneğini beraber kullanabilme desteği eklendi.
+- Site kullanıcılarına ve/veya yöneticilere IP ile giriş sınırlama desteği eklendi.
+- Cosmo Premium Şablon eklendi.
+- Site gezinme sonrası sunulan promosyon teklifine, üyelik zorunluluğu verebilme desteği eklendi.
+- Türkiye Finans Sanal Pos altyapısı güncellendi.
+- Gelen siparişler arama formu geliştirildi.
+- Promosyon kodunu, sadece belirli ürünlere tanımlayabilme desteği eklendi.
+- Muhasebe programları için siparişer ve kullanıcılar XML çıktı desteği eklendi.
+- Diğer yazılımlardan XML ile kullanıcı entegrasyon desteği (opsiyonel) eklendi.
+- Ürün varyasyonlarında, X ve Y varyasyon için ayrı fiyat farkı girişine ek olarak, X-Y beraber seçildiğinde farklı fiyat farkı tanımlama desteği eklendi.
+- Akakçe, güncel XML çıktı desteği eklendi.
+- Ürün ve Blog Yorumlarına ek olarak, Alışveriş Yorumları desteği eklendi.
+- İş Bankası, yeni sanal pos altyapısı (Innova) desteği eklendi.
+- Marka Promosyon desteği eklendi.
+- Billio Güvenilir Mağaza entegrasyon desteği eklendi.
+- Aqua Premium Şablon eklendi.
+- Toplu Fiyat Güncelleme paneline, yeni başlıklar eklendi.
+- InfoBip SMS Entegrasyonu eklendi.
+- AktifBank / NKolay entegrasyonu eklendi.
+- Criteo Analytics entegrasyon desteği eklendi.
+
+v4.20
+
+- Ürünler için "Promosyon Ürünüdür" seçim desteği eklendi. Ör : X-Y-Z ürünlerinden sepete, sadece bir tanesi eklenebilir.
+- Ürünler için asgari sepet tutarı eklendi. Ör : X ürünü, sepete eklenebilmesi için sepet toplamı asgari N olmalı.
+- Kategori gösterimine, ürün slider yerine vitrin slider ekleyebilme desteği eklendi.
+- Toplu ürün işlemleri paneline, yeni özellikler eklendi.
+- Sepet Kombine İndirim menüsü eklendi. Örnek : Giyim kategorisi altında, Polo marka X ürün alana, sepetteki en ucuz Y ürün %n indirimli veya bedava.
+- Kurecell SMS entegrasyonu desteği eklendi.
+- E-Click Premium şablon eklendi.
+- Google Merchant XML çıktı desteği geliştirildi. 
+- HepsiBurada için Excel çıktı desteği eklendi.
+- Ürün varyasyon stoklarını, toplu düzenleme paneli eklendi.
+- Multilang mod güncellemeleri yapıldı.
+- Teknik işlemler güncellendi.
+
+v4.10
+
+- Kredi kartı ile ödeme form tasarımları yenilendi.
+- Yuvarla.org entegrasyonu eklendi.
+- Royal Shop Premium şablon eklendi.
+- Unique Premium şablon eklendi.
+- Iyzico yeni ödeme altyapısı (v3) eklendi.
+- Kargo yönetimi, ülkeleri kapsayacak şekilde güncellendi.
+- Yurtdışına sipariş gönderen siteler için, ülke ve şehir veri tabanı eklendi. 
+- Site üzerinden Instagram Feed gösterim modülü eklendi.
+- TurkPOS ve PayTR ödeme altyapıları eklendi.
+- N11 API entegrasyon modülü, "Rest API" yerine "Web Service" ile güncellendi.
+- Arena Paynet ödeme modülü, firmaya ait yeni altyapı ile güncellendi.
+- Kapıda ödeme seçilen siparişlerde, SMS ile doğrulatabilme desteği eklendi.
+- Çoklu filtre seçimlerine checkbox'a ek olarak div box ile seçim desteği eklendi.
+- Filtre fiyat aralığı kısmı checkbox yerine mouse slide ile güncellendi.
+- Ürün filtrelerini, ürün varyasyonları ile birleştirebilme desteği eklendi.
+- Aras Kargo API durum desteğine, panelden kargo iletim desteği eklendi.
+- Sipariş detay ekranında barkod desteği eklendi.
+- Sipariş listeme ekranında direkt fatura ve detay yazdırabilme desteği eklendi.
+- Ürün detay ekranına, ürüne özel text veya dosya talep formu desteği eklendi.
+- Banka tanımlamalarında, test için otomatik sipariş oluşturma desteği eklendi.
+- MadMimi e-posta entegrasyonu eklendi.
+
+v4.00
+
+- Ürün detay ekranındaki formlara (geri bildirim, yorum, SSS) ajax ile sumbit desteği eklendi.
+- Google Rich Snippets desteği eklendi.
+- Ürün yönetim paneline, çoklu ürün arama paneli eklendi.
+- Panelden ürün (fiyat ve stok) ve sipariş (durum) güncellemeleri için kullanıcı / işlem log ekranı eklendi.
+- Sepet ön-detay ekranına, adet değiştirme ve ürün silme desteği eklendi.
+- Yazılım encode altyapısı, turkish'den UTF-8 olarak güncellendi.
+- Whatsapp SMS entegrasyonu eklendi.
+- Ürün zoom JS app, elevate zoom ile güncellendi.
+- Güncellemelerde veri tabanı sorguları otomatik hale getirildi. Artık güncellemelerde dosya kopyalama yeterli.
+- Sepet detay ekranına (ürün adet güncelleme, ürün silme ...) ajax ile güncelleme desteği eklendi.
+- Login ekran tasarımı yenilendi.
+- Sosyal medya yönetim paneli geliştirildi.
+- Şalter kapalı ekranı için, geri sayım destekli yeni tasarım eklendi.
+- Ödeme tipi seçimlerine, tek sayfada ödeme tamamlama desteği eklendi.
+- Sipariş detayları yazdırma ekranı yenilendi.
+- Yönetim paneline Firma Detayları başlığı eklendi.
+- SEO URL seçimlerine, ürün, kategori ve/veya markaID bulunmayan, sadece adı içeren 4.seçim tipi eklendi.
+- Ürün varyasyon resimleri paneli geliştirildi.
+- Kliksa XML çıktı desteği eklendi.
+- Ürün varyasyon giriş paneli yenilendi. İkili varyasyonlar için, X-Y kombinasyonlarına ayrı stok kodu ve stok tanımlayabilme desteği eklendi.
+- Banner yönetimine, banner'ın sadece belirli kategorilerde gösterilebilmesi desteği eklendi.
+- XML entegrasyon paneline, bire bir kategori eşleştirme desteği eklendi.
+- Facebook Modülüne, Facebook Page'i, ilk açılışta pop-up ile like ettirme ekranı eklendi.
+- Dashboard ekranına site aktivitesi başlığı eklendi.
+- Dashboard ekranındaki hızlı istatistikler içeriği arttırıldı.
+- Dashboard ekranına, son gelen siparişler tab menü eklendi.
+- XML entegrasyon paneline, gelen kategorileri filtrelemek için, Tree View desteği eklendi.
+- Yönetim paneli, şablon editörüne Code Mirror desteği eklendi.
+- Anlık kullanıcı takibi ekranı detaylandırıldı.
+- Yönetim paneli, Dashboard ekranı yenilendi.
+- XML Entegrasyon, kar marjı desteği güncellendi.
+- Bank Asya 3D Sanal Pos ile ödeme altyapısı eklendi.
+- KVK 3D Sanal Pos ile ödeme altyapısı eklendi.
+- Yönetim paneli yeniden tasarlandı.
+- Kullanıcı gruplarına tanımlanan indirimi, belirli kategori, marka veya ürünler ile sınırlama desteği eklendi.
+- BillPro ile ödeme altyapısı eklendi.
+- Multiple Filtre Seçimleri URL'e eklenerek, URL SEO desteği güçlendirildi.
+- Sanalpazar XML servisi güncellendi.
+- E-Shopy Premium şablon eklendi.
+- İçerik yönetimi paneline, resim galeri (lightbox2) modülü eklendi.
+
+v3.95
+
+- Güvenlik güncellemeleri eklendi.
+- Ürün ve kategorilerde, otomatik title dışında, kişisel title tanımlayabilme desteği eklendi.
+- ShopPHP XML Çıktı desteğine yeni tagler eklendi.
+- Shopme Premium şablon eklendi.
+- Yapıkredi 3D ödeme modülü güncellendi.
+- E-Royal ödeme altyapısı eklendi.
+- Yeni e-ticaret kanununa uygun olarak, siparişlere değiştir ve iptal desteği eklendi.
+- Ürün stokları X adetten aşağı düştüğünde yöneticiyi otomatik bilgilendirme desteği eklendi.
+- SSL yönlendirmelerinde, sadece formlar veya tüm site seçeneği eklendi.
+- Şablonlar, ürün sayfalama için yeni pagination desteği eklendi.
+- Ürünlerde otomatik gözüken "Bu ürün son 24 saatte X defa incelendi" tooltip desteği eklendi.
+- Google Tracking modülü geliştirildi.
+- Ürün XML Çıktı servisleri geliştirildi.
+- E-Posta ile gönderilen, sepet ekran tasarımı yenilendi.
+- Bayi grupları yönetiminden, excel ile bayi fiyat listesi alma desteği eklendi. 
+- Kullanıcı ve Ürün Düzenleme ekranlarına yeni istatistikler eklendi.
+- GittiGidiyor API entegrasyon desteği güncellendi.
+- Desteklenen SMS firmalarına, UcuzSMSGonder.com altyapısı eklenendi. 
+- Yurtiçi kargo entegrasyonu eklendi.
+- Bilişim firmaları için teknik servis takip modülü eklendi.
+- Detaylı Marka istatistikleri paneli eklendi.
+- Canlı site istatistikleri ve sipariş liste panelinde, mouse hover ile sepet detayı görüntüleme desteği eklendi.
+- Promosyon kodlarını, belirli kategoriler ile sınırlayabilme desteği eklendi.
+
+v3.9
+
+- Sipariş listeleme panelinde, detaya girmeden sipariş durumu değiştirebilme desteği eklendi.
+- Ürün varyasyon fiyat tanımlamalarında, fiyat çarpan desteği eklendi.
+- Ürünlere, hazır varyasyon tanımlayabilme desteği eklendi.
+- Site üzerinden takip edilebilen canlı sepet feed desteği eklendi.
+- Moda Zone Premium şablon eklendi.
+- Kıbrıs Universal Bank ödeme altyapı desteği eklendi.
+- Iyzico v2 ödeme altyapısı eklendi (v1 desteği devam edecek.)
+- Kişisel XML çıktı desteği ile, sınırsız farklı kombinasyonda XML çıktı verebilme desteği eklendi.
+- Arama motorundan gelen aramalar ile oluşturulan SEO Link paneline, kategori vererek toplu ürün ekleme ve gelen kelimeyi yönlendirme desteği eklendi.
+- Moda Click ve Shopigo Premium şablon eklendi.
+- Toplu ürün işlemlerine, toplu kargo desi tanımlama desteği eklendi.
+- TC Kimlik No zorunlu siteler için, numara doğrulama desteği eklendi.
+- Ürün istatistik paneline yeni istatistikler eklendi.
+- Şifremi unuttum kısmına, SMS ile gönderebilme desteği eklendi.
+- Arena Paynet 3D ödeme modülü eklendi.
+- E-PTT Avm XML çıktı desteği eklendi.
+- Fatura modülüne, aynı makroyu sınırsız sayıda ekleyebilme desteği eklendi.
+- Toplu ürün işlemlerine, otomatik piyasa fiyatı tanımlama desteği eklendi.
+- Sanal Pos Türk ödeme altyapısı eklendi.
+- Click Plus Premium şablon eklendi.
+- Aras ve MNG'den sonra Sürat Kargo ve UPS Kargo Durum (API) desteği eklendi.
+- Cimri XML çıktı desteği, yeni altyapıya göre güncellendi.
+- CronJob desteği ile, XML/GG gibi entegrasyonların her gün belirli saatlerde otomatik çalışması desteği eklendi.
+- ProStore Premium şablon eklendi.
+- iPara ödeme modülü güncellendi.
+
+v3.8
+
+- Google Merchant XML çıktı desteği eklendi.
+- Yandex Market XML çıktı desteği eklendi.
+- Blog (Makale) yönetimi geliştirildi.
+- Promosyon kodlarına son kullanım tarihi set edebilme desteği eklendi.
+- Sepetteki ucuz olan ürün ücretsiz kampanya desteği eklendi
+- Ürün düzenleme panelinden, tek tuşla twitter'a post etme desteği eklendi.
+- Ürün düzenleme panelinden, tek tuşla facebook wall'da paylaşım desteği eklendi.
+- Image resize desteğine 3. seçenek Tim Thumb eklendi.
+- E-Bülten kayıt modülüne AJAX desteği eklendi.
+- S-Blue Click Premium şablon eklendi.
+- Qplus Premium şablon eklendi.
+- Marka Kombine promosyon desteği eklendi. (Ör : Samsung TV, Samsung DVD Player berbaber alana TV sehpası %50 indirimli.)
+- Fiyat verilmek istenmeyen ürünler için, "Fiyatı Sorunuz" desteği eklendi. 
+- Arama sonuçları arasında, kategori filtreleme desteği eklendi.
+- Ön sipariş verebilme desteği eklendi.
+- UcuzSMSAl.com ve AVEA Kurumsal API entegrasyon desteği eklendi.
+- Arama sonuçlarını otomatik yönlendirebilme desteği eklendi.
+- Vade yönetimine + taksit ekleme desteği eklendi.
+- Mobil şablona, kategori filtreleme desteği eklendi. 
+- Panel select elemenetlerine inline search desteği eklendi.
+- Toplu indirim desteğine, indirimi kullanıcı e-posta adresi uzantısına göre filtreleyebilme desteği eklendi.
+
+v3.7
+
+- Tüm ürün listeleme fonksiyon sorguları, güncel teknolojiye göre baştan yazıldı, yazılım hızı arttırıldı.
+- Otomatik resim boyutlandırma desteği için temel boyutlandırma ve PHP Thumb kullanımı arasında seçim yapabilme desteği eklendi.
+- Site açılışına popup ile süre sayım destekli reklam ekleyebilme desteği eklendi.
+- E-posta footer yazısını, e-posta şablon yönetimine ek olarak direkt e-posta ayarlarından set edebilme desteği eklendi.
+- 3 Yeni Premium şablon eklendi.
+- Iyzico, Denizbank 3D ve Kuveyt Türk güncel altyapı desteği eklendi.
+- Andropay ile ödeme modülü eklendi.
+- Siparişlerde, her ürüne ayrı durum ekleyebilme desteği eklendi.
+- PayU modüllerine PayU Open ve PayU ortak ödemeden sonra kendi tasarımınızı kullanma desteği veren PayU ALU desteği eklnedi.
+- Markaya e-posta tanımlayabilme ve sadece ilgili siparişleri bilgilendirebilme desteği eklendi.
+- Sipariş yönetim paneline, detaylı excel çıktısı alma desteği eklendi.
+-Üyeliksiz girişe kapalı sitelere, bayi grubuna, kategori / marka gösterimi sınırlayabilme desteği eklendi.
+- Çapraz promosyon teklifini, ürün detay sayfası içinde verebilme desteği eklendi.
+- Künye, tablo gibi siparişlerde, ürün sepete eklenmeden önce ürün ile ilgili birden fazla isim, resim gibi manuel girişli talepleri alabilme desteği eklendi.
+- Inner Login ekranı tasarımı yenilendi.
+- Kategoriye özel taksit sınırlama desteği eklendi.
+- N11 ve GittiGidiyor entegrasyonları için kategoriye özel kar marjı tanımlayabilme desteği eklendi.
+- Ürün listelemeleri pager kullanmadan ajax ile listeletebilme desteği eklendi.
+- Sipariş formunda geliştirmeler yapıldı.
+- Yeni güvenlik güncellemeleri.
+
+v3.6
+
+- Yeni güvenlik güncellemeleri.
+- Kargo bölgelerine tek seferde tüm illeri tanımlama desteği eklendi.
+- Denizbank yeni ödeme altapısı ve Paramazing.com ile ödeyebilme desteği eklendi. - Ödeme seçim ekran tasarımı yenilendi.
+- Sipariş ve İletişim e-postalarının, yönetici dışında e-posta adreslerine CC'leyebilme desteği eklendi.
+- 2. Tip stok yönetim desteği eklendi. Artık anlık stok kontrolü veya satış sonrası stok kontrolü seçimi yapılabilecek.
+- Ürün stok kayıtları için, detaylı log penceresi desteği eklendi.
+- E-Bülten gönderimi desteğine, sadece sipariş verenlere toplu mail gönderim desteği eklendi.
+- MNG kargo API entegrasyon desteği eklendi.
+- Sepet ekranı tasarımı yenilendi.
+- Site form altyapı tasarımı yenilendi. Formları bölümlendirebilme ve elementlere info ekleyebilme desteği eklendi.
+- Vakıfbank 3D ve Mailorder ödeme modülleri güncellendi.
+- Paypal ödeme modülüne IPN desteği eklendi.
+- Zamanaşımına uğrayan siparişlerde, müşteriyi otomatik bilgilendirme desteği eklendi.
+- 3 Farklı Cache tipi seçim desteği eklendi. (Disk cache, Memcached ve Database cache)
+- 2. SEO URL tipi seçim desteği eklendi. (<urun-adi>.html veya <kategori-adi>/<urun-adi>.html)
+- Ürün, kategori ve içerik sayfaları SEO URL'leri manuel girebilme/düzenleyebilme desteği eklendi.
+- Resize edilen resimleri, direkt cache üzerinden çekebilme desteği eklendi.
+- Veritabanı sorgu optimizasyonları yapıldı.
+- Güvenlik güncellemeleri yapıldı.
+- Bazı ufak hata düzeltmeleri.
+
+v3.5
+
+- Yedekleme bölümüne, veritabanı ile birlikte dosya yedeği alma desteği eklendi.
+- Sipariş adımında, kargo seçimi yapıldığı anda, aynı bölüme hesaplanan kargo ücretini yazdırma desteği eklendi. 
+- SMTP Mail gönderim desteğine SSL ve TLS ile gönderim desteği eklendi. 
+- Kayıt olan kullanıcıların, girdikleri bilgiye göre otomatik bayi grubuna atanması desteği eklendi.
+- Ürünleri paket olarak gruplandırıp, tek fiyat veya indirim tanımlama desteği eklendi.
+- E-bülten gönderim desteğine, anasayfa, indirimli ,ücretsiz kargo ve yeni gibi ürün listelerinden, otomatik e-bülten oluşturma desteği eklendi.
+- iyzico ile ödeme entegrasyonu eklendi.
+- XML Güncelleme desteğinde fiyat ve stoğu ayrı ayrı güncelleyebilme desteği eklendi.
+- Tanımlanan ödeme seçeneklerini, sadece belirli bayi gruplarında kullanıma açıma desteği eklendi.
+- Sipariş istatistiklerine, ödeme tipi filtresi eklendi.
+- İstatistiklere ürün satış kar istatistikleri başlığı eklendi.
+- Canlı destek modülü eklendi.
+- Otomatik cevap tanımlama desteği eklendi. Buraya tanımlanan cevaplar, iletişim gönderileri, ürün soru-cevapları,arıza kaydı ve canlı destek gibi kısmında kullanılabilecek.
+- Şablonların 22 noktasına, koda hiç müdahale etmeden, yönetim panelinden banner ekleme desteği eklendi.
+- Facebook connect ve app. ayarları, yönetim paneline eklendi.
+- Sadece bayilere satış yapan (üye girişi zorunlu) siteler için yeni giriş ekranı tasarımı eklendi.
+- Giriş dashboard ekranında geliştirmeler yapıldı. (Yeni ödeme modülü, Google ve sosyal medya istatistikleri eklendi.)
+- XML Servislerini bayi gruplarına özelleştirme desteği eklendi. (Serviste bayi grubuna özel fiyat, marka/kategori listeleme ve IP Kontrolü eklendi.)
+- Aras kargo API entegrasyon desteği eklendi.
+- Şablon logo yükleme yönetim paneline eklendi.
+- Resimsiz ürünlere Google Image API ile otomatik/manuel resim çekme desteği eklendi.
+- Hazır affilate banner sayısı 1'den 4'e çıkarıldı.
+- Gittigidiyor API destek modülü geliştirildi.
+- 3 Yeni premium şablon (Clean v2,Pasaj ve Store Plus) eklendi.
+- XML entegrasyon firma sayısı 155'e yükseldi.
+- Bazı ufak hata düzeltmeleri.
+
+v3.4
+
+- Yönetim menü altına teknik işlemler başlığı eklendi. Bu bölümden veritabanını onarabilir, optimize edebilir, gereksiz resim ve markaları silebilirsiniz.
+- Yeni premium şablon "Planet" eklendi.
+- Affilate desteğine,sınırsız seviye zincir kullanıcı davet desteği eklendi. Ör : Alışveriş yapan kullanıcıyı davet eden kullanıcı X lira, davet eden kullanıcıyı davet eden kullanıcı Y lira komisyon kazanabilecek. 
+- İki ShopPHP sitesi arasında stok entegrasyon desteği eklendi.
+- Tüm kullanıcılara bakiye ödeyebilme desteğini aktif edebilme eklendi.
+- Ürün tablarına, kullanıcıların ürün hakkında soru sorabileceği ve bu yanıtların forum biçiminde yayınlanabileceği bölüm eklendi.
+- Fatura yazdırma modülü geliştirildi.
+- Grup (kupon) satış modelinde geliştirmeler yapıldı.
+- Gittigidiyor entegrasyon desteği geliştirildi. (Turbolist kullanmadan, direkt API üzerinden ürün entegrasyonu, gelen siparişlerin ShopPHP paneline düşmesi, gelen siparişlerde ShopPHP panelden stok düşmesi ve ShopPHP panelinden girilen kargo bilgilerinin otomatik gittigidiyor'a iletilmesi eklendi)
+- Arama sonuçları fonksiyonu geliştirildi.
+- Resize.php baştan yazıldı, hızlandırıldı.
+- Google ve nano piksel ecommerce tracking desteği eklendi.
+- n11.com için XML çıktı desteği eklendi.
+- Telpa 3D, Avawebs,Paymec ve PayEU sanalpos desteği eklendşi.
+- XML entegrasyon firma sayısı 151'e yükseldi.
+- Bazı ufak hata düzeltmeleri.
+
+v3.3
+
+- Yeni 2 standart, 2 premium şablon eklendi.
+- Kredi kartı ödeme ekran tasarımları güncellendi.
+- Yetersiz bakiye, hatalı kredi kartı gibi kredi kartı ödeme hatalarında, yöneticiye hata ve sepet içeriği bilgi gönderme desteği eklendi.
+- Yönetim panaeline veritabanı yedeği alma ve yükleme desteği eklendi.
+- SEO güncellemeleri yapıldı.
+- Arama bölümüne, çok arananlar bölümü eklendi.
+- Tek promosyon kodunu birden fazla kullandırabilme ve her promosyon koduna ayrı asgari kullanım limiti tanımlayabilme desteği eklendi.
+- EST tabanlı bankaların normal ve 3dpay desteğine ek olarak 3dmodel tipinde ödeme desteği eklendi.
+- Bazı ufak hata güncellemeleri
+
+v3.2
+
+- Affilate sistemi desteği eklendi. 
+- Mikro ödeme Kredi Kartı,Tesan, iPara ve PAYU (Site içi ve Ortak ödeme) ile ödeme yapabilme desteği eklendi. 
+- Satın alma adımları, sipariş adres bilgileri ve ödeme bilgileri olarak 2 adıma düşürüldü. 
+- Yazılımı satışı yapan siteleri için secured download desteği eklendi. 
+- Seçim filitreleme desteği mutliple seçim yapılabilecek şekilde güncellendi. 
+- Fiyat aralığı filitre ayarları desteği eklendi. 
+- Belirli ürünlerde toplu indirim veya bayi indirimi geçersiz kılma desteği eklendi. 
+- Kurulum tek tuşla tamamlanacak şekilde güncellendi.
+- Yönetim panelinden veritabanı yedeği alabilme desteği eklendi.
+- Şablonlara alışveriş sırası (CSS) fonksiyonu eklendi.
+- Üye kayıt ekranına, şifre güvenlik seviyesi ekranı eklendi.
+- 12 yeni XML entegrasyon eklendi.
+- Güvenlik güncellemeleri ve bazı ufak hata düzeltmeleri.
+
+v3.1
+
+- Facebook Connect (opsiyonel) desteği eklendi. 
+- MutluCell SMS entegrasyon desteği eklendi. 
+- XML Entegrasyon altyapısı geliştirildi.
+- Kullanıcılara doğum günlerinde otomatik mail gönderimi desteği eklendi.
+- Toplu e-posta gönderimlerine kişiye özel promosyon gönderim desteği eklendi. 
+- WYSIWYG editor CK Editor ile güncellendi. 
+- Otomatik sipariş tekrarlama desteği eklendi. 
+- Özel URL ile siteye gelen kullanıcıları otomatik bayi grubuna atama desteği eklendi. 
+- Şalter kapalıyken admin statüsünde kullanıcının siteyi gezebilme desteği eklendi. 
+- Makale yönerimine kategori ve yorum desteği eklendi. 
+- Ocean şablonu (opsyionel) eklendi. 
+- Sorgular optimize edilerek yazılım hızlandırıldı.
+
+v3.0
+
+- Tamamen yenilenen yönetim paneli. 
+- Dashboard desteği eklendi. 
+- Alışveriş sonrasına otomatik promosyon kodu gönderim desteği eklendi. 
+- XML Entegrasyon altyapısı yenilendi. Firma kategori filitreleme desteği eklendi.
+- Filitre fonksiyonuna, fiyata göre daraltma desteği eklendi.
+- SEO Link generate desteği eklendi. (Arama motorlarından gelen kelimeleri otomatik sayfa hazırlama) 
+- Adet sayısına göre indirim desteği eklendi. 
+- Datagrid içinde gerçek zamanlı düzenleme desteği eklendi. 
+- Ürünler üzerinde toplu işlem yapabilme desteği eklendi. 
+- D-Store teması eklendi. 
+- Google ayarları desteği eklendi. 
+- 3 Saatte bir otomatik Google sitemap submission desteği eklendi.
+- Banka yönetiminde, yönlendirilmeli banka kurulumu desteği eklendi. 
+- İstatistikler güncelledi. 
+- Canlı istatistik desteği eklendi. 
+- SMS gönderim şablonları arttırıldı. 
+- Captha desteğine Google reCaptcha eklendi. Birden fazla captcha arasında seçim yapılabilme desteği eklendi.
+- Sorgular optimize edilerek yazılım hızlandırıldı.
+
+v2.9
+
+- SMS ile üyelik onaylama desteği eklendi.
+- Ürün yönetimine ürün kopyalama ve toplu kategori güncelleme desteği eklendi.
+- Excel edit desteğinde yeni veri ekleyebilme desteği eklendi.
+- Anlık stok kontrolü için sepet zaman aşımı desteği eklendi.
+- Yazılımdaki tüm stringler lang veritabanına eklendi. Tek bir yerden güncellenebilir hale getirildi.
+- Ürün resimlerine watermark logo desteği eklendi.
+- Posnetodeme.com sanal pos desteği eklendi.
+- Genpa sanal pos desteği 3D olarak güncelledi.
+- Final, Webmarket, 4c Müzik, Zenbi, Teknomodel, Çarşıbaşı, GSM Tedarik, And Outdoor, Hediye Denizi, Elfa, Velleman, Pleaserusa, YY Ithalat, Senfonimuzik XML Entegrasyon desteği eklendi.
+
+v2.8
+
+- Ürünler seçeneklerine stok ve farklı resimler tanımlama desteği eklendi.
+- Entegrasyon sırasında kategorilere farklı kar marjı tanımlama desteği eklendi.
+- Ideasoft/Melisa.com.tr/Dropship/Dilay Kozmetik/E-Bebek engtegrasyon desteği eklendi.
+- Sipariş detaylarına referrer desteği eklendi.
+
+v2.7
+
+- GittiGidiyor entegrasyon desteği eklendi. 
+- Goldmaster XML entegrasyon desteği eklendi. 
+- Kategori filitrelerine Stok var / yok başlığı eklendi. 
+- Ürün detay ekranı makrolarına ürün seçimlerinin select tag'i ile listelenmesi makrosu eklendi. 
+- Kredi kartı ile ödeme hatası (banka hatası / limit yetersizliği / geçersiz kredi kartı bilgileri ..) nedeniyle sonlandırılamamış siparişlerin görüntülenmesi desteği eklendi. 
+- Yönetim paneli listelemeleri Excel'e gönderim desteği eklendi. 
+- Ürün / Kategori / Marka yönetimlerine Excel'den geri yükleme desteği eklendi. 
+- Gelen siparişler, Ödeme Onayı Bekleyenler ve Gelen Siparişler olarak ikiye ayrıldı. 
+- İletişim gönderilerine auto responder desteği eklendi. 
+- ShopPHP XML çıktı desteği geliştirildi. Bayiye özel XML çıktı desteği eklendi.
+- Sınırsız para birimi tanımlama desteği eklendi. 
+- Döviz güncelleme özelliğine otomatik altın fiyatları güncelleme desteği ekelndi. 
+- E-Bülten desteği geliştirildi. E-Bültene kolayca ürün tanıtım(lar)ı ekleme desteği eklendi. E-Bülten hızlı öngörünüm desteği eklendi. 
+- Bazı ufak hata düzeltmeleri.
+
+v2.6
+
+- Facebook application desteği (opsyionel) eklendi. 
+- Toplu fiyat güncelleme desteği eklendi. 
+- Garanti Bankası yeni 3D sanal pos alt yapısı güncellendi. 
+- Puanlarım detay sayfası eklendi. 
+- Kampanya kelime desteği eklendi. (Ör : xyz kampanya kelimesi ile giriş yapan bir kullanıcıya x-y tarihleri arasında kullanabileceği z puan tanımlama.) 
+- Bir alışverişte kullanılabilecek azami puan ayarı eklendi. 
+- Puan kullanılabilmesi için alışverişte min. sepet tutarı tanımlama desteği eklendi. 
+- Otomatik Promosyon Ekranı desteği eklendi (Ör : Sitede X saniye gezinen bir kullanıcıya Y TL / İndirim oranı promosyon kodu teklifi sunulması.)
+- Ürünlere fiyat oranlarına göre sigorta seçeneği tanımlama desteği eklendi.
+- Kategori listeleri üst bölgelerine HTML kod tanımlama desteği eklendi.
+- Firsatbufirsat.com XML çıktı desteği eklendi.
+- Tumfirsatlar.com XML çıktı desteği eklendi.
+- Grup kupon satış siteleri için il seçimi desteği eklendi.
+
+v2.5
+
+- 2 Yeni şablon (Tpblue: Genel Satış, Mgroup: Grup satış) eklendi.
+- Yönetim paneline çoklu kullanıcı desteği eklendi.
+- İletişim mesajlarının yönetim panelinde listelenip yanıtlanabilme desteği eklendi.
+- XML entegrasyon altyapısı güncellendi.
+- Bayilere ön kredi ödeme / tanımlama desteği eklendi.
+- Taksit vade oranlarına min. fiyat belirleyebilme desteği eklendi. (Ör : 1000 TL üzeri peşin fiyatına 5 taksit veya standart 5 taksit vade oranı 0.10, 1000 TL üzeri 5 taksit vade oranı 0.07 gibi..)
+- Arena Paynet ödeme desteği eklendi.
+- Fonksiyon cache desteği eklendi. Yazılım sunucu yükü azaltıldı.
+- Sipariş detaylarını yazdırma desteği eklendi.
+- Online Tedarik XML Entegrasyon desteği eklendi.
+- Hırdavat B2B XML Entegrasyon desteği eklendi.
+- Aral Game XML Entegrasyon desteği eklendi.
+- Gold Store XML Entegrasyon desteği eklendi.
+- Grup satışı desteği geliştirildi. Toplu kupon girişi desteği eklendi.
+- ShopPHP XML çıktı desteği güncellendi.
+
+v2.4
+
+- Kategori filitre (seçim daraltma) desteği eklendi. (Ör: Mp3 çalarlar kategorisinde Apple marka,Divx,Mp4 destekli, 16-32GB arası ürünlerin listelenmesi)
+- Toplu indirim tanımlama (kategori,marka,filitre) desteği eklendi.
+- Grup satış desteği ve grup satış sitesi tempalte (Grupa) eklendi.
+- Minimum sipariş tutarı tanımlama desteği eklendi.
+- Sipariş tekrarlama desteği eklendi.
+- Birden fazla kargo firması ve kargo firma detayları (sadece hızlı gönderimlerde aktif, ücretsiz ürünlerde aktif ..) tanımlama desteği eklendi.
+- Kullanıcıların birden fazla adres tanımlama desteği eklendi.
+- Teslimat süresi fiyatlandırma desteği eklendi. (Ör: Aynı gün / 1 Saat içerisinde teslimat +10 TL)
+- Resize fonksiyonu güncellendi. Boyutlandırılan resimler cachede tutularak sunucu yükü azaltıldı.
+- Arena XML entegrasyonu eklendi.
+- Bitkisel Depo XML entegrasyonu eklendi.
+- PetsRus XML entegrasyonu eklendi.
+- Garanti Bankası yeni altyapısı ödeme modülü eklendi.
+
+v2.3
+
+- Puan destekli otomatik kullanıcı davetiye desteği eklendi. (Hotmail,Gmail,Yahoo,Facebook,Twitter,FriendFeed,XING ...)
+- Yeni template (Fancy) eklendi.
+- Tek ürün satış desteği ve tek ürün sitesi template (S-Yellow) eklendi.
+- Üye olmayanlara havale bildirimi yapabilme desteği eklendi.
+- Kategorilerde detaylı veya liste halinde ürün sıralama ve toplu ürün sepete ekleme desteği eklendi.
+- Figensoft + Mikroödeme Mobil ödeme desteği eklendi. 
+- (TEKNİK) Ürün gösterim templatelerine makro ile direkt fonksiyon çağırma desteği eklendi.
+- (TEKNİK) Templatelerde Queryler ve Template kullanımını kolaylaştıran CSData class'ı eklendi.
+- Bazı ufak hata düzeltmeleri.
+
+v2.2
+
+- Ürünler için 5 farklı bayi fiyatı tanımlama desteği eklendi.
+- Bayilere ürün bilgileri ekleme/düzenleme desteği eklendi.
+- Siteyi sadece üyelere açabilme desteği eklendi.
+- Sadece üyelere fiyatları görüntüleme desteği eklendi.
+- Kategorilere resim tanımlayabilme desteği eklendi.
+- Metro Elektronik XML entegrasyonu eklendi. 
+- Ses Müzik Aletleri XML entegrasyonu eklendi.
+- Ziraat Bankası ortak ödeme desteği eklendi.
+- Yapı Kredi 3D Ödeme modülü geliştirildi.
+- Ürün template makroları geliştirildi.
+- E-Posta şablon makroları geliştirildi.
+- Arama motoru geliştirildi.
+- Güvenlik filitreleri arttırıldı.
+
+v2.1 
+
+- Kargo desteği geliştirildi. Belli ilçelere kargo göndermeme veya + fiyat eklenme desteği eklendi.
+- Puan Sistemi desteği eklendi.
+- Çapraz Promosyon desteği eklendi (x Ürününü alırsanız Y ürünü %n indirimli)
+- Ürün detay ekranına ana ürün resmine detay/zoom desteği eklendi.
+- Bebek Reyonu Ürün Import (XML) desteği eklendi.
+- Turkcell / Avea Mobil ödeme desteği eklendi.
+- Bazı ufak hata düzeltmeleri.
+
+v2.0
+
+- Yönetim paneli yeniden tasarlandı.
+- Yönetim paneli Listeleme ekranları ajax destekli grid ile değiştirildi.
+- SEO Ayarları geliştirildi.
+- İki yeni template eklendi.
+- Tüm site template desteği geliştirildi.
+- E-Posta yönetimi yeniden hazırlandı.
+- E-Posta log desteği eklendi. Böylece sitedeki tüm e-posta alışverişleri mail sunusundaki bir problem nedeniyle kaçırlmayacak.
+- Genel E-Posta şablonu desteği eklendi.
+- Tüm e-posta şablonları baştan yazıldı.
+- SMTP Mail gönderimi geliştirildi.
+- Yapıkredi sanal pos desteği geliştirildi.
+- Bank Asya sanal pos desteği eklendi.
+- Sepet detay ekranına kredi kartına tek çekim indirimi desteği (opsiyonel) eklendi.
+- Döviz ayarları eklendi. Döviz bilgileri güncelleme geliştirildi.
+- Döviz güncelleme için crontab gereksinimi kaldırıldı.
+- Ziyaretçi,Ürün,Kategori,E-posta ve Satış istatistikleri eklendi.
+- Tüm XML Importlar ajax destekli hale getirildi. Boylece tek seferde importdan kaynaklanan timeout problemleri giderildi.
+- Atlas Kamp,Hepsiburada,Saatnoktası,Oksid,Modacar,Sihirli Bebekler,Elma Sepeti,Tedarik Bizden,Toptan Shop XML entegrasyon desteği eklendi.
+- Nekadar.com ,Ucuzcu.com,Akıllı Fiyat XML export desteği eklendi.
+- Penta XML desteği geliştirildi.
+- Formlara captcha (güvenlik kodu) desteği eklendi.
+- Ürün aramalara autocomplete ozelliği eklendi.
+- Sepet iconuna hızlı sepet izleme özelliği eklendi.
+- Spaw sürümü güncellendi.
+- Bazı ufak hata düzeltmeleri.

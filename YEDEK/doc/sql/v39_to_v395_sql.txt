@@ -1,0 +1,54 @@
+UPDATE `siteConfig` SET `version` = '3.95' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `promosyon` ADD `cat` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `code`; 
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '80', 'Markalar', '', 'stats.php&type=marka', '1', '45', ''); 
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '80', 'Marka (Ciro)', '', 'stats.php&type=marka-ciro', '1', '25', ''); 
+
+CREATE TABLE IF NOT EXISTS `teknikservis` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `title` varchar(255) CHARACTER SET latin5 NOT NULL,
+`code` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `body` text CHARACTER SET latin5 NOT NULL,
+  `sdate` datetime NOT NULL,
+
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+ALTER TABLE `teknikservis` ADD `mail` BOOLEAN NOT NULL AFTER `sdate`; 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_titleTeknikServis', 'TR', 'Teknik Servis Takip');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_orderNumaraliTakipDetaylari', 'TR', 'Numaralı Servis Takip Detayları'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_teknikTakipNumaraniz', 'TR', 'Teknik Takip Numaranız'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_teknikTakipNo', 'TR', 'Takip No'), (NULL, '_lang_teknikTakipBaslik', 'TR', 'Başlık'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_teknikTakipIcerik', 'TR', 'Mesaj'), (NULL, '_lang_teknikTakipTarih', 'TR', 'Tarih');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'Teknik Servis', '', 'teknikservis.php', '1', '70', ''); 
+UPDATE `lang` SET `value` = 'Sipariş Durumu' WHERE `lang`.`ID` = 40; 
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Teknik_Servis_Mesaj', '', '', 'Teknik Servis Mesaji', 'Sayın {%name%} {%lastname%}, <br /><br />{%title%} konulu yeni bir teknik servis mesajınız var. Okumak için lütfen <a href="{%link%}">tıklayın</a>.');
+ALTER TABLE `siteConfig` ADD `kargo_yiKullanici` VARCHAR(32) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_upsSifre`, ADD `kargo_yiSifre` VARCHAR(32) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_yiKullanici`; 
+ALTER TABLE `siteConfig` ADD `kargo_yiID` INT NOT NULL AFTER `kargo_upsSifre`;  
+ALTER TABLE `siteConfig` ADD `google_conversionuye` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `google_conversion`; 
+ALTER TABLE `sss` ADD `catIDs` VARCHAR(512) NOT NULL AFTER `ID`; 
+UPDATE sablonEmail SET `body` = 'Sayın {%name%} {%lastname%},<br><br>Sitemize üyeliğiniz onaylanmıştır. Şimdi giriş yapıp alışverişe başlayabilirsiniz. <br><br>Kullanıcı Adı : {%username%}, <br /><br />Bilginize,' WHERE `sablonEmail`.`code` like 'Kullanici_Onay'; 
+ALTER TABLE `urun` ADD `parentID` INT NOT NULL AFTER `metaDescription`; 
+ALTER TABLE `seolinks` ADD `ktype` SMALLINT NOT NULL AFTER `kategori`; 
+UPDATE `sablonSMS` SET `body` = 'Sayın {%name%} {%lastname%}, Sitemizden yapmış olduğunuz siparişiniz kargoya teslim edilmiştir. Kargo Firması : {%kargoFirma%} Kargo Takip Numarası : {%kargoSeriNo%} *Bizi seçtiğiniz için teşekkür ederiz.*' WHERE `sablonSMS`.`ID` = 5; 
+ALTER TABLE `iletisim` ADD `data1` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `answer`, ADD `data2` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data1`, ADD `data3` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data2`, ADD `data4` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data3`, ADD `data5` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data4`; 
+ALTER TABLE `urun` ADD `noxml` BOOLEAN NOT NULL AFTER `prefix`; 
+ALTER TABLE `siteConfig` ADD `google_conversion_id` VARCHAR( 32 ) NOT NULL AFTER `google_conversion` ;
+ALTER TABLE `lang` DROP INDEX `key`;
+ALTER TABLE `siteConfig` CHANGE `httpsAktif` `httpsAktif` TINYINT NOT NULL; 
+ALTER TABLE `siteConfig` ADD `stokMail` TINYINT NOT NULL AFTER `aff_kural`; 
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Stok_Uyari', '', '', 'Urun Stok Uyari', 'Site üzerinde aşağıdaki ürünler, uyarı stok adeti altına inmiştir. <br /><br /> {%URUNLER%}'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_iptal', 'TR', 'İptal'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_degistir', 'TR', 'Değiştir'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_iptalAlert', 'TR', 'Siparişiniz iptal edilip, ödemeniz iade edilecek, onaylıyor musunuz?'); 
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_degistirAlert', 'TR', 'Siparişiniz iptal edilip, ödemeniz yeni bir siparişte kullanılmak üzere bakiyenize eklenecek, onaylıyor musunuz?'); 
+INSERT INTO `odemeDurum` (`ID`, `title`, `mailCode`) VALUES (89, 'Değişim Talebi Alındı', 'Degisim_Talebi'); 
+INSERT INTO `odemeDurum` (`ID`, `title`, `mailCode`) VALUES (90, 'İptal Talebi Alındı', 'Iptal_Talebi'); 
+
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES ('0', 'Iptal_Talebi', '', '', 'Siparis İptal Talebi Alındı', 'Sitenizde sipariş iptal talebi var. <br /><br />Sepet Bilgileri : <img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif"> {%sepet%}  <img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif"> <br /><br /> Ödeme Tipi : {%odemeTipi%} <br /><br /> Sipariş detaylarına bakmak için <a href="{%siteAdresiFull%}/secure/s.php?f=iptalTalepSiparisler.php&y=d&siparisID={%randStr%}">burayı tıklayın</a>.'); 
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES ('0', 'Degisim_Talebi', '', '', 'Siparis Degisim Talebi Alındı', 'Sitenizden sipariş degisim talebi alındı. Ödeme tutarı kullanıcıya artı bakiye olarak eklendi. <br /><br />Sepet Bilgileri : <img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif"> {%sepet%}  <img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif"> <br /><br /> Ödeme Tipi : {%odemeTipi%} <br /><br /> Sipariş detaylarına bakmak için <a href="{%siteAdresiFull%}/secure/s.php?f=degisimTalepSiparisler.php&y=d&siparisID={%randStr%}">burayı tıklayın</a>.'); 
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '10', 'İptal Talepleri', '', 'iptalTalepSiparisler.php', '1', '17', ''); 
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '10', 'Değişim Talepleri', '', 'degisimTalepSiparisler.php', '1', '16', ''); 
+
+ALTER TABLE `urun` CHANGE `resim6` `resim6` VARCHAR(128) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, CHANGE `resim7` `resim7` VARCHAR(128) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, CHANGE `resim8` `resim8` VARCHAR(128) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, CHANGE `resim9` `resim9` VARCHAR(128) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL, CHANGE `resim10` `resim10` VARCHAR(128) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL; 
+ALTER TABLE `urun` ADD `customTitle` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `metaDescription`; 
+ALTER TABLE `kategori` ADD `customTitle` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `metaDescription`; 

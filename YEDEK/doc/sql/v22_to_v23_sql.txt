@@ -1,0 +1,17 @@
+ALTER TABLE `user` ADD `davetUserID` INT NOT NULL AFTER `puanHarcanan` ;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Site_Davet', '', 'Site Daveti', '{%siteAdi%} Sitesine Davetlisiniz', 'Merhaba,<br><br>Arkadaşınız {%name%} {%lastname%}, sizi {%siteAdi%} sitesine davet ediyor. Siteye üye olarak indirimli alışveriş yapmaya hemen başlayabilirsiniz.<br><br>
+Arkadaşınızın mesajı :<br><br>
+{%arkadasMesaj%}<br><br>
+Siteye kayit olmak icin <a href="{%davetURL%}">TIKLAYIN</a>.');
+ALTER TABLE `user` ADD `sitePuan` INT NOT NULL AFTER `davetUserID`;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Site_Davet_Kayit', '', 'Site Davet Kayıt Onayı', '{%name%} {%lastname%} Sizi Referans Gösterdi', 'Merhaba,<br><br>Arkadaşınız {%name%} {%lastname%}, sizi referans göstererek site kaydını tamamladı. Arkadaşonız ilk alışverişini tamamlandıktan sonra hesabınıza {%puan%} puan eklenecektir.');
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Kullanici_Kayit', '', 'Kullanıcı Kaydi', 'Hoşgeldiniz', 'Sayın {%name%} {%lastname%},<br><br>Kullanıcı bilgileriniz sitemize kaydedildi. Üyelik bilgilerinizi kullanarak alışverişlerinizi hızlandırabilir ve kazandığınız puanlar ile ücretsiz alışverişler yapabilirsiniz. Bizi seçtiğiniz için teşekkür ederiz. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}
+<br /><br />Bilginize,');
+UPDATE `sablonEmail` SET `body` = 'Sayın {%KULLANICI_ADI%}, <br /><br />Sitemizde alarm listenize eklediğiniz {%URUN_ADI%} ürünü stoklarımıza eklenmiştir. <br /><br />Bilginize, <br /><br />Bizi seçtiğiniz için teşekkür ederiz' WHERE `sablonEmail`.`ID` =7 LIMIT 1 ;
+UPDATE `sablonEmail` SET `body` = 'Sayın {%KULLANICI_ADI%}, <br /><br />Sitemizde alarm listenize eklediğiniz {%URUN_ADI%} ürününün {%ESKI_FIYAT%} olan fiyatı {%YENI_FIYAT%} olarak güncellenmiştir. <br /><br />Bilginize, </p><p>Bizi seçtiğiniz için teşekkür ederiz</p>' WHERE `sablonEmail`.`ID` =6 LIMIT 1 ;
+ALTER TABLE `urun`  ADD `start` DATETIME NOT NULL AFTER `tarih`,  ADD `finish` DATETIME NOT NULL AFTER `start`;
+ALTER TABLE `urun` ADD `urunBirim` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kar` ;
+update urun set urunBirim='Ad.';
+update urun set fiyatBirim = 'TL' where fiyatBirim='' OR fiyatBirim='YTL';
+ALTER TABLE `sepet` CHANGE `adet` `adet` FLOAT NOT NULL;
+ALTER TABLE `siteConfig` ADD `listType` INT NOT NULL ;

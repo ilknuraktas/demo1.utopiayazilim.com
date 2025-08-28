@@ -1,0 +1,9 @@
+.ks { position:relative; }
+.kb { position:relative; width:610px; height:159px; margin-bottom:10px;  }
+.kb .resim { position:absolute; width:610px; height:159px; }
+.kb .info{ position:absolute; height:20px; padding:10px; top:119px; width:590px; background-color:#000000; z-index:10; text-align:right; color:#FFFFFF; }
+.kb .info span { color:#FFFFFF; }
+.kstitle { font-size:14px; font-weight:bold; margin-top:10px; margin-bottom:10px; clear:both; }
+
+
+/* jQuery Countdown styles 1.5.8. */

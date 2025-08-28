@@ -1,0 +1,49 @@
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'Dropship XML', '', 'XML/xml_dropship.php&y=e', '1', '33', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'Okyanus Tekstil XML', '', 'XML/xml_okyanustekstil.php&y=e', '1', '73', '');
+CREATE TABLE `urunvar` (`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, `urunID` INT NOT NULL, `varID` INT NOT NULL, `varName` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL, `resim1` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL, `resim2` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL, `resim3` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL, `resim4` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL, `resim5` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL, `data` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL) ENGINE = InnoDB;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Ürün Varyasyon Detayları', '', 'urunvar.php', '1', '13', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'İlgili Ürünler Yönetimi', '', 'urunilgiliurunler.php', '1', '15', '');
+CREATE TABLE `grupkuponsatis` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`code` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`userID` INT NOT NULL ,
+`urunID` INT NOT NULL ,
+`tarih` DATETIME NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `grupkuponsatis` ADD `info` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `userID` ;
+ALTER TABLE `grupkuponsatis` ADD `randStr` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `urunID` ;
+ALTER TABLE `grupkuponsatis` ADD `onay` BOOLEAN NOT NULL ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Grup Ürün Kupon Satışları', '', 'grupKuponSatis.php', '1', '120', 'GRUPSATIS');
+ALTER TABLE `grupkupon` ADD `sonTarih` DATETIME NOT NULL ;
+UPDATE `sablonEmail` SET `body` = 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz tamamlandı. Fırsat minimum satış adedini geçtiğinden kuponunuz aktif ve kullanılabilir durumdadır.<br><br>
+Kupon Kodu : {%kupon%}<br />
+Son Kullanım Tarihi : {%sonkullanim%}
+<br /><br />Sepet Bilgileriniz :<br />
+<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">
+{%sepet%} 
+<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">
+<br><br>
+<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />
+<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,' WHERE `sablonEmail`.`ID` = 22;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Kullanici_Onkayit', '', 'Kullanıcı Ön Kayıt', 'Uyelik Onay Bilgileriniz', 'Sayın {%name%} {%lastname%},<br><br>Kullanıcı bilgileriniz sitemize kaydedildi. Aşağıdaki adresi tıklayarak site kullanıcı kaydınızı tamamlayabilirsiniz.<br><br>{%UYELIK_ONAY_URL%}');
+ALTER TABLE `urun` ADD `maxSatis` INT NOT NULL AFTER `minSatis` ;
+ALTER TABLE `marka`  ADD `private_resim1` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `private_resim2` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `private_resim3` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `private_info` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL,  ADD `private_tarih` DATETIME NOT NULL;
+ALTER TABLE `siteConfig` ADD `privateSepetMarkaKontrol` BOOLEAN NOT NULL AFTER `promosyonTeklifAktif` ;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Site_Davet_Tek', '', 'Site Daveti', '{%siteAdi%} Sitesine Davetlisiniz', 'Merhaba,<br><br>Arkadaşınız, sizi {%siteAdi%} sitesine davet ediyor. Siteye üye olarak indirimli alışveriş yapmaya hemen başlayabilirsiniz.<br><br>
+Siteye kayit olmak icin <a href="{%davetURL%}">TIKLAYIN</a>.');
+delete from kargoDesi where ID<3;
+ALTER TABLE `siparis` CHANGE `tarih` `tarih` DATETIME NOT NULL ;
+ALTER TABLE `siteConfig` ADD `seo_urunEtiket` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo_kategoriMetaDescription` ;
+UPDATE `siteConfig` SET `seo_urunEtiket` = '{%urun_metaKeywords%} {%URUN_ADI%} {%KATEGORI_ADI%} {%MARKA_ADI%}' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `siteConfig` CHANGE `seo_urunEtiket` `seo_urunEtiket` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `marka` ADD `private_start` DATETIME NOT NULL AFTER `private_info` ;
+DELETE FROM `adminmenu` WHERE `adminmenu`.`ID` = 48;
+DELETE FROM `adminmenu` WHERE `adminmenu`.`ID` = 49;
+DELETE FROM `adminmenu` WHERE `adminmenu`.`ID` = 50;
+DELETE FROM `adminmenu` WHERE `adminmenu`.`ID` = 52;
+DELETE FROM `adminmenu` WHERE `adminmenu`.`ID` = 51;
+ALTER TABLE `siteConfig` ADD `SMS_Firma` INT NOT NULL AFTER `SMS_kullan` ;
+ALTER TABLE `marka` ADD `seq` INT NOT NULL ;
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES (NULL, 'Grup_OnOnay', 'Sn {%lastname%}, {%randStr%} nolu siparisinizin gerceklesebilmesi için gerekli satış adedine ulasildiginda tekrar bilgilendirileceksiniz.'), (NULL, 'Grup_Onay', 'Sayın {%lastname%}, Kupon bilginiz : {%kupon%}<br />
+Son Kullanım Tarihi : {%sonkullanim%}');
+ALTER TABLE `grupkuponsatis` ADD `sonTarih` DATETIME NOT NULL ;

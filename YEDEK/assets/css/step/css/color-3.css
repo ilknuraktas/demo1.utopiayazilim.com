@@ -1,0 +1,35 @@
+div.multi-step {
+	border-color:#81c5e8;							/* color of the container's rounded border */
+	xxbackground:url(../img/3/bg.png);				/* default background pattern */
+	background-color:#266796;
+}
+div.multi-step ol > li {							/* default step decoration */
+	xxbackground-image:url(../img/3/pointer.png);
+	background-color:#266796;
+}
+div.multi-step ol > li:first-child {
+	background:none;								/* not needed for step #1 */
+}
+div.multi-step ol > li.current {					/* the active step */
+	xxbackground-image:url(../img/3/current.png);
+	background-color:#81c5e8;
+}
+
+div.multi-step ol > li.current .title {				/* current title text color */
+	color:#fff;
+}
+div.multi-step ol > li.current .wrap:before {		/* current num background color */
+	background:#792d2d;
+}
+div.multi-step ol > li .wrap:before {				/* step number, background, border and text color */ 
+	background:#333;
+	border-color:#fff;
+	color:#fff;
+}
+div.multi-step ol > li .title {						/* title text color */
+	color:#fff;
+}
+div.multi-step ol > li .subtitle {					/* subtitle text color */
+	color:#fff;
+	white-space:nowrap;
+}

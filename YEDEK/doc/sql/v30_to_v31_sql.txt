@@ -1,0 +1,25 @@
+UPDATE `siteConfig` SET `version` = '3.1' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `urun` ADD INDEX ( `tedarikciCode` );
+ALTER TABLE `siparis` ADD `tekrarAktif` INT NOT NULL AFTER `puanHarcananTL` ,
+ADD `tekrarSure` INT NOT NULL AFTER `tekrarAktif` ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_siparis_durdur', 'TR', 'durdur');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_orderTekrarlanacakSiparisleriniz', 'TR', 'Tekrarlanacak Siparişleriniz');
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES (NULL, 'Grup_Onay', 'Sayin {%name%} {%lastname%}, siparisini onaylandi. Kupon Kodu : {%kupon%} , Son Kullanım Tarihi : {%sonkullanim%}.');
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES (NULL, 'Grup_OnOnay', 'Sayin {%name%} {%lastname%}, Fırsat geceklesebilmesi için gerekli satis adedine ulastigimizda tekrar bilgilendirleceksiniz.');
+ALTER TABLE `user` ADD `automail_BirthDay` BOOLEAN NOT NULL ;
+ALTER TABLE `urun` ADD INDEX ( `ID` ) ;
+ALTER TABLE `urun` ADD UNIQUE (`ID` );
+ALTER TABLE `kategori` ADD INDEX ( `ID` ) ;
+ALTER TABLE `kategori` ADD UNIQUE (`ID` ) ;
+ALTER TABLE `marka` ADD INDEX ( `ID` ) ;
+ALTER TABLE `marka` ADD UNIQUE (`ID` ) ;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Dogum_Gunu', '', '', 'Dogum Gununuz Kutlu Olsun!', 'Sayın {%name%} {%lastname%}, <br /><br />Doğum gününüzü kutlar, sevdikleriniz ile birlikte uzun ve mutlu bir ömür dileriz.<br /><br /><center><img src="{%siteAdresiFull%}/templates/system/email/dogumgunu.jpg" /></center>');
+ALTER TABLE `promosyon` ADD `tarih` DATE NOT NULL ;
+ALTER TABLE `siteConfig` ADD `promosyonAlisverisSiniri` DOUBLE NOT NULL AFTER `wm_opacity` ;
+ALTER TABLE `siteConfig` ADD `promosyonSonKullanim` INT NOT NULL AFTER `promosyonAlisverisSiniri` ;
+update promosyon set tarih = now();
+ALTER TABLE `userGroups` ADD `code` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `user` ADD `facebookID` INT NOT NULL AFTER `ID` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'Makale Yorumları', '', 'makaleYorum.php', '1', '65', '');
+delete from esantiyon;
+alter table siparis drop index randStr;

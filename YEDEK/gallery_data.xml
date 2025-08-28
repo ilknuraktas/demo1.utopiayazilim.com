@@ -1,0 +1,33 @@
+<gallery>
+	<setup path="images/kampanya/">
+		<imgWidth>450</imgWidth>
+     	<imgHeight>152</imgHeight>
+      	<thumbWidth>12</thumbWidth>
+      	<thumbHeight>12</thumbHeight>
+      	<transitionType>fade</transitionType>
+     	<thumbnailRows>1</thumbnailRows>
+		<thumbPosition>left</thumbPosition>
+		<captionPosition>bottom</captionPosition>
+		<showControls>false</showControls>
+		<thumbType>numbers</thumbType>
+		<backgroundColor>#FFFFFF</backgroundColor>
+		<imgBgColor >#FFFFFF</imgBgColor>
+		<numberColor>0xFFFFFF</numberColor>
+		<thumbActiveColor>#AAAAAA</thumbActiveColor>
+		<thumbColor>#DDDDDD</thumbColor>
+		<numberBold>false</numberBold>
+		<loopImages>true</loopImages>
+		<imageCentering>left</imageCentering>
+		<autoPlay>4</autoPlay>
+	 </setup>
+<item>
+				   <thumb>include/resize.php?path=images/urunler/resim-4.jpg&amp;width=50</thumb>
+				   <img>resim-4.jpg</img>
+				   <imgLink><![CDATA[javascript:window.location.href="";]]></imgLink>
+			   </item>
+			   <item>
+				   <thumb>include/resize.php?path=images/urunler/resim-5.jpg&amp;width=50</thumb>
+				   <img>resim-5.jpg</img>
+				   <imgLink><![CDATA[javascript:window.location.href="";]]></imgLink>
+			   </item>
+			   </gallery>

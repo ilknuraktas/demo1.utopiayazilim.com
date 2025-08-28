@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Posnet Integration for PHP by using Java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<script language=javascript>
+function findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+function OrderIDHesapla(){
+	var simdi = new Date();
+	var yil = new String(simdi.getFullYear());
+	yil = yil.slice(2, 4);
+	var ay = new String(simdi.getMonth()+1);
+	if (ay.length == 1) ay = "0"+ay;
+	var gun = new String(simdi.getDate());
+	if (gun.length == 1) gun = "0"+gun;
+	var sa = new String(simdi.getHours());
+	if (sa.length == 1) sa = "0"+sa;
+	var dk = new String(simdi.getMinutes());
+	if (dk.length == 1) dk = "0"+dk;
+	var sn = new String(simdi.getSeconds());
+	if (sn.length == 1) sn = "0"+sn;
+	
+	findObj("orderid").value = "YKBTEST_0000"
+		+yil+ay+gun+sa+dk+sn;
+
+}
+</script>
+<body onload="OrderIDHesapla()">
+<form action="posnetxmlsample.php" method="post">
+  <p align="center"><font color="#0066FF" size="6">Posnet Integration for PHP 
+    by using PHP/XML</font><br>
+    <FONT COLOR="#0066FF"><STRONG>(<A HREF="../PosnetXMLDoc/index.html">PHP Document</A>)</STRONG></FONT>
+    <br>
+  </p>
+  <table width="787" border="0" align="center">
+    <!--DWLayoutTable-->
+    <tr> 
+      <td height="78" colspan="4"><font color="#0066FF" size="5">Connection Parameters:</font></td>
+    </tr>
+    <tr> 
+      <td width="79"> HostName : </td>
+      <td width="280"> <input name="hostname" type="text" id="hostname" value="http://10.7.30.51/PosnetWebService/XML" size="50" maxlength="75"></td>
+      <td width="93">User Name :</td>
+      <td><input name="username" type="text" id="username" value="aaaaaaaa" size="8" maxlength="8"> 
+      </td>
+    </tr>
+    <tr> 
+      <td>OwnIp : </td>
+      <td><input name="ownip" type="text" id="ownip" value="10.1.4.65" size="20" maxlength="20"></td>
+      <td>Password : </td>
+      <td><input name="password" type="text" id="password" value="aaaaaaaa" size="8" maxlength="8">
+      </td>
+    </tr>
+    <tr> 
+      <td height="26">Mid :</td>
+      <td> <input name="mid" type="text" id="mid" value="6700000067" size="10" maxlength="10"></td>
+      <td><!--DWLayoutEmptyCell-->&nbsp;</td>
+      <td valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    </tr>
+    <tr> 
+      <td height="26">Tid :</td>
+      <td><input name="tid" type="text" id="tid2" value="67000067" size="8" maxlength="8"></td>
+      <td><!--DWLayoutEmptyCell-->&nbsp;</td>
+      <td width="238" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    </tr>
+  </table>
+
+  <br>
+  <table width="667" border="0" align="center">
+    <tr> 
+      <td height="69" colspan="4"> 
+<p><font color="#0066FF" size="5">Transaction 
+          Inputs :</font></p></td>
+    </tr>
+    <tr> 
+      <td width="154">CCNo : </td>
+      <td width="177"> <input name="ccno" type="text" id="ccno" value="5401225002940697" size="20" maxlength="16">
+      </td>
+      <td width="111">Extra Point : </td>
+      <td width="207"> 
+        <input name="extpoint" type="text" id="extpoint" value="000000" size="6" maxlength="6"> 
+      </td>
+    </tr>
+    <tr> 
+      <td width="154">Expire Date(YYMM) :</td>
+      <td width="177"><input name="expdate" type="text" id="expdate" value="0703" size="4" maxlength="4"> 
+      </td>
+      <td width="111">Multiple Point :</td>
+      <td width="207"> 
+        <input name="multpoint" type="text" id="multpoint" value="00" size="2" maxlength="2"> 
+      </td>
+    </tr>
+    <tr> 
+      <td width="154">CVC : </td>
+      <td width="177"><input name="cvc" type="text" id="cvc" value="XXX" size="3" maxlength="3"> 
+      </td>
+      <td width="111">Order ID : </td>
+      <td width="207"> 
+        <input name="orderid" type="text" id="orderid" size="29" maxlength="24"></td>
+    </tr>
+    <tr> 
+      <td width="154">Amount : </td>
+      <td width="177"><input name="amount" type="text" id="amount" value="3612" size="13" maxlength="13"> 
+      </td>
+      <td width="111">VFT Tran Code :</td>
+      <td width="207"><input name="vftcode" type="text" id="vftcode" VALUE="K001" size="4" maxlength="4"></td>
+    </tr>
+    <tr> 
+      <td width="154">Inst. Number :</td>
+      <td width="177"><input name="instnumber" type="text" id="instnumber" value="03" size="2" maxlength="2"></td>
+      <td width="111">&nbsp;</td>
+      <td width="207">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="154">Tran. Type : </td>
+      <td width="177"><select name="trantype" id="trantype">
+          <OPTION VALUE="Auth">Authorization</OPTION>
+          <OPTION VALUE="Capture">Capture</OPTION>
+          <OPTION VALUE="Sale">Sale</OPTION>
+          <OPTION VALUE="AuthRev">Auth Reverse</OPTION>
+          <OPTION VALUE="CaptureRev">Capture Reverse</OPTION>
+          <OPTION VALUE="SaleRev">Sale Reverse</OPTION>
+          <OPTION VALUE="PNTI">Point Inq</OPTION>
+          <OPTION VALUE="PNTU">Point Usage</OPTION>
+          <OPTION VALUE="PNTV">Point Reverse</OPTION>
+          <OPTION VALUE="VFTI">VFT Inquiry</OPTION>
+          <OPTION VALUE="VFTS">VFT Sale</OPTION>
+          <OPTION VALUE="VFTR">VFT Reverse</OPTION>
+        </select></td>
+      <td>AuthCode : </td>
+      <td><input name="authcode" type="text" id="authcode" size="6" maxlength="6"></td>
+    </tr>
+    <tr> 
+      <td width="154">Currency Code : </td>
+      <td width="177"><input name="currencycode" type="text" id="currencycode" size="2" maxlength="2" value="YT">
+        (TL/YT) </td>
+      <td>HostLogKey : </td>
+      <td><input name="hostlogkey" type="text" id="hostlogkey" size="18" maxlength="18"></td>
+    </tr>
+  </table>
+  <p align="center"> 
+    <input type="submit" name="Submit" value="Submit">
+  </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+div.multi-step {
+	border-color:#a0a5a9;							/* color of the container's rounded border */
+	background:url(../img/1/bg.png);				/* default background pattern */
+}
+div.multi-step ol > li {							/* default step decoration */
+	background-image:url(../img/1/pointer.png);
+}
+div.multi-step ol > li:first-child {
+	background:none;								/* not needed for step #1 */
+}
+div.multi-step ol > li.current {					/* the active step */
+	background-image:url(../img/1/current.png);
+}
+div.multi-step ol > li.current:first-child {		/* some different styling is needed when the active step is #1 */
+	background-position:100% 50%;
+	background-repeat:no-repeat;
+}
+div.multi-step ol > li.current + li { 				/* the next step, please pay attention to not have anything between those two LIs, which is invalid anyway */
+	background-image:url(../img/1/pointer_current.png);
+}
+div.multi-step ol > li.current .title {				/* current title text color */
+	color:#fff;
+}
+div.multi-step ol > li .wrap:before {				/* step number, background, border and text color */ 
+	background:#030e1b;
+	border-color:#fff;
+	color:#fff;
+}
+div.multi-step ol > li .title {						/* title text color */
+	color:#06c;
+}
+div.multi-step ol > li .subtitle {					/* subtitle text color */
+	color:#525c66;
+}

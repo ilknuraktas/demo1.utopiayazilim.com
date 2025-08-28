@@ -1,0 +1,41 @@
+.selectPayBlock { width: 100%; }
+.wrapSelectPay { border: 1px solid #e4e4e4; border-radius: 2px; margin-left: auto; margin-right: auto;   }
+.wrapSelectPay .title { background: #f8f8f8 none repeat scroll 0 0; border-bottom: 1px solid #e8e8e8; float: left; width: 100%; }
+.wrapSelectPay .title img { float: left; padding: 10px; }
+.wrapSelectPay .title h3 { color: #5ea526; float: left; padding-bottom: 10px; padding-top: 10px; }
+.wrapSelectPay .selectMethods { background: #fff none repeat scroll 0 0; float: left; width: 100%;  }
+.wrapSelectPay .selectMethods .payMethods { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background: #fff none repeat scroll 0 0; border-color: #f4f4f4; border-image: none; border-style: solid; border-width: 1px 1px 5px; display:inline-block; float: left; min-height: 38px; margin: 1% 1% 2px; width: 98%;  position:relative; vertical-align:middle !important;}
+.wrapSelectPay .selectMethods .payMethods .payLogo {  float: left; margin-left: 10px; margin-right:10px; margin-left:70px; width:100px; vertical-align:middle; vertical-align:middle; display:inline-block; }
+.wrapSelectPay .selectMethods .payMethods .payLogo label { display:inline-block; height:50px;  position:relative; }
+.wrapSelectPay .selectMethods .payMethods .payLogo img { max-width:100px; max-height:50px; position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;  }
+.wrapSelectPay .selectMethods .payMethods .payTitle { display: block; float: none !important; font-size:13px;  line-height:22px; padding-left: 10px; max-width: 65%; cursor:pointer; border-left:1px solid #e4e4e4; min-height:50px;  }
+.wrapSelectPay .selectMethods .payMethods .payPercent {  color: #aaa;  line-height: 37px; width: 15%; font-size:16px; font-weight:bold; text-align:left; white-space:nowrap; }
+.wrapSelectPay .selectMethods .payMethods .paySelector { background: #eee none repeat scroll 0 0; border-radius: 5px; color: #fff; cursor: pointer; display: block; float: left;  font-weight: bold; line-height: 31px; margin-right: 4px; margin-top: 4px; padding:10px 15px 5px 15px;  position:absolute; left:5px; bottom:5px; top:0px; }
+.wrapSelectPay .selectMethods .payMethods .paySelector input { padding:5px;}
+.wrapSelectPay .payFooter { background: #f6f6f6 none repeat scroll 0 0; float: left; margin-top: 6px; padding-bottom: 9px; padding-top: 9px; width: 100%; }
+.wrapSelectPay .payFooter .rulesBox { float: left; padding-left: 9px; padding-right: 9px; padding-top: 13px; }
+.wrapSelectPay .payFooter .rulesText { float: left; font-size: 12px; padding-top: 13px; width: 61%; }
+.wrapSelectPay .payFooter .rulesButtons { float: right; margin-right: 20px; }
+.wrapSelectPay .payFooter .rulesButtons a { background-attachment: scroll; background-color: #5aa726; background-image: url(../images/select_pay_arrow.png); background-position: 94% center; background-repeat: no-repeat; border-radius: 3px; color: #fff; display: block; font-size: 21px; font-weight: bold; line-height: 45px; margin-right: 4px; padding-left: 20px; padding-right: 20px; width: 85%; }
+
+@media only screen and (max-width: 1000px) {
+.wrapSelectPay .selectMethods .payMethods .payTitle { width:65%; line-height:normal;}
+}
+
+
+@media only screen and (max-width: 700px) {
+.wrapSelectPay .selectMethods .payMethods .payLogo { display:none; }
+.wrapSelectPay .selectMethods .payMethods .payPercent { clear:both; padding-left:10px;  }
+.wrapSelectPay .selectMethods .payMethods .payTitle { border:none; margin-left:70px; line-height:normal;}
+}
+
+
+
+@media only screen and (max-width: 374px) {
+
+} 

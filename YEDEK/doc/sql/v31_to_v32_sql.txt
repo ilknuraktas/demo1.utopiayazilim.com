@@ -1,0 +1,76 @@
+UPDATE `siteConfig` SET `version` = '3.2' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `urun`  ADD `download1` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `resim5`,  ADD `download2` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `download1`,  ADD `download3` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `download2`,  ADD `download4` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `download3`,  ADD `download5` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `download4`;
+ALTER TABLE `banka` ADD `bakiye` BOOLEAN NOT NULL AFTER `paymentModulURL`;
+ALTER TABLE `urun` ADD `minSiparis` INT NOT NULL AFTER `maxSatis` ;
+ALTER TABLE `siteConfig` ADD `sepetadim` BOOLEAN NOT NULL AFTER`tekCekimIndirim` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES
+(181, 0, 'Veritabanı Yedekle', 'download.png', '', 1, 210, ''),
+(182, 181, 'Veritabanı Yedekle', '', 'yedek.php', 1, 10, '');
+ALTER TABLE `siteConfig` ADD `filterFiyat` VARCHAR( 255)NOT NULL AFTER `listType` ;
+UPDATE `sablonSMS`SET`body`='Sn. {%name%} {%lastname%},{%randStr%} nolu siparisiniz kargoya teslim edilmistir.' WHERE `sablonSMS`.`ID`=5;
+UPDATE `sablonSMS`SET`body`='Sayin {%ADI%} {%SOYADI%}, siparisini onaylandi. Kupon Kodu : {%kupon%} , Son Kullanım Tarihi : {%sonkullanim%}.' WHERE `sablonSMS`.`ID`=6;
+UPDATE `sablonSMS`SET`body`='Sayin {%ADI%} {%SOYADI%}, Fırsat geceklesebilmesi için gerekli satis adedine ulastigimizda tekrar bilgilendirleceksiniz.' WHERE`sablonSMS`.`ID`=7;
+ALTER TABLE `urun` ADD `indirimyok` BOOLEAN NOT NULL AFTER `indirimde`;
+ALTER TABLE `siteConfig`  ADD `aff_active` BOOLEAN NOT NULL AFTER `gg_Vitrin`,  ADD `aff_ban` LONGTEXT NOT NULL AFTER `aff_active`,  ADD `aff_click` DOUBLE NOT NULL AFTER `aff_ban`,  ADD `aff_oran` DOUBLE NOT NULL AFTER `aff_click`,  ADD `aff_siparis` DOUBLE NOT NULL AFTER `aff_oran`;
+ALTER TABLE `siteConfig` ADD `aff_timeout` INT NOT NULL AFTER `aff_siparis` ;
+ALTER TABLE `siparis` ADD `affID` INT NOT NULL AFTER `userID`;
+ALTER TABLE `siparis` ADD `affOK` BOOLEAN NOT NULL AFTER `affID` ;
+ALTER TABLE `siteConfig` ADD `aff_min` DOUBLE NOT NULL AFTER `aff_active` ;
+ALTER TABLE `user`  ADD `aff_banka` VARCHAR(128) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `vergiDaire`,  ADD `aff_name` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `aff_banka`,  ADD `aff_iban` VARCHAR(64) NOT NULL AFTER `aff_name`;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_titleOnerilenler', 'TR', 'Sizin İçin Seçtiklerimiz');
+CREATE TABLE IF NOT EXISTS `afflog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `tekil` int(11) NOT NULL,
+  `cogul` int(11) NOT NULL,
+  `gosterim` int(11) NOT NULL,
+  `satis` int(11) NOT NULL,
+  `tutar` double NOT NULL,
+  `komisyon` double NOT NULL,
+  `kazanc` double NOT NULL,
+  `harcanan` double NOT NULL,
+  `tarih` date NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `ID` (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin5 AUTO_INCREMENT=11 ;
+
+CREATE TABLE IF NOT EXISTS `affpay` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `talep` double NOT NULL,
+  `yatan` double NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  `tarih` date NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin5 AUTO_INCREMENT=6 ;
+CREATE TABLE IF NOT EXISTS `affip` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `IP` varchar(64) NOT NULL,
+  `tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `ID` (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+ALTER TABLE `affip` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT;
+ALTER TABLE `afflog` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT;
+ALTER TABLE `affpay` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT;
+ALTER TABLE `user`  ADD `aff_web` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `vergiDaire`,  ADD `aff_not` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `aff_web`;
+ALTER TABLE `user`  ADD `aff_onay` BOOLEAN NOT NULL AFTER `vergiDaire`;
+UPDATE `lang` SET `value` = 'Kullanıcı Bilgileriniz' WHERE `lang`.`ID` = 362;
+UPDATE `lang` SET `value` = 'Kullanıcı bilgileriniz güncellenmiştir.' WHERE `lang`.`ID` = 118;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Affilate_Onay', '', 'Affilate Onayı', 'Affilate Uyeliginiz Onaylandi', 'Sayın {%name%} {%lastname%},<br><br>Affilate üyeliğiniz onaylandı. Şimdi giriş yapıp affilate kodunu kullanmaya başlayabilirsiniz. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}
+<br /><br />Bilginize,');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_affilateBasvuruAlindi', 'TR', 'Affilate başvuru talebiniz kaydedildi. Onaylandıktan sonra e-posta ile bilgilendirileceksiniz.');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '200', 'Affilate Üyeleri', '', 'affusers.php', '1', '20', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('200', '0', 'Affilate', 'user_add.png', '', '1', '75', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '200', 'Affilate Ayarları', '', 'affAyarlari.php', '1', '10', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '200', 'Affilate Ödemeleri', '', 'affOdemeleri.php', '1', '30', '');
+ALTER TABLE `siteConfig`  ADD `sepet_kdvdahil` BOOLEAN NOT NULL AFTER `aff_timeout`,  ADD `sepet_kdvharic` BOOLEAN NOT NULL AFTER `sepet_kdvdahil`,  ADD `sepet_kdv` BOOLEAN NOT NULL AFTER `sepet_kdvharic`;
+UPDATE `siteConfig` SET `sepet_kdvdahil` = '1', `sepet_kdvharic` = '1', `sepet_kdv` = '1',filterFiyat='0,100,500,1000,4000',cacheSuresi='3600' WHERE `siteConfig`.`ID` = 1;
+ALTER TABLE `siteConfig`  ADD `sepet_hizli` BOOLEAN NOT NULL AFTER `sepet_kdv`;
+ALTER TABLE `siteConfig`  ADD `aff_kural` LONGTEXT NOT NULL AFTER `aff_timeout`;
+UPDATE `lang`SET`value`='E-Posta Adresi' WHERE`lang`.`ID`=36;
+UPDATE `adminmenu` SET `Adi` = 'Affiliate Üyeleri' WHERE `adminmenu`.`ID` = 183; 
+UPDATE `adminmenu` SET `Adi` = 'Affiliate' WHERE `adminmenu`.`ID` = 200; 
+UPDATE `adminmenu` SET `Adi` = 'Affiliate Ayarları' WHERE `adminmenu`.`ID` = 201; 
+UPDATE `adminmenu` SET `Adi` = 'Affiliate Ödemeleri' WHERE `adminmenu`.`ID` = 202;

@@ -1,0 +1,19 @@
+UPDATE `siteConfig` SET `version` = '3.4' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `sepet` CHANGE `ozellik2` `ozellik2` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `sepet` CHANGE `ozellik3` `ozellik3` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `iletisim` ADD `urunID` INT NOT NULL AFTER `ID`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'Ürün Soru Gönderileri', '', 'sorucevap.php', '1', '8', '');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_form_sorunuz', 'TR', 'Sorunuz');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_soruMesaji', 'TR', 'Ürün Soru Gönderimi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_soruGonderildi', 'TR', 'Sorunuz kayedildi. En kısa sürede yanıtlanıp, sitede gözükmeye başlanacaktır. Teşekkürler.');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'N11', '', 'xmlExport.php&code=XML_N11', '1', '10', '');
+INSERT INTO `xmlexport` (`ID`, `code`, `file`, `status`, `izinliGruplar`, `data1`, `data2`, `data3`, `data4`, `data5`) VALUES (NULL, 'XML_N11', 'XML/n11.xml', '0', '', '', '', '', '', '');
+ALTER TABLE  `siteConfig` CHANGE  `aff_oran`  `aff_oran` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE  `siteConfig` CHANGE  `aff_siparis`  `aff_siparis` VARCHAR( 64 ) NOT NULL;
+ALTER TABLE `siteConfig`  ADD `gg_username` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_DukkanNo`,  ADD `gg_password` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_username`;
+ALTER TABLE `siteConfig`  ADD `gg_api` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_password`,  ADD `gg_secret` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_api`;
+ALTER TABLE `kategori`  ADD `yc_Kod` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_Kod`,  ADD `data1` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `yc_Kod`,  ADD `data2` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data1`,  ADD `data3` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data2`,  ADD `data4` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data3`,  ADD `data5` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data4`;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_titletumFirsatlar', 'TR', 'Tüm Fırsatlar');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '168', 'Teknik İşlemler', '', 'teknik.php', '1', '20', '');
+UPDATE `lang` SET `value` = 'Yorum / Soru ekleyebilmek için üye olmanız gerekmektedir.' WHERE `lang`.`ID` =114;
+

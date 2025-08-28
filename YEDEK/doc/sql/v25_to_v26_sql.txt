@@ -1,0 +1,66 @@
+update adminmenu set Aktif=1,SiteTipi='' where Adi like 'Metro XML';
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', '7/24 Spor XML', '', 'XML/xml_724spor.php&y=e', '1', '5', '');
+ALTER TABLE `sepet` ADD `urunName` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `urunID` ;
+ALTER TABLE `siparis` ADD `toplamTutarTL` DOUBLE NOT NULL AFTER `durum`;
+ALTER TABLE `siparis` ADD `kdvTutar` DOUBLE NOT NULL AFTER `durum` ;
+ALTER TABLE `siparis` ADD `toplamKDVDahil` DOUBLE NOT NULL AFTER `durum` ,
+ADD `toplamKDVHaric` DOUBLE NOT NULL AFTER `toplamKDVDahil` ,
+ADD `toplamKDV` DOUBLE NOT NULL AFTER `toplamKDVHaric` ,
+ADD `toplamIndirimDahil` DOUBLE NOT NULL AFTER `kdvTutar` ;
+ALTER TABLE `siparis` ADD `kargoTutar` DOUBLE NOT NULL AFTER `kdvTutar` ;
+ALTER TABLE `siparis` ADD `toplamKargoDahil` DOUBLE NOT NULL AFTER `kargoTutar` ;
+ALTER TABLE `siparis` ADD `havaleIndirimOran` DOUBLE NOT NULL AFTER `toplamKargoDahil` ,
+ADD `tekCekimIndirimOran` DOUBLE NOT NULL AFTER `havaleIndirimOran` ,
+ADD `havaleIndirimiIle` DOUBLE NOT NULL AFTER `tekCekimIndirimOran` ,
+ADD `tekCekimIndirimiIle` DOUBLE NOT NULL AFTER `havaleIndirimiIle` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'HepsiBurada', '', 'xmlExport.php&code=XML_Hb', '1', '25', '');
+INSERT INTO `xmlexport` (`ID`, `code`, `file`, `status`, `izinliGruplar`, `data1`, `data2`, `data3`, `data4`, `data5`) VALUES (9, 'XML_Hb', 'XML/hb.xml', '0', '', '', '', '', '', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'Fırsat bu Fırsat', '', 'xmlExport.php&code=XML_Fbf', '1', '23', '');
+INSERT INTO `xmlexport` (`ID`, `code`, `file`, `status`, `izinliGruplar`, `data1`, `data2`, `data3`, `data4`, `data5`) VALUES (10, 'XML_Fbf', 'XML/fbf.xml', '0', '', '', '', '', '', '');
+ALTER TABLE `xmlexport` ADD PRIMARY KEY ( `ID` );
+ALTER TABLE `xmlexport` CHANGE `ID` `ID` INT( 11 ) NOT NULL AUTO_INCREMENT;
+CREATE TABLE `sigorta` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`start` DOUBLE NOT NULL ,
+`finish` DOUBLE NOT NULL ,
+`tl` DOUBLE NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `urun` ADD `sigorta` BOOLEAN NOT NULL AFTER `yeni` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Sigorta Ücretleri', '', 'sigorta.php', '1', '95', '');
+CREATE TABLE `bannerkategori` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`title` VARCHAR( 255 ) NOT NULL ,
+`catIDs` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`body` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = InnoDB;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '19', 'Kategori Vitrin', '', 'bannerKategori.php', '1', '70', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '19', 'Promosyon Teklif Ayarları', '', 'promosyonTeklif.php', '1', '80', '');
+ALTER TABLE `siteConfig`  ADD `promosyonTeklifSuresi` INT NOT NULL AFTER `puanAktif`,  ADD `promosyonTeklifTutari` DOUBLE NOT NULL AFTER `promosyonTeklifSuresi`,  ADD `promosyonTeklifOrani` DOUBLE NOT NULL AFTER `promosyonTeklifTutari`,  ADD `promosyonTeklifHarfSayisi` INT NOT NULL AFTER `promosyonTeklifOrani`,  ADD `promosyonTeklifAktif` BOOLEAN NOT NULL AFTER `promosyonTeklifHarfSayisi`;
+UPDATE `siteConfig` SET `promosyonTeklifHarfSayisi` = '5' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `siteConfig` ADD `puanTekSefer` INT NOT NULL AFTER `puanMin` ;
+ALTER TABLE `urun` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT ;
+CREATE TABLE `kampanyaLog` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`kampanyaID` INT NOT NULL ,
+`userID` INT NOT NULL ,
+`tarih` INT NOT NULL ,
+`harcananPuan` INT NOT NULL 
+) ENGINE = InnoDB;
+CREATE TABLE `kampanya` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`kelime` VARCHAR( 255 ) NOT NULL ,
+`startDate` DATETIME NOT NULL ,
+`finishDate` DATETIME NOT NULL ,
+`puan` INT NOT NULL 
+) ENGINE = InnoDB;
+INSERT INTO `adminmenu` ( `ID` , `parentID` , `Adi` , `Icon` , `Dosya` , `Aktif` , `Sira` , `SiteTipi` ) 
+VALUES (
+NULL , '19', 'Kampanya Puanları', '', 'kampanya.php', '1', '90', ''
+);
+ALTER TABLE `kampanyaLog` CHANGE `tarih` `tarih` DATETIME NOT NULL ;
+ALTER TABLE `siteConfig` ADD `puanSepetLimit` DOUBLE NOT NULL AFTER `puanMin` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'Tüm Fırsatlar', '', 'xmlExport.php&code=XML_Tf', '1', '38', '');
+INSERT INTO `xmlexport` (`ID`, `code`, `file`, `status`, `izinliGruplar`, `data1`, `data2`, `data3`, `data4`, `data5`) VALUES (NULL, 'XML_Tf', 'XML/tf.xml', '0', '', '', '', '', '', '');
+ALTER TABLE `kategori` ADD `sigorta` BOOL NOT NULL AFTER `PCToplama` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Toplu Fiyat Güncelleme', '', 'topluFiyatGuncelleme.php&y=e', '1', '75', '');
+UPDATE `adminmenu` SET `Adi` = 'İndirim Tanımlama' WHERE `adminmenu`.`ID` =124 LIMIT 1 ;

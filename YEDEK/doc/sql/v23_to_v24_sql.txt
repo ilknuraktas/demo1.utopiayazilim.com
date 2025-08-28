@@ -1,0 +1,79 @@
+ALTER TABLE `urun` CHANGE `detay` `detay` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `urun` ADD `minSatis` INT NOT NULL AFTER `xmlUpdateStatus` ,
+ADD `prefix` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `minSatis` ;
+ALTER TABLE `sepet` ADD `prefix` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `durum` ;
+ALTER TABLE `sepet` CHANGE `tarih` `tarih` DATETIME NOT NULL;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (null, 'Grup_OnOnay', '', '', 'Siparişiniz Elimize Ulaştı', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz kaydedildi. Fırsat gerçekleşebilmesi için gerekli satış adedine ulaştığımızda  ulaşıldığında kredi kartından sipariş tutarı tahsil edilecek ve kupon bilgileriniz aynı e-posta adresinde gönderilecektir.<br /><br />Sepet Bilgileriniz :<br />\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br><br>\r\n<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />\r\n<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,'),
+(null, 'Grup_Onay', '', '', 'Kupon Bilgileriniz', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz tamamlandı. Fırsat minimum satış adedini geçtiğinden kuponunuz aktif ve kullanılabilir durumdadır.<br><br>\r\nKupon Kodu : {%kupon%}\r\n<br /><br />Sepet Bilgileriniz :<br />\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br><br>\r\n<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />\r\n<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,');
+ALTER TABLE `siteConfig` ADD `minSiparis` DOUBLE NOT NULL AFTER `puanAktif` ;
+CREATE TABLE `kargofirma` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '15', 'Kargo Firmaları', '', 'kargofirma.php', '1', '5');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '15', 'Teslimat Ayarları', '', 'teslimat.php', '1', '40');
+ALTER TABLE `kargoDesi` ADD `firmaID` INT NOT NULL AFTER `ID` ;
+INSERT INTO `kargofirma` (`ID`, `name`) VALUES ('0', 'Tüm Firmalar');
+UPDATE `kargofirma` SET `ID` = '0' WHERE `kargofirma`.`name` ='Tüm Firmalar' LIMIT 1 ;
+ALTER TABLE `siparis` ADD `kargoFirmaID` INT NOT NULL AFTER `city2`;
+CREATE TABLE `teslimat` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`degisimYuzde` DOUBLE NOT NULL ,
+`degisimYTL` DOUBLE NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `siparis` ADD `teslimatID` INT NOT NULL AFTER `kargoTarih` ,
+ADD `teslimatFark` DOUBLE NOT NULL AFTER `teslimatID` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '10', 'Grup Kupon Listesi', '', 'grupListe.php', '1', '50');
+ALTER TABLE `urun` CHANGE `data1` `data1` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `urun` CHANGE `data2` `data2` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `urun` CHANGE `data3` `data3` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `urun` CHANGE `data4` `data4` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `urun` CHANGE `data5` `data5` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+CREATE TABLE `filitre` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`baslik` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`icerik` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+CREATE TABLE `filitredetay` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`baslik` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`resim` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`icerik` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'Filitre Başlıkları', '', 'filitre.php', '1', '40');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'Filitre Detay Sayfaları', '', 'filitredetay.php', '0', '50');
+UPDATE `adminmenu` SET `Sira` = '60' WHERE `adminmenu`.`ID` =110 LIMIT 1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'Ürün Filitre Yönetimi', '', 'urunFilitre.php', '1', '14');
+ALTER TABLE `urun` ADD `filitre` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `prefix` ;
+ALTER TABLE `kategori` ADD `filterCache` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `hit` ;
+ALTER TABLE `kargofirma` ADD `ucretsiz` BOOL NOT NULL ,
+ADD `kurye` BOOL NOT NULL ;
+ALTER TABLE `urun` ADD `tarihFirsatOK` DATETIME NOT NULL AFTER `tarih` ;
+ALTER TABLE `teslimat` ADD `seq` INT NOT NULL ;
+CREATE TABLE `topluindirim` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`kategori` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`marka` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`filitre` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `topluindirim` ADD `baslik` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `ID` ;
+ALTER TABLE `topluindirim` ADD `indirimOran` DOUBLE NOT NULL ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'Toplu İndirim Tanımlama', '', 'topluIndirim.php', '1', '70');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'Sistem Toplama Özellikleri', '', 'pcToplama.php', '1', '100');
+CREATE TABLE `useraddress` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`userID` INT NOT NULL ,
+`address` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`semt` INT NOT NULL ,
+`city` INT NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `useraddress` ADD `baslik` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `userID` ;
+ALTER TABLE `siparis` ADD `addressID` INT NOT NULL AFTER `address` ;
+ALTER TABLE `siparis` ADD `addressID2` INT NOT NULL AFTER `address2` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Arena XML', '', 'XML/xml_arena.php&y=e', '1', '5');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Bitkisel Depo XML', '', 'XML/xml_bitkiseldepo.php&y=e', '1', '15');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'PetsRus XML', '', 'XML/xml_petsrus.php&y=e', '1', '27');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'İlgili Ürünler Yönetimi', '', 'urunilgiliurunler.php', '1', '15');
+ALTER TABLE `filitre` CHANGE `icerik` `icerik` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+UPDATE `kargofirma` SET `ID` = '0' WHERE `kargofirma`.`name` like 'Tüm Firmalar';

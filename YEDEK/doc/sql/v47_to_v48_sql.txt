@@ -1,0 +1,12 @@
+UPDATE `siteConfig` SET `version` = '4.8' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `siparis` ADD INDEX(`randStr`);
+ALTER TABLE `sepet` ADD INDEX(`randStr`);
+ALTER TABLE `urun` ADD INDEX(`catID`);
+ALTER TABLE `urun` ADD INDEX(`markaID`);
+ALTER TABLE `urunvarstok` ADD INDEX(`urunID`);
+ALTER TABLE `urunvars` ADD INDEX(`urunID`);
+update siteConfig set havaleIndirim = 0;
+CREATE TABLE `config` ( `ID` INT NOT NULL AUTO_INCREMENT , `ckey` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL , `cvalue` TEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL , PRIMARY KEY (`ID`)) ENGINE = MyISAM;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '168', 'Dosya Yöneticisi', '', 'secureshare/CKEditor/filemanager/index.html', '1', '50', 'newpage');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '10', 'Tüm Siparişler', '', 'tumSiparisler.php', '1', '19', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '34', 'Kullanıcı Adresleri', '', 'userAddress.php', '1', '11', '');

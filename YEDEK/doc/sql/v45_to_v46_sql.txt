@@ -1,0 +1,8 @@
+UPDATE `siteConfig` SET `version` = '4.6' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `iletisimcevap` CHANGE `cevap` `cevap` TEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '5', 'Çoklu Çapraz Promosyon', '', 'multiesantiyon.php', '1', '41', '');
+ALTER TABLE `siteConfig` CHANGE `splash_url` `splash_url` VARCHAR(256) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '168', 'URL Yönlendirme', '', 'yonlendir.php', '1', '40', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '80', 'SMS Raporları', '', 'smsrapor.php', '1', '140', '');
+INSERT INTO `odemeDurum` (`ID`, `title`, `mailCode`) VALUES (0, 'Sipariş Aşamasında', '');
+update odemeDurum set ID=0 where title like 'Sipariş Aşamasında';

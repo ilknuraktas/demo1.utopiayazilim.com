@@ -1,0 +1,45 @@
+ALTER TABLE `urunYorum` ADD `detay` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Online Tedarik XML', '', 'XML/xml_onlinetedarik.php&y=e', '1', '75');
+UPDATE `kargofirma` SET `ID` = '0' WHERE `kargofirma`.`name` like 'Tüm Firmalar';
+ALTER TABLE `bankaVade` ADD `minfiyat` DOUBLE NOT NULL;
+ALTER TABLE `user` ADD `isAdmin` BOOL NOT NULL ,
+ADD `isMod` BOOL NOT NULL ,
+ADD `accessTo` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `adminmenu` ADD `SiteTipi` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `Sira` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Grup Ürün Kupon Girişleri', '', 'grupKupon.php', '1', '110', 'GRUPSATIS');
+CREATE TABLE `grupkupon` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`urunID` INT NOT NULL ,
+`kuponlist` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+UPDATE `adminmenu` SET `Aktif` = '0' WHERE `adminmenu`.`ID` =116 LIMIT 1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'Aral Game XML', '', 'XML/xml_aralgame.php&y=e', '0', '5', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'Gold Store XML', '', 'XML/xml_goldstore.php&y=e', '1', '43', '');
+ALTER TABLE `urun` ADD `bakiyeOdeme` BOOL NOT NULL AFTER `data5` ;
+ALTER TABLE `userGroups` ADD `bakiyeEkleyebilir` BOOL NOT NULL AFTER `urunEkleyebilir` ;
+ALTER TABLE `user` ADD `bakiye` DOUBLE NOT NULL AFTER `data5` ;
+ALTER TABLE `siteConfig` ADD `cacheSuresi` INT NOT NULL AFTER `seoURL` ;
+UPDATE `adminmenu` SET `Adi` = 'Gunboyu XML',`Dosya`='XML/xml_gunboyu.php&y=e'  WHERE `adminmenu`.`ID` =98 LIMIT 1 ;
+ALTER TABLE `siparis` ADD `bakiyeOdeme` BOOL NOT NULL AFTER `data5` ;
+ALTER TABLE `siparis` ADD `bakiyeileOdeme` BOOL NOT NULL AFTER `bakiyeOdeme`;
+ALTER TABLE `ilceler` CHANGE `ID` `ID` INT( 5 ) NOT NULL AUTO_INCREMENT ;
+INSERT INTO `banka` VALUES(null, 'Kredi Bakiyesi ile Ödeme', '', '', '', '', '', '', 0, 0, '', '', '', '', '', 'Kredi bakiyem ile ödemek istiyorum.', '', 'Ödemeniz onaylandı. Teşekkür ederiz.', 0, 0, 'include/payment_kredi.php', 0, 1);
+INSERT INTO `banka` VALUES(null, 'Promosyon Tutarı Siparişi Tamamlama', '', '', '', '', '', '', 0, 0, '', '', '', '', '', 'Promosyon tutarım sipariş tutarını karşılıyor. Siparişi tamamlamak istiyorum.', '', 'Ödemeniz onaylandı. Teşekkür ederiz.', 0, 0, 'include/payment_promosyon.php', 0, 1);
+CREATE TABLE `iletisim` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`namelastname` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`ceptel` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`email` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`subject` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`message` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`answer` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`status` BOOL NOT NULL 
+) ENGINE = MYISAM ;
+ALTER TABLE `iletisim` ADD `tarih` DATETIME NOT NULL ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'İletişim Gönderileri', '', 'iletisim.php', '1', '5', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'ShopPHP XML', '', 'XML/xml_shopphp.php&y=e', '1', '97', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '34', 'Profilim', '', 'profile.php', '0', '15', '');
+UPDATE `adminmenu` SET `Aktif` = '0' WHERE `adminmenu`.`ID` =120 LIMIT 1 ;
+ALTER TABLE `sepet` CHANGE `ozellik4` `ozellik4` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+CHANGE `ozellik5` `ozellik5` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+update adminmenu set Aktif=1,SiteTipi='' where Adi like 'Metro XML';

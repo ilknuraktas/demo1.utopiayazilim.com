@@ -1,0 +1,36 @@
+/* Tab Menu CSS */
+#tabs1 {
+	float:left;
+	width:100%;
+	xbackground:#F4F7FB;
+	font-size:93%;
+	line-height:normal;
+	border-bottom:1px solid #BCD2E6;
+}
+#tabs1 ul {
+	margin:0;
+	padding:5px 10px 0 20px;
+	list-style:none;
+}
+#tabs1 li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+#tabs1 a {
+	float:left;
+	background:url("../images/tableft_blue.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 4px;
+	text-decoration:none;
+}
+#tabs1 a span {
+	float:left;
+	display:block;
+	background:url("../images/tabright_blue.gif") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#627EB7;
+}
+#tabs1 a span {float:none;}
+#tabData , .tabData { padding:20px; padding-top:0px; }
+/* Tabe Menu CSS */

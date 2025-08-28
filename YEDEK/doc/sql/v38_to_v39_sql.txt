@@ -1,0 +1,96 @@
+UPDATE `siteConfig` SET `version` = '3.9' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `siteConfig` ADD `kargo_upsID` INT NOT NULL AFTER `kargo_mngSifre` ,
+ADD `kargo_upsMusteriNo` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_upsID` ,
+ADD `kargo_upsKullanici` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_upsMusteriNo` ,
+ADD `kargo_upsSifre` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargo_upsKullanici` ;
+ALTER TABLE `seolinks` ADD `kategori` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `urun` ,
+ADD `redirect` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kategori` ;
+CREATE TABLE `xmlout` (
+ `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`code` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`xml` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`active` BOOLEAN NOT NULL 
+) ENGINE = MyISAM;
+ALTER TABLE `xmlout` ADD `xmlheader` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `code` ,
+ADD `xmlfooter` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `xmlheader` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '74', 'Kişisel XML Çıktı', '', 'xmlout.php', '1', '30', '');
+CREATE TABLE `langs` (
+ `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`code` VARCHAR( 8 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`name` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM ;
+INSERT INTO `adminmenu` (
+`ID` ,
+`parentID` ,
+`Adi` ,
+`Icon` ,
+`Dosya` ,
+`Aktif` ,
+`Sira` ,
+`SiteTipi` 
+)
+VALUES (
+ null, '1', 'Dil Seçenekleri', '', 'langs.php', '0', '51', ''
+);
+
+CREATE TABLE `var` (
+ `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`tanim` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`ozellik` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`ozellikdetay` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = MYISAM;
+
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Hazır Varyasyonlar', '', 'varyasyon.php', '1', '12', '');
+ALTER TABLE `urun`  ADD `varID1` INT NOT NULL AFTER `anasayfa`,  ADD `varID2` INT NOT NULL AFTER `varID1`,  ADD `varID3` INT NOT NULL AFTER `varID2`;
+
+ALTER TABLE `siteConfig` ADD `kargoSuratID` INT NOT NULL AFTER `kargo_upsSifre` ,
+ADD `kargoSuratApiName` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargoSuratID` ,
+ADD `kargoSuratApiPassword` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargoSuratApiName` ,
+ADD `kargoSuratKapidaUsername` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargoSuratApiPassword` ,
+ADD `kargoSuratKapidaPassword` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `kargoSuratKapidaUsername` ;
+
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_tr', 'TR', 'Türkçe');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitBaslik', 'TR', 'Henüz Üye Değil misiniz?');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kayitAciklama', 'TR', 'Tek adımda kolayca üye olabilirsiniz ...');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_girisYap', 'TR', 'Üye Girişi yapın');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_epostaAdresiniz', 'TR', 'E-posta Adresiniz');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sifreniz', 'TR', 'Şifreniz');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_guvenlik', 'TR', 'Güvenlik');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kisiselBilgiler', 'TR', 'Kişisel Bilgiler');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_iletisimBilgileri', 'TR', 'İletisim Bilgileri');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_vergiBilgileri', 'TR', 'Vergi Bilgileri');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_teslimatAdresi', 'TR', 'Teslimat Adresi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_faturaAdresimFarkli', 'TR', 'Fatura Adresim Farklı');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_kargoSecenegi', 'TR', 'Kargo Seçeneği');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_hediyeindirim', 'TR', 'Hediye / İndirim');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_dolu', 'TR', 'DOLU');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepetiniziOnaylayin', 'TR', 'Sepetinizi Onaylayın');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_teslimatBilgileriniziGirin', 'TR', 'Teslimat Bilgilerinizi Girin');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemeTipiSecimiYapin', 'TR', 'Ödeme Tipi Seçimi Yapın');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemeBilgileriniGirin', 'TR', 'Ödeme bilgilerini girin');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemenizTamamlandi', 'TR', 'Ödemeniz tamamlandı');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_genelDegerlendirme', 'TR', 'Genel Değerlendirme');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_urunKalitesi', 'TR', 'Ürün Kalitesi');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_urunFiyati', 'TR', 'Ürün Fiyatı');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_urunMarkasi', 'TR', 'Ürün Markası');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_garantiDestek', 'TR', 'Garanti / Destek');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_tumDepartmanlar', 'TR', 'Tüm Departmanlar');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_odemeBilgileri', 'TR', 'Ödeme Bilgileri');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_taksitTutari', 'TR', 'Taksit tutarı');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_toplam', 'TR', 'Toplam');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_urunSiparislerim', 'TR', 'Ürünlerime Gelen Siparişler');
+
+ALTER TABLE `urun` ADD `resim6` VARCHAR(32) NOT NULL AFTER `resim5`, ADD `resim7` VARCHAR(32) NOT NULL AFTER `resim6`, ADD `resim8` VARCHAR(32) NOT NULL AFTER `resim7`, ADD `resim9` VARCHAR(32) NOT NULL AFTER `resim8`, ADD `resim10` VARCHAR(32) NOT NULL AFTER `resim9`;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES ('0', '_lang_form_firmaUnvani', 'TR', 'Firma Ünvanı');
+ALTER TABLE `siparis` ADD `firmaUnvani` VARCHAR(64) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `tckNo`;
+
+INSERT INTO `xmlout` (`ID`, `code`, `xmlheader`, `xmlfooter`, `xml`, `active`) VALUES
+(1, 'SanalPazar', '<xml>', '</xml>', '<Products>\r\n<Product_id>{%URUN_NO%}</Product_id>\r\n<Name>{%DB_NAME%}</Name>\r\n<SubName>En Uygun Fiyat </SubName>\r\n<Category_Tree>{%KATEGORI_ADI%}</Category_Tree>\r\n<Price>{%URUN_FIYAT_KDV_DAHIL%}</Price>\r\n<CurrencyType>TL</CurrencyType>\r\n<Stock>{%STOK%}</Stock>\r\n<Image1>http://www.SITEADI.com/images/urunler/{%DB_RESIM%}</Image1>\r\n<Description>{%STOKLAR%}{%DB_DETAY%}</Description>\r\n</Products>', 1);
+
+
+
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (null, 'Siparis_Bildirimi_Marka', '', '', 'Yeni Sipariş Bildirimi', 'Markanıza yeni bir sipariş talebi var.<br /><br />Ürün Bilgileri :\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br /><br />\r\n.');
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES (NULL, 'Kullanici_Bilgileri', 'Sayın {%name%} {%lastname%}, Kullanici Adi : {%username%} , Yeni Sifre : {%password%} '); 
+
+UPDATE sablonEmail SET `body` = 'Sayın {%name%} {%lastname%},<br><br>Sitemize üyeliğiniz onaylanmıştır. Şimdi giriş yapıp alışverişe başlayabilirsiniz. <br><br>Kullanıcı Adı : {%username%}, <br /><br />Bilginize,' WHERE `sablonEmail`.`code` like 'Kullanici_Onay'; 
+

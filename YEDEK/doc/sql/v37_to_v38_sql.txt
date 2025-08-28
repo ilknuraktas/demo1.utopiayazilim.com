@@ -1,0 +1,28 @@
+UPDATE `siteConfig` SET `version` = '3.8' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `sms` ADD `ceptel` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `sendToOrder` BOOLEAN NOT NULL ;
+update lang set value='Sipariş Sözleşmesi' where lang.key = '_lang_titleSozlesme';
+ALTER TABLE `topluindirim` ADD `mail` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+ADD `urun` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `bankaVade` ADD `plus` INT NOT NULL AFTER `ay` ;
+ALTER TABLE `stats` ADD `data1` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `v` ;
+ALTER TABLE `stats` ADD `data2` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data1`; 
+ALTER TABLE `urun` ADD `onsiparis` BOOLEAN NOT NULL AFTER `kuponFirmaData` ,
+ADD `onsiparisinfo` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `onsiparis` ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_onsiparis', 'TR', 'Ürün stoklarımızda bulunmamaktadır. Siparişiniz stoklara girdiğinde, öncelikli olarak gönderilecektir. ');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_onsiparisSTR', 'TR', '(* Ön Sipariştir)');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sorunuz', 'TR', '<a href="page.php?act=iletisim&urunID={%DB_ID%}">Sorunuz</a>');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sorunuzMesaj', 'TR', 'Ürün hakkında bilgi talep ediyorum.');
+CREATE TABLE `kombine` (
+ `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`marka` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`kategori` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`urun` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`indirim` DOUBLE NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `kombine` ADD `tanim` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `ID` ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Kombine Promosyon', '', 'kombine.php', '1', '40', '');
+ALTER TABLE `siteConfig`  ADD `twitter_ckey` VARCHAR(64) NOT NULL AFTER `facebook_secret`,  ADD `twitter_csecret` VARCHAR(64) NOT NULL AFTER `twitter_ckey`,  ADD `twitter_akey` VARCHAR(64) NOT NULL AFTER `twitter_csecret`,  ADD `twitter_asecret` VARCHAR(64) NOT NULL AFTER `twitter_akey`;
+ALTER TABLE `sepet` ADD `ucretsiz` BOOLEAN NOT NULL AFTER `kdv` ;
+ALTER TABLE `siteConfig` ADD `ucretsizurun` BOOLEAN NOT NULL ,ADD `ucretsizsayi` SMALLINT NOT NULL ;
+UPDATE `adminmenu` SET `Sira` = '30' WHERE `adminmenu`.`ID` = 146; 

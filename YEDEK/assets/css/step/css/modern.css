@@ -1,0 +1,190 @@
+div.multi-step {
+	border-style:solid;
+	border-width:4px;
+	xxborder-radius:8px;
+	display:block;
+	font-size:1em;
+	clear:both;
+}
+div.multi-step ol {
+	display:block;
+	margin:0;
+	padding:0;
+	overflow:hidden;				/* this is needed, to contain the floats */
+	position:relative;				/* position parent for the backgrounds */
+}
+div.multi-step ol > li {
+	display:block;
+	float:left;
+	list-style:none;				/* the default list numbers are not really usefull when the LIs are floated */
+	margin:0;
+	padding:0;
+}
+div.multi-step ol > li:last-child .bg {
+	border-radius:0 8px 8px 0;		/* we need to round those corners, otherwise the background will show over the rounded border */
+}
+div.multi-step ol > li:first-child .bg {
+	border-radius:8px 0 0 8px;
+	background:none;
+}
+div.multi-step ol > li:first-child p {
+	margin-left:-20px;
+}
+div.multi-step ol > li.current p,
+div.multi-step ol > li.current .wrap,
+div.multi-step ol > li.current ~ li .wrap {
+	opacity:1;
+	filter:alpha(opacity=100);		/* this is for IE 8 */
+}
+div.multi-step ol > li .bg {		/* cannot really use the LI for the background, since they might all have different heights */
+	background-position:0 50%;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+div.multi-step ol > li .num {
+	display:inline-block;
+	vertical-align:top;
+	position:absolute;
+	top:4px;
+	left:20px;
+	border-style:solid;
+	border-width:2px;
+	border-radius:50%;
+	width:24px;
+	height:24px;
+	line-height:22px;
+	font-size:0.8em;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+}
+div.multi-step ol > li .wrap {
+	min-height:20px;
+	padding:8px 8px 8px 22px;
+	position:relative;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+div.multi-step ol > li:first-child .num {
+	left:4px;
+}
+div.multi-step ol > li:first-child .wrap {
+	padding-left:38px;
+}
+div.multi-step ol > li p {
+	margin:0;
+}
+div.multi-step ol > li .title {
+	font-size:1.2em;
+	font-weight:bolder;
+	line-height:1;
+}
+div.multi-step ol > li .subtitle {
+	font-size:0.8em;
+	line-height:1.2;
+	margin-top:0.4em;
+}
+
+
+
+/* specific widths are needed for each step (LI) since they are floated inside the container (OL)
+   the same width is assigned to the div.bg too, since it is absolutely positioned, relative to the OL
+   you should not really need less than three or more than five steps! */
+div.multi-step.three-steps ol > li,
+div.multi-step.three-steps ol > li .bg {
+	width:34%;
+}
+div.multi-step.three-steps ol > li:first-child,
+div.multi-step.three-steps ol > li:first-child .bg {
+	width:32%;						/* the computed (rounded) widths sometimes don't fit, as in my demo page */
+	width:31.9%;					/* a .1 percent less will keep the items in a single row, most of the time */
+}
+
+div.multi-step.four-steps ol > li,
+div.multi-step.four-steps ol > li .bg {
+	width:26%;
+}
+div.multi-step.four-steps ol > li:first-child,
+div.multi-step.four-steps ol > li:first-child .bg {
+	width:22%;
+}
+
+div.multi-step.five-steps ol > li,
+div.multi-step.five-steps ol > li .bg {
+	width:20%;
+}
+
+
+/* IE 8 fixes */
+@media \0screen {
+	div.multi-step ol > li .num {
+		border-width:0;
+		top:6px;
+		left:22px;
+	}
+	div.multi-step ol > li:first-child .num {
+		left:6px;
+	}
+}
+
+
+/* IE 7 fixes */
+@media screen\9 {
+	div.multi-step ol > li .num {
+		border-width:0;
+		top:6px;
+		left:22px;
+	}
+	div.multi-step ol > li:first-child .num {
+		left:6px;
+	}
+}
+
+div.multi-step {
+	border-color:#81c5e8;							/* color of the container's rounded border */
+	xxbackground:url(../img/3/bg.png);				/* default background pattern */
+	background-color:#266796;
+}
+div.multi-step ol > li {							/* default step decoration */
+	xxbackground-image:url(../img/3/pointer.png);
+	background-color:#266796;
+}
+div.multi-step ol > li:first-child {
+	background:none;								/* not needed for step #1 */
+}
+div.multi-step ol > li.current {					/* the active step */
+	xxbackground-image:url(../img/3/current.png);
+	background-color:#81c5e8;
+}
+
+div.multi-step ol > li.current .title {				/* current title text color */
+	color:#fff;
+}
+div.multi-step ol > li.current .wrap:before {		/* current num background color */
+}
+div.multi-step ol > li .wrap:before {				/* step number, background, border and text color */ 
+	border-color:#fff;
+	color:#fff;
+}
+div.multi-step ol > li .title {						/* title text color */
+	color:#fff;
+}
+div.multi-step ol > li .subtitle {					/* subtitle text color */
+	color:#fff;
+	white-space:nowrap;
+}
+
+
+
+
+/* Alýþveriþ Sýrasý */
+div.multi-step { margin-bottom:10px; background-color:#f9f9f9; border:none; }
+div.multi-step ol > li.current { background-color:#90BE00; border-top:8px solid #90BE00; border-bottom:8px solid #90BE00; color:white; }
+div.multi-step ol > li.current .title, div.multi-step ol > li.current .subtitle { color:#fff; }
+div.multi-step ol > li .title {  color:#555;  }
+div.multi-step ol > li { border-top:8px solid white; border-bottom:8px solid white;  background-color: #f9f9f9;}
+div.multi-step ol > li .subtitle { color:#555;  }
+div.multi-step ol > li .wrap { }
+/* Alýþveriþ Sýrasý */

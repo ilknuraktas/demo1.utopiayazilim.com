@@ -1,0 +1,103 @@
+#mod_FrontKirala {
+    clear: both;
+    display: table;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: -75px;
+    z-index: 9999;
+    position: relative;
+}
+
+#mod_FrontKirala input[type='text'], #mod_FrontKirala input[type='date'], #mod_FrontKirala input[type='email'], #mod_FrontKirala input[type='password'], #mod_FrontKirala input[type='number'], #mod_FrontKirala input:not([type]), #mod_FrontKirala textarea, #mod_FrontKirala select {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    width: 100% !important;
+    height: 44px;
+    padding: 11px 8px 8px;
+    color: #333333;
+    background-color: white;
+    color: #fff !important;
+    border: 1px solid #dddddd;
+
+}
+
+#mod_FrontKirala #rentCity, #mod_FrontKirala #rentDate, #mod_FrontKirala #sizeSelector {
+    padding: 4px 8px 4px;
+    height: 30px;
+    font-size: 11px;
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, .44);
+}
+
+#mod_FrontKirala select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #fff url(../images/selectArrow.png) no-repeat 96% center;
+    padding-right: 30px;
+    padding: 0px 15px !important;
+}
+
+.urunSecimTableKira tbody {
+    width: 50%;
+    display: block;
+}
+.urunSecimTableKira tr {
+    line-height: 35px;
+    display: block;
+    width: 100%;
+}
+
+.urunSecimTableKira tr td {
+    display: block;
+}
+
+.urunSecimTableKira tr td select, .urunSecimTableKira tr td input {
+    width: 100%!important;
+    border-radius: 2px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    padding: 4px 15px!important;
+}
+
+.kira-control{
+    display: flex;
+}
+
+.kira-control div {
+    display: flex;
+    padding-right: 10px;
+}
+
+.kira-control div  input{
+    display: none!important;
+}
+
+.kira-control div label:before{
+    display: inline-block;
+    font: normal normal normal 1px FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f10c";
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    margin-right: 5px;
+ }
+
+.kira-control div  input[type=radio]:checked + label:before{
+    content: "\f111";
+    color: #bf087f;
+}

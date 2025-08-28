@@ -1,0 +1,57 @@
+UPDATE `siteConfig` SET `version` = '3.7' WHERE `siteConfig`.`ID` =1;
+ALTER TABLE `kategori` ADD `ckar` DOUBLE NOT NULL AFTER `kar` ,ADD `taksit` INT NOT NULL AFTER `ckar` ;
+ALTER TABLE `siteConfig` ADD `useAjaxPager` BOOLEAN NOT NULL AFTER `wm_opacity` ;
+update lang set value='Teslimat' where `key` like '_lang_form_teslimat';
+ALTER TABLE `sepet` CHANGE `ozellik1` `ozellik1` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `urun` CHANGE `filtre_gg` `filtre_gg` MEDIUMTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `user` ADD `onKural` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `data5` ,
+ADD `satinalKural` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `onKural` ;
+ALTER TABLE `siparis` ADD `urunUserID` INT NOT NULL AFTER `userID` ;
+ALTER TABLE `urun` ADD `sold_day` INT NOT NULL AFTER `sold` ,
+ADD `sold_week` INT NOT NULL AFTER `sold_day` ,
+ADD `sold_month` INT NOT NULL AFTER `sold_week` ;
+ALTER TABLE `siteConfig` ADD `puanoran` FLOAT NOT NULL AFTER `puanMin` ;
+
+ALTER TABLE `marka` ADD `email` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `seo` ;
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES (NULL, 'Siparis_Bildirimi_Marka', '', '', 'Yeni Sipariş Bildirimi', 'Yeni bir sipariş talebi var.<br /><br />Sepet Bilgileri :
+<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">
+{%sepet_marka%} 
+<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">
+<br /><br />
+Siparişi Veren : {%SIPARIS_NAME%} {%SIPARIS_LASTNAME%}<br/>
+Adres : {%adres%}<br />
+Tel :{%SIPARIS_EVTEL%},{%SIPARIS_ISTEL%},{%SIPARIS_CEPTEL%}<br/>');
+
+CREATE TABLE IF NOT EXISTS `sepetDurum` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=92 ;
+
+INSERT INTO `sepetDurum` (`ID`, `title`) VALUES
+(1, 'Tedarikçiden Ürün Bekleniyor'),
+(50, 'Eksik Temin Edildi'),
+(3, 'Temin Edildi'),
+(51, 'Temin Edilemedi'),
+(91, 'İptal');
+
+ALTER TABLE `sepet` ADD `adetiade` FLOAT NOT NULL AFTER `adet` ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_sepetDurumu', 'TR', 'Ürün Sepet Durumu (Opsiyonel)');
+ALTER TABLE `sepet` ADD `sepetDurum` INT NOT NULL AFTER `durum` ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_iadeTutari', 'TR', 'İade Tutarı');
+ALTER TABLE `sepet` ADD `kdv` FLOAT NOT NULL AFTER `fiyatBirim` ;
+ALTER TABLE `banka` ADD `minsiparis` DOUBLE NOT NULL AFTER `paymentModulURL` ;
+ALTER TABLE `kategori` ADD `minsiparis` INT NOT NULL AFTER `data5` ;
+ALTER TABLE `kategori` ADD `minsiparisadet` INT NOT NULL AFTER `data5` ;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (NULL, '_lang_katAzami', 'TR', 'Sepetiniz {%KATEGORI_ADI%}, azami {%AZAMI%} limitini karşılamamaktadır.');
+ALTER TABLE `siteConfig` ADD `splash_active` BOOLEAN NOT NULL AFTER `promosyonTeklifAktif` ,
+ADD `splash_url` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `splash_active` ,
+ADD `splash_resim` VARCHAR( 32 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `splash_url` ,
+ADD `splash_tarih` DATETIME NOT NULL AFTER `splash_resim` ;
+UPDATE `siteConfig` SET `splash_resim` = 'img.png' WHERE `siteConfig`.`ID` =1;
+UPDATE `siteConfig` SET `splash_url` = 'indirimde_sp.html' WHERE `siteConfig`.`ID` =1;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '19', 'Splash Reklam Ayarları', '', 'splashAyarlari.php', '1', '85', '');
+ALTER TABLE `kategori` ADD `gg_Dukkan` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `gg_Kod` ;
+ALTER TABLE `siteConfig` ADD `sepet_odeme` TINYINT NOT NULL AFTER `sepet_hizli` ;
+update siteConfig set sepet_hizli = 0 where ID=1;
+update siteConfig set footer = '<p>ShopPHP - DemoShop Ltd. Sti., Adres Bilgileri<br /><p>Tel : +90 0 216 444 4444, Fax +90 0 216 444 4444, Mail : <a href="mailto:{%adminMail%}">{%adminMail%}</a></p>' where ID=1;

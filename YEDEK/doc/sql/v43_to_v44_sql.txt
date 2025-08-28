@@ -1,0 +1,12 @@
+﻿UPDATE `siteConfig` SET `version` = '4.4' WHERE `siteConfig`.`ID` =1;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '74', 'StockMount Ayarları', '', 'smAyarlari.php', '1', '35', '1');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '1', 'PushCrew Ayarları', '', 'pcAyarlari.php', '1', '27', '1');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '53', 'PushCrew Gönderimi', '', 'pc.php', '1', '35', '');
+UPDATE `adminmenu` SET `Aktif` = '1' WHERE `adminmenu`.`ID` = 147;
+ALTER TABLE `siparis` ADD `koruma` BOOLEAN NOT NULL AFTER `tekrarSure`;
+UPDATE `odemeDurum` SET `ID` = '0' WHERE `odemeDurum`.`ID` = -1;
+UPDATE `sablonEmail` SET `body` = 'Sayın {%name%} {%lastname%}, <br /><br />Doğum gününüzü kutlar, sevdikleriniz ile birlikte uzun ve mutlu bir ömür dileriz.<br /><br /><center><img src="{%siteAdresiFull%}/templates/system/email/dogumgunu.png" /></center>' WHERE `sablonEmail`.`ID` = 27;
+update `lang` set `value` = 'Üyelik kaydınız tamamlandı.Üyeliğinizin tamamlanması için cep telefonunuza gelen onay kodunu <a href="page.php?act=smsOnay" style="color:red; font-weight:bolder;"> SMS ONAY </a> bağlantısına tıklayıp girmeniz gerekiyor.' where ID=345;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES ('0', '_lang_cookieAccept', 'TR', 'Bu site size daha iyi bir deneyim sunmak için tarayıcı çerezlerini kullanır.');
+ALTER TABLE `sepet` CHANGE `fiyatBirim` `fiyatBirim` VARCHAR(4) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;
+ALTER TABLE `filitre` CHANGE `baslik` `baslik` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL, CHANGE `icerik` `icerik` TEXT CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL;

@@ -1,0 +1,2935 @@
+CREATE TABLE IF NOT EXISTS `adminmenu` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `parentID` int(11) NOT NULL,
+  `Adi` varchar(64) NOT NULL,
+  `Icon` varchar(64) NOT NULL,
+  `Dosya` varchar(255) NOT NULL,
+  `Aktif` tinyint(1) NOT NULL,
+  `Sira` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=126 ;
+
+--
+-- Tablo döküm verisi `adminmenu`
+--
+
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES
+(1, 0, 'Ayarlar', 'settings.png', '', 1, 10),
+(3, 1, 'SMS Ayarları', '', 'smsAyarlari.php', 1, 25),
+(2, 1, 'Genel Ayarlar', '', 'siteAyarlari.php', 1, 10),
+(10, 0, 'Siparişler', 'orders.png', '', 1, 20),
+(4, 1, 'Sepet Ayarları', '', 'sepetAyarlari.php', 1, 30),
+(5, 0, 'Ürünler', 'products.png', '', 1, 30),
+(6, 5, 'Ürün Yönetimi', '', 'urun.php', 1, 10),
+(7, 5, 'Kategori Yönetimi', '', 'kategori.php', 1, 20),
+(8, 5, 'Ürün Yorumları', '', 'urunYorum.php', 1, 15),
+(9, 10, 'Gelen Siparişler', '', 'gelenSiparisler.php', 1, 10),
+(11, 10, 'Havale Bildirimleri', '', 'havaleBildirim.php', 1, 20),
+(12, 10, 'Arıza Takip', '', 'arizaBildirim.php', 1, 30),
+(13, 10, 'Gönderilen Siparişler', '', 'gonderilenSiparisler.php', 1, 15),
+(14, 10, 'Serial Takibi', '', 'serial.php', 1, 40),
+(15, 0, 'Kargo', 'shipping.png', '', 1, 40),
+(16, 15, 'Kargo Grupları', '', 'kargoBolge.php', 1, 10),
+(17, 15, 'Kargo İlleri', '', 'kargoIl.php', 1, 20),
+(18, 15, 'Kargo Ücretleri', '', 'kargoDesi.php', 1, 30),
+(19, 0, 'Reklam', 'seo.png', '', 1, 50),
+(20, 19, 'Firmalar', '', 'firma.php', 1, 10),
+(21, 19, 'Banner Bilgileri', '', 'banner.php', 1, 20),
+(22, 19, 'Banner Yönetimi', '', 'bannerYonetim.php', 1, 30),
+(23, 19, 'Banner İstatistikleri', '', 'bannerIstatistik.php', 1, 40),
+(24, 19, 'Vitrin Ayarları', '', 'kampanyaBannerAyarlari.php', 1, 50),
+(25, 19, 'Vitrin Resimleri', '', 'kampanyaBannerResim.php', 1, 60),
+(26, 0, 'İçerik', 'pages.png', '', 1, 60),
+(28, 26, 'İçerik Sayfaları', '', 'page.php', 1, 10),
+(29, 26, 'Sıkça Sorulan Sorular ', '', 'sss.php', 1, 20),
+(30, 26, 'Anket Soruları', '', 'anketSoru.php', 1, 30),
+(31, 26, 'Anket Cevapları', '', 'anketCevap.php', 1, 40),
+(32, 26, 'Haberler', '', 'haberler.php', 1, 50),
+(33, 26, 'Makaleler', '', 'makaleler.php', 1, 60),
+(34, 0, 'Kullanıcılar', 'users.png', '', 1, 70),
+(35, 34, 'Bayi Grupları', '', 'userGroups.php', 1, 20),
+(36, 34, 'Kullanıcı Yonetimi', '', 'users.php', 1, 10),
+(37, 34, 'Bayi Üyeleri', '', 'userGroupMembers.php', 1, 30),
+(38, 0, 'Şablon', 'pics.png', '', 1, 80),
+(39, 38, 'Genel Şablon', '', 'edit.php&file=templates/{%session.templateName%}/temp.php', 1, 10),
+(40, 38, 'Blok Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/blocks/DefaultBlock.php', 1, 10),
+(41, 38, 'Listeleme Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/lists/MenuList.php', 1, 30),
+(42, 38, 'Sistem Şablonları', '', 'edit.php&file=templates/{%session.templateName%}/systemDefault/UrunListShow.php', 1, 40),
+(43, 38, 'Stylesheet', '', 'edit.php&file=templates/{%session.templateName%}/style.css', 1, 50),
+(44, 0, 'SMS', 'sms.png', '', 1, 90),
+(46, 44, 'Toplu SMS Gönderimi', '', 'sms.php', 1, 10),
+(47, 44, 'SMS Şablonları ', '', 'smsTemp.php', 1, 20),
+(48, 44, 'Beklemede olan SMS&#39;ler ', '', 'smsrapor.php&filterValue=0', 1, 30),
+(49, 44, 'Gönderilen SMSler', '', 'smsrapor.php&filterValue=1', 1, 40),
+(50, 44, 'Gönderilemeyen SMSler', '', 'smsrapor.php&filterValue=3', 1, 50),
+(52, 44, 'SMS Raporlarını Güncelle', '', 'smsrapor.php&up=true', 1, 70),
+(51, 44, 'Süresi Geçen SMS''ler', '', 'smsrapor.php&filterValue=4', 1, 60),
+(53, 0, 'E-Posta', 'email.png', '', 1, 100),
+(54, 53, 'E-bülten Kayıt Listesi', '', 'maillist.php', 1, 10),
+(55, 53, 'Toplu Eposta Kayıt Giriş', '', 'importMaillist.php', 1, 20),
+(56, 53, 'E-Bülten Gönderimi', '', 'mailing.php', 1, 30),
+(57, 53, 'E-posta Şablonları', '', 'sablonEmail.php', 1, 40),
+(58, 0, 'Ödeme', 'payment.png', '', 1, 110),
+(59, 58, 'Banka Yönetimi', '', 'banka.php', 1, 10),
+(60, 58, 'Vade Oranları', '', 'bankaVade.php', 1, 20),
+(61, 58, 'Havale Bilgileri ', '', 'havale.php', 1, 30),
+(62, 58, 'Alışveriş Çekleri', '', 'alisverisCeki.php', 1, 40),
+(63, 58, 'Promosyon Kodları', '', 'promosyon.php', 1, 50),
+(64, 0, 'XML Yükle', 'modules.png', '', 1, 120),
+(65, 64, 'Arena XML', '', 'XML/xml_arena.php&y=e', 0, 10),
+(66, 64, 'Penta XML', '', 'XML/xml_penta.php&y=e', 1, 60),
+(67, 64, 'Index / Despec XML', '', 'XML/xml_index.php&y=e', 1, 50),
+(68, 64, 'Exa XML', '', 'XML/xml_exa.php&y=e', 1, 40),
+(69, 64, 'Denge XML', '', 'XML/xml_denge.php&y=e', 1, 30),
+(70, 64, 'Pozitif XML', '', 'XML/xml_pozitif.php&y=e', 1, 70),
+(71, 64, 'Oksid XML', '', 'XML/xml_oksid.php&y=e', 1, 80),
+(72, 64, 'Saat Noktası XML', '', 'XML/xml_saatnoktasi.php&y=e', 1, 90),
+(73, 64, 'Hepsi Burada XML', '', 'XML/xml_hb.php&y=e', 1, 45),
+(74, 0, 'XML Çıktılar', 'modules.png', '', 1, 130),
+(109, 74, 'Hızlı Al', '', 'xmlExport.php&code=XML_HizliAl', 1, 35),
+(76, 74, 'Cimri', '', 'xmlExport.php&code=XML_Cimri', 1, 20),
+(77, 74, 'Ne Kadar', '', 'xmlExport.php&code=XML_NeKadar', 1, 30),
+(78, 74, 'Ucuzu', '', 'xmlExport.php&code=XML_Ucuzcu', 1, 40),
+(79, 74, 'Google Sitemap', '', 'xmlExport.php&code=XML_GoogleSitemap', 1, 5),
+(80, 0, 'İstatistikler', 'stats.png', '', 1, 140),
+(81, 80, 'Kullanıcı Logları', '', 'userLog.php', 1, 120),
+(82, 38, 'Dil Şablonu', '', 'edit.php&file=include/lang/lang-tr.php', 1, 60),
+(83, 74, 'Shopphp', '', 'xmlExport.php&code=XML_Shopphp', 1, 6),
+(84, 1, 'E-Posta Ayarları', '', 'epostaAyarlari.php', 1, 20),
+(85, 10, 'Sipariş Arşivi', '', 'siparisArsivi.php', 1, 18),
+(86, 74, 'Akıllı Fiyat', '', 'xmlExport.php&code=XML_AkilliFiyat', 1, 10),
+(87, 64, 'Modacar XML', '', 'XML/xml_modacar.php&y=e', 1, 75),
+(88, 80, 'Aylık Sipariş (Adet)', '', 'stats.php&type=aylik-adet', 1, 10),
+(89, 80, 'Aylık Sipariş (Ciro)', '', 'stats.php&type=aylik-fiyat', 1, 20),
+(90, 80, 'Kategoriler', '', 'stats.php&type=kategori', 1, 30),
+(91, 80, 'Ürünler', '', 'stats.php&type=urun', 1, 40),
+(92, 80, 'Ziyaretçi Sayıları', '', 'stats.php&type=ziyaret', 1, 70),
+(93, 80, 'Ziyaretçi İstatistikleri', '', 'stats.php&type=os-browser', 1, 80),
+(94, 80, 'Arama Motorları', '', 'stats.php&type=aramaMotoru', 1, 75),
+(95, 80, 'Referrer Adresler', '', 'stats.php&type=referrer', 1, 76),
+(96, 64, 'Ecza Deposu XML', '', 'XML/xml_eczadeposu.php&y=e', 1, 35),
+(97, 5, 'Marka Yönetimi', '', 'marka.php', 1, 30),
+(98, 64, 'Sihirli Bebekler XML', '', 'XML/xml_sihirlibebekler.php&y=e', 1, 95),
+(99, 64, 'Elma Sepeti XML', '', 'XML/xml_elmasepeti.php&y=e', 1, 37),
+(100, 64, 'Tedarik Bizden XML', '', 'XML/xml_tedarikbizden.php&y=e', 1, 100),
+(101, 64, 'Toptan Shop XML', '', 'XML/xml_toptanshop.php&y=e', 1, 110),
+(102, 80, 'E-posta Logları', '', 'emailLog.php', 1, 130),
+(103, 38, 'E-Posta Şablonu', '', 'edit.php&file=templates/system/email/temp.php', 1, 70),
+(104, 64, 'Atlas Kamp XML', '', 'XML/xml_atlaskamp.php&y=e', 1, 10),
+(105, 64, 'Toptan Mallar XML', '', 'XML/xml_toptanmallar.php&y=e', 1, 105),
+(106, 1, 'SEO Ayarları', '', 'seoAyarlari.php', 1, 40),
+(107, 64, 'Joker XML', '', 'XML/xml_joker.php&y=e', 1, 55),
+(108, 64, 'Parfüm ve Kozmetik', '', 'XML/xml_parfumvekozmetik.php&y=e', 1, 85),
+(110, 1, 'Puan Ayarları', '', 'puanAyarlari.php', 1, 60),
+(111, 5, 'Çapraz Promosyon', '', 'esantiyon.php', 1, 40),
+(112, 15, 'İller', '', 'iller.php', 1, 40),
+(113, 15, 'İlçeler', '', 'ilceler.php', 1, 50),
+(114, 64, 'Bebek Reyonu XML', '', 'XML/xml_bebekreyonu.php&y=e', 1, 15),
+(115, 19, 'Kategori Kampanyaları', '', 'kampanyaKategori.php', 0, 70),
+(116, 64, 'Metro XML', '', 'XML/xml_metro.php&y=e', 1, 75),
+(117, 64, 'Ses Müzik Aletleri XML', '', 'XML/xml_sesmuzikaletleri.php&y=e', 1, 95),
+(118, 15, 'Kargo Firmaları', '', 'kargofirma.php', 1, 5),
+(119, 15, 'Teslimat Ayarları', '', 'teslimat.php', 1, 40),
+(120, 10, 'Grup Kupon Listesi', '', 'grupListe.php', 1, 50),
+(121, 5, 'Filitre Başlıkları', '', 'filitre.php', 1, 40),
+(122, 5, 'Filitre Detay Sayfaları', '', 'filitredetay.php', 0, 50),
+(123, 5, 'Ürün Filitre Yönetimi', '', 'urunfilitre.php', 1, 14),
+(124, 5, 'Toplu İndirim Tanımlama', '', 'topluIndirim.php', 1, 70),
+(125, 5, 'Sistem Toplama Özellikleri', '', 'pcToplama.php', 1, 100);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `alarmListe`
+--
+
+CREATE TABLE IF NOT EXISTS `alarmListe` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `urunID` int(11) NOT NULL,
+  `type` varchar(32) NOT NULL,
+  `date` date NOT NULL,
+  `sent` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=33 ;
+
+--
+-- Tablo döküm verisi `alarmListe`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `anketCevap`
+--
+
+CREATE TABLE IF NOT EXISTS `anketCevap` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `anketID` int(11) NOT NULL,
+  `Cevap` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `Seq` int(11) NOT NULL,
+  `Oy` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `anketCevap`
+--
+
+INSERT INTO `anketCevap` (`ID`, `anketID`, `Cevap`, `Seq`, `Oy`) VALUES
+(1, 1, 'Evet', 0, 180),
+(2, 1, 'Hayır', 0, 66);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `anketIP`
+--
+
+CREATE TABLE IF NOT EXISTS `anketIP` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `anketID` int(11) NOT NULL,
+  `IP` varchar(64) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=241 ;
+
+--
+-- Tablo döküm verisi `anketIP`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `anketSoru`
+--
+
+CREATE TABLE IF NOT EXISTS `anketSoru` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Soru` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `Aktif` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `anketSoru`
+--
+
+INSERT INTO `anketSoru` (`ID`, `Soru`, `Aktif`) VALUES
+(1, 'Siteye anket eklensin mi?', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `arizaBildirim`
+--
+
+CREATE TABLE IF NOT EXISTS `arizaBildirim` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `randStr` varchar(32) NOT NULL,
+  `sepetID` int(11) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `arizaBildirim`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `arizaDurum`
+--
+
+CREATE TABLE IF NOT EXISTS `arizaDurum` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `randStr` varchar(32) NOT NULL,
+  `tarih` datetime NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `arizaDurum`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `arizaMesaj`
+--
+
+CREATE TABLE IF NOT EXISTS `arizaMesaj` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `randStr` varchar(32) NOT NULL,
+  `mesaj` text NOT NULL,
+  `gonderen` tinyint(1) NOT NULL,
+  `tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `arizaMesaj`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `banka`
+--
+
+CREATE TABLE IF NOT EXISTS `banka` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `bankaAdi` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `clientID` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `username` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `password` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `modData1` varchar(255) NOT NULL,
+  `modData2` varchar(255) NOT NULL,
+  `modData3` varchar(255) NOT NULL,
+  `degisimYuzde` double NOT NULL,
+  `degisimYTL` double NOT NULL,
+  `postURL` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `odemeLogo` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `taksitUrunLogo` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `taksitGosterimBaslik` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `taksitGosterimCSS` varchar(256) NOT NULL,
+  `odemeAciklama` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `epostaAciklama` text CHARACTER SET latin5 NOT NULL,
+  `onayAciklama` text CHARACTER SET latin5 NOT NULL,
+  `taksitOrani` double NOT NULL,
+  `taksitSayisi` int(11) NOT NULL,
+  `paymentModulURL` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `seq` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Tablo döküm verisi `banka`
+--
+
+INSERT INTO `banka` (`ID`, `bankaAdi`, `clientID`, `username`, `password`, `modData1`, `modData2`, `modData3`, `degisimYuzde`, `degisimYTL`, `postURL`, `odemeLogo`, `taksitUrunLogo`, `taksitGosterimBaslik`, `taksitGosterimCSS`, `odemeAciklama`, `epostaAciklama`, `onayAciklama`, `taksitOrani`, `taksitSayisi`, `paymentModulURL`, `seq`, `active`) VALUES
+(1, 'Kredi Kartı (Genel)', '', '', '', '', '', '', 0, 0, '', 'odemeLogo-1.gif', '', '', '', 'Kredi Kartı ile ödemek istiyorum', '', '', 0, 0, 'include/payment_Garanti.php', 1, 1),
+(2, 'İş Bankası (Maximum)', '', '', '', '', '', '', -0.03, 0, '', 'odemeLogo-2.gif', 'taksitLogo-2.gif', 'İş Bankası Kredi Kartları ile', 'isbank_', 'İş Bankası kredi kartı (Maximum) ile peşin, taksitle veya Maximum puanlarımı kullanarak ödemek istiyorum.', '', '', 0.02, 12, 'include/payment_EST.php', 2, 1),
+(3, 'Yapı ve Kredi Bankası (World Card)', '', '', '', '', '', '', 0, 0, '', 'odemeLogo-3.gif', 'taksitLogo-3.gif', 'Worldcard ile', 'yapikredi_', 'Yapı Kredi Bankası kredi kartı (World Card) ile peşin, taksitle veya World puanlarımı kullanarak ödemek istiyorum', '', '', 0.02, 12, 'include/payment_world.php', 3, 0),
+(4, 'Garanti Bankası (Bonus Card)', '', '', '', '', '', '', 0, 0, '', 'odemeLogo-4.gif', 'taksitLogo-4.gif', 'Garanti Kredi Kartları ile', 'garanti_', 'Garanti Bankası kredi kartı (Bonus Card) ile peşin, taksitle veya Bonus puanlarımı kullanarak ödemek istiyorum', '', '', 0.02, 12, 'include/payment_EST.php', 4, 1),
+(5, 'Havale', '', '', '', '', '', '', -0.04, 0, '', '', '', '', '', 'Havale ile ödemek istiyorum', '', '<TABLE>\r\n<TBODY>\r\n<TR>\r\n<TD>Sipariş Numaranız : <B>{%SIPARIS_NO%}</B></TD></TR>\r\n<TR>\r\n<TD><BR>Ödemeyi yaptıktan sonra, <A href="page.php?act=havaleBildirim&amp;status=1"><U>havale bildirim formuna</U></A> giris yapmayı unutmayın. Siparişiniz ödeme ile aynı gün işleme koyulacaktır. <BR><BR>Lütfen aşağıdaki adres bilgilerini ve sipariş ürünlerinizi dikkatlice kontrol edin.<BR><BR></TD></TR></TBODY></TABLE><BR>\r\n<TABLE>\r\n<TBODY>\r\n<TR>\r\n<TD colSpan=3><B>Banka Hesap Numaralarımız</B></TD></TR></TBODY></TABLE><BR>{%HAVALE_BILGILERI%}', 0, 0, 'include/payment_havale.php', 5, 1),
+(8, 'Alışveriş Çeki', '', '', '', '', '', '', 0, 0, '', '', '', '', '', 'Alışveriş çeki kodu ve şifresi ile ödemek istiyorum.', '', 'Ödemeniz onaylandı. Teşekkür ederiz.', 0, 0, 'include/payment_alisverisceki.php', 0, 1),
+(9, 'Kapıda Ödeme (+10 YTL)', '', '', '', '', '', '', 0, 10, '', '', '', '', '', 'Ürünün fiyatını kapıda teslim aldığımda ödemek istiyorum.', '', '<P>Teşekkürler.</P>', 0, 0, 'include/payment_Kapida.php', 10, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bankaHavale`
+--
+
+CREATE TABLE IF NOT EXISTS `bankaHavale` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `bankaAdi` varchar(128) NOT NULL,
+  `bankaSubeKodu` varchar(32) NOT NULL,
+  `bankaSubeAdi` varchar(128) NOT NULL,
+  `bankaHesapNo` varchar(32) NOT NULL,
+  `bankaKullaniciAdi` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=6 ;
+
+--
+-- Tablo döküm verisi `bankaHavale`
+--
+
+INSERT INTO `bankaHavale` (`ID`, `bankaAdi`, `bankaSubeKodu`, `bankaSubeAdi`, `bankaHesapNo`, `bankaKullaniciAdi`) VALUES
+(4, 'Akbank', '123', 'Ferikoy', '123123123', 'Sevan Alpay'),
+(5, 'Garanti Bankasi', '123', 'Sisli', '123123321', 'Sevan Alpay');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bankaHavaleBildirim`
+--
+
+CREATE TABLE IF NOT EXISTS `bankaHavaleBildirim` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `siparisNo` varchar(32) NOT NULL,
+  `bankaID` int(11) NOT NULL,
+  `tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=16 ;
+
+--
+-- Tablo döküm verisi `bankaHavaleBildirim`
+--
+
+INSERT INTO `bankaHavaleBildirim` (`ID`, `siparisNo`, `bankaID`, `tarih`) VALUES
+(4, '759540463', 4, '2010-04-24 05:59:38'),
+(5, '759540463', 4, '2010-04-25 08:04:22'),
+(6, '895593026', 4, '2010-06-26 12:21:29'),
+(7, '488851174', 4, '2010-09-02 12:40:17'),
+(8, '677067674', 4, '2010-09-11 05:20:18'),
+(9, '677067674', 4, '2010-09-11 05:20:27'),
+(10, '502406973', 4, '2010-09-17 14:31:21'),
+(11, '506260278', 4, '2010-10-01 21:29:28'),
+(12, '506260278', 5, '2010-10-01 21:46:56'),
+(13, '198431053', 5, '2010-10-01 21:47:04'),
+(14, '420568815', 5, '2010-10-21 17:26:42'),
+(15, '294618883', 5, '2010-10-28 02:13:36');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bankaposurl`
+--
+
+CREATE TABLE IF NOT EXISTS `bankaposurl` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=11 ;
+
+--
+-- Tablo döküm verisi `bankaposurl`
+--
+
+INSERT INTO `bankaposurl` (`ID`, `name`, `url`) VALUES
+(1, 'Garanti Bankası 3D', 'https://ccpos.garanti.com.tr/servlet/gar3Dgate'),
+(2, 'Akbank 3D', 'https://www.sanalakpos.com/servlet/est3Dgate'),
+(3, 'Garanti Bankası', 'https://ccpos.garanti.com.tr/servlet/cc5ApiServer'),
+(4, 'Bank Asya 3D', 'https://vps.bankasya.com.tr/iposnet/sposnet.aspx?prmstr=[DATA]'),
+(5, 'Vakıfbank', 'https://subesiz.vakifbank.com.tr/vpos724v3/?'),
+(6, 'Yapı Kredi', 'http://193.254.228.52/PosnetWebService/XML'),
+(7, 'Finansbank', 'https://www.fbwebpos.com/servlet/cc5ApiServer'),
+(8, 'İş Bankası', 'https://spos.isbank.com.tr/servlet/cc5ApiServer'),
+(9, 'Akbank', 'https://vpos.est.com.tr/servlet/cc5ApiServer'),
+(10, 'İş Bankası 3D', 'https://spos.isbank.com.tr/servlet/est3Dgate');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bankaVade`
+--
+
+CREATE TABLE IF NOT EXISTS `bankaVade` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `bankaID` int(11) NOT NULL,
+  `ay` int(11) NOT NULL,
+  `vade` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=41 ;
+
+--
+-- Tablo döküm verisi `bankaVade`
+--
+
+INSERT INTO `bankaVade` (`ID`, `bankaID`, `ay`, `vade`) VALUES
+(1, 4, 2, 0.02),
+(2, 4, 3, 0.04),
+(3, 4, 4, 0.06),
+(4, 4, 5, 0.08),
+(5, 4, 6, 0),
+(6, 4, 7, 0.12),
+(7, 4, 8, 0.14),
+(8, 4, 9, 0.16),
+(9, 4, 10, 0.18),
+(10, 4, 11, 0.2),
+(11, 4, 12, 0.22),
+(12, 3, 2, 0.02),
+(13, 3, 3, 0.04),
+(14, 3, 4, 0.06),
+(15, 3, 5, 0.08),
+(16, 3, 6, 0.1),
+(17, 3, 7, 0.12),
+(18, 3, 8, 0.14),
+(19, 3, 9, 0.16),
+(20, 3, 10, 0.18),
+(21, 3, 11, 0.2),
+(22, 3, 12, 0.22),
+(23, 2, 2, 0.02),
+(24, 2, 3, 0.04),
+(25, 2, 4, 0.06),
+(26, 2, 5, 0.08),
+(27, 2, 6, 0.1),
+(28, 2, 7, 0.12),
+(29, 2, 8, 0.14),
+(30, 2, 9, 0.16),
+(31, 2, 10, 0.18),
+(32, 2, 11, 0.2),
+(33, 2, 12, 0.22),
+(38, 4, 1, 0),
+(39, 3, 1, 0),
+(40, 2, 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bannerlar`
+--
+
+CREATE TABLE IF NOT EXISTS `bannerlar` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `firmaID` int(11) NOT NULL,
+  `name` varchar(256) NOT NULL,
+  `bannerPic` varchar(256) NOT NULL,
+  `bannerFlashSource` text NOT NULL,
+  `divStyle` varchar(512) NOT NULL,
+  `url` varchar(256) NOT NULL,
+  `aktif` tinyint(1) NOT NULL,
+  `gosterim` int(11) NOT NULL,
+  `hit` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `bannerlar`
+--
+
+INSERT INTO `bannerlar` (`ID`, `firmaID`, `name`, `bannerPic`, `bannerFlashSource`, `divStyle`, `url`, `aktif`, `gosterim`, `hit`) VALUES
+(1, 2, 'paro', 'bannerPic-1.png', '', '', 'http://www.google.com.tr', 1, 2234, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `bannerYonetim`
+--
+
+CREATE TABLE IF NOT EXISTS `bannerYonetim` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `bannerID` int(11) NOT NULL,
+  `bannerYer` varchar(256) NOT NULL,
+  `maxHit` int(11) NOT NULL,
+  `maxGosterim` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=5 ;
+
+--
+-- Tablo döküm verisi `bannerYonetim`
+--
+
+INSERT INTO `bannerYonetim` (`ID`, `bannerID`, `bannerYer`, `maxHit`, `maxGosterim`) VALUES
+(1, 2, 'ustbanner', 10000, 20000),
+(3, 2, 'deneme', 123, 123),
+(4, 1, 'paro', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `epostalog`
+--
+
+CREATE TABLE IF NOT EXISTS `epostalog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `from` varchar(255) NOT NULL,
+  `to` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `body` text NOT NULL,
+  `IP` varchar(32) NOT NULL,
+  `tarih` datetime NOT NULL,
+  `randStr` varchar(32) NOT NULL,
+  `durum` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=185 ;
+
+--
+-- Tablo döküm verisi `epostalog`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `esantiyon`
+--
+
+CREATE TABLE IF NOT EXISTS `esantiyon` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `urunler` text COLLATE utf8_unicode_ci NOT NULL,
+  `kategoriler` text COLLATE utf8_unicode_ci NOT NULL,
+  `tanim` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `indirimOran` double NOT NULL,
+  `maxAdet` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `esantiyon`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `filitre`
+--
+
+CREATE TABLE IF NOT EXISTS `filitre` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `icerik` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `filitre`
+--
+
+INSERT INTO `filitre` (`ID`, `baslik`, `icerik`) VALUES
+(1, 'Desteklenen Formatlar', 'Mp3\r\nMp4\r\nAvi\r\nDivx'),
+(2, 'Oynatılabilen Media', 'DVD\r\nDivx\r\nBlue Ray');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `filitredetay`
+--
+
+CREATE TABLE IF NOT EXISTS `filitredetay` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `resim` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `icerik` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `filitredetay`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `firmalar`
+--
+
+CREATE TABLE IF NOT EXISTS `firmalar` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(256) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `firmalar`
+--
+
+INSERT INTO `firmalar` (`ID`, `name`) VALUES
+(1, 'microsoft'),
+(2, 'paro');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `gittiGidiyorCat`
+--
+
+CREATE TABLE IF NOT EXISTS `gittiGidiyorCat` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `catID` int(11) NOT NULL,
+  `ggCatName` varchar(16) NOT NULL,
+  `ggStoreCatName` varchar(16) NOT NULL,
+  `ggTaksit` int(11) NOT NULL,
+  `ggSure` int(11) NOT NULL,
+  `ggPesinTaksit` int(11) NOT NULL,
+  `ggKalinYazi` varchar(8) NOT NULL,
+  `ggKatalog` varchar(8) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `gittiGidiyorCat`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `haberler`
+--
+
+CREATE TABLE IF NOT EXISTS `haberler` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Resim` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `Baslik` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `Icerik` text CHARACTER SET latin5 NOT NULL,
+  `Tarih` date NOT NULL,
+  `metaKeywords` text CHARACTER SET latin5 NOT NULL,
+  `metaDescription` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Tablo döküm verisi `haberler`
+--
+
+INSERT INTO `haberler` (`ID`, `Resim`, `Baslik`, `Icerik`, `Tarih`, `metaKeywords`, `metaDescription`) VALUES
+(4, 'Resim-4.jpg', 'Haber Başlığı Burada', '<P>Örnek haber içerik.</P>', '2010-09-30', '', ''),
+(2, 'Resim-2.jpg', 'Diğer Haber Başlığı', '<P>Örnek haber içerik.</P>', '2010-09-30', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `ilceler`
+--
+
+CREATE TABLE IF NOT EXISTS `ilceler` (
+  `ID` int(5) NOT NULL DEFAULT '0',
+  `parentID` int(3) NOT NULL DEFAULT '0',
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `fiyatFarki` double NOT NULL,
+  `disabled` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5;
+
+--
+-- Tablo döküm verisi `ilceler`
+--
+
+INSERT INTO `ilceler` (`ID`, `parentID`, `name`, `fiyatFarki`, `disabled`) VALUES
+(1, 1, 'Merkez', 0, 0),
+(2, 1, 'Aladag', 0, 0),
+(3, 1, 'Ceyhan', 0, 0),
+(4, 1, 'Feke', 0, 0),
+(5, 1, 'Imamoglu', 0, 0),
+(6, 1, 'Karaisali', 0, 0),
+(7, 1, 'Karatas', 0, 0),
+(8, 1, 'Kozan', 0, 0),
+(9, 1, 'Pozanti', 0, 0),
+(10, 1, 'Saimbeyli', 0, 0),
+(11, 1, 'Seyhan', 0, 0),
+(12, 1, 'Tufanbeyli', 0, 0),
+(13, 1, 'Yumurtalik', 0, 0),
+(14, 1, 'Yüregir', 0, 0),
+(15, 2, 'Merkez', 0, 0),
+(16, 2, 'Besni', 0, 0),
+(17, 2, 'Çelikhan', 0, 0),
+(18, 2, 'Gerger', 0, 0),
+(19, 2, 'Gölbasi', 0, 0),
+(20, 2, 'Kahta', 0, 0),
+(21, 2, 'Samsat', 0, 0),
+(22, 2, 'Sincik', 0, 0),
+(23, 2, 'Tut', 0, 0),
+(24, 3, 'Merkez', 0, 0),
+(25, 3, 'Basmakçi', 0, 0),
+(26, 3, 'Bayat', 0, 0),
+(27, 3, 'Bolvadin', 0, 0),
+(28, 3, 'Çobanlar', 0, 0),
+(29, 3, 'Çay', 0, 0),
+(30, 3, 'Dazkiri', 0, 0),
+(31, 3, 'Dinar', 0, 0),
+(32, 3, 'Emirdag', 0, 0),
+(33, 3, 'Evciler', 0, 0),
+(34, 3, 'Hocalar', 0, 0),
+(35, 3, 'Ihsaniye', 0, 0),
+(36, 3, 'Iscehisar', 0, 0),
+(37, 3, 'Kizilören', 0, 0),
+(38, 3, 'Sandikli', 0, 0),
+(39, 3, 'Sincanli', 0, 0),
+(40, 3, 'Sultandagi', 0, 0),
+(41, 3, 'Suhut', 0, 0),
+(42, 4, 'Merkez', 0, 0),
+(43, 4, 'Diyadin', 0, 0),
+(44, 4, 'Dogubeyazit', 0, 0),
+(45, 4, 'Eleskirt', 0, 0),
+(46, 4, 'Hamur', 0, 0),
+(47, 4, 'Patnos', 0, 0),
+(48, 4, 'Tasliçay', 0, 0),
+(49, 4, 'Tutak', 0, 0),
+(50, 5, 'Merkez', 0, 0),
+(51, 5, 'Göynücek', 0, 0),
+(52, 5, 'Gümüşhaciköy', 0, 0),
+(53, 5, 'Hamamözü', 0, 0),
+(54, 5, 'Merzifon', 0, 0),
+(55, 5, 'Suluova', 0, 0),
+(56, 5, 'Tasova', 0, 0),
+(57, 6, 'Merkez', 0, 0),
+(58, 6, 'Akyurt', 0, 0),
+(59, 6, 'Altindag', 0, 0),
+(60, 6, 'Ayas', 0, 0),
+(61, 6, 'Bala', 0, 0),
+(62, 6, 'Beypazari', 0, 0),
+(63, 6, 'Çamlidere', 0, 0),
+(64, 6, 'Çankaya', 0, 0),
+(65, 6, 'Çubuk', 0, 0),
+(66, 6, 'Elmadag', 0, 0),
+(67, 6, 'Etimesgut', 0, 0),
+(68, 6, 'Evren', 0, 0),
+(69, 6, 'Gölbasi', 0, 0),
+(70, 6, 'Güdül', 0, 0),
+(71, 6, 'Haymana', 0, 0),
+(72, 6, 'Kalecik', 0, 0),
+(73, 6, 'Kazan', 0, 0),
+(74, 6, 'Keçiören', 0, 0),
+(75, 6, 'Kizilcahama', 0, 0),
+(76, 6, 'Mamak', 0, 0),
+(77, 6, 'Nallihan', 0, 0),
+(78, 6, 'Polatli', 0, 0),
+(79, 6, 'Sincan', 0, 0),
+(80, 6, 'Sereflikoçh', 0, 0),
+(81, 6, 'Yenimahalle', 0, 0),
+(82, 7, 'Merkez', 0, 0),
+(83, 7, 'Akseki', 0, 0),
+(84, 7, 'Alanya', 0, 0),
+(85, 7, 'Demre', 0, 0),
+(86, 7, 'Elmali', 0, 0),
+(87, 7, 'Finike', 0, 0),
+(88, 7, 'Gazipasa', 0, 0),
+(89, 7, 'Gündogmus', 0, 0),
+(90, 7, 'Ibradi', 0, 0),
+(91, 7, 'Kale', 0, 0),
+(92, 7, 'Kas', 0, 0),
+(93, 7, 'Kemer', 0, 0),
+(94, 7, 'Korkuteli', 0, 0),
+(95, 7, 'Kumluca', 0, 0),
+(96, 7, 'Manavgat', 0, 0),
+(97, 7, 'Serik', 0, 0),
+(98, 8, 'Merkez', 0, 0),
+(99, 8, 'Ardanuç', 0, 0),
+(100, 8, 'Arhavi', 0, 0),
+(101, 8, 'Borçka', 0, 0),
+(102, 8, 'Hopa', 0, 0),
+(103, 8, 'Murgul', 0, 0),
+(104, 8, 'Savsat', 0, 0),
+(105, 8, 'Yusufeli', 0, 0),
+(106, 9, 'Merkez', 0, 0),
+(107, 9, 'Bozdogan', 0, 0),
+(108, 9, 'Buharkent', 0, 0),
+(109, 9, 'Çine', 0, 0),
+(110, 9, 'Germencik', 0, 0),
+(111, 9, 'Incirliova', 0, 0),
+(112, 9, 'Karacasu', 0, 0),
+(113, 9, 'Karpuzlu', 0, 0),
+(114, 9, 'Koçarli', 0, 0),
+(115, 9, 'Kösk', 0, 0),
+(116, 9, 'Kusadasi', 0, 0),
+(117, 9, 'Kuyucak', 0, 0),
+(118, 9, 'Nazilli', 0, 0),
+(119, 9, 'Söke', 0, 0),
+(120, 9, 'Sultanhisar', 0, 0),
+(121, 9, 'Yenihisar', 0, 0),
+(122, 9, 'Yenipazar', 0, 0),
+(123, 10, 'Merkez', 0, 0),
+(124, 10, 'Ayvalik', 0, 0),
+(125, 10, 'Akçay', 0, 0),
+(126, 10, 'Balya', 0, 0),
+(127, 10, 'Bandirma', 0, 0),
+(128, 10, 'Bigadiç', 0, 0),
+(129, 10, 'Burhaniye', 0, 0),
+(130, 10, 'Dursunbey', 0, 0),
+(131, 10, 'Edremit', 0, 0),
+(132, 10, 'Erdek', 0, 0),
+(133, 10, 'Gönen', 0, 0),
+(134, 10, 'Gömeç', 0, 0),
+(135, 10, 'Havran', 0, 0),
+(136, 10, 'Ivrindi', 0, 0),
+(137, 10, 'Kepsut', 0, 0),
+(138, 10, 'Manyas', 0, 0),
+(139, 10, 'Marmara', 0, 0),
+(140, 10, 'Savastepe', 0, 0),
+(141, 10, 'Sindirgi', 0, 0),
+(142, 10, 'Susurluk', 0, 0),
+(143, 11, 'Merkez', 0, 0),
+(144, 11, 'Bozöyük', 0, 0),
+(145, 11, 'Gölpazari', 0, 0),
+(146, 11, 'Inhisar', 0, 0),
+(147, 11, 'Osmaneli', 0, 0),
+(148, 11, 'Pazaryeri', 0, 0),
+(149, 11, 'Sögüt', 0, 0),
+(150, 11, 'Yenipazar', 0, 0),
+(151, 12, 'Merkez', 0, 0),
+(152, 12, 'Adakli', 0, 0),
+(153, 12, 'Genç', 0, 0),
+(154, 12, 'Karliova', 0, 0),
+(155, 12, 'Kigi', 0, 0),
+(156, 12, 'Solhan', 0, 0),
+(157, 12, 'Yayladere', 0, 0),
+(158, 12, 'Yedisu', 0, 0),
+(159, 13, 'Merkez', 0, 0),
+(160, 13, 'Adilcevaz', 0, 0),
+(161, 13, 'Ahlat', 0, 0),
+(162, 13, 'Güroymak', 0, 0),
+(163, 13, 'Hizan', 0, 0),
+(164, 13, 'Mutki', 0, 0),
+(165, 13, 'Tatvan', 0, 0),
+(166, 14, 'Merkez', 0, 0),
+(167, 14, 'Dörtdivan', 0, 0),
+(168, 14, 'Gerede', 0, 0),
+(169, 14, 'Göynük', 0, 0),
+(170, 14, 'Kibriscik', 0, 0),
+(171, 14, 'Mengen', 0, 0),
+(172, 14, 'Mudurnu', 0, 0),
+(173, 14, 'Seben', 0, 0),
+(174, 14, 'Yeniçaga', 0, 0),
+(175, 15, 'Merkez', 0, 0),
+(176, 15, 'Altinyayla', 0, 0),
+(177, 15, 'Aglasun', 0, 0),
+(178, 15, 'Bucak', 0, 0),
+(179, 15, 'Çavdir', 0, 0),
+(180, 15, 'Çeltikçi', 0, 0),
+(181, 15, 'Gölhisar', 0, 0),
+(182, 15, 'Karamanli', 0, 0),
+(183, 15, 'Kemer', 0, 0),
+(184, 15, 'Tefenni', 0, 0),
+(185, 15, 'Yesilova', 0, 0),
+(186, 16, 'Merkez', 0, 0),
+(187, 16, 'Büyükorhan', 0, 0),
+(188, 16, 'Gemlik', 0, 0),
+(189, 16, 'Gürsu', 0, 0),
+(190, 16, 'Harmancik', 0, 0),
+(191, 16, 'Inegöl', 0, 0),
+(192, 16, 'Iznik', 0, 0),
+(193, 16, 'Karacabey', 0, 0),
+(194, 16, 'Keles', 0, 0),
+(195, 16, 'Kestel', 0, 0),
+(196, 16, 'Mudanya', 0, 0),
+(197, 16, 'Mustafakema', 0, 0),
+(198, 16, 'Nilüfer', 0, 0),
+(199, 16, 'Orhaneli', 0, 0),
+(200, 16, 'Orhangazi', 0, 0),
+(201, 16, 'Osmangazi', 0, 0),
+(202, 16, 'Yenisehir', 0, 0),
+(203, 16, 'Yildirim', 0, 0),
+(204, 17, 'Merkez', 0, 0),
+(205, 17, 'Ayvacik', 0, 0),
+(206, 17, 'Bayramiç', 0, 0),
+(207, 17, 'Bozcaada', 0, 0),
+(208, 17, 'Biga', 0, 0),
+(209, 17, 'Çan', 0, 0),
+(210, 17, 'Eceabat', 0, 0),
+(211, 17, 'Ezine', 0, 0),
+(212, 17, 'Gelibolu', 0, 0),
+(213, 17, 'Gökçeada', 0, 0),
+(214, 17, 'Lapseki', 0, 0),
+(215, 17, 'Yenice', 0, 0),
+(216, 18, 'Merkez', 0, 0),
+(217, 18, 'Atkaracalar', 0, 0),
+(218, 18, 'Bayramören', 0, 0),
+(219, 18, 'Çerkes', 0, 0),
+(220, 18, 'Eldivan', 0, 0),
+(221, 18, 'Ilgaz', 0, 0),
+(222, 18, 'Kizilirmak', 0, 0),
+(223, 18, 'Korgun', 0, 0),
+(224, 18, 'Kursunlu', 0, 0),
+(225, 18, 'Orta', 0, 0),
+(226, 18, 'Ovacik', 0, 0),
+(227, 18, 'Sabanözü', 0, 0),
+(228, 18, 'Yaprakli', 0, 0),
+(229, 19, 'Merkez', 0, 0),
+(230, 19, 'Alaca', 0, 0),
+(231, 19, 'Bayat', 0, 0),
+(232, 19, 'Bogazkale', 0, 0),
+(233, 19, 'Dodurga', 0, 0),
+(234, 19, 'Iskilip', 0, 0),
+(235, 19, 'Kargi', 0, 0),
+(236, 19, 'Laçin', 0, 0),
+(237, 19, 'Mecitözü', 0, 0),
+(238, 19, 'Oguzlar', 0, 0),
+(239, 19, 'Ortaköy', 0, 0),
+(240, 19, 'Osmancik', 0, 0),
+(241, 19, 'Sungurlu', 0, 0),
+(242, 19, 'Ugurludag', 0, 0),
+(243, 20, 'Merkez', 0, 0),
+(244, 20, 'Acipayam', 0, 0),
+(245, 20, 'Akköy', 0, 0),
+(246, 20, 'Babadag', 0, 0),
+(247, 20, 'Baklan', 0, 0),
+(248, 20, 'Bekilli', 0, 0),
+(249, 20, 'Beyagaç', 0, 0),
+(250, 20, 'Buldan', 0, 0),
+(251, 20, 'Bozkurt', 0, 0),
+(252, 20, 'Çal', 0, 0),
+(253, 20, 'Çameli', 0, 0),
+(254, 20, 'Çardak', 0, 0),
+(255, 20, 'Çivril', 0, 0),
+(256, 20, 'Güney', 0, 0),
+(257, 20, 'Honaz', 0, 0),
+(258, 20, 'Kale', 0, 0),
+(259, 20, 'Sarayköy', 0, 0),
+(260, 20, 'Serinhisar', 0, 0),
+(261, 20, 'Tavas', 0, 0),
+(262, 21, 'Merkez', 0, 0),
+(263, 21, 'Bismil', 0, 0),
+(264, 21, 'Çermik', 0, 0),
+(265, 21, 'Çinar', 0, 0),
+(266, 21, 'Çüngüs', 0, 0),
+(267, 21, 'Dicle', 0, 0),
+(268, 21, 'Egil', 0, 0),
+(269, 21, 'Ergani', 0, 0),
+(270, 21, 'Hani', 0, 0),
+(271, 21, 'Hazro', 0, 0),
+(272, 21, 'Kocaköy', 0, 0),
+(273, 21, 'Kulp', 0, 0),
+(274, 21, 'Lice', 0, 0),
+(275, 21, 'Silvan', 0, 0),
+(276, 22, 'Merkez', 0, 0),
+(277, 22, 'Enez', 0, 0),
+(278, 22, 'Havsa', 0, 0),
+(279, 22, 'Ipsala', 0, 0),
+(280, 22, 'Kesan', 0, 0),
+(281, 22, 'Lalapasa', 0, 0),
+(282, 22, 'Meriç', 0, 0),
+(283, 22, 'Süloglu', 0, 0),
+(284, 22, 'Uzunköprü', 0, 0),
+(285, 23, 'Merkez', 0, 0),
+(286, 23, 'Agin', 0, 0),
+(287, 23, 'Alacakaya', 0, 0),
+(288, 23, 'Aricak', 0, 0),
+(289, 23, 'Baskil', 0, 0),
+(290, 23, 'Karakoçan', 0, 0),
+(291, 23, 'Keban', 0, 0),
+(292, 23, 'Kovancilar', 0, 0),
+(293, 23, 'Maden', 0, 0),
+(294, 23, 'Palu', 0, 0),
+(295, 23, 'Sivrice', 0, 0),
+(296, 24, 'Merkez', 0, 0),
+(297, 24, 'Çayirli', 0, 0),
+(298, 24, 'Iliç', 0, 0),
+(299, 24, 'Kemah', 0, 0),
+(300, 24, 'Kemaliye', 0, 0),
+(301, 24, 'Otlukbeli', 0, 0),
+(302, 24, 'Refahiye', 0, 0),
+(303, 24, 'Tercan', 0, 0),
+(304, 24, 'Üzümlü', 0, 0),
+(305, 25, 'Merkez', 0, 0),
+(306, 25, 'Askale', 0, 0),
+(307, 25, 'Çat', 0, 0),
+(308, 25, 'Hinis', 0, 0),
+(309, 25, 'Horasan', 0, 0),
+(310, 25, 'Ilica', 0, 0),
+(311, 25, 'Ispir', 0, 0),
+(312, 25, 'Karaçoban', 0, 0),
+(313, 25, 'Karayazi', 0, 0),
+(314, 25, 'Köprüköy', 0, 0),
+(315, 25, 'Narman', 0, 0),
+(316, 25, 'Oltu', 0, 0),
+(317, 25, 'Olur', 0, 0),
+(318, 25, 'Pasinler', 0, 0),
+(319, 25, 'Pazaryolu', 0, 0),
+(320, 25, 'Senkaya', 0, 0),
+(321, 25, 'Tekman', 0, 0),
+(322, 25, 'Tortum', 0, 0),
+(323, 25, 'Uzundere', 0, 0),
+(324, 26, 'Merkez', 0, 0),
+(325, 26, 'Alpu', 0, 0),
+(326, 26, 'Beylikova', 0, 0),
+(327, 26, 'Çifteler', 0, 0),
+(328, 26, 'Günyüzü', 0, 0),
+(329, 26, 'Han', 0, 0),
+(330, 26, 'Inönü', 0, 0),
+(331, 26, 'Mahmudiye', 0, 0),
+(332, 26, 'Mihalgazi', 0, 0),
+(333, 26, 'Mihaliççik', 0, 0),
+(334, 26, 'Saricakaya', 0, 0),
+(335, 26, 'Seyitgazi', 0, 0),
+(336, 26, 'Sivrihisar', 0, 0),
+(337, 27, 'Merkez', 0, 0),
+(338, 27, 'Araban', 0, 0),
+(339, 27, 'Islahiye', 0, 0),
+(340, 27, 'Kilis', 0, 0),
+(341, 27, 'Kargamis', 0, 0),
+(342, 27, 'Nizip', 0, 0),
+(343, 27, 'Nurdagi', 0, 0),
+(344, 27, 'Oguzeli', 0, 0),
+(345, 27, 'Sahinbey', 0, 0),
+(346, 27, 'Sehitkamil', 0, 0),
+(347, 27, 'Yavuzeli', 0, 0),
+(348, 28, 'Merkez', 0, 0),
+(349, 28, 'Alucra', 0, 0),
+(350, 28, 'Bulancak', 0, 0),
+(351, 28, 'Çamoluk', 0, 0),
+(352, 28, 'Çanakçi', 0, 0),
+(353, 28, 'Dereli', 0, 0),
+(354, 28, 'Dogankent', 0, 0),
+(355, 28, 'Espiye', 0, 0),
+(356, 28, 'Eynesil', 0, 0),
+(357, 28, 'Görele', 0, 0),
+(358, 28, 'Güce', 0, 0),
+(359, 28, 'Kesap', 0, 0),
+(360, 28, 'Piraziz', 0, 0),
+(361, 28, 'Sebinkarahisar', 0, 0),
+(362, 28, 'Tirebolu', 0, 0),
+(363, 28, 'Yaglidere', 0, 0),
+(364, 29, 'Merkez', 0, 0),
+(365, 29, 'Kelkit', 0, 0),
+(366, 29, 'Köse', 0, 0),
+(367, 29, 'Kürtün', 0, 0),
+(368, 29, 'Siran', 0, 0),
+(369, 29, 'Torul', 0, 0),
+(370, 30, 'Merkez', 0, 0),
+(371, 30, 'Çukurca', 0, 0),
+(372, 30, 'Semdinli', 0, 0),
+(373, 30, 'Yüksekova', 0, 0),
+(374, 31, 'Merkez', 0, 0),
+(375, 31, 'Altinözü', 0, 0),
+(376, 31, 'Belen', 0, 0),
+(377, 31, 'Dörtyol', 0, 0),
+(378, 31, 'Erzin', 0, 0),
+(379, 31, 'Hassa', 0, 0),
+(380, 31, 'Iskenderun', 0, 0),
+(381, 31, 'Kirikhan', 0, 0),
+(382, 31, 'Kumlu', 0, 0),
+(383, 31, 'Reyhanli', 0, 0),
+(384, 31, 'Samandagi', 0, 0),
+(385, 31, 'Yayladagi', 0, 0),
+(386, 32, 'Merkez', 0, 0),
+(387, 32, 'Aksu', 0, 0),
+(388, 32, 'Atabey', 0, 0),
+(389, 32, 'Egirdir', 0, 0),
+(390, 32, 'Gelendost', 0, 0),
+(391, 32, 'Gönen', 0, 0),
+(392, 32, 'Keçiborlu', 0, 0),
+(393, 32, 'Senirkent', 0, 0),
+(394, 32, 'Sütçüler', 0, 0),
+(395, 32, 'Sarkikaraag', 0, 0),
+(396, 32, 'Uluborlu', 0, 0),
+(397, 32, 'Yenisarbade', 0, 0),
+(398, 32, 'Yalvaç', 0, 0),
+(399, 33, 'Merkez', 0, 0),
+(400, 33, 'Anamur', 0, 0),
+(401, 33, 'Aydincik', 0, 0),
+(402, 33, 'Bozyazi', 0, 0),
+(403, 33, 'Çamliyayla', 0, 0),
+(404, 33, 'Erdemli', 0, 0),
+(405, 33, 'Gülnar', 0, 0),
+(406, 33, 'Mut', 0, 0),
+(407, 33, 'Silifke', 0, 0),
+(408, 33, 'Tarsus', 0, 0),
+(409, 34, 'Merkez', 0, 0),
+(410, 34, 'Adalar', 0, 0),
+(411, 34, 'Avcilar', 0, 0),
+(412, 34, 'Bagcilar', 0, 0),
+(413, 34, 'Bakirköy', 0, 0),
+(414, 34, 'Bahçelievle', 0, 0),
+(415, 34, 'Bayrampasa', 0, 0),
+(416, 34, 'Besiktas', 0, 0),
+(417, 34, 'Beykoz', 0, 0),
+(418, 34, 'Beyoglu', 0, 0),
+(419, 34, 'Büyükçekmece', 0, 0),
+(420, 34, 'Çatalca', 0, 0),
+(421, 34, 'Eminönü', 0, 0),
+(422, 34, 'Eyüp', 0, 0),
+(423, 34, 'Esenler', 0, 0),
+(424, 34, 'Fatih', 0, 0),
+(425, 34, 'Gaziosmanpasa', 0, 0),
+(426, 34, 'Güngören', 0, 0),
+(427, 34, 'Kadiköy', 0, 0),
+(428, 34, 'Kagithane', 0, 0),
+(429, 34, 'Kartal', 0, 0),
+(430, 34, 'Küçükçekmece', 0, 0),
+(431, 34, 'Maltepe', 0, 0),
+(432, 34, 'Pendik', 0, 0),
+(433, 34, 'Sariyer', 0, 0),
+(434, 34, 'Silivri', 0, 0),
+(435, 34, 'Sultanbeyli', 0, 0),
+(436, 34, 'Sile', 0, 0),
+(437, 34, 'Sisli', 0, 0),
+(438, 34, 'Tuzla', 0, 0),
+(439, 34, 'Ümraniye', 0, 0),
+(440, 34, 'Üsküdar', 0, 0),
+(441, 34, 'Yalova', 0, 0),
+(442, 34, 'Zeytinburnu', 0, 0),
+(443, 35, 'Merkez', 0, 0),
+(444, 35, 'Aliaga', 0, 0),
+(445, 35, 'Bayindir', 0, 0),
+(446, 35, 'Balçova', 0, 0),
+(447, 35, 'Bergama', 0, 0),
+(448, 35, 'Beydag', 0, 0),
+(449, 35, 'Bornova', 0, 0),
+(450, 35, 'Buca', 0, 0),
+(451, 35, 'Çesme', 0, 0),
+(452, 35, 'Çigli', 0, 0),
+(453, 35, 'Dikili', 0, 0),
+(454, 35, 'Foça', 0, 0),
+(455, 35, 'Gaziemir', 0, 0),
+(456, 35, 'Güzelbahçe', 0, 0),
+(457, 35, 'Karaburun', 0, 0),
+(458, 35, 'Karsiyaka', 0, 0),
+(459, 35, 'Kemalpasa', 0, 0),
+(460, 35, 'Kinik', 0, 0),
+(461, 35, 'Kiraz', 0, 0),
+(462, 35, 'Konak', 0, 0),
+(463, 35, 'Menderes', 0, 0),
+(464, 35, 'Menemen', 0, 0),
+(465, 35, 'Narlidere', 0, 0),
+(466, 35, 'Ödemis', 0, 0),
+(467, 35, 'Seferihisar', 0, 0),
+(468, 35, 'Selçuk', 0, 0),
+(469, 35, 'Tire', 0, 0),
+(470, 35, 'Torbali', 0, 0),
+(471, 35, 'Urla', 0, 0),
+(472, 36, 'Merkez', 0, 0),
+(473, 36, 'Akyaka', 0, 0),
+(474, 36, 'Arpaçay', 0, 0),
+(475, 36, 'Digor', 0, 0),
+(476, 36, 'Kagizman', 0, 0),
+(477, 36, 'Sarikamis', 0, 0),
+(478, 36, 'Selim', 0, 0),
+(479, 36, 'Susuz', 0, 0),
+(480, 37, 'Merkez', 0, 0),
+(481, 37, 'Abana', 0, 0),
+(482, 37, 'Agli', 0, 0),
+(483, 37, 'Araç', 0, 0),
+(484, 37, 'Azdavay', 0, 0),
+(485, 37, 'Bozkurt', 0, 0),
+(486, 37, 'Cide', 0, 0),
+(487, 37, 'Çatalzeytin', 0, 0),
+(488, 37, 'Daday', 0, 0),
+(489, 37, 'Devrekani', 0, 0),
+(490, 37, 'Doganyurt', 0, 0),
+(491, 37, 'Hanönü', 0, 0),
+(492, 37, 'Ihsangazi', 0, 0),
+(493, 37, 'Inebolu', 0, 0),
+(494, 37, 'Küre', 0, 0),
+(495, 37, 'Pinarbasi', 0, 0),
+(496, 37, 'Seydiler', 0, 0),
+(497, 37, 'Senpazar', 0, 0),
+(498, 37, 'Tasköprü', 0, 0),
+(499, 37, 'Tosya', 0, 0),
+(500, 38, 'Merkez', 0, 0),
+(501, 38, 'Akkisla', 0, 0),
+(502, 38, 'Bünyan', 0, 0),
+(503, 38, 'Develi', 0, 0),
+(504, 38, 'Felahiye', 0, 0),
+(505, 38, 'Hacilar', 0, 0),
+(506, 38, 'Incesu', 0, 0),
+(507, 38, 'Kocasinan', 0, 0),
+(508, 38, 'Melikgazi', 0, 0),
+(509, 38, 'Özvatan', 0, 0),
+(510, 38, 'Pinarbasi', 0, 0),
+(511, 38, 'Sarioglan', 0, 0),
+(512, 38, 'Sariz', 0, 0),
+(513, 38, 'Talas', 0, 0),
+(514, 38, 'Tomarza', 0, 0),
+(515, 38, 'Yahyali', 0, 0),
+(516, 38, 'Yesilhisar', 0, 0),
+(517, 39, 'Merkez', 0, 0),
+(518, 39, 'Babaeski', 0, 0),
+(519, 39, 'Demirköy', 0, 0),
+(520, 39, 'Kofçaz', 0, 0),
+(521, 39, 'Lüleburgaz', 0, 0),
+(522, 39, 'Pehlivanköy', 0, 0),
+(523, 39, 'Pinarhisar', 0, 0),
+(524, 39, 'Vize', 0, 0),
+(525, 40, 'Merkez', 0, 0),
+(526, 40, 'Akçakent', 0, 0),
+(527, 40, 'Akpinar', 0, 0),
+(528, 40, 'Boztepe', 0, 0),
+(529, 40, 'Çiçekdagi', 0, 0),
+(530, 40, 'Kaman', 0, 0),
+(531, 40, 'Mucur', 0, 0),
+(532, 41, 'Merkez', 0, 0),
+(533, 41, 'Darica', 0, 0),
+(534, 41, 'Gebze', 0, 0),
+(535, 41, 'Gölcük', 0, 0),
+(536, 41, 'Kandira', 0, 0),
+(537, 41, 'Karamürsel', 0, 0),
+(538, 41, 'Körfez', 0, 0),
+(539, 42, 'Merkez', 0, 0),
+(540, 42, 'Ahirli', 0, 0),
+(541, 42, 'Akören', 0, 0),
+(542, 42, 'Aksehir', 0, 0),
+(543, 42, 'Altinekin', 0, 0),
+(544, 42, 'Beysehir', 0, 0),
+(545, 42, 'Bozkir', 0, 0),
+(546, 42, 'Derebucak', 0, 0),
+(547, 42, 'Cihanbeyli', 0, 0),
+(548, 42, 'Çumra', 0, 0),
+(549, 42, 'Çeltik', 0, 0),
+(550, 42, 'Derbent', 0, 0),
+(551, 42, 'Doganhisar', 0, 0),
+(552, 42, 'Emirgazi', 0, 0),
+(553, 42, 'Eregli', 0, 0),
+(554, 42, 'Güneysinir', 0, 0),
+(555, 42, 'Halkapinar', 0, 0),
+(556, 42, 'Hadim', 0, 0),
+(557, 42, 'Hüyük', 0, 0),
+(558, 42, 'Ilgin', 0, 0),
+(559, 42, 'Kadinhani', 0, 0),
+(560, 42, 'Karapinar', 0, 0),
+(561, 42, 'Karatay', 0, 0),
+(562, 42, 'Kulu', 0, 0),
+(563, 42, 'Meram', 0, 0),
+(564, 42, 'Sarayönü', 0, 0),
+(565, 42, 'Selçuklu', 0, 0),
+(566, 42, 'Seydisehir', 0, 0),
+(567, 42, 'Taskent', 0, 0),
+(568, 42, 'Tuzlukçu', 0, 0),
+(569, 42, 'Yalihöyük', 0, 0),
+(570, 42, 'Yunak', 0, 0),
+(571, 43, 'Merkez', 0, 0),
+(572, 43, 'Altintas', 0, 0),
+(573, 43, 'Aslanapa', 0, 0),
+(574, 43, 'Cavdarhisar', 0, 0),
+(575, 43, 'Domaniç', 0, 0),
+(576, 43, 'Dumlupinar', 0, 0),
+(577, 43, 'Emet', 0, 0),
+(578, 43, 'Gediz', 0, 0),
+(579, 43, 'Hisarcik', 0, 0),
+(580, 43, 'Pazarlar', 0, 0),
+(581, 43, 'Simav', 0, 0),
+(582, 43, 'Saphane', 0, 0),
+(583, 43, 'Tavsanli', 0, 0),
+(584, 44, 'Merkez', 0, 0),
+(585, 44, 'Akçadag', 0, 0),
+(586, 44, 'Arapgir', 0, 0),
+(587, 44, 'Arguvan', 0, 0),
+(588, 44, 'Battalgazi', 0, 0),
+(589, 44, 'Darende', 0, 0),
+(590, 44, 'Dogansehir', 0, 0),
+(591, 44, 'Doganyol', 0, 0),
+(592, 44, 'Hekimhan', 0, 0),
+(593, 44, 'Kale', 0, 0),
+(594, 44, 'Kuluncak', 0, 0),
+(595, 44, 'Pötürge', 0, 0),
+(596, 44, 'Yazihan', 0, 0),
+(597, 44, 'Yesilyurt', 0, 0),
+(598, 45, 'Merkez', 0, 0),
+(599, 45, 'Ahmetli', 0, 0),
+(600, 45, 'Akhisar', 0, 0),
+(601, 45, 'Alasehir', 0, 0),
+(602, 45, 'Demirci', 0, 0),
+(603, 45, 'Gölmarmara', 0, 0),
+(604, 45, 'Gördes', 0, 0),
+(605, 45, 'Kirkagaç', 0, 0),
+(606, 45, 'Köprübasi', 0, 0),
+(607, 45, 'Kula', 0, 0),
+(608, 45, 'Salihli', 0, 0),
+(609, 45, 'Sarigöl', 0, 0),
+(610, 45, 'Saruhanli', 0, 0),
+(611, 45, 'Selendi', 0, 0),
+(612, 45, 'Soma', 0, 0),
+(613, 45, 'Turgutlu', 0, 0),
+(614, 46, 'Merkez', 0, 0),
+(615, 46, 'Afsin', 0, 0),
+(616, 46, 'Andirin', 0, 0),
+(617, 46, 'Çaglayancer', 0, 0),
+(618, 46, 'Ekinözü', 0, 0),
+(619, 46, 'Elbistan', 0, 0),
+(620, 46, 'Göksun', 0, 0),
+(621, 46, 'Nurhak', 0, 0),
+(622, 46, 'Pazarcik', 0, 0),
+(623, 46, 'Türkoglu', 0, 0),
+(624, 47, 'Merkez', 0, 0),
+(625, 47, 'Dargeçit', 0, 0),
+(626, 47, 'Derik', 0, 0),
+(627, 47, 'Kiziltepe', 0, 0),
+(628, 47, 'Mazidagi', 0, 0),
+(629, 47, 'Midyat', 0, 0),
+(630, 47, 'Nusaybin', 0, 0),
+(631, 47, 'Ömerli', 0, 0),
+(632, 47, 'Savur', 0, 0),
+(633, 47, 'Yesilli', 0, 0),
+(634, 48, 'Merkez', 0, 0),
+(635, 48, 'Bodrum', 0, 0),
+(636, 48, 'Dalaman', 0, 0),
+(637, 48, 'Datça', 0, 0),
+(638, 48, 'Fethiye', 0, 0),
+(639, 48, 'Kavaklidere', 0, 0),
+(640, 48, 'Köycegiz', 0, 0),
+(641, 48, 'Marmaris', 0, 0),
+(642, 48, 'Milas', 0, 0),
+(643, 48, 'Ortaca', 0, 0),
+(644, 48, 'Ula', 0, 0),
+(645, 48, 'Yatagan', 0, 0),
+(646, 49, 'Merkez', 0, 0),
+(647, 49, 'Bulanik', 0, 0),
+(648, 49, 'Hasköy', 0, 0),
+(649, 49, 'Korkut', 0, 0),
+(650, 49, 'Malazgirt', 0, 0),
+(651, 49, 'Varto', 0, 0),
+(652, 50, 'Merkez', 0, 0),
+(653, 50, 'Acigöl', 0, 0),
+(654, 50, 'Avanos', 0, 0),
+(655, 50, 'Derinkuyu', 0, 0),
+(656, 50, 'Gülsehir', 0, 0),
+(657, 50, 'Hacibektas', 0, 0),
+(658, 50, 'Kozakli', 0, 0),
+(659, 50, 'Ürgüp', 0, 0),
+(660, 51, 'Merkez', 0, 0),
+(661, 51, 'Altunhisar', 0, 0),
+(662, 51, 'Bor', 0, 0),
+(663, 51, 'Çamardi', 0, 0),
+(664, 51, 'Çiftlik', 0, 0),
+(665, 51, 'Ulukisla', 0, 0),
+(666, 52, 'Merkez', 0, 0),
+(667, 52, 'Akkus', 0, 0),
+(668, 52, 'Aybasti', 0, 0),
+(669, 52, 'Çamas', 0, 0),
+(670, 52, 'Çatalpinar', 0, 0),
+(671, 52, 'Çaybasi', 0, 0),
+(672, 52, 'Fatsa', 0, 0),
+(673, 52, 'Gölköy', 0, 0),
+(674, 52, 'Gölyali', 0, 0),
+(675, 52, 'Gürgentepe', 0, 0),
+(676, 52, 'Ikizce', 0, 0),
+(677, 52, 'Korgan', 0, 0),
+(678, 52, 'Kabadüz', 0, 0),
+(679, 52, 'Kabatas', 0, 0),
+(680, 52, 'Kumru', 0, 0),
+(681, 52, 'Mesudiye', 0, 0),
+(682, 52, 'Persembe', 0, 0),
+(683, 52, 'Ulubey', 0, 0),
+(684, 52, 'Ünye', 0, 0),
+(685, 53, 'Merkez', 0, 0),
+(686, 53, 'Ardesen', 0, 0),
+(687, 53, 'Çamlihemsin', 0, 0),
+(688, 53, 'Çayeli', 0, 0),
+(689, 53, 'Derepazari', 0, 0),
+(690, 53, 'Findikli', 0, 0),
+(691, 53, 'Güneysu', 0, 0),
+(692, 53, 'Hemsin', 0, 0),
+(693, 53, 'Ikizdere', 0, 0),
+(694, 53, 'Iyidere', 0, 0),
+(695, 53, 'Kalkandere', 0, 0),
+(696, 53, 'Pazar', 0, 0),
+(697, 54, 'Merkez', 0, 0),
+(698, 54, 'Akyazi', 0, 0),
+(699, 54, 'Ferizli', 0, 0),
+(700, 54, 'Geyve', 0, 0),
+(701, 54, 'Hendek', 0, 0),
+(702, 54, 'Karapürçek', 0, 0),
+(703, 54, 'Karasu', 0, 0),
+(704, 54, 'Kaynarca', 0, 0),
+(705, 54, 'Kocaali', 0, 0),
+(706, 54, 'Pamukova', 0, 0),
+(707, 54, 'Sapanca', 0, 0),
+(708, 54, 'Sögütlü', 0, 0),
+(709, 54, 'Tarakli', 0, 0),
+(710, 55, 'Merkez', 0, 0),
+(711, 55, 'Alaçam', 0, 0),
+(712, 55, 'Asarcik', 0, 0),
+(713, 55, 'Ayvacik', 0, 0),
+(714, 55, 'Bafra', 0, 0),
+(715, 55, 'Çarsamba', 0, 0),
+(716, 55, 'Havza', 0, 0),
+(717, 55, 'Kavak', 0, 0),
+(718, 55, 'Ladik', 0, 0),
+(719, 55, '19mayis', 0, 0),
+(720, 55, 'Salipazari', 0, 0),
+(721, 55, 'Tekkeköy', 0, 0),
+(722, 55, 'Terme', 0, 0),
+(723, 55, 'Vezirköprü', 0, 0),
+(724, 55, 'Yakakent', 0, 0),
+(725, 56, 'Merkez', 0, 0),
+(726, 56, 'Aydinlar', 0, 0),
+(727, 56, 'Baykan', 0, 0),
+(728, 56, 'Eruh', 0, 0),
+(729, 56, 'Kozluk', 0, 0),
+(730, 56, 'Kurtalan', 0, 0),
+(731, 56, 'Pervari', 0, 0),
+(732, 56, 'Sirvan', 0, 0),
+(733, 57, 'Merkez', 0, 0),
+(734, 57, 'Ayancik', 0, 0),
+(735, 57, 'Boyabat', 0, 0),
+(736, 57, 'Dikmen', 0, 0),
+(737, 57, 'Duragan', 0, 0),
+(738, 57, 'Erfelek', 0, 0),
+(739, 57, 'Gerze', 0, 0),
+(740, 57, 'Saraydüzü', 0, 0),
+(741, 57, 'Türkeli', 0, 0),
+(742, 58, 'Merkez', 0, 0),
+(743, 58, 'Akincilar', 0, 0),
+(744, 58, 'Altinyayla', 0, 0),
+(745, 58, 'Divrigi', 0, 0),
+(746, 58, 'Dogansar', 0, 0),
+(747, 58, 'Gemerek', 0, 0),
+(748, 58, 'Gölova', 0, 0),
+(749, 58, 'Gürün', 0, 0),
+(750, 58, 'Hafik', 0, 0),
+(751, 58, 'Imranli', 0, 0),
+(752, 58, 'Kangal', 0, 0),
+(753, 58, 'Koyulhisar', 0, 0),
+(754, 58, 'Susehri', 0, 0),
+(755, 58, 'Sarkisla', 0, 0),
+(756, 58, 'Ulas', 0, 0),
+(757, 58, 'Yildizeli', 0, 0),
+(758, 58, 'Zara', 0, 0),
+(759, 59, 'Merkez', 0, 0),
+(760, 59, 'Çerkezköy', 0, 0),
+(761, 59, 'Çorlu', 0, 0),
+(762, 59, 'Hayrabolu', 0, 0),
+(763, 59, 'Malkara', 0, 0),
+(764, 59, 'Marmaraeregli', 0, 0),
+(765, 59, 'Muratli', 0, 0),
+(766, 59, 'Saray', 0, 0),
+(767, 59, 'Sarköy', 0, 0),
+(768, 60, 'Merkez', 0, 0),
+(769, 60, 'Almus', 0, 0),
+(770, 60, 'Artova', 0, 0),
+(771, 60, 'Basçiftlik', 0, 0),
+(772, 60, 'Erbaa', 0, 0),
+(773, 60, 'Niksar', 0, 0),
+(774, 60, 'Pazar', 0, 0),
+(775, 60, 'Resadiye', 0, 0),
+(776, 60, 'Sulusaray', 0, 0),
+(777, 60, 'Turhal', 0, 0),
+(778, 60, 'Yesilyurt', 0, 0),
+(779, 60, 'Zile', 0, 0),
+(780, 61, 'Merkez', 0, 0),
+(781, 61, 'Akçaabat', 0, 0),
+(782, 61, 'Arakli', 0, 0),
+(783, 61, 'Arsin', 0, 0),
+(784, 61, 'Besikdüzü', 0, 0),
+(785, 61, 'Çarsibasi', 0, 0),
+(786, 61, 'Çaykara', 0, 0),
+(787, 61, 'Dernekpazar', 0, 0),
+(788, 61, 'Düzköy', 0, 0),
+(789, 61, 'Hayrat', 0, 0),
+(790, 61, 'Köprübasi', 0, 0),
+(791, 61, 'Maçka', 0, 0),
+(792, 61, 'Of', 0, 0),
+(793, 61, 'Sürmene', 0, 0),
+(794, 61, 'Salpazari', 0, 0),
+(795, 61, 'Tonya', 0, 0),
+(796, 61, 'Vakfikebir', 0, 0),
+(797, 61, 'Yomra', 0, 0),
+(798, 62, 'Merkez', 0, 0),
+(799, 62, 'Çemisgezek', 0, 0),
+(800, 62, 'Hozat', 0, 0),
+(801, 62, 'Mazgirt', 0, 0),
+(802, 62, 'Nazimiye', 0, 0),
+(803, 62, 'Ovacik', 0, 0),
+(804, 62, 'Pertek', 0, 0),
+(805, 62, 'Pülümür', 0, 0),
+(806, 63, 'Merkez', 0, 0),
+(807, 63, 'Akçakale', 0, 0),
+(808, 63, 'Birecik', 0, 0),
+(809, 63, 'Bozova', 0, 0),
+(810, 63, 'Ceylanpinar', 0, 0),
+(811, 63, 'Halfeti', 0, 0),
+(812, 63, 'Harran', 0, 0),
+(813, 63, 'Hilvan', 0, 0),
+(814, 63, 'Siverek', 0, 0),
+(815, 63, 'Suruç', 0, 0),
+(816, 63, 'Viransehir', 0, 0),
+(817, 64, 'Merkez', 0, 0),
+(818, 64, 'Banaz', 0, 0),
+(819, 64, 'Esme', 0, 0),
+(820, 64, 'Karahalli', 0, 0),
+(821, 64, 'Sivasli', 0, 0),
+(822, 64, 'Ulubey', 0, 0),
+(823, 65, 'Merkez', 0, 0),
+(824, 65, 'Bahçesaray', 0, 0),
+(825, 65, 'Baskale', 0, 0),
+(826, 65, 'Çaldiran', 0, 0),
+(827, 65, 'Çatak', 0, 0),
+(828, 65, 'Edremit', 0, 0),
+(829, 65, 'Ercis', 0, 0),
+(830, 65, 'Gevas', 0, 0),
+(831, 65, 'Gürpinar', 0, 0),
+(832, 65, 'Muradiye', 0, 0),
+(833, 65, 'Özalp', 0, 0),
+(834, 65, 'Saray', 0, 0),
+(835, 66, 'Merkez', 0, 0),
+(836, 66, 'Akdagmadeni', 0, 0),
+(837, 66, 'Aydincik', 0, 0),
+(838, 66, 'Bogazliyan', 0, 0),
+(839, 66, 'Çandir', 0, 0),
+(840, 66, 'Çayiralan', 0, 0),
+(841, 66, 'Çekerek', 0, 0),
+(842, 66, 'Kadisehri', 0, 0),
+(843, 66, 'Sarikaya', 0, 0),
+(844, 66, 'Saraykent', 0, 0),
+(845, 66, 'Sorgun', 0, 0),
+(846, 66, 'Sefaatli', 0, 0),
+(847, 66, 'Yenifakili', 0, 0),
+(848, 66, 'Yerköy', 0, 0),
+(849, 67, 'Merkez', 0, 0),
+(850, 67, 'Alapli', 0, 0),
+(851, 67, 'Çamoluk', 0, 0),
+(852, 67, 'Çaycuma', 0, 0),
+(853, 67, 'Devrek', 0, 0),
+(854, 67, 'Eflani', 0, 0),
+(855, 67, 'Eregli', 0, 0),
+(856, 67, 'Gökçebey', 0, 0),
+(857, 68, 'Merkez', 0, 0),
+(858, 68, 'Agaçören', 0, 0),
+(859, 68, 'Eskil', 0, 0),
+(860, 68, 'Gülagaç', 0, 0),
+(861, 68, 'Güzelyurt', 0, 0),
+(862, 68, 'Ortaköy', 0, 0),
+(863, 68, 'Sariyahsi', 0, 0),
+(864, 69, 'Merkez', 0, 0),
+(865, 69, 'Aydintepe', 0, 0),
+(866, 69, 'Demirözü', 0, 0),
+(867, 70, 'Merkez', 0, 0),
+(868, 70, 'Ayranci', 0, 0),
+(869, 70, 'Basyayla', 0, 0),
+(870, 70, 'Ermenek', 0, 0),
+(871, 70, 'Kazimkarabekir', 0, 0),
+(872, 70, 'Sariveliler', 0, 0),
+(873, 71, 'Merkez', 0, 0),
+(874, 71, 'Bahsili', 0, 0),
+(875, 71, 'Bagliseyh', 0, 0),
+(876, 71, 'Çelebi', 0, 0),
+(877, 71, 'Delice', 0, 0),
+(878, 71, 'Karakeçili', 0, 0),
+(879, 71, 'Keskin', 0, 0),
+(880, 71, 'Sulakyurt', 0, 0),
+(881, 71, 'Yahsihan', 0, 0),
+(882, 72, 'Merkez', 0, 0),
+(883, 72, 'Gercüs', 0, 0),
+(884, 72, 'Hasankeyf', 0, 0),
+(885, 72, 'Besiri', 0, 0),
+(886, 72, 'Kozluk', 0, 0),
+(887, 72, 'Sason', 0, 0),
+(888, 73, 'Merkez', 0, 0),
+(889, 73, 'Beytüsseba', 0, 0),
+(890, 73, 'Uludere', 0, 0),
+(891, 73, 'Cizre', 0, 0),
+(892, 73, 'Idil', 0, 0),
+(893, 73, 'Silopi', 0, 0),
+(894, 73, 'Güçlükonak', 0, 0),
+(895, 74, 'Merkez', 0, 0),
+(896, 74, 'Amasra', 0, 0),
+(897, 74, 'Kurucasile', 0, 0),
+(898, 74, 'Ulus', 0, 0),
+(899, 75, 'Merkez', 0, 0),
+(900, 75, 'Çildir', 0, 0),
+(901, 75, 'Damal', 0, 0),
+(902, 75, 'Göle', 0, 0),
+(903, 75, 'Hanak', 0, 0),
+(904, 75, 'Posof', 0, 0),
+(905, 76, 'Merkez', 0, 0),
+(906, 76, 'Aralik', 0, 0),
+(907, 76, 'Karakoyunlu', 0, 0),
+(908, 76, 'Tuzluca', 0, 0),
+(909, 77, 'Merkez', 0, 0),
+(910, 77, 'Altinova', 0, 0),
+(911, 77, 'Armutlu', 0, 0),
+(912, 77, 'Cinarcik', 0, 0),
+(913, 77, 'Ciftlikkoy', 0, 0),
+(914, 77, 'Termal', 0, 0),
+(915, 78, 'Merkez', 0, 0),
+(916, 78, 'Eflani', 0, 0),
+(917, 78, 'Eskipazar', 0, 0),
+(918, 78, 'Ovacik', 0, 0),
+(919, 78, 'Safranbolu', 0, 0),
+(920, 78, 'Yenice', 0, 0),
+(921, 79, 'Merkez', 0, 0),
+(922, 79, 'Elbeyli', 0, 0),
+(923, 79, 'Musabeyli', 0, 0),
+(924, 79, 'Polateli', 0, 0),
+(925, 80, 'Merkez', 0, 0),
+(926, 80, 'Bahçe', 0, 0),
+(927, 80, 'Hasanbeyli', 0, 0),
+(928, 80, 'Düziçi', 0, 0),
+(929, 80, 'Kadirli', 0, 0),
+(930, 80, 'Sunbas', 0, 0),
+(931, 80, 'Toprakkale', 0, 0),
+(932, 81, 'Merkez', 0, 0),
+(933, 81, 'Akçakoca', 0, 0),
+(934, 81, 'Cumayeri', 0, 0),
+(935, 81, 'Çilimli', 0, 0),
+(936, 81, 'Gölyaka', 0, 0),
+(937, 81, 'Gümüsova', 0, 0),
+(938, 81, 'Kaynasli', 0, 0),
+(939, 81, 'Yigilca', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `iller`
+--
+
+CREATE TABLE IF NOT EXISTS `iller` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `plakaID` int(11) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `disabled` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `plakaID` (`plakaID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=83 ;
+
+--
+-- Tablo döküm verisi `iller`
+--
+
+INSERT INTO `iller` (`ID`, `plakaID`, `name`, `disabled`) VALUES
+(1, 1, 'Adana', 0),
+(2, 2, 'Adıyaman', 0),
+(3, 3, 'Afyon', 0),
+(4, 4, 'Ağrı', 0),
+(5, 5, 'Amasya', 0),
+(6, 6, 'Ankara', 0),
+(7, 7, 'Antalya', 0),
+(8, 8, 'Artvin', 0),
+(9, 9, 'Aydın', 0),
+(10, 10, 'Balıkesir', 0),
+(11, 11, 'Bilecik', 0),
+(12, 12, 'Bingöl', 0),
+(13, 13, 'Bitlis', 0),
+(14, 14, 'Bolu', 0),
+(15, 15, 'Burdur', 0),
+(16, 16, 'Bursa', 0),
+(17, 17, 'Çanakkale', 0),
+(18, 18, 'Çankırı', 0),
+(19, 19, 'Çorum', 0),
+(20, 20, 'Denizli', 0),
+(21, 21, 'Diyarbakır', 0),
+(22, 22, 'Edirne', 0),
+(23, 23, 'Elazığ', 0),
+(24, 24, 'Erzincan', 0),
+(25, 25, 'Erzurum', 0),
+(26, 26, 'Eskişehir', 0),
+(27, 27, 'Gaziantep', 0),
+(28, 28, 'Giresun', 0),
+(29, 29, 'Gümüşhane', 0),
+(30, 30, 'Hakkari', 0),
+(31, 31, 'Hatay', 0),
+(32, 32, 'Isparta', 0),
+(33, 33, 'İçel', 0),
+(34, 34, 'İstanbul', 0),
+(35, 35, 'İzmir', 0),
+(36, 36, 'Kars', 0),
+(37, 37, 'Kastamonu', 0),
+(38, 38, 'Kayseri', 0),
+(39, 39, 'Kırklareli', 0),
+(40, 40, 'Kırşehir', 0),
+(41, 41, 'Kocaeli', 0),
+(42, 42, 'Konya', 0),
+(43, 43, 'Kütahya', 0),
+(44, 44, 'Malatya', 0),
+(45, 45, 'Manisa', 0),
+(46, 46, 'K.Maraş', 0),
+(47, 47, 'Mardin', 0),
+(48, 48, 'Muğla', 0),
+(49, 49, 'Muş', 0),
+(50, 50, 'Nevşehir', 0),
+(51, 51, 'Niğde', 0),
+(52, 52, 'Ordu', 0),
+(53, 53, 'Rize', 0),
+(54, 54, 'Sakarya', 0),
+(55, 55, 'Samsun', 0),
+(56, 56, 'Siirt', 0),
+(57, 57, 'Sinop', 0),
+(58, 58, 'Sivas', 0),
+(59, 59, 'Tekirdağ', 0),
+(60, 60, 'Tokat', 0),
+(61, 61, 'Trabzon', 0),
+(62, 62, 'Tunceli', 0),
+(63, 63, 'Şanlıurfa', 0),
+(64, 64, 'Uşak', 0),
+(65, 65, 'Van', 0),
+(66, 66, 'Yozgat', 0),
+(67, 67, 'Zonguldak', 0),
+(68, 68, 'Aksaray', 0),
+(69, 69, 'Bayburt', 0),
+(70, 70, 'Karaman', 0),
+(71, 71, 'Kırıkkale', 0),
+(72, 72, 'Batman', 0),
+(73, 73, 'Şırnak', 0),
+(74, 74, 'Bartın', 0),
+(75, 75, 'Ardahan', 0),
+(76, 76, 'Iğdır', 0),
+(77, 77, 'Yalova', 0),
+(78, 78, 'Karabük', 0),
+(79, 79, 'Kilis', 0),
+(80, 80, 'Osmaniye', 0),
+(81, 81, 'Düzce', 0),
+(82, 33, 'Mersin', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kampanyaBanner`
+--
+
+CREATE TABLE IF NOT EXISTS `kampanyaBanner` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `resim` varchar(512) NOT NULL,
+  `thumb` varchar(512) NOT NULL,
+  `link` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Tablo döküm verisi `kampanyaBanner`
+--
+
+INSERT INTO `kampanyaBanner` (`ID`, `title`, `resim`, `thumb`, `link`, `seq`) VALUES
+(4, 'Deneme', 'resim-4.jpg', '', '', 0),
+(5, '', 'resim-5.jpg', '', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kampanyaBannerConfig`
+--
+
+CREATE TABLE IF NOT EXISTS `kampanyaBannerConfig` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `secim` varchar(32) NOT NULL,
+  `resimen` int(11) NOT NULL,
+  `resimboy` int(11) NOT NULL,
+  `thumben` int(11) NOT NULL,
+  `thumbboy` int(11) NOT NULL,
+  `effect` varchar(64) NOT NULL,
+  `pozisyon` varchar(16) NOT NULL,
+  `hiz` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `kampanyaBannerConfig`
+--
+
+INSERT INTO `kampanyaBannerConfig` (`ID`, `secim`, `resimen`, `resimboy`, `thumben`, `thumbboy`, `effect`, `pozisyon`, `hiz`) VALUES
+(1, 'numbers', 450, 152, 12, 12, 'fade', 'left', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kampanyaJSBanner`
+--
+
+CREATE TABLE IF NOT EXISTS `kampanyaJSBanner` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `title2` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `info` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `info2` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `resimJS` varchar(512) NOT NULL,
+  `link` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Tablo döküm verisi `kampanyaJSBanner`
+--
+
+INSERT INTO `kampanyaJSBanner` (`ID`, `title`, `title2`, `info`, `info2`, `resimJS`, `link`, `seq`) VALUES
+(6, 'Deneme Başlık 5', 'Deneme Başlık 5', 'Deneme Bilgi 1', 'Deneme Bilgi 2', 'resimJS-6.jpg', '', 5),
+(7, 'Deneme Başlık 2', 'Deneme Başlık 2', 'Deneme Bilgi 1', 'Deneme Bilgi 2', 'resimJS-7.jpg', '', 2),
+(8, 'Deneme Başlık 4', 'Deneme Başlık 4', 'Deneme Bilgi 1', 'Deneme Bilgi 2', 'resimJS-8.jpg', '', 4),
+(9, 'Deneme Başlık 3', 'Deneme Başlık 3', 'Deneme Bilgi 1', 'Deneme Bilgi 2', 'resimJS-9.jpg', '', 3),
+(10, 'Deneme Başlık 1', 'Deneme Başlık 1', 'Deneme Bilgi 1', 'Deneme Bilgi 2', 'resimJS-10.jpg', '', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kampanyakategori`
+--
+
+CREATE TABLE IF NOT EXISTS `kampanyakategori` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `catID` int(11) NOT NULL,
+  `banner` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `baslangic` datetime NOT NULL,
+  `bitis` datetime NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `kampanyakategori`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kargoBolge`
+--
+
+CREATE TABLE IF NOT EXISTS `kargoBolge` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `kargoBolge`
+--
+
+INSERT INTO `kargoBolge` (`ID`, `name`) VALUES
+(1, 'Marmara');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kargoDesi`
+--
+
+CREATE TABLE IF NOT EXISTS `kargoDesi` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `firmaID` int(11) NOT NULL,
+  `bolgeID` int(11) NOT NULL,
+  `desiBaslangic` double NOT NULL,
+  `desiBitis` double NOT NULL,
+  `fiyat` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `kargoDesi`
+--
+
+INSERT INTO `kargoDesi` (`ID`, `firmaID`, `bolgeID`, `desiBaslangic`, `desiBitis`, `fiyat`) VALUES
+(1, 0, 1, 0, 10, 20),
+(2, 0, 1, 10, 20, 40);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kargofirma`
+--
+
+CREATE TABLE IF NOT EXISTS `kargofirma` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `ucretsiz` tinyint(1) NOT NULL,
+  `kurye` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `kargofirma`
+--
+
+INSERT INTO `kargofirma` (`ID`, `name`, `ucretsiz`, `kurye`) VALUES
+(0, 'Tüm Firmalar', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kargoSehir`
+--
+
+CREATE TABLE IF NOT EXISTS `kargoSehir` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `bolgeID` int(11) NOT NULL,
+  `plakaID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `kargoSehir`
+--
+
+INSERT INTO `kargoSehir` (`ID`, `bolgeID`, `plakaID`) VALUES
+(1, 1, 34),
+(2, 1, 16);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `kategori`
+--
+
+CREATE TABLE IF NOT EXISTS `kategori` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `metaKeywords` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `metaDescription` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `parentID` int(11) NOT NULL,
+  `tedarikciID` int(11) NOT NULL,
+  `tedarikciCode` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `name` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `resim` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `kar` double NOT NULL,
+  `PCToplama` tinyint(1) NOT NULL,
+  `namePath` text CHARACTER SET latin5 NOT NULL,
+  `idPath` varchar(1024) NOT NULL,
+  `level` int(11) NOT NULL,
+  `seq` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  `hit` int(11) NOT NULL,
+  `filterCache` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+
+--
+-- Tablo döküm verisi `kategori`
+--
+
+INSERT INTO `kategori` (`ID`, `metaKeywords`, `metaDescription`, `parentID`, `tedarikciID`, `tedarikciCode`, `name`, `resim`, `kar`, `PCToplama`, `namePath`, `idPath`, `level`, `seq`, `active`, `hit`, `filterCache`) VALUES
+(1, '', '', 0, 0, '', 'Elektronik Ürünler', '', 0, 0, 'Elektronik Ürünler', '1', 1, 1, 0, 42, ''),
+(2, '', '', 1, 0, '', 'Dijital Fotoğraf Makineleri', '', 0, 0, 'Elektronik Ürünler/Dijital Fotoğraf Makineleri', '1/2', 2, 2, 1, 0, ''),
+(3, '', '', 1, 0, '', 'Dijital Kameralar', '', 0, 0, 'Elektronik Ürünler/Dijital Kameralar', '1/3', 2, 2, 1, 0, ''),
+(4, '', '', 1, 0, '', 'MP3 Player', '', 0, 0, 'Elektronik Ürünler/MP3 Player', '1/4', 2, 3, 1, 0, ''),
+(5, '', '', 1, 0, '', 'Cep Telefonu', '', 0, 0, 'Elektronik Ürünler/Cep Telefonu', '1/5', 2, 5, 1, 0, ''),
+(6, '', '', 1, 0, '', 'Müzik ve Ses Sistemleri', '', 0, 0, 'Elektronik Ürünler/Müzik ve Ses Sistemleri', '1/6', 2, 7, 1, 0, ''),
+(7, '', '', 1, 0, '', 'Uydu Sistemleri', '', 0, 0, 'Elektronik Ürünler/Uydu Sistemleri', '1/7', 2, 8, 1, 0, ''),
+(8, '', '', 1, 0, '', 'Taşınabilir Müzik', '', 0, 0, 'Elektronik Ürünler/Taşınabilir Müzik', '1/8', 2, 9, 1, 0, ''),
+(9, '', '', 1, 0, '', 'Kalolu / Sabit Telefonlar', '', 0, 0, 'Elektronik Ürünler/Kalolu / Sabit Telefonlar', '1/9', 2, 5, 1, 0, ''),
+(10, '', '', 0, 0, '', 'Müzik ve Filmler', '', 0, 1, 'Müzik ve Filmler', '10', 1, 2, 1, 464, ''),
+(11, '', '', 10, 0, '', 'DVD Filmler', '', 0, 0, 'Müzik ve Filmler/DVD Filmler', '10/11', 2, 1, 1, 1286, ''),
+(12, '', '', 10, 0, '', 'Konser DVD&#39;leri', '', 0, 0, 'Müzik ve Filmler/Konser DVD&#39;leri', '10/12', 2, 2, 1, 964, ''),
+(13, '', '', 10, 0, '', 'Müzik CD&#39;leri', '', 0, 0, 'Müzik ve Filmler/Müzik CD&#39;leri', '10/13', 2, 3, 1, 764, ''),
+(14, '', '', 0, 0, '', 'Donanım ve Yazılım', '', 0, 1, 'Donanım ve Yazılım', '14', 1, 0, 1, 1476, ''),
+(15, '', '', 14, 0, '', 'Hazır Bilgisayarlar', '', 0, 0, 'Donanım ve Yazılım/Hazır Bilgisayarlar', '14/15', 2, 1, 1, 2514, ''),
+(16, '', '', 14, 0, '', 'Notebook', '', 0, 0, 'Donanım ve Yazılım/Notebook', '14/16', 2, 2, 1, 2507, ''),
+(17, '', '', 14, 0, '', 'Monitör', '', 0, 0, 'Donanım ve Yazılım/Monitör', '14/17', 2, 3, 1, 1740, ''),
+(18, '', '', 14, 0, '', 'OEM Parçalar', '', 0, 0, 'Donanım ve Yazılım/OEM Parçalar', '14/18', 2, 5, 1, 864, ''),
+(19, '', '', 17, 0, '', 'LCD Monitörler', '', 0, 0, 'Donanım ve Yazılım/Monitör/LCD Monitörler', '14/17/19', 3, 1, 1, 618, ''),
+(20, '', '', 17, 0, '', 'CRT Monitörler', '', 0, 0, 'Donanım ve Yazılım/Monitör/CRT Monitörler', '14/17/20', 3, 2, 1, 344, ''),
+(21, '', '', 19, 0, '', '19&#39;inç ve Üzeri', '', 0, 0, 'Donanım ve Yazılım/Monitör/LCD Monitörler/19&#39;inç ve Üzeri', '14/17/19/21', 4, 1, 1, 596, ''),
+(22, '', '', 19, 0, '', '17&#39;inç Monitörler', '', 0, 0, 'Donanım ve Yazılım/Monitör/LCD Monitörler/17&#39;inç Monitörler', '14/17/19/22', 4, 2, 1, 480, ''),
+(23, '', '', 15, 3, '', 'Hosting', '', 10, 1, 'Donanım ve Yazılım/Hazır Bilgisayarlar/Hosting', '14/15/23', 3, 0, 1, 400, '');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `mailing`
+--
+
+CREATE TABLE IF NOT EXISTS `mailing` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `body` text CHARACTER SET latin5 NOT NULL,
+  `sendToAdmin` tinyint(1) NOT NULL,
+  `sendToCustomer` tinyint(1) NOT NULL,
+  `sendToEbulten` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `mailing`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `maillist`
+--
+
+CREATE TABLE IF NOT EXISTS `maillist` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `mail` varchar(128) NOT NULL,
+  `IP` varchar(32) NOT NULL,
+  `tarih` date NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=15 ;
+
+--
+-- Tablo döküm verisi `maillist`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `makaleler`
+--
+
+CREATE TABLE IF NOT EXISTS `makaleler` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Baslik` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `Icerik` text CHARACTER SET latin5 NOT NULL,
+  `Tarih` date NOT NULL,
+  `metaKeywords` text CHARACTER SET latin5 NOT NULL,
+  `metaDescription` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Tablo döküm verisi `makaleler`
+--
+
+INSERT INTO `makaleler` (`ID`, `Baslik`, `Icerik`, `Tarih`, `metaKeywords`, `metaDescription`) VALUES
+(5, 'MAkale', '123<br /><br />Makale deneme<br /><br /><br />makale<br />', '2008-04-25', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `marka`
+--
+
+CREATE TABLE IF NOT EXISTS `marka` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `tedarikciCode` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `name` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `resim` varchar(512) CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Tablo döküm verisi `marka`
+--
+
+INSERT INTO `marka` (`ID`, `tedarikciCode`, `name`, `resim`) VALUES
+(1, '', 'Sony', 'resim-1.gif'),
+(2, '', 'HP', 'resim-2.gif'),
+(3, '', 'Casio', 'resim-3.gif'),
+(4, '', 'Apple', 'resim-4.gif'),
+(5, '', 'Asus', 'resim-5.gif'),
+(6, '', 'Dell', ''),
+(7, '', 'Philips', 'resim-7.gif'),
+(8, '', 'Digiturk', 'resim-8.gif'),
+(9, '', 'Samsung', 'resim-9.gif');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `odemeDurum`
+--
+
+CREATE TABLE IF NOT EXISTS `odemeDurum` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `mailCode` varchar(64) CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=92 ;
+
+--
+-- Tablo döküm verisi `odemeDurum`
+--
+
+INSERT INTO `odemeDurum` (`ID`, `title`, `mailCode`) VALUES
+(1, 'Ödeme Onay Bekliyor', ''),
+(2, 'Siparişiniz Hazırlanıyor', 'Odeme_Onayi'),
+(51, 'Siparişiniz Kargoya Teslim Edildi', 'Kargo_Gonderim'),
+(81, 'Teslimat Yapıldı', 'Teslimat_Onayi'),
+(91, 'İptal', 'Siparis_Iptali');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `pages`
+--
+
+CREATE TABLE IF NOT EXISTS `pages` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `parentID` int(11) NOT NULL,
+  `title` varchar(256) NOT NULL,
+  `metaKeywords` varchar(255) NOT NULL,
+  `metaDescription` varchar(255) NOT NULL,
+  `body` text NOT NULL,
+  `redirect` varchar(128) NOT NULL,
+  `showLeft` tinyint(1) NOT NULL,
+  `showBottom` tinyint(1) NOT NULL,
+  `hide` tinyint(1) NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=15 ;
+
+--
+-- Tablo döküm verisi `pages`
+--
+
+INSERT INTO `pages` (`ID`, `parentID`, `title`, `metaKeywords`, `metaDescription`, `body`, `redirect`, `showLeft`, `showBottom`, `hide`, `seq`) VALUES
+(1, 0, 'Garanti ve İade', '', '', 'Garanti ve İade', '', 1, 0, 0, 6),
+(2, 0, 'Gizlilik ve Kullanım Şartları', '', '', 'Gizlilik ve Kullanım Şartları', '', 1, 0, 0, 3),
+(3, 0, 'Kargo ve Taşıma Bilgileri', '', '', 'Kargo ve Taşıma Bilgileri', '', 1, 0, 0, 3),
+(4, 0, 'İletişim', '', '', '', 'iletisim_sp.html|page.php?act=iletisim', 1, 1, 0, 1),
+(7, 0, 'Sipariş Takibi', '', '', '', 'siparistakip_sp.html|page.php?act=siparistakip', 1, 0, 0, 2),
+(9, 0, 'S.S.S.', '', '', '', 'sss_sp.html|page.php?act=sss', 0, 1, 0, 2),
+(10, 0, 'Detaylı Arama', '', '', '', 'arama_sp.html|page.php?act=arama', 0, 1, 0, 4),
+(12, 0, 'Hakkımızda', '', '', 'Hakkımızda', '', 0, 1, 0, 5),
+(13, 0, 'Sistem Toplama', '', '', '', 'pcToplama_sp.html|page.php?act=pcToplama', 1, 0, 0, 20),
+(14, 0, 'Üye Girişi', '', '', 'Alışverişinizi tamamlayabilmeniz için kayıtlı kullanıcı olmanız gerekiyor. Sağ taraftaki formdan kullanıcı girişi yapabilir veya <a href="page.php?act=register">buraya tıklayarak</a> <b>ücretsiz</b> kayıt olabilirsiniz.', '', 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `pcToplama`
+--
+
+CREATE TABLE IF NOT EXISTS `pcToplama` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+
+--
+-- Tablo döküm verisi `pcToplama`
+--
+
+INSERT INTO `pcToplama` (`ID`, `name`) VALUES
+(13, 'HDD-SATA'),
+(2, 'HDD-IDE'),
+(14, 'HDD-SCSI'),
+(5, 'CPU-Intel Soket 775'),
+(10, 'CPU-AMD Soket 940 AM2'),
+(11, 'VGA-PCI EXP 16X'),
+(12, 'VGA-AGP 8X'),
+(15, 'RAM-SD'),
+(16, 'RAM-DDR'),
+(17, 'RAM-DDR2'),
+(18, 'RAM-DDR3'),
+(19, 'RAM-SODIMM'),
+(20, 'Core2Duo ');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `promosyon`
+--
+
+CREATE TABLE IF NOT EXISTS `promosyon` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) NOT NULL,
+  `password` varchar(64) NOT NULL,
+  `percent` double NOT NULL,
+  `ammount` int(11) NOT NULL,
+  `used` int(11) NOT NULL,
+  `left` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=9 ;
+
+--
+-- Tablo döküm verisi `promosyon`
+--
+
+INSERT INTO `promosyon` (`ID`, `code`, `password`, `percent`, `ammount`, `used`, `left`) VALUES
+(7, '012837267083434', '576787', 0, 862, 5151, -3076),
+(8, '282166022268456', '', 0, 50, 50, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `sablonEmail`
+--
+
+CREATE TABLE IF NOT EXISTS `sablonEmail` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) NOT NULL,
+  `email` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `name` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `title` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `body` text CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+
+--
+-- Tablo döküm verisi `sablonEmail`
+--
+
+INSERT INTO `sablonEmail` (`ID`, `code`, `email`, `name`, `title`, `body`) VALUES
+(1, 'Kullanici_Bilgileri', 'info@shopphp.net', 'Şifremi Unuttum', 'Kullanıcı Bilgileriniz', 'Sayın {%name%} {%lastname%},<br><br>Talebiniz üzere kullanıcı bilgilerinizi aşağıda verilmiştir. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}\r\n<br /><br />Bilginize,'),
+(3, 'Odeme_Onayi', 'info@shopphp.net', 'Sipariş Onayı', 'Sipariş Ödeme Onayınız', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz için yapılan ödemeniz onaylandı.Siparişinizin kargo teslimatından sonra tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,'),
+(5, 'Urun_Tavsiye', 'info@shopphp.net', 'Arkadaşıma Gönder', 'Arkadaşınız {%ARKADAS_ADI%} size {%URUN_ADI%} ürününü tavsiye ediyor', 'Merhaba {%ALICI_ADI%},\r\n<br><br>\r\nArkadaşınız {%GONDEREN_ADI%}, size DemoShop sitesi {%KATEGORI_ADI%} kategorisinden {%URUN_ADI%} ürününü tavsiye etti.\r\n<br><br>\r\nArkadaşınızın size mesajı :<br>\r\n{%MESAJ%}<br><br>\r\n\r\n Ürüne gitmek için lütfen <a href="{%URUN_LINK%}">tıklayın</a>.'),
+(6, 'Fiyat_Guncellemesi', 'info@shopphp.net', 'Ürün Fiyat Güncellemesi', 'Ürün Fiyat Güncellemesi', 'Sayın {%KULLANICI_ADI%}, <br /><br />Sitemizde alarm listenize eklediğiniz {%URUN_ADI%} ürününün {%ESKI_FIYAT%} olan fiyatı {%YENI_FIYAT%} olarak güncellenmiştir. <br /><br />Bilginize, </p><p>Bizi seçtiğiniz için teşekkür ederiz</p>'),
+(11, 'Kargo_Gonderim', '', '', 'Siparişiniz Kargoya Teslim Edildi', 'Sayın {%name%} {%lastname%},\r\n<br><br>\r\nSitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz kargoya teslim edilimiştir.<br><br>\r\nKargo Firması : {%kargoFirma%}<br>\r\nKargo Takip Numarası : {%kargoSeriNo%}<br>\r\nKargo Takip URL Adresi : <a href="{%kargoURL%}">{%kargoURL%}</a><br><br>\r\nBizi seçtiğiniz için teşekkür ederiz,'),
+(7, 'Stok_Guncellemesi', 'info@shopphp.net', 'Ürün StokGüncellemesi', 'Ürün Stok Güncellemesi', 'Sayın {%KULLANICI_ADI%}, <br /><br />Sitemizde alarm listenize eklediğiniz {%URUN_ADI%} ürünü stoklarımıza eklenmiştir. <br /><br />Bilginize, <br /><br />Bizi seçtiğiniz için teşekkür ederiz'),
+(12, 'Siparis_Iptali', '', '', 'Siparişiniz İptal Edildi', 'Sayın {%name%} {%lastname%},\r\n<br><br>\r\nSitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz iptal edilmiştir.\r\n\r\nBilginize,'),
+(15, 'Alisveris_Onayi', '', '', 'Siparişiniz Elimize Ulaştı', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz işleme alınmıştır.<br /><br />Sepet Bilgileriniz :<br />\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br><br>\r\n<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />\r\n<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,'),
+(13, 'Teslimat_Onayi', '', '', 'Siparişiniz Adresinize Teslim Edildi', 'Sn. {%name%} {%lastname%},\r\n<br><br>\r\nSitemizden yapmış olduğunuz <a href="{%siparisURL%}">{%randStr%}</a> nolu siparişiniz adresinize teslim edilmiş ve siparişinize sonuçlanmıştır.\r\n<br /><br />\r\nBizi seçtiğiniz için teşekkür ederiz,'),
+(16, 'Siparis_Bildirimi', '', '', 'Yeni Sipariş Bildirimi', 'Sitenizde yeni bir sipariş talebi var.<br /><br />Sepet Bilgileri :\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br /><br />\r\nÖdeme Tipi : {%odemeTipi%}\r\n<br /><br />\r\nSipariş detaylarına bakmak için <a href="{%siteAdresiFull%}/secure/s.php?f=gelenSiparisler.php&y=d&siparisID={%randStr%}">burayı tıklayın</a>.'),
+(17, 'Kullanici_Onay', '', 'Kullanıcı Onayı', 'Üyeliginiz Onaylandı', 'Sayın {%name%} {%lastname%},<br><br>Sitemize üyeliğiniz onaylanmıştır. Şimdi giriş yapıp alışverişe başlayabilirsiniz. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}\r\n<br /><br />Bilginize,'),
+(18, 'Site_Davet', '', 'Site Daveti', '{%siteAdi%} Sitesine Davetlisiniz', 'Merhaba,<br><br>Arkadaşınız {%name%} {%lastname%}, sizi {%siteAdi%} sitesine davet ediyor. Siteye üye olarak indirimli alışveriş yapmaya hemen başlayabilirsiniz.<br><br>\r\nArkadaşınızın mesajı :<br><br>\r\n{%arkadasMesaj%}<br><br>\r\nSiteye kayit olmak icin <a href="{%davetURL%}">TIKLAYIN</a>.'),
+(19, 'Site_Davet_Kayit', '', 'Site Davet Kayıt Onayı', '{%name%} {%lastname%} Sizi Referans Gösterdi', 'Merhaba,<br><br>Arkadaşınız {%name%} {%lastname%}, sizi referans göstererek site kaydını tamamladı. Arkadaşonız ilk alışverişini tamamlandıktan sonra hesabınıza {%puan%} puan eklenecektir.'),
+(20, 'Kullanici_Kayit', '', 'Kullanıcı Kaydi', 'Hoşgeldiniz', 'Sayın {%name%} {%lastname%},<br><br>Kullanıcı bilgileriniz sitemize kaydedildi. Üyelik bilgilerinizi kullanarak alışverişlerinizi hızlandırabilir ve kazandığınız puanlar ile ücretsiz alışverişler yapabilirsiniz. Bizi seçtiğiniz için teşekkür ederiz. <br><br>Kullanıcı Adı : {%username%} <br>Şifre : {%password%}\r\n<br /><br />Bilginize,'),
+(21, 'Grup_OnOnay', '', '', 'Siparişiniz Elimize Ulaştı', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz kaydedildi. Fırsat gerçekleşebilmesi için gerekli satış adedine ulaştığımızda  ulaşıldığında kredi kartından sipariş tutarı tahsil edilecek ve kupon bilgileriniz aynı e-posta adresinde gönderilecektir.<br /><br />Sepet Bilgileriniz :<br />\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br><br>\r\n<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />\r\n<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,'),
+(22, 'Grup_Onay', '', '', 'Kupon Bilgileriniz', 'Sayın {%name%} {%lastname%}, <br /><br />Sitemizden yapmış olduğunuz <a href="{%siteAdresiFull%}page.php?act=siparistakip&email={%email%}&sn={%randStr%}" target="_blank">{%randStr%}</a> nolu siparişiniz tamamlandı. Fırsat minimum satış adedini geçtiğinden kuponunuz aktif ve kullanılabilir durumdadır.<br><br>\r\nKupon Kodu : {%kupon%}\r\n<br /><br />Sepet Bilgileriniz :<br />\r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n{%sepet%} \r\n<img width="560" height="3" src="{%siteAdresiFull%}templates/system/email/hr.gif">\r\n<br><br>\r\n<a href="{%siteAdresiFull%}page.php?act=sozlesme&email={%email%}&sn={%randStr%}" target="_blank">Sipariş sözleşmesi.</a><br />\r\n<br />{%epostaAciklama%} <br />Siparişinizin durumu hakkında tekrar bilgilendirleceksiniz. <br /><br />Bizi seçtiğiniz için teşekkür ederiz,');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `sablonSMS`
+--
+
+CREATE TABLE IF NOT EXISTS `sablonSMS` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) NOT NULL,
+  `body` text NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `sablonSMS`
+--
+
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES
+(1, 'Havele_Bilgileri', 'Sn. {%ADI%} {%SOYADI%}. 	{%SIPARIS_NO%} nolu siparisiniz isleme alinmistir. Havale odemesinden sonra site uzerinden havale bildirim formunu doldurmayi unutmatin.'),
+(2, 'Alisveris_Onayi', 'Sn. {%ADI%} {%SOYADI%},{%SIPARIS_NO%} nolu siparisiniz isleme konmustur. En kisa surede gonderim bilgileri size ulastirilacaktir. ');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `sepet`
+--
+
+CREATE TABLE IF NOT EXISTS `sepet` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `urunID` int(11) NOT NULL,
+  `relUrunID` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  `ytlFiyat` double NOT NULL,
+  `fiyat` double NOT NULL,
+  `fiyatBirim` varchar(4) NOT NULL,
+  `ozellik1` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `ozellik2` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `ozellik3` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `ozellik4` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `ozellik5` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `adet` float NOT NULL,
+  `serialNo` varchar(64) NOT NULL,
+  `durum` int(11) NOT NULL,
+  `prefix` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `randStr` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1150 ;
+
+--
+-- Tablo döküm verisi `sepet`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `siparis`
+--
+
+CREATE TABLE IF NOT EXISTS `siparis` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `randStr` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `userID` int(11) NOT NULL,
+  `name` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `lastname` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `email` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `evtel` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `istel` varchar(256) NOT NULL,
+  `ceptel` varchar(256) NOT NULL,
+  `tckNo` varchar(16) NOT NULL,
+  `vergiNo` varchar(64) NOT NULL,
+  `vergiDaire` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `address` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `addressID` int(11) NOT NULL,
+  `semt` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `city` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `address2` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `addressID2` int(11) NOT NULL,
+  `semt2` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `city2` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `kargoFirmaID` int(11) NOT NULL,
+  `kargo` double NOT NULL,
+  `hediye` varchar(16) CHARACTER SET latin5 NOT NULL,
+  `promotionCode` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `promotionUsed` int(11) NOT NULL,
+  `odemeTipi` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `degisimYuzde` double NOT NULL,
+  `degisimYTL` double NOT NULL,
+  `kargoFirma` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `kargoSeriNo` varchar(64) NOT NULL,
+  `kargoURL` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `kargoTarih` date NOT NULL,
+  `teslimatID` int(11) NOT NULL,
+  `teslimatFark` double NOT NULL,
+  `durum` int(11) NOT NULL,
+  `data1` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data2` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data3` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data4` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data5` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `puanToplanan` double NOT NULL,
+  `puanHarcanan` double NOT NULL,
+  `puanHarcananTL` double NOT NULL,
+  `tarih` date NOT NULL,
+  `IP` varchar(64) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=118 ;
+
+--
+-- Tablo döküm verisi `siparis`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `siteConfig`
+--
+
+CREATE TABLE IF NOT EXISTS `siteConfig` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `seo_title` varchar(256) NOT NULL,
+  `seo_metaKeywords` text NOT NULL,
+  `seo_metaDescription` text NOT NULL,
+  `seo_icerikTitle` varchar(255) NOT NULL,
+  `seo_icerikMetaKeywords` varchar(255) NOT NULL,
+  `seo_icerikMetaDescription` varchar(255) NOT NULL,
+  `seo_urunTitle` varchar(255) NOT NULL,
+  `seo_urunMetaKeywords` varchar(255) NOT NULL,
+  `seo_urunMetaDescription` varchar(255) NOT NULL,
+  `seo_kategoriTitle` varchar(255) NOT NULL,
+  `seo_kategoriMetaKeywords` varchar(255) NOT NULL,
+  `seo_kategoriMetaDescription` varchar(255) NOT NULL,
+  `mailFrom` varchar(64) NOT NULL,
+  `adminMail` varchar(256) NOT NULL,
+  `anaSayfaUrun` int(11) NOT NULL,
+  `icSayfaUrun` int(11) NOT NULL,
+  `listelemeUrun` int(11) NOT NULL,
+  `havaleIndirim` double NOT NULL,
+  `tekCekimIndirim` double NOT NULL,
+  `kargo` double NOT NULL,
+  `minKargo` int(11) NOT NULL,
+  `urunOnay` tinyint(1) NOT NULL,
+  `uyeOnay` tinyint(1) NOT NULL,
+  `sadeceUye` tinyint(1) NOT NULL,
+  `fiyatUyelikZorunlu` tinyint(1) NOT NULL,
+  `uyelikZorunlu` tinyint(1) NOT NULL,
+  `uyelikZorunluURL` varchar(256) NOT NULL,
+  `updateDoviz` tinyint(1) NOT NULL,
+  `dovizType` int(11) NOT NULL,
+  `httpsAktif` tinyint(1) NOT NULL,
+  `seoURL` tinyint(1) NOT NULL,
+  `dolar` varchar(16) NOT NULL,
+  `euro` varchar(16) NOT NULL,
+  `digerparabirim` varchar(16) NOT NULL,
+  `footer` text NOT NULL,
+  `satinalKural` text NOT NULL,
+  `uyelikKural` longtext NOT NULL,
+  `SMTP_kullan` tinyint(1) NOT NULL,
+  `SMTP_server` varchar(512) NOT NULL,
+  `SMTP_port` int(11) NOT NULL,
+  `SMTP_username` varchar(256) NOT NULL,
+  `SMTP_password` varchar(256) NOT NULL,
+  `gonderilenEpostaSayisi` int(11) NOT NULL,
+  `javaScript` varchar(256) NOT NULL,
+  `onLoad` varchar(256) NOT NULL,
+  `salter` tinyint(1) NOT NULL,
+  `salterInfo` longtext NOT NULL,
+  `crontabLastUpdate` datetime NOT NULL,
+  `uploadAllowed` varchar(255) NOT NULL,
+  `watermark` varchar(255) NOT NULL,
+  `SMS_kullan` varchar(255) NOT NULL,
+  `SMS_originator` varchar(255) NOT NULL,
+  `SMS_username` varchar(255) NOT NULL,
+  `SMS_password` varchar(255) NOT NULL,
+  `puanTL` double NOT NULL,
+  `puanYorum` double NOT NULL,
+  `puanSatis` double NOT NULL,
+  `puanUyelik` double NOT NULL,
+  `puanTavsiye` double NOT NULL,
+  `puanMin` double NOT NULL,
+  `puanAktif` tinyint(1) NOT NULL,
+  `minSiparis` double NOT NULL,
+  `listType` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `siteConfig`
+--
+
+INSERT INTO `siteConfig` (`ID`, `seo_title`, `seo_metaKeywords`, `seo_metaDescription`, `seo_icerikTitle`, `seo_icerikMetaKeywords`, `seo_icerikMetaDescription`, `seo_urunTitle`, `seo_urunMetaKeywords`, `seo_urunMetaDescription`, `seo_kategoriTitle`, `seo_kategoriMetaKeywords`, `seo_kategoriMetaDescription`, `mailFrom`, `adminMail`, `anaSayfaUrun`, `icSayfaUrun`, `listelemeUrun`, `havaleIndirim`, `tekCekimIndirim`, `kargo`, `minKargo`, `urunOnay`, `uyeOnay`, `sadeceUye`, `fiyatUyelikZorunlu`, `uyelikZorunlu`, `uyelikZorunluURL`, `updateDoviz`, `dovizType`, `httpsAktif`, `seoURL`, `dolar`, `euro`, `digerparabirim`, `footer`, `satinalKural`, `uyelikKural`, `SMTP_kullan`, `SMTP_server`, `SMTP_port`, `SMTP_username`, `SMTP_password`, `gonderilenEpostaSayisi`, `javaScript`, `onLoad`, `salter`, `salterInfo`, `crontabLastUpdate`, `uploadAllowed`, `watermark`, `SMS_kullan`, `SMS_originator`, `SMS_username`, `SMS_password`, `puanTL`, `puanYorum`, `puanSatis`, `puanUyelik`, `puanTavsiye`, `puanMin`, `puanAktif`, `minSiparis`, `listType`) VALUES
+(1, 'Demo Shop', '', '', '{%icerik_title%} - {%site_title%} ', '{%icerik_metaKeywords%},{%site_metaKeywords%}', '{%icerik_metaDescription%}-{%site_metaDescription%}', '{%URUN_ADI%} - {%URUN_FIYAT_KDV_HARIC%} {%URUN_FIYAT_BIRIM%} + KDV', '{%urun_metaKeywords%},{%URUN_ADI%},{%KATEGORI_ADI%}', '{%urun_metaDescription%} {%URUN_ADI%} {%ONDETAY%},', '{%MARKA_ADI%} {%KATEGORI_ADI%} ürünleri - {%site_title%}', '{%kategori_metaKeywords%},{%KATEGORI_ADI%},{%site_metaKeywords%}', '{%kategori_metaDescription%} {%KATEGORI_ADI%}  ürünleri', 'Shophp.net', 'info@shopphp.net', 5, 5, 10, 0.04, 0, 0, 99999999, 1, 0, 0, 0, 0, '', 1, 3, 0, 1, '1.4856', '1.9832', '', '© 2010 <strong>ShopPHP</strong>, <a target="_blank" href="secure/">yönetim paneli</a> (l:Demo p:Demo) | iletişim (msn) <a href="mailto:info@shopphp.net">info@shopphp.net</a>', 'Satın Alma Kuralları\r\n\r\nGenel Yazı..\r\n<ONAY>\r\nSepet Bilgileri :\r\n{%SEPET_BILGILERI%}\r\n\r\nSatıcı :\r\nShopPHP A.S.\r\n\r\nAlıcı :\r\n{%ALICI_ADI%} {%ALICI_SOYADI%}\r\n{%ALICI_ADRESI%}\r\n</ONAY> ', 'Üyelik Kuralları\r\n\r\nGenel Yazı..', 0, '', 0, 'info@shopphp.net', '', 0, '', '', 0, '', '2010-11-24 08:46:11', 'jpg,gif', '', '', '', '', '', 0.1, 5, 0.01, 50, 10, 500, 1, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `sms`
+--
+
+CREATE TABLE IF NOT EXISTS `sms` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Gonderen` varchar(64) NOT NULL,
+  `Mesaj` varchar(512) NOT NULL,
+  `IslemNo` varchar(32) NOT NULL,
+  `DenemeNo` varchar(32) NOT NULL,
+  `sendToAdmin` tinyint(1) NOT NULL,
+  `sendToCustomer` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `sms`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `smsrapor`
+--
+
+CREATE TABLE IF NOT EXISTS `smsrapor` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `islemNo` varchar(32) NOT NULL,
+  `tel` varchar(32) NOT NULL,
+  `tarih` datetime NOT NULL,
+  `mesaj` varchar(512) NOT NULL,
+  `durumID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin5 AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `smsrapor`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `sss`
+--
+
+CREATE TABLE IF NOT EXISTS `sss` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `soru` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `cevap` text CHARACTER SET latin5 NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `sss`
+--
+
+INSERT INTO `sss` (`ID`, `soru`, `cevap`, `seq`) VALUES
+(1, 'Teslimat kaç günde gerçekleşir?', 'Bir iki günde.', 1),
+(2, 'Ürünleriniz garantili mi?', '<P>Evet.</P>', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `stats`
+--
+
+CREATE TABLE IF NOT EXISTS `stats` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `k` varchar(32) NOT NULL,
+  `v` varchar(255) NOT NULL,
+  `Toplam` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=216 ;
+
+--
+-- Tablo döküm verisi `stats`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `stats_IP`
+--
+
+CREATE TABLE IF NOT EXISTS `stats_IP` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `IP` varchar(32) NOT NULL,
+  `Tarih` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=5871 ;
+
+--
+-- Tablo döküm verisi `stats_IP`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `stats_ziyaret`
+--
+
+CREATE TABLE IF NOT EXISTS `stats_ziyaret` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Tarih` date NOT NULL,
+  `Tekil` int(11) NOT NULL,
+  `Cogul` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=108 ;
+
+--
+-- Tablo döküm verisi `stats_ziyaret`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `tedarikciler`
+--
+
+CREATE TABLE IF NOT EXISTS `tedarikciler` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `DataFile` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `DataURL` varchar(1024) CHARACTER SET latin5 NOT NULL,
+  `kar` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Tablo döküm verisi `tedarikciler`
+--
+
+INSERT INTO `tedarikciler` (`ID`, `Name`, `DataFile`, `DataURL`, `kar`) VALUES
+(1, 'Penta', '', '', 0),
+(2, 'Despec', '', '', 0),
+(3, 'Index', '', '', 0),
+(4, 'Arena', '', '', 0),
+(5, 'Exa', '', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `temp`
+--
+
+CREATE TABLE IF NOT EXISTS `temp` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `text` longtext CHARACTER SET latin5 NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `temp`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `teslimat`
+--
+
+CREATE TABLE IF NOT EXISTS `teslimat` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `degisimYuzde` double NOT NULL,
+  `degisimYTL` double NOT NULL,
+  `seq` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `teslimat`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `topluindirim`
+--
+
+CREATE TABLE IF NOT EXISTS `topluindirim` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `kategori` text CHARACTER SET latin5 NOT NULL,
+  `marka` text CHARACTER SET latin5 NOT NULL,
+  `filitre` text CHARACTER SET latin5 NOT NULL,
+  `indirimOran` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `topluindirim`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `urun`
+--
+
+CREATE TABLE IF NOT EXISTS `urun` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `metaKeywords` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `metaDescription` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `catID` int(11) NOT NULL,
+  `virtualCatIDs` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `showCatIDs` text NOT NULL,
+  `tedarikciID` int(11) NOT NULL,
+  `tedarikciCode` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `name` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `markaID` int(11) NOT NULL,
+  `listeDetay` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `onDetay` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `detay` longtext CHARACTER SET latin5 NOT NULL,
+  `resim` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `resim2` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `resim3` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `resim4` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `resim5` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `kar` double NOT NULL,
+  `urunBirim` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `fiyatBirim` varchar(16) CHARACTER SET latin5 NOT NULL,
+  `fiyat` double NOT NULL,
+  `fiyat1` double NOT NULL,
+  `fiyat2` double NOT NULL,
+  `fiyat3` double NOT NULL,
+  `fiyat4` double NOT NULL,
+  `fiyat5` double NOT NULL,
+  `kdv` double NOT NULL,
+  `bayifiyat` double NOT NULL,
+  `tedarikfiyat` double NOT NULL,
+  `piyasafiyat` double NOT NULL,
+  `garanti` int(11) NOT NULL,
+  `desi` double NOT NULL,
+  `fixKargoFiyat` double NOT NULL,
+  `pesinTaksitOrani` double NOT NULL,
+  `anasayfa` tinyint(1) NOT NULL,
+  `ozellik1` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `ozellik2` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `ozellik3` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `ozellik4` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `ozellik5` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `ozellik1detay` text CHARACTER SET latin5 NOT NULL,
+  `ozellik2detay` text CHARACTER SET latin5 NOT NULL,
+  `ozellik3detay` text CHARACTER SET latin5 NOT NULL,
+  `ozellik4detay` text CHARACTER SET latin5 NOT NULL,
+  `ozellik5detay` text CHARACTER SET latin5 NOT NULL,
+  `video` varchar(1024) NOT NULL,
+  `stok` int(1) NOT NULL,
+  `barkodNo` varchar(64) NOT NULL,
+  `PCToplama` text CHARACTER SET latin5 NOT NULL,
+  `ilgiliUrunler` longtext NOT NULL,
+  `indirimde` tinyint(1) NOT NULL,
+  `anindaGonderim` tinyint(1) NOT NULL,
+  `ucretsizKargo` tinyint(1) NOT NULL,
+  `yeni` tinyint(1) NOT NULL,
+  `tarih` datetime NOT NULL,
+  `tarihFirsatOK` datetime NOT NULL,
+  `start` datetime NOT NULL,
+  `finish` datetime NOT NULL,
+  `seq` int(11) NOT NULL,
+  `hit` int(11) NOT NULL,
+  `sold` int(11) NOT NULL,
+  `puan` int(11) NOT NULL,
+  `xmlUpdateStatus` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `minSatis` int(11) NOT NULL,
+  `prefix` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `filitre` text CHARACTER SET latin5 NOT NULL,
+  `data1` text CHARACTER SET latin5 NOT NULL,
+  `data2` text CHARACTER SET latin5 NOT NULL,
+  `data3` text CHARACTER SET latin5 NOT NULL,
+  `data4` text CHARACTER SET latin5 NOT NULL,
+  `data5` text CHARACTER SET latin5 NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  `userID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+
+--
+-- Tablo döküm verisi `urun`
+--
+
+INSERT INTO `urun` (`ID`, `metaKeywords`, `metaDescription`, `catID`, `virtualCatIDs`, `showCatIDs`, `tedarikciID`, `tedarikciCode`, `name`, `markaID`, `listeDetay`, `onDetay`, `detay`, `resim`, `resim2`, `resim3`, `resim4`, `resim5`, `kar`, `urunBirim`, `fiyatBirim`, `fiyat`, `fiyat1`, `fiyat2`, `fiyat3`, `fiyat4`, `fiyat5`, `kdv`, `bayifiyat`, `tedarikfiyat`, `piyasafiyat`, `garanti`, `desi`, `fixKargoFiyat`, `pesinTaksitOrani`, `anasayfa`, `ozellik1`, `ozellik2`, `ozellik3`, `ozellik4`, `ozellik5`, `ozellik1detay`, `ozellik2detay`, `ozellik3detay`, `ozellik4detay`, `ozellik5detay`, `video`, `stok`, `barkodNo`, `PCToplama`, `ilgiliUrunler`, `indirimde`, `anindaGonderim`, `ucretsizKargo`, `yeni`, `tarih`, `tarihFirsatOK`, `start`, `finish`, `seq`, `hit`, `sold`, `puan`, `xmlUpdateStatus`, `minSatis`, `prefix`, `filitre`, `data1`, `data2`, `data3`, `data4`, `data5`, `active`, `userID`) VALUES
+(2, '', '', 15, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'Demoshop Core Duo', 8, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', '<table width=100% cellspacing=0 cellpadding=0><tr ><td style="padding:3px; width:100px;">Disk Kapasitesi </td><td style="padding:3px; width:2px;">:</td><td style="padding:3px;">301 GB - 400 GB </td></tr><tr><td style="padding:3px;">Disk Kapasitesi </td><td style="padding:3px;">:</td><td style="padding:3px;">320 GB </td></tr><tr ><td style="padding:3px;">İşlemci Hızı </td><td style="padding:3px;">:</td><td style="padding:3px;">2.6 GHz - 3 GHz </td></tr><tr><td style="padding:3px;">Portlar </td><td style="padding:3px;">:</td><td style="padding:3px;">1 x RJ-45 Ethernet </td></tr><tr ><td style="padding:3px;">Portlar </td><td style="padding:3px;">:</td><td style="padding:3px;">1 x VGA (Monitör Çıkışı) </td></tr><tr><td style="padding:3px;">Portlar </td><td style="padding:3px;">:</td><td style="padding:3px;">4 x USB 2.0 </td></tr><tr ><td style="padding:3px;">Portlar </td><td style="padding:3px;">:</td><td style="padding:3px;">2 x USB 2.0 </td></tr><tr><td style="padding:3px;">Portlar </td><td style="padding:3px;">:</td><td style="padding:3px;">1 x Mikrofon Girişi </td></tr><tr ><td style="padding:3px;">Sistem Belleği </td><td style="padding:3px;">:</td><td style="padding:3px;">2 GB </td></tr><tr><td style="padding:3px;">Ethernet </td><td style="padding:3px;">:</td><td style="padding:3px;">10/100 Mbps </td></tr><tr ><td style="padding:3px;">Portlar </td><td style="padding:3px;">:</td><td style="padding:3px;">1 x Kulaklık Çıkışı </td></tr><tr><td style="padding:3px;">İşlemci Üreticisi </td><td style="padding:3px;">:</td><td style="padding:3px;">Intel </td></tr><tr ><td style="padding:3px;">İşlemci Hızı </td><td style="padding:3px;">:</td><td style="padding:3px;">2.93 GHz </td></tr><tr><td style="padding:3px;">İşlemci Tipi </td><td style="padding:3px;">:</td><td style="padding:3px;">Core2Duo </td></tr><tr ><td style="padding:3px;">L2 Cache Kapasitesi </td><td style="padding:3px;">:</td><td style="padding:3px;">3 MB </td></tr><tr><td style="padding:3px;">İşletim Sistemi </td><td style="padding:3px;">:</td><td style="padding:3px;">Free Dos İşletim Sistemi </td></tr><tr ><td style="padding:3px;">Garanti Süresi </td><td style="padding:3px;">:</td><td style="padding:3px;">24 Ay </td></tr><tr><td style="padding:3px;">Floppy </td><td style="padding:3px;">:</td><td style="padding:3px;">Yok </td></tr><tr ><td style="padding:3px;">Ekran Kartı </td><td style="padding:3px;">:</td><td style="padding:3px;">Paylaşımlı </td></tr><tr><td style="padding:3px;">Monitör </td><td style="padding:3px;">:</td><td style="padding:3px;">Yok </td></tr><tr ><td style="padding:3px;">Optik Ürünler </td><td style="padding:3px;">:</td><td style="padding:3px;">DVD-RW DVD Yazıcı </td></tr></table>', 'resim-2.jpg', 'resim2-2.jpg', '2.jpg', '', '', 0, 'Ad.', 'USD', 610, 0, 0, 0, 0, 0, 0.18, 0, 0, 670, 0, 2, 5, 0.1, 1, 'Monitör Rengi', 'Kasa Rengi', 'Aksesuar Rengi (Klavye,Mouse)', '', '', 'Gümüş\r\nSiyah', 'Siyah\r\nKırmızı\r\nGümüş\r\nBej', 'Siyah\r\nGümüş\r\nBeyaz', '', '', '', 5, '', '', '', 0, 0, 0, 0, '2007-12-11 18:47:37', '0000-00-00 00:00:00', '2010-11-24 09:19:23', '2010-11-26 12:00:00', 2, 3245, 17, 4, '', 0, '', '', '', '', '', '', '', 1, 0),
+(3, '', '', 15, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'Demoshop Gamer', 5, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8242;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürünün detaylı açıklamaları burada olacak.', 'resim-3.jpg', 'resim2-3.jpg', '', '', '', 0, 'Ad.', 'USD', 770, 0, 0, 0, 0, 0, 0.18, 0, 0, 810, 0, 2, 5, 0, 1, 'Kasa Rengi', 'Monitör Rengi', '', '', '', 'Siyah\r\nBeyaz\r\nGümüş\r\nKırmızı\r\nBej', 'Siyah\r\nGümüş', '', '', '', '', 5, '', '', '', 0, 0, 0, 0, '2007-12-11 19:41:46', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 1611, 13, 4, '', 0, '', '', '', '', '', '', '', 1, 0),
+(4, '', '', 16, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'Sony Vaio M740', 1, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8242;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürünün detaylı açıklamaları burada olacak', 'resim-4.jpg', 'resim2-4.jpg', '', '', '', 0, 'Ad.', 'USD', 1070, 0, 0, 0, 0, 0, 0.18, 0, 0, 1190, 0, 2, 5, 0, 1, 'Çanta', '', '', '', '', 'Siyah\r\nGri\r\nBej', '', '', '', '', '', 5, '', '', '', 1, 0, 1, 0, '2007-12-11 19:44:16', '0000-00-00 00:00:00', '2010-11-24 09:19:23', '2010-11-26 12:00:00', 0, 1199, 7, 1, '', 0, '', '', '', '', '', '', '', 1, 0),
+(5, '', '', 16, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'ASUS R1F', 5, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürünün detaylı açıklamaları burada olacak.', 'resim-5.jpg', 'resim2-5.jpg', '', '', '', 0, 'Ad.', 'USD', 810, 0, 0, 0, 0, 0, 0.18, 0, 0, 880, 0, 2, 5, 0, 1, '', '', '', '', '', '', '', '', '', '', '', 5, '', '', '', 1, 0, 0, 0, '2007-12-11 19:47:56', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 1143, 15, 5, '', 0, '', '', '', '', '', '', '', 1, 0),
+(6, '', '', 16, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'HP Pavilion dv2500t ', 2, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&prime;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürün kataloğumuza 11 Aralık,2007 tarihinde eklenmiştir.', 'resim-6.jpg', 'resim2-6.jpg', 'resim3-6.jpg', '', '', 0, 'Ad.', 'USD', 1010, 0, 0, 0, 0, 0, 0.18, 0, 0, 1100, 0, 2, 5, 0, 1, 'Çanta', '', '', '', '', 'Siyah\r\nBej\r\nGri', '', '', '', '', '<object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/fsE0g-8CDQo&rel=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/fsE0g-8CDQo&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>', 5, '', '', '', 1, 0, 0, 0, '2007-12-11 19:51:47', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 728, 5, 3, '', 0, '', '', '', '', '', '', '', 1, 0),
+(7, '', '', 16, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'Dell Inspiron 9400-E', 6, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürün kataloğumuza 11 Aralık,2007 tarihinde eklenmiştir.', 'resim-7.jpg', 'resim2-7.jpg', '', '', '', 0, 'Ad.', 'USD', 720, 0, 0, 0, 0, 0, 0.18, 0, 0, 780, 0, 2, 5, 0, 1, 'Çanta', '', '', '', '', 'Gri\r\nSiyah\r\nKoyu Yeşil', '', '', '', '', '', 5, '', '', '', 0, 0, 0, 0, '2007-12-11 19:56:43', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 581, 2, 4, '', 0, '', '', '', '', '', '', '', 1, 0),
+(8, '', '', 21, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'Samsung 19 940BW', 9, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürün kataloğumuza 11 Aralık,2007 tarihinde eklenmiştir', 'resim-8.jpg', '', '', '', '', 0, 'Ad.', 'USD', 277, 0, 0, 0, 0, 0, 0.18, 0, 0, 300, 0, 2, 5, 0, 1, 'Renk', '', '', '', '', 'Siyah\r\nGümüş', '', '', '', '', '', 5, '', '', '', 0, 0, 0, 0, '2007-12-11 20:24:08', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 608, 2, 0, '', 0, '', '[2::Divx],[2::Blue Ray],[1::Mp4],[1::Avi],[1::Divx],', '', '', '', '', '', 1, 0),
+(9, '', '', 22, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', 'Hyundai 17&#39;&#39; B71A 8MS', 2, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürün kataloğumuza 11 Aralık,2007 tarihinde eklenmiştir.', 'resim-9.jpg', '', '', '', '', 0, 'Ad.', 'USD', 177, 0, 0, 0, 0, 0, 0.18, 0, 0, 190, 0, 2, 5, 0, 1, 'Renk', '', '', '', '', 'Siyah\r\nGümüş', '', '', '', '', '', 5, '', '', '', 0, 0, 0, 0, '2007-12-11 20:26:59', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 485, 0, 4, '', 0, '', '', '', '', '', '', '', 1, 0),
+(10, '', '', 21, '', '|17||17||19||21||22||20||10||11||12||13|', 0, '', '19 Philips 190P7ES', 7, '', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8242;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Ürünün özellikler burada yer alacak.', 'resim-10.jpg', '', '', '', '', 0, 'Ad.', 'USD', 171.01, 0, 0, 0, 0, 0, 0.18, 0, 0, 180, 0, 2, 5, 0, 1, 'Renk', '', '', '', '', '100ml\r\n240ml', '', '', '', '', '', 5, '', '', '', 0, 0, 0, 0, '2007-12-11 21:01:32', '0000-00-00 00:00:00', '2010-11-24 09:19:23', '2010-11-26 12:00:00', 1, 1251, 5, 0, '', 0, '', '[2::DVD],[2::Blue Ray],[1::Mp4],[1::Avi],[1::Divx],', '', '', '', '', '', 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `urunXML`
+--
+
+CREATE TABLE IF NOT EXISTS `urunXML` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `penta` varchar(256) NOT NULL,
+  `indexKatalog` varchar(256) NOT NULL,
+  `indexFiyat` varchar(256) NOT NULL,
+  `indexStok` varchar(256) NOT NULL,
+  `parentID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=2 ;
+
+--
+-- Tablo döküm verisi `urunXML`
+--
+
+INSERT INTO `urunXML` (`ID`, `penta`, `indexKatalog`, `indexFiyat`, `indexStok`, `parentID`) VALUES
+(1, '', '1', '0', '0', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `urunYorum`
+--
+
+CREATE TABLE IF NOT EXISTS `urunYorum` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `urunID` int(11) NOT NULL,
+  `puan` int(11) NOT NULL,
+  `sitePuan` double NOT NULL,
+  `aciklama` text CHARACTER SET latin5 NOT NULL,
+  `tarih` date NOT NULL,
+  `onay` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=41 ;
+
+--
+-- Tablo döküm verisi `urunYorum`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `resim` varchar(128) CHARACTER SET latin5 NOT NULL,
+  `name` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `lastname` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `birthdate` date NOT NULL,
+  `sex` varchar(16) CHARACTER SET latin5 NOT NULL,
+  `semt` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `username` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `password` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `email` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `address` varchar(512) CHARACTER SET latin5 NOT NULL,
+  `city` varchar(256) CHARACTER SET latin5 NOT NULL,
+  `evtel` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `istel` varchar(256) NOT NULL,
+  `ceptel` varchar(256) NOT NULL,
+  `tckNo` varchar(16) NOT NULL,
+  `vergiNo` varchar(64) NOT NULL,
+  `vergiDaire` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `data1` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data2` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data3` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data4` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data5` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `puanToplanan` double NOT NULL,
+  `puanHarcanan` double NOT NULL,
+  `davetUserID` int(11) NOT NULL,
+  `sitePuan` int(11) NOT NULL,
+  `submitedDate` date NOT NULL,
+  `bayiStatus` tinyint(4) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=44 ;
+
+--
+-- Tablo döküm verisi `user`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `useraddress`
+--
+
+CREATE TABLE IF NOT EXISTS `useraddress` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `baslik` varchar(64) CHARACTER SET latin5 NOT NULL,
+  `address` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `semt` int(11) NOT NULL,
+  `city` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- Tablo döküm verisi `useraddress`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `userGroupMembers`
+--
+
+CREATE TABLE IF NOT EXISTS `userGroupMembers` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userGroupID` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `userGroupMembers`
+--
+
+INSERT INTO `userGroupMembers` (`ID`, `userGroupID`, `userID`) VALUES
+(2, 4, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `userGroups`
+--
+
+CREATE TABLE IF NOT EXISTS `userGroups` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(64) NOT NULL,
+  `discount` double NOT NULL,
+  `fiyatAlani` int(11) NOT NULL,
+  `urunEkleyebilir` tinyint(1) NOT NULL,
+  `urunKategorileri` text NOT NULL,
+  `maxUrun` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=5 ;
+
+--
+-- Tablo döküm verisi `userGroups`
+--
+
+INSERT INTO `userGroups` (`ID`, `name`, `discount`, `fiyatAlani`, `urunEkleyebilir`, `urunKategorileri`, `maxUrun`) VALUES
+(1, 'Yüksek Cirolu Bayiler', 0.15, 0, 0, '', 0),
+(2, 'Orta Derece Cirolu Bayiler', 0.1, 0, 0, '', 0),
+(4, 'Düşük Cirolu Bayiler', 0.05, 0, 0, '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `userLog`
+--
+
+CREATE TABLE IF NOT EXISTS `userLog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) NOT NULL,
+  `key` varchar(32) NOT NULL,
+  `keyDetail` varchar(32) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  `IP` varchar(32) NOT NULL,
+  `date` date NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin5 AUTO_INCREMENT=346 ;
+
+--
+-- Tablo döküm verisi `userLog`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tablo yapısı: `xmlexport`
+--
+
+CREATE TABLE IF NOT EXISTS `xmlexport` (
+  `ID` int(11) NOT NULL,
+  `code` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `file` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `izinliGruplar` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `data1` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data2` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data3` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data4` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `data5` varchar(255) CHARACTER SET latin5 NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Tablo döküm verisi `xmlexport`
+--
+
+INSERT INTO `xmlexport` (`ID`, `code`, `file`, `status`, `izinliGruplar`, `data1`, `data2`, `data3`, `data4`, `data5`) VALUES
+(1, 'XML_GoogleSitemap', '/sitemap.xml', 0, '', '', '', '', '', ''),
+(2, 'XML_Cimri', 'XML/cimri.xml', 0, '', '', '', '', '', ''),
+(3, 'XML_NeKadar', 'XML/nekadar.xml', 0, '', '', '', '', '', ''),
+(4, 'XML_Ucuzcu', 'XML/ucuzcu.xml', 0, '', '', '', '', '', ''),
+(5, 'XML_Shopphp', 'XML/shopphp.xml', 0, '', '', '', '', '', ''),
+(6, 'XML_AkilliFiyat', 'XML/akillifiyat.xml', 0, '', '', '', '', '', ''),
+(7, 'XML_HizliAl', 'XML/hizlial.xml', 0, '', '', '', '', '', '');
+
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Arena XML', '', 'XML/xml_arena.php&y=e', '1', '5');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'Bitkisel Depo XML', '', 'XML/xml_bitkiseldepo.php&y=e', '1', '15');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '64', 'PetsRus XML', '', 'XML/xml_petsrus.php&y=e', '1', '27');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`) VALUES (NULL, '5', 'İlgili Ürünler Yönetimi', '', 'urunilgiliurunler.php', '1', '15');
+ALTER TABLE `filitre` CHANGE `icerik` `icerik` LONGTEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+UPDATE `kargofirma` SET `ID` = '0' WHERE `kargofirma`.`name` like 'Tüm Firmalar';

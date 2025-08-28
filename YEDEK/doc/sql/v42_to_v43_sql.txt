@@ -1,0 +1,7 @@
+UPDATE `siteConfig` SET `version` = '4.3' WHERE `siteConfig`.`ID` =1;
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_yorumlar', 'TR', 'Alışveriş Yorumları');
+INSERT INTO `lang` (`ID`, `key`, `code`, `value`) VALUES (null, '_lang_siteYorumEkleyebilmenIcin', 'TR', 'Siteye alışveriş yorumu ekleyebilmek için, üye olmanız ve asgari bir onaylı siparişinizin bulunması gerekir.');
+ALTER TABLE `urunvarstok` ADD `fark` DOUBLE NOT NULL AFTER `stok`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (null, '26', 'Site Yorumları', '', 'siteYorum.php', '1', '68', '');
+UPDATE `siteConfig` SET `filterFiyat` = concat('0,',(select fiyat from urun where active = 1 order by fiyat desc limit 0,1)) WHERE `siteConfig`.`ID` = 1;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES ('0', '5', 'Ürün Varyasyon Girişleri', '', 'urunvars.php', '1', '13', '');

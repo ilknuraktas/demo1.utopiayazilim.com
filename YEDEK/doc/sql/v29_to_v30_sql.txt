@@ -1,0 +1,132 @@
+UPDATE `adminmenu` SET `Icon` = 'info.png' WHERE `adminmenu`.`ID` = 1;
+UPDATE `adminmenu` SET `Icon` = 'trolley.png' WHERE `adminmenu`.`ID` = 10;
+UPDATE `adminmenu` SET `Icon` = 'star.png' WHERE `adminmenu`.`ID` = 5;
+UPDATE `adminmenu` SET `Icon` = 'arrow_up.png' WHERE `adminmenu`.`ID` = 15;
+UPDATE `adminmenu` SET `Icon` = 'laptop.png' WHERE `adminmenu`.`ID` = 19;
+UPDATE `adminmenu` SET `Icon` = 'file_add.png' WHERE `adminmenu`.`ID` = 26;
+UPDATE `adminmenu` SET `Icon` = 'user.png' WHERE `adminmenu`.`ID` = 34;
+UPDATE `adminmenu` SET `Icon` = 'image.png' WHERE `adminmenu`.`ID` = 38;
+UPDATE `adminmenu` SET `Icon` = 'comment.png' WHERE `adminmenu`.`ID` = 44;
+UPDATE `adminmenu` SET `Icon` = 'mail.png' WHERE `adminmenu`.`ID` = 53;
+UPDATE `adminmenu` SET `Icon` = 'vcard.png' WHERE `adminmenu`.`ID` = 58;
+UPDATE `adminmenu` SET `Icon` = 'arrow_up.png' WHERE `adminmenu`.`ID` = 64;
+UPDATE `adminmenu` SET `Icon` = 'arrow_down.png' WHERE `adminmenu`.`ID` = 74;
+UPDATE `adminmenu` SET `Icon` = 'info.png' WHERE `adminmenu`.`ID` = 80;
+UPDATE `adminmenu` SET `Icon` = 'file_add.png', `Aktif` = '1', `Sira` = '150' WHERE `adminmenu`.`ID` = 160;
+ALTER TABLE `filitre` ADD `seq` INT NOT NULL ;
+ALTER TABLE `makaleler` ADD `catID` INT NOT NULL AFTER `ID` ;
+
+CREATE TABLE `makalekategori` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`metaKeywords` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`metaDescription` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`parentID` INT NOT NULL ,
+`name` INT NOT NULL ,
+`namePath` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`idPath` VARCHAR( 255 ) NOT NULL ,
+`level` INT NOT NULL ,
+`seq` INT NOT NULL ,
+`active` BOOLEAN NOT NULL ,
+`hit` INT NOT NULL ,
+`data1` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`data2` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `makalekategori` CHANGE `name` `name` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'Makale Kateogrileri', '', 'makalekategori.php', '1', '55', '');
+ALTER TABLE `makaleler` ADD `resim` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `catID` ;
+ALTER TABLE `urunYorum` ADD `tip` VARCHAR( 8 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+ALTER TABLE `urunYorum` CHANGE `tip` `tip` INT NOT NULL ;
+ALTER TABLE `makaleler` ADD `Giris` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `Baslik` ;
+ALTER TABLE `promosyon` CHANGE `ammount` `ammount` DOUBLE NOT NULL, CHANGE `used` `used` DOUBLE NOT NULL, CHANGE `left` `left` DOUBLE NOT NULL;
+CREATE TABLE `seolinks` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`key` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`urun` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`from` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`active` BOOLEAN NOT NULL ,
+`body` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `seolinks` ADD `tarih` DATETIME NOT NULL ;
+ALTER TABLE `seolinks` ADD `seq` INT NOT NULL;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '26', 'SEO Linkler', '', 'seolinks.php', '1', '15', '');
+ALTER TABLE `urun` CHANGE `video` `video` VARCHAR( 1024 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+CREATE TABLE `adetindirim` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`urunID` INT NOT NULL ,
+`start` INT NOT NULL ,
+`finish` INT NOT NULL ,
+`indirim` DOUBLE NOT NULL 
+) ENGINE = InnoDB;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Adet İndirimleri', '', 'adetIndirim.php', '1', '65', '');
+CREATE TABLE `stats_anlik` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`IP` VARCHAR( 64 ) NOT NULL ,
+`username` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`title` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`URL` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`tarih` DATETIME NOT NULL 
+) ENGINE = InnoDB;
+
+CREATE TABLE `stats_gunluk` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`type` VARCHAR( 16 ) NOT NULL ,
+`typeID` INT NOT NULL ,
+`hit` INT NOT NULL ,
+`tarih` DATE NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `stats_gunluk` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `stats_anlik` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `stats` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `stats_IP` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `stats_ziyaret` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `stats_anlik` ADD `referrer` VARCHAR( 255 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `URL` ;
+CREATE TABLE IF NOT EXISTS `otopromosyon` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` varchar(255) CHARACTER SET latin5 NOT NULL,
+  `kategori` text CHARACTER SET latin5 NOT NULL,
+  `marka` text CHARACTER SET latin5 NOT NULL,
+  `minTutar` double NOT NULL,
+  `indirimTutar` double NOT NULL,
+  `indirimOran` double NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '58', 'Otomatik Promosyon', '', 'otopromosyon.php', '1', '55', '');
+UPDATE `adminmenu` SET `Dosya` = 'seolinks.php' WHERE `adminmenu`.`ID` =162;
+delete from adminmenu where parentID=64;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '64', 'XML Entegrasyon', '', 'XML/xml.php', '1', '10', '');
+insert into temp (ID,code,text) values(null,'XML_urun_guncellenen','');
+insert into temp (ID,code,text) values(null,'XML_urun_eklenen','');
+insert into temp (ID,code,text) values(null,'XML_marka_guncellenen','');
+insert into temp (ID,code,text) values(null,'XML_marka_eklenen','');
+insert into temp (ID,code,text) values(null,'XML_kategori_guncellenen','');
+insert into temp (ID,code,text) values(null,'XML_kategori_eklenen','');
+insert into temp (ID,code,text) values(null,'XML_fiyatstok_guncellenen','');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '5', 'Toplu Ürün İşlemleri', '', 'topluIslemler.php&y=e', '1', '78', '');
+ALTER TABLE `urun` CHANGE `tedarikciID` `tedarikciID` VARCHAR( 16 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ;
+ALTER TABLE `siteConfig`  ADD `google_meta` VARCHAR(255) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `privateSepetMarkaKontrol`,  ADD `google_analytics` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `google_meta`,  ADD `google_remarketing` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `google_analytics`,  ADD `google_conversion` TEXT CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `google_remarketing`;
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '1', 'Google Ayarları', '', 'googleAyarlari.php', '1', '45', '');
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES (NULL, 'Siparis_Bildirimi', 'Sitenizde ({%ADI%} {%SOYADI%} - {%SIPARIS_NO%}) yeni bir siparis talebi var.');
+UPDATE `sablonSMS` SET `body` = 'Sn. {%ADI%} {%SOYADI%}. 	{%SIPARIS_NO%} nolu siparisiniz isleme alinmistir. Havale odemesinden sonra site uzerinden havale bildirim formunu doldurmayi unutmayin.' WHERE `sablonSMS`.`ID` =1;
+INSERT INTO `sablonSMS` (`ID`, `code`, `body`) VALUES (NULL, 'Kargo_Gonderim', 'Sn. {%ADI%} {%SOYADI%},{%SIPARIS_NO%} nolu siparisiniz kargoya teslim edilmistir.');
+ALTER TABLE `siteConfig` ADD `version` VARCHAR( 8 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL;
+UPDATE `siteConfig` SET `version` = '3.0' WHERE `siteConfig`.`ID` =1;
+UPDATE `adminmenu` SET `Adi` = 'Filitre Yönetimi',`Sira` = '45' WHERE `adminmenu`.`ID` =123;
+ALTER TABLE `siteConfig` ADD `captchaClose` BOOLEAN NOT NULL AFTER `listType` ;
+
+CREATE TABLE `xmlcatcache` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`tedarikciID` VARCHAR( 8 ) NOT NULL ,
+`tedarikciCode` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`parentID` INT NOT NULL ,
+`name` VARCHAR( 128 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL ,
+`active` BOOLEAN NOT NULL 
+) ENGINE = InnoDB;
+ALTER TABLE `xmlcatcache` ADD `up` BOOLEAN NOT NULL ;
+ALTER TABLE `xmlcatcache` ADD `dosya` VARCHAR( 64 ) CHARACTER SET latin5 COLLATE latin5_turkish_ci NOT NULL AFTER `tedarikciCode` ;
+ALTER TABLE `siteConfig` ADD `captcha` INT NOT NULL AFTER `listType` ;
+delete from adminmenu where Dosya like 'yonetimMenu.php';
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (168, '0', 'Yönetim Menü', 'file_edit.png', '', '1', '200', '');
+INSERT INTO `adminmenu` (`ID`, `parentID`, `Adi`, `Icon`, `Dosya`, `Aktif`, `Sira`, `SiteTipi`) VALUES (NULL, '168', 'Yönetim Menü', '', 'yonetimMenu.php', '1', '10', '');
+UPDATE `adminmenu` SET `Sira` = '11' WHERE `adminmenu`.`ID` =7;
+UPDATE `adminmenu` SET `Sira` = '12' WHERE `adminmenu`.`ID` =97;
+UPDATE`siteConfig`SET`captcha`='2' WHERE`siteConfig`.`ID`=1;

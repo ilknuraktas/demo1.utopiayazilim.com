@@ -1,0 +1,1 @@
+<li><a href="{%URUN_DETAY_LINK%}"><img alt="{%DB_NAME%}" src="{%IMG_100%}" /></a></li>

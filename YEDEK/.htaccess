@@ -1,0 +1,688 @@
+RewriteEngine on
+
+Options -Indexes
+
+
+
+
+
+# RewriteRule ^images/urunler/(.*)$ include/resize.php?path=images/urunler/$1&width=200 [NC,L,QSA]
+
+
+
+RewriteRule ^ln-([a-z]{2})/$ index.php?autolang=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})$ index.php?autolang=$1 [NC,L,QSA]
+
+
+
+# RewriteRule ^(.*)index\.(php|html?)$ /$1 [R=301,NC,L]
+
+RewriteRule ^include/3rdparty/Facebook/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/GittiGidiyor/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/Google/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/iyziv3/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/Klarna/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/Madmimi/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/OpenInviter/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/PDF/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/PHPExcel/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/PHPMailer/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/PHPMailer-master/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/PHPThumb/(.*)/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/Twitter/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/StockMount/(.*) - [F,L,NC]
+
+RewriteRule ^include/3rdparty/Whatsapp/(.*) - [F,L,NC]
+
+
+
+#RewriteRule ^include/(((?!resize)(?!ajaxLib.php)(?!3rdparty/PHPThumb/phpThumb).)*)\.ph.$ - [F,L,NC]
+
+RewriteRule ^resizer/(\d+)x(\d+)/(\d+)/(.*)$ include/resizer.php?w=$1&h=$2&zc=$3&src=$4 [L,NC]
+
+RewriteRule ^resized/([^\./]+)/(.*)$ include/resize.php?width=$1&path=$2 [L,NC]
+
+# RewriteRule ^images/urunler/(.*)$ include/resize.php?path=images/urunler/$1 [NC,L,QSA]
+
+
+
+# RewriteRule ^templates/((?!aqua/resizer)(?!royalshop/resizer)(?!vertigo/resizer)(?!unique/resizer).*)\.ph.$ - [F,L,NC]
+
+
+
+#RewriteRule ^templates/(.*)\.ht. - [F,L,NC]
+
+RewriteRule ^images/(.*)\.ph. - [F,L,NC]
+
+RewriteRule ^cache/(.*)\.ph. - [F,L,NC]
+
+RewriteRule ^files/(.*)\.ph. - [F,L,NC]
+
+RewriteRule ^files/(.*)\.txt - [F,L,NC]
+
+RewriteRule ^secure/yedek/(.*) - [F,L,NC]
+
+
+
+RewriteRule ^(.*)\.pl$ - [F,L,NC]
+
+RewriteRule ^(.*)\.cgi - [F,L,NC]
+
+RewriteRule ^(.*)\.sh$ - [F,L,NC]
+
+RewriteRule ^(.*)\.py$ - [F,L,NC]
+
+RewriteRule ^(.*)\.sp$ - [F,L,NC]
+
+
+
+#T�m URL SSL ��in
+
+#RewriteCond %{HTTPS} off
+
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+
+
+#T�m URL www i�in
+
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+
+RewriteCond %{HTTPS}s ^on(s)|
+
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]L]
+
+
+
+RewriteRule ^css/(.*)$  assets/css/$1 [L]
+
+RewriteRule ^js/(.*)$  assets/js/$1 [L]
+
+RewriteRule ^cron-(.*)$  cron/cron-$1 [L]
+
+RewriteRule ^cron.php$  cron/cron.php [L]
+
+
+
+
+
+RewriteRule ^robots.txt$  robots.php [L]
+
+
+
+RewriteRule ^sitemap.xml$  xml.php?c=google [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/sitemap.xml$  xml.php?c=google&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^sitemap_([0-9]*)_([0-9]*).xml$  xml.php?c=google&start=$1&limit=$2 [L]
+
+RewriteRule ^ln-([a-z]{2})/sitemap_([0-9]*)_([0-9]*).xml$  xml.php?c=google&autolang=$1&start=$2&limit=$3 [L]
+
+
+
+RewriteRule ^imagemap.xml$  xml.php?c=googleimage [L]
+
+RewriteRule ^ln-([a-z]{2})/imagemap.xml$  xml.php?c=googleimage&autolang=$1 [L]
+
+
+
+RewriteRule ^manifest.json$  manifest.php [L]
+
+RewriteRule ^odeme$  index.php?temp=tahsilat [L]
+
+RewriteRule ^ln-([a-z]{2})/odeme$ index.php?temp=tahsilat&autolang=$1 [L]
+
+
+
+RewriteRule ^tahsilat$  index.php?temp=tahsilatv2 [L]
+
+RewriteRule ^ln-([a-z]{2})/tahsilat$ index.php?temp=tahsilatv2&autolang=$1 [L]
+
+
+
+RewriteRule ^index\.html?$ / [NC,R,L]
+
+
+
+# RewriteRule ^(.*)index\.(php|html?)$  [R=301,NC,L]
+
+RewriteRule ^ac/404 page.php?act=404 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/404$ page.php?act=404&autolang=$1 [L]
+
+
+
+RewriteRule ^paketler/(.*)$ page.php?act=paketKategori&check=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/paketler/(.*)$ page.php?act=paketKategori&check=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^paket/(.*)$ page.php?act=paketGoster&check=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/paket/(.*)$ page.php?act=paketGoster&check=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^u([0-9]*)/(.*).html$ page.php?act=urunDetay&urunID=$1&name=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/u([0-9]*)/(.*).html$ page.php?act=urunDetay&urunID=$2&name=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^u([0-9]*)/(.*)/(.*).html$ page.php?act=urunDetay&urunID=$1&name=$3 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/u([0-9]*)/(.*)/(.*).html$ page.php?act=urunDetay&urunID=$2&name=$4&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^c([0-9]*)/([0-9]*)/f-([^/]*)/(.*).html$ page.php?act=kategoriGoster&catID=$1&name=$4&page=$2&setFilter=$3 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/c([0-9]*)/([0-9]*)/f-([^/]*)/(.*).html$ page.php?act=kategoriGoster&catID=$2&name=$5&page=$3&setFilter=$4&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^c([0-9]*)/([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$1&name=$3&page=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/c([0-9]*)/([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$2&name=$4&page=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^c([0-9]*)-([0-9]*)/([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$1&markaID=$2&page=$3&name=$4 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/c([0-9]*)-([0-9]*)/([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$2&markaID=$3&page=$4&name=$5&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^c([0-9]*)-([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$1&markaID=$2&name=$3 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/c([0-9]*)-([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$2&markaID=$3&name=$4&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^c([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$1&name=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/c([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=$2&name=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^m([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=0&markaID=$1&name=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/m([0-9]*)/(.*).html$ page.php?act=kategoriGoster&catID=0&markaID=$2&name=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/makale/([^\./]+)/([0-9]+)$ page.php?act=makale-kategori-seo&seo=$1&page=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/makale/([^\./]+)/([0-9]+)$ page.php?act=makale-kategori-seo&seo=$2&page=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/makale/([^\./]+)/([^\./]+)$ page.php?act=makale-seo&seo=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/makale/([^\./]+)/([^\./]+)$ page.php?act=makale-seo&seo=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/makale/([^\./]+)$ page.php?act=makale-kategori-seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/makale/([^\./]+)$ page.php?act=makale-kategori-seo&seo=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/kombine/([^\./]+)$ page.php?act=kombine-seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/kombine/([^\./]+)$ page.php?act=kombine-seo&seo=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/paketler/([^\./]+)$ page.php?act=paket-seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/paketler/([^\./]+)$ page.php?act=paket-seo&seo=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/galeri/([^\./]+)/([^\./]+)$ page.php?act=galeri-seo&seo=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/galeri/([^\./]+)/([^\./]+)$ page.php?act=galeri-seo&seo=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/galeri/([^\./]+)$ page.php?act=galeri-kategori-seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/galeri/([^\./]+)$ page.php?act=galeri-kategori-seo&seo=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/haber/(.*)$ page.php?act=haber-seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/haber/(.*)$ page.php?act=haber-seo&seo=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/sifre/(.*)$ page.php?act=sifre&check=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/sifre/(.*)$ page.php?act=sifre&check=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ic/(.*)$ page.php?act=icerik-seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ic/(.*)$ page.php?act=icerik-seo&seo=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/([a-z]+)/([0-9]+)$ page.php?act=$1&page=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/([a-z]+)/([0-9]+)$ page.php?act=$2&page=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/([a-z]+)/([a-z0-9_]+)$ page.php?act=$1&op=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/([a-z]+)/([a-z0-9_]+)$ page.php?act=$2&op=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/([a-z]+)/([a-z]+)/([0-9]+)$ page.php?act=$1&op=$2&ID=$3 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/([a-z]+)/([a-z]+)/([0-9]+)$ page.php?act=$2&op=$3&ID=$4&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ac/([a-z]+)$ page.php?act=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/ac/([a-z]+)$ page.php?act=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^([^\./]+)/([0-9]+)$ page.php?act=seo&seo=$1&page=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/([^\./]+)/([0-9]+)$ page.php?act=seo&seo=$2&page=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^([^\./]+)/([^\./]+)$ page.php?act=seo&seo=$2&urun=1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/([^\./]+)/([^\./]+)$ page.php?act=seo&seo=$3&urun=1&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^([^\./]+)/sf/([^\./]+)/([0-9]+)$ page.php?act=seo&seo=$1&page=$3&setFilter=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/([^\./]+)/sf/([^\./]+)/([0-9]+)$ page.php?act=seo&seo=$2&page=$4&setFilter=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^([^\./]+)/sf/([^\./]+)$ page.php?act=seo&seo=$1&setFilter=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/([^\./]+)/sf/([^\./]+)$ page.php?act=seo&seo=$2&setFilter=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^ln-([a-z]{2})/([a-z]{2})/([^\./]+)/sf/([^\./]+)$ page.php?act=seo&seo=$2&setFilter=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^([^\./]+)$ page.php?act=seo&seo=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/([^\./]+)$ page.php?act=seo&seo=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^arama/(.*)/([0-9]*)$ page.php?act=arama&str=$1&page=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/arama/(.*)/([0-9]*)$ page.php?act=arama&str=$2&page=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-urun([0-9]*).html$ page.php?act=urunDetay&urunID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-urun([0-9]*).html$ page.php?act=urunDetay&urunID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*?)/([a-zA-Z0-9_-]+)/([0-9]+)$ index.php?urunID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*?)/([a-zA-Z0-9_-]+)/([0-9]+)$ index.php?urunID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-fID([0-9]*).html$ page.php?act=filitreDetay&filitreID=$2&v=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-fID([0-9]*).html$ page.php?act=filitreDetay&filitreID=$3&v=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-urunID([0-9]*).html$ index.php?urunID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-urunID([0-9]*).html$ index.php?urunID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-p([0-9]*)-kat([0-9]*)-marka([0-9]*).html$ page.php?act=kategoriGoster&catID=$3&markaID=$4&name=$1&page=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-p([0-9]*)-kat([0-9]*)-marka([0-9]*).html$ page.php?act=kategoriGoster&catID=$4&markaID=$5&name=$2&page=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-f-(.*)-p([0-9]*)-kat([0-9]*).html$ page.php?act=kategoriGoster&catID=$4&markaID=0&name=$1&page=$3&setFilter=$2 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-f-(.*)-p([0-9]*)-kat([0-9]*).html$ page.php?act=kategoriGoster&catID=$5&markaID=0&name=$2&page=$4&setFilter=$3&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-kat([0-9]*)(-marka([0-9]*))?(-sayfa([0-9]*))?(-sira(.*)[^-])?.html$ page.php?act=kategoriGoster&catID=$2&markaID=$4&name=$1&page=$6&orderBy=$8 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-kat([0-9]*)(-marka([0-9]*))?(-sayfa([0-9]*))?(-sira(.*)[^-])?.html$ page.php?act=kategoriGoster&catID=$3&markaID=$5&name=$2&page=$7&orderBy=$9&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-p([0-9]*)-kat([0-9]*).html$ page.php?act=kategoriGoster&catID=$3&markaID=$4&name=$1&page=$2&orderBy=$9 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-p([0-9]*)-kat([0-9]*).html$ page.php?act=kategoriGoster&catID=$4&markaID=$5&name=$2&page=$3&orderBy=$10&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-sID([0-9]*).html$ page.php?act=showPage&ID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-sID([0-9]*).html$ page.php?act=showPage&ID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-seID([0-9]*).html$ page.php?act=showKeyResult&seID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-seID([0-9]*).html$ page.php?act=showKeyResult&seID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-hID([0-9]*).html$ page.php?act=showNews&ID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-hID([0-9]*).html$ page.php?act=showNews&ID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-mID([0-9]*).html$ page.php?act=showArticles&ID=$2&name=$1 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)-mID([0-9]*).html$ page.php?act=showArticles&ID=$3&name=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)_sp(__(.*))?.html(.*)$ page.php?act=$1&replaceGet=$3 [NC,L,QSA]
+
+RewriteRule ^ln-([a-z]{2})/(.*)_sp(__(.*))?.html(.*)$ page.php?act=$2&replaceGet=$4&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-ara.html$ page.php?act=arama&str=$1 [NC,L,QSA] 
+
+RewriteRule ^ln-([a-z]{2})/(.*)-ara.html$ page.php?act=arama&str=$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^(.*)-marka([0-9]*)(-cat([0-9]*))?(-sayfa([0-9]*))?(-sira(.*)[^-])?.html$ page.php?act=kategoriGoster&catID=$4&markaID=$2&name=$1&page=$6&orderBy=$8
+
+RewriteRule ^ln-([a-z]{2})/(.*)-marka([0-9]*)(-cat([0-9]*))?(-sayfa([0-9]*))?(-sira(.*)[^-])?.html$ page.php?act=kategoriGoster&catID=$5&markaID=$3&name=$2&page=$7&orderBy=$9&autolang=$1
+
+
+
+
+
+RewriteRule ^ln-([a-z]{2})/xml.php?(.*)$ xml.php?$2&autolang=$1 [NC,L,QSA]
+
+
+
+RewriteRule ^go/(.*)/(.*)$ banner.php?ID=$1 [NC,L,QSA]
+
+
+
+
+
+RewriteCond %{QUERY_STRING} proc/self/environ [OR]
+
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+
+RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
+
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+
+
+
+RewriteCond %{HTTP_USER_AGENT} ^w3af.sourceforge.net [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} dirbuster [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} nikto [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} SF [OR]
+
+RewriteCond %{HTTP_USER_AGENT} sqlmap [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} fimap [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} nessus [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} whatweb [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} Openvas [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} jbrofuzz [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} libwhisker [NC,OR]
+
+RewriteCond %{HTTP_USER_AGENT} webshag [NC,OR]
+
+RewriteCond %{HTTP:Acunetix-Product} ^WVS
+
+
+
+#Gzip
+
+<ifmodule mod_deflate.c>
+
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+
+</ifmodule>
+
+#End Gzip
+
+
+
+ <IfModule mod_php5.c>
+
+   php_value short_open_tag 1
+
+   php_value max_input_vars 15000
+
+ </IfModule>
+
+
+
+<IfModule mod_expires.c>
+
+  ExpiresActive on
+
+  ExpiresDefault "access plus 1 month"
+
+  ExpiresByType text/cache-manifest "access plus 1 month"
+
+  ExpiresByType text/html "access plus 1 month"
+
+  ExpiresByType text/xml "access plus 1 month"
+
+  ExpiresByType application/xml "access plus 1 hour"
+
+  ExpiresByType application/json "access plus 1 hour"
+
+  ExpiresByType application/rss+xml "access plus 1 hour"
+
+  ExpiresByType application/atom+xml "access plus 1 hour"
+
+  ExpiresByType image/x-icon "access plus 1 week"
+
+  ExpiresByType image/gif "access plus 1 month"
+
+  ExpiresByType image/png "access plus 1 month"
+
+  ExpiresByType image/webp "access plus 1 month"
+
+  ExpiresByType image/jpeg "access plus 1 month"
+
+  ExpiresByType video/ogg "access plus 1 month"
+
+  ExpiresByType audio/ogg "access plus 1 month"
+
+  ExpiresByType video/mp4 "access plus 1 month"
+
+  ExpiresByType video/webm "access plus 1 month"
+
+  ExpiresByType text/x-component "access plus 1 month"
+
+  ExpiresByType application/x-font-ttf "access plus 1 month"
+
+  ExpiresByType font/opentype "access plus 1 month"
+
+  ExpiresByType application/x-font-woff "access plus 1 month"
+
+  ExpiresByType image/svg+xml "access plus 1 month"
+
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+  ExpiresByType text/css "access plus 1 week"
+
+  ExpiresByType application/javascript "access plus 1 week"
+
+</IfModule>
+
+
+
+<IfModule pagespeed_module>
+
+    ModPagespeed off
+
+</IfModule>
+
+
+
+
+
+<IfModule mod_security.c> 
+
+SecFilterEngine Off 
+
+SecFilterScanPOST Off 
+
+</IfModule> 
+
+
+
+<IfModule mod_deflate.c>
+
+ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript
+
+ BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+ BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+</IfModule>
+
+
+
+<IfModule mod_deflate.c>
+
+    <IfModule mod_setenvif.c>
+
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+        BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+
+    </IfModule>
+
+    <IfModule mod_headers.c>
+
+        Header append Vary User-Agent env=!dont-vary
+
+    </IfModule>
+
+    <IfModule mod_filter.c>
+
+        AddOutputFilterByType DEFLATE text/css application/x-javascript text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon
+
+    </IfModule>
+
+</IfModule>
+
+<FilesMatch "\.(css|CSS|)$">
+
+    <IfModule mod_headers.c>
+
+        Header set Pragma "public"
+
+        Header append Cache-Control "public, must-revalidate, proxy-revalidate"
+
+    </IfModule>
+
+    FileETag MTime Size
+
+</FilesMatch>
+
+<FilesMatch "\.(rtf|rtx|svg|svgz|txt|xsd|xsl|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|)$">
+
+    <IfModule mod_headers.c>
+
+        Header set Pragma "public"
+
+        Header append Cache-Control "public, must-revalidate, proxy-revalidate"
+
+    </IfModule>
+
+    FileETag MTime Size
+
+</FilesMatch>
+
+<FilesMatch "\.(asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|swf|tar|tif|tiff|wav|wma|wri|xla|xls|xlsx|xlt|xlw|zip|ASF|ASX|WAX|WMV|WMX|AVI|BMP|CLASS|DIVX|DOC|DOCX|EXE|GIF|GZ|GZIP|ICO|JPG|JPEG|JPE|MDB|MID|MIDI|MOV|QT|MP3|M4A|MP4|M4V|MPEG|MPG|MPE|MPP|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|PNG|POT|PPS|PPT|PPTX|RA|RAM|SWF|TAR|TIF|TIFF|WAV|WMA|WRI|XLA|XLS|XLSX|XLT|XLW|ZIP)$">
+
+    <IfModule mod_headers.c>
+
+        Header set Pragma "public"
+
+        Header append Cache-Control "public, must-revalidate, proxy-revalidate"
+
+    </IfModule>
+
+    FileETag MTime Size
+
+</FilesMatch>
+
+# End Browser Caching/Headers 
+
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value max_execution_time 300
+php_value max_input_time 300
