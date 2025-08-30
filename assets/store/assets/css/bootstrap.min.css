@@ -274,7 +274,8 @@ sup {
 }
 a {
  color:#353535;
- text-decoration:none
+ text-decoration:none;
+ padding-right:10px;
 }
 a:hover {
  color:#275985
@@ -5208,7 +5209,7 @@ fieldset:disabled .btn {
  display:-ms-flexbox;
  display:flex;
  padding-left:0;
- list-style:none
+ list-style:none;
 }
 .page-link {
  position:relative;

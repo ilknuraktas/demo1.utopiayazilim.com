@@ -107,7 +107,7 @@ img{
 }
 .btn{
   box-shadow:none!important;
-  outline:none!important
+  outline:none!important;
 }
 .btn i{
   margin-right:8px
@@ -166,7 +166,7 @@ img{
 .btn-block{
   padding:1.3rem 1.5rem;
   border-radius:.1875rem;
-  color:#fff!important
+  color: #fff !important;
 }
 .btn-product-cart{
   text-transform:uppercase;
@@ -541,7 +541,7 @@ img{
 }
 @media(max-width:992px){
   .container{
-    max-width:100%
+    max-width: 90%;
  }
 }
 @media(min-width:1200px){
@@ -560,7 +560,7 @@ img{
   width:100%;
   border-bottom:1px solid rgb(225,232,238);
   position:relative;
-  background-color:#623CEA;
+  background-color: #623CEA;
 }
 .top-bar .col-left .navbar-nav{
   float:left
@@ -796,7 +796,7 @@ img{
   padding-right:40px;
   padding-left:20px;
   box-shadow:none;
-  /*border-radius:50px;*/
+  border-radius:50px;
   font-size:1rem;
   line-height:21px;
   min-height:46px;
@@ -3541,11 +3541,11 @@ img{
 }
 .btn-wishlist-classified{
   background-color:transparent!important;
-  font-size:14px;
+  font-size: 14px;
   font-weight:400;
   outline:0!important;
-  border:1px solid #e4e4e4;
-  color:#444!important;
+  /* border:1px solid #e4e4e4; */
+  color: #343a40 !important;
   padding:.4rem 1.5rem;
   border-radius:.1875rem;
   min-width:218px
@@ -7102,7 +7102,7 @@ form select.error{
 }
 @media(max-width:1260px){
   .container{
-    max-width:100%!important
+    max-width: 90%!important;
  }
  .img-product-container{
     display:block;

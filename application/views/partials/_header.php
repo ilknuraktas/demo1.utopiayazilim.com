@@ -237,7 +237,7 @@
 															<li>
 																<a href="/magazam">
 																	<i class="icon-dashboard"></i>
-																	Mağaza Paneli
+																	<?php echo trans("panel"); ?>
 																</a>
 															</li>
 														<!--li>

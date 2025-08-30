@@ -375,19 +375,19 @@ if (!function_exists('get_store_rank')) {
         $count_item =  $row->total_sell;
 
         if($count_item  < 10){
-            return "<img src='/assets/ranks/acemi-satici.png' width='15'> Acemi Satıcı";
+            return "<img src='<?php echo base_url(); ?>/assets/ranks/acemi-satici.png' width='15'> Acemi Satıcı";
         }
         else if($count_item  < 30){
-            return "<img src='/assets/ranks/tecrubeli-satici.png'  width='15'> Tecrübeli Satıcı";
+            return "<img src='<?php echo base_url(); ?>/assets/ranks/tecrubeli-satici.png'  width='15'> Tecrübeli Satıcı";
         }
       else if($count_item  < 75){
-            return "<img src='/assets/ranks/hizli-satici.png'  width='15'> Hızlı Satıcı";
+            return "<img src='<?php echo base_url(); ?>/assets/ranks/hizli-satici.png'  width='15'> Hızlı Satıcı";
         }
       else if($count_item  < 150){
-            return "<img src='/assets/ranks/trend-satici.png'  width='15'> Trend Satıcı";
+            return "<img src='<?php echo base_url(); ?>/assets/ranks/trend-satici.png'  width='15'> Trend Satıcı";
         }
       else if($count_item  > 150){
-            return "<img src='/assets/ranks/usta-satici.png'  width='15'> Tecrübeli Satıcı";
+            return "<img src='<?php echo base_url(); ?>/assets/ranks/usta-satici.png'  width='15'> Tecrübeli Satıcı";
         }
         else{
             return $count_item;
@@ -472,10 +472,10 @@ if (!function_exists('get_user_avatar')) {
             } elseif (!empty($user->avatar) && $user->user_type != "registered") {
                 return $user->avatar;
             } else {
-                return base_url() . "assets/img/user.png";
+                return base_url() . "<?php echo base_url(); ?>assets/img/user.png";
             }
         } else {
-            return base_url() . "assets/img/user.png";
+            return base_url() . "<?php echo base_url(); ?>assets/img/user.png";
         }
     }
 }
@@ -493,10 +493,10 @@ if (!function_exists('get_user_avatar_by_id')) {
             } elseif (!empty($user->avatar) && $user->user_type != "registered") {
                 return $user->avatar;
             } else {
-                return base_url() . "assets/img/user.png";
+                return base_url() . "<?php echo base_url(); ?>assets/img/user.png";
             }
         } else {
-            return base_url() . "assets/img/user.png";
+            return base_url() . "<?php echo base_url(); ?>assets/img/user.png";
         }
     }
 }
@@ -512,7 +512,7 @@ if (!function_exists('get_user_avatar_by_image_url')) {
                 return base_url() . $image_url;
             }
         } else {
-            return base_url() . "assets/img/user.png";
+            return base_url() . "<?php echo base_url(); ?>assets/img/user.png";
         }
     }
 }
@@ -565,7 +565,7 @@ if (!function_exists('get_logo')) {
                 return base_url() . $settings->logo;
             }
         }
-        return base_url() . "assets/img/logo.svg";
+        return base_url() . "<?php echo base_url(); ?>assets/img/logo.svg";
     }
 }
 
@@ -578,7 +578,7 @@ if (!function_exists('get_logo_email')) {
                 return base_url() . $settings->logo_email;
             }
         }
-        return base_url() . "assets/img/logo.png";
+        return base_url() . "<?php echo base_url(); ?>assets/img/logo.png";
     }
 }
 
@@ -591,7 +591,7 @@ if (!function_exists('get_favicon')) {
                 return base_url() . $settings->favicon;
             }
         }
-        return base_url() . "assets/img/favicon.png";
+        return base_url() . "<?php echo base_url(); ?>assets/img/favicon.png";
     }
 }
 

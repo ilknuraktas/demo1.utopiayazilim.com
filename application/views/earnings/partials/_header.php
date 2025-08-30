@@ -6,7 +6,7 @@
         <title><?php echo xss_clean($title); ?> - <?php echo xss_clean($this->settings->site_title); ?></title>
         <meta name="description" content="<?php echo xss_clean($description); ?>" />
         <meta name="keywords" content="<?php echo xss_clean($keywords); ?>" />
-        <link rel="shortcut icon" type="image/png" href="https://mowww.utopiayazilim.com/uploads/logo/icon.png" />
+        <link rel="shortcut icon" type="image/png" href="<?php echo base_url('uploads/logo/logo.png'); ?>" />
         <link href="<?php echo base_url(); ?>assets/store/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/store/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/store/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
@@ -117,19 +117,19 @@
                         <div class="navbar-brand-box">
                             <a href="/magazam" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="https://mowww.utopiayazilim.com/uploads/logo/logo.png" height="40" alt="logo">
+                                    <img src="<?php echo base_url('uploads/logo/logo.png'); ?>" height="40" alt="logo">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="https://mowww.utopiayazilim.com/uploads/logo/logo.png" height="40" alt="logo">
+                                    <img src="<?php echo base_url('uploads/logo/logo.png'); ?>" height="40" alt="logo">
                                 </span>
                             </a>
 
                             <a href="/magazam" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="https://mowww.utopiayazilim.com/uploads/logo/logo-light.png" height="40" alt="logo">
+                                    <img src="<?php echo base_url('uploads/logo/logo-light.png'); ?>" height="40" alt="logo">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="https://mowww.utopiayazilim.com/uploads/logo/logo-light.png" height="40" alt="logo">
+                                    <img src="<?php echo base_url('uploads/logo/logo-light.png'); ?>" height="40" alt="logo">
                                 </span>
                             </a>
                         </div>

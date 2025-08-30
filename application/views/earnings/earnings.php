@@ -10,7 +10,7 @@
 				
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item active">Mowww The Online Store Maker</li>
+                        <li class="breadcrumb-item active">Utopia Online Store Maker</li>
                     </ol>
                 </div>
             </div>

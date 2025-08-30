@@ -110,7 +110,7 @@
                                 <p class="title">Mağazanız Onaylanmıştır! Mağaza bilgilerinizi düzenledikten sonra ürün eklemeye başlayabilir.</p>
                             </div>
                             <div class="icon">
-                                <img src="<?php echo base_url('assets/img/d-tex.png') ?>" height="100px" alt="image">
+                                <img src="<?php echo base_url("<?php echo base_url(); ?>assets/img/d-tex.png") ?>" height="100px" alt="image">
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                                 <p class="title">Sizin için bir çok firma ile birlikte çalışıyoruz. İşletmeniz için ihtiyacınız olan hizmete hızlıca ulaşın!</p>
                             </div>
                             <div class="icon">
-                                <img src="<?php echo base_url('assets/img/cozum-ortaklari.png') ?>" height="100px" alt="image">
+                                <img src="<?php echo base_url("<?php echo base_url(); ?>assets/img/cozum-ortaklari.png") ?>" height="100px" alt="image">
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                 <p class="title">Excel üzerinden ürün bilgilerinizi girerek toplu bir şekilde ürün eklemesi yapabilirsiniz.</p>
                             </div>
                             <div class="icon">
-                                <img src="<?php echo base_url('assets/img/toplu-urun.png') ?>" height="100px" alt="image">
+                                <img src="<?php echo base_url("<?php echo base_url(); ?>assets/img/toplu-urun.png") ?>" height="100px" alt="image">
                             </div>
                         </div>
                     </div>

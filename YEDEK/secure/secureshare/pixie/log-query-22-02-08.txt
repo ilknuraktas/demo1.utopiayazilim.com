@@ -1,1 +1,0 @@
-1644343990.3892:select ID from user where username = 'support' AND password = 'c567dc7446e76e940ebb2b19f953dbb9' AND md5(concat(password,',*.')) = '091c058134452ea755443422b2b5cd57' AND (isAdmin = 1 OR isMod = 1) : require_once : 

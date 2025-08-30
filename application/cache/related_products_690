@@ -1,17 +1,78 @@
-a:3:{s:4:"time";i:1686108557;s:3:"ttl";s:2:"60";s:4:"data";a:8:{i:0;a:26:{s:2:"id";s:3:"682";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-682";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"25000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"352";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-02-20 09:28:41";s:11:"description";s:69:"<p>&Uuml;st&uuml;n kaliteli, suya dayanıklı &uuml;r&uuml;nler</p>
-";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333239011.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:1;a:26:{s:2:"id";s:2:"14";s:5:"title";s:25:"Altus Çamaşır Makinesi";s:4:"slug";s:25:"altus-camasir-makinesi-14";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"598";s:5:"price";s:6:"600040";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"18";s:7:"user_id";s:1:"3";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"461";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2022-06-07 02:29:08";s:11:"description";s:458:"<p>Altus AL 7103 ML Beyaz<br />
-MarkaAltusModelAL 7103 ML BeyazKullanım TipiSolo<br />
-Performans<br />
-Yıkama Kapasitesi7 kgMaksimum Sıkma Devri1000 devirSu T&uuml;ketimi45 ltSıkma Sesi74 dB<br />
-&Ouml;zellikler<br />
-Dengesiz Y&uuml;k Kontrol&uuml;VarElektronik Su Kontrol&uuml;Var<br />
-Tasarım<br />
-RenkBeyazY&uuml;kseklik840 mmGenişlik600 mmDerinlik550 mm<br />
-Kurutma<br />
-KurutmaYok<br />
-Emniyet<br />
-Su Taşma EmniyetiVar</p>
-";s:17:"product_condition";s:13:"new_with_tags";s:10:"created_at";s:19:"2020-07-02 02:02:28";s:13:"user_username";s:14:"kayaelektronik";s:9:"shop_name";s:15:"Kaya Elektronik";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:14:"kayaelektronik";s:5:"image";s:52:"local::img_x300_62419629b9f233-89097595-64042727.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:2;a:26:{s:2:"id";s:2:"13";s:5:"title";s:24:"Poco M4 Pro Cep Telefonu";s:4:"slug";s:27:"poco-m4-pro-cep-telefonu-13";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"574";s:5:"price";s:6:"750080";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"12";s:7:"user_id";s:1:"3";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"457";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-02-20 09:30:48";s:11:"description";s:1330:"<p>Poco M4 Pro 256 GB Sarı<br />
+a:3:{s:4:"time";i:1756554048;s:3:"ttl";s:2:"60";s:4:"data";a:8:{i:0;a:26:{s:2:"id";s:4:"5409";s:5:"title";s:16:"2,5 OZ TEK DUVAR";s:4:"slug";s:20:"25-oz-tek-duvar-5409";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:7:"bidding";s:11:"category_id";s:3:"621";s:5:"price";s:1:"0";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:1:"9";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-04-11 16:24:19";s:11:"description";s:191:"<p>2,5 oz / 75ml kahve bardağı, &ouml;rneğin ofiste bir espresso&nbsp;i&ccedil;in bir bardak&nbsp;olarak &ccedil;ok uygundur.&nbsp;Bu karton kahve bardak&nbsp;PE kaplamalıdır&nbsp;</p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2023-04-11 16:24:19";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";N;s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:1;a:26:{s:2:"id";s:3:"681";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-681";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"30000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"653";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-02-20 09:28:33";s:11:"description";s:44:"Üstün kaliteli, suya dayanıklı ürünler";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333381090.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:2;a:26:{s:2:"id";s:3:"679";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-679";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"54500";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"296";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-06-19 18:31:21";s:11:"description";s:69:"<p>&Uuml;st&uuml;n kaliteli, suya dayanıklı &uuml;r&uuml;nler</p>
+";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333571209.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"1";}i:3;a:26:{s:2:"id";s:2:"16";s:5:"title";s:25:"Vestel 70U9600 Televizyon";s:4:"slug";s:28:"vestel-70u9600-televizyon-16";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"588";s:5:"price";s:5:"56050";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"3";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"5";s:3:"hit";s:3:"356";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-02-20 09:30:25";s:11:"description";s:2778:"<p>Durum&nbsp;&nbsp; &nbsp;SıfırGaranti S&uuml;resi&nbsp;&nbsp; &nbsp;2 Yıl - 3 YılGaranti&nbsp;&nbsp; &nbsp;Var, BaşlamamışKata Teslimat&nbsp;&nbsp; &nbsp;VarGaranti Ge&ccedil;erlilik Yeri&nbsp;&nbsp; &nbsp;T&uuml;rkiye&Uuml;cretsiz Kurulum/Montaj&nbsp;&nbsp; &nbsp;VarMenşei&nbsp;&nbsp; &nbsp;T&uuml;rkiyeİşletim Sistemi&nbsp;&nbsp; &nbsp;Belirtilmemiş<br />
+TEKNİK BİLGİLER<br />
+&nbsp;</p>
+
+<p>Genel &Ouml;zellikler<br />
+&Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;k4K Ultra HD (3840 x 2160)<br />
+Ekran Boyutu70&quot; / 178 Ekran<br />
+SeriU9600<br />
+İşletim SistemiQUI<br />
+Smart &Ouml;zellikler<br />
+BluetoothVar<br />
+DLNA AVS Ses ve Video PaylaşımıVar(AVS)<br />
+İnternet TarayıcısıVar<br />
+NetflixVar<br />
+Smart CenterVar<br />
+Smart TVVar<br />
+YouTubeVar<br />
+BeIN ConnectVar<br />
+Follow Me TV UygulamasıVar<br />
+HBBTVVar<br />
+G&ouml;r&uuml;nt&uuml; &Ouml;zellikleri<br />
+BluetoothVar<br />
+Dolby Vision G&ouml;r&uuml;nt&uuml; TeknolojisiVar<br />
+G&ouml;r&uuml;nt&uuml; TeknolojileriVar<br />
+HDR G&ouml;r&uuml;nt&uuml; TeknolojileriVar<br />
+MEMCVar<br />
+Micro Dimming Var<br />
+Quantum Renk PaletiVar<br />
+Motion Rate1300<br />
+Ses &Ouml;zellikleri<br />
+Ses &Ccedil;ıkış G&uuml;c&uuml;2X12W RMS(%10 THD)<br />
+Ses TeknolojisiDTS Virtual X + DTS HD<br />
+SubwooferInternal Subwoofer<br />
+Bağlantılar<br />
+CI+Var<br />
+Dahili Uydu Alıcısı4K<br />
+EPG Elektronik Program RehberiVar<br />
+Ethernet LANVar<br />
+HDMI Sayısı3<br />
+Kulaklık &Ccedil;ıkışıVar<br />
+Otomatik Kanal AramaVar<br />
+USB Girişi Sayısı2<br />
+Turksat &amp; TKGSVar<br />
+Enerji T&uuml;ketim &Ouml;zellikleri<br />
+Enerji SınıfıG<br />
+G&uuml;&ccedil; Tasarrufu ModuVar<br />
+Stand-By G&uuml;&ccedil; T&uuml;ketimi&lt;0.5<br />
+Voltaj Aralığı0,5W(ST-BY)220-240V AC 50HZ<br />
+SDR Enerji SınıfıG<br />
+SDR (Standart) EnerjiT&uuml;ketimi[ 1000h]147<br />
+HDR Enerji SınıfıG<br />
+HDR EnerjiT&uuml;ketimi [1000h]191<br />
+Fiziksel &Ouml;zellikler<br />
+&Uuml;r&uuml;n Ağırlığı (Ayaklı)22,85<br />
+&Uuml;r&uuml;n Ağırlığı (Ayaksız)22,25<br />
+&Uuml;r&uuml;n Boyutları (YxGxD) Stand&#39;lı894 x 1449 x 281<br />
+&Uuml;r&uuml;n Boyutları (YxGxD) Stand&#39;sız830 x 1449 x 48<br />
+Ek &Ouml;zellikler<br />
+&Ccedil;ocuk KilidiVar<br />
+&Ccedil;ekirdek Sayısı4 &Ccedil;ekirdek<br />
+Otomatik Kayıt ve Program Arama (APS)Var<br />
+Zaman Ayarlı Kapanma (Sleep Timer)Var<br />
+CECVar<br />
+Aksesuarlar<br />
+Kullanım KılavuzuVar<br />
+Uzaktan KumandaVar<br />
+E-KılavuzVar<br />
+Diğer Bilgiler<br />
+&Uuml;r&uuml;n Kodu20276211<br />
+&Uuml;cretsiz Garanti S&uuml;resi3 Yıl Garanti<br />
+&Uuml;cretsiz NakliyeVar<br />
+&Uuml;cretsiz MontajVar</p>
+";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2020-07-02 02:10:26";s:13:"user_username";s:14:"kayaelektronik";s:9:"shop_name";s:15:"Kaya Elektronik";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:14:"kayaelektronik";s:5:"image";s:52:"local::img_x300_624192bdc1b9e2-33032037-11136666.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:4;a:26:{s:2:"id";s:2:"13";s:5:"title";s:24:"Poco M4 Pro Cep Telefonu";s:4:"slug";s:27:"poco-m4-pro-cep-telefonu-13";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"574";s:5:"price";s:6:"750080";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"12";s:7:"user_id";s:1:"3";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"457";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-02-20 09:30:48";s:11:"description";s:1330:"<p>Poco M4 Pro 256 GB Sarı<br />
 MarkaPocoSeriM4ModelProDahili Hafıza256 GBRenkSarıStilBarİşletim SistemiAndroidİşletim Sistemi VersiyonuAndroid 11 (R)&Ccedil;ıkış Yılı2022<br />
 Kamera<br />
 Kamera &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;64 MPFlashVarY&uuml;z AlgılamaVarKonum İşaretlemeVarOtomatik Odaklamavar&Ouml;n KameraVarİkinci Arka Kamera &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;8 MPİkinci Arka KameraVar&Ouml;n Kamera &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;16 MPVideo &Ccedil;&ouml;z&uuml;n&uuml;rl&uuml;ğ&uuml;1080pKare Hızı30 fps<br />
@@ -29,7 +90,6 @@ G&ouml;vde<br />
 Sim TipiNano SIM<br />
 Batarya<br />
 Batarya Kapasitesi5000 mAh</p>
-";s:17:"product_condition";s:13:"new_with_tags";s:10:"created_at";s:19:"2020-07-02 02:00:12";s:13:"user_username";s:14:"kayaelektronik";s:9:"shop_name";s:15:"Kaya Elektronik";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:14:"kayaelektronik";s:5:"image";s:52:"local::img_x300_62419636e446a6-98424513-42988714.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:3;a:26:{s:2:"id";s:4:"5409";s:5:"title";s:16:"2,5 OZ TEK DUVAR";s:4:"slug";s:20:"25-oz-tek-duvar-5409";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:7:"bidding";s:11:"category_id";s:3:"621";s:5:"price";s:1:"0";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:1:"6";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-04-11 16:24:19";s:11:"description";s:191:"<p>2,5 oz / 75ml kahve bardağı, &ouml;rneğin ofiste bir espresso&nbsp;i&ccedil;in bir bardak&nbsp;olarak &ccedil;ok uygundur.&nbsp;Bu karton kahve bardak&nbsp;PE kaplamalıdır&nbsp;</p>
-";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2023-04-11 16:24:19";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";N;s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:4;a:26:{s:2:"id";s:3:"675";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-675";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"10000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"420";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-02-20 09:28:47";s:11:"description";s:44:"Üstün kaliteli, suya dayanıklı ürünler";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:12";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466332301978.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:5;a:26:{s:2:"id";s:3:"681";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-681";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"30000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"652";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-02-20 09:28:33";s:11:"description";s:44:"Üstün kaliteli, suya dayanıklı ürünler";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333381090.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:6;a:26:{s:2:"id";s:3:"679";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-679";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"54500";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"1";s:6:"rating";s:1:"0";s:3:"hit";s:3:"296";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-06-19 18:31:21";s:11:"description";s:69:"<p>&Uuml;st&uuml;n kaliteli, suya dayanıklı &uuml;r&uuml;nler</p>
-";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333571209.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"0";}i:7;a:26:{s:2:"id";s:4:"5410";s:5:"title";s:10:"cup design";s:4:"slug";s:15:"cup-design-5410";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:16:"ordinary_listing";s:11:"category_id";s:3:"621";s:5:"price";s:6:"100000";s:8:"currency";s:3:"USD";s:13:"discount_rate";s:1:"0";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:1:"2";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-04-12 23:12:36";s:11:"description";s:13:"<p>test</p>
-";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2023-04-12 23:12:36";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";N;s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}}}
+";s:17:"product_condition";s:13:"new_with_tags";s:10:"created_at";s:19:"2020-07-02 02:00:12";s:13:"user_username";s:14:"kayaelektronik";s:9:"shop_name";s:15:"Kaya Elektronik";s:9:"user_role";s:6:"vendor";s:9:"user_slug";s:14:"kayaelektronik";s:5:"image";s:52:"local::img_x300_62419636e446a6-98424513-42988714.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"1";}i:5;a:26:{s:2:"id";s:3:"676";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-676";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"25000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"266";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-02-20 09:28:57";s:11:"description";s:69:"<p>&Uuml;st&uuml;n kaliteli, suya dayanıklı &uuml;r&uuml;nler</p>
+";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:12";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466332596393.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:6;a:26:{s:2:"id";s:3:"682";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-682";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"25000";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"352";s:15:"is_free_product";N;s:16:"promote_end_date";s:19:"2023-02-20 09:28:41";s:11:"description";s:69:"<p>&Uuml;st&uuml;n kaliteli, suya dayanıklı &uuml;r&uuml;nler</p>
+";s:17:"product_condition";N;s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333239011.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"0";s:14:"is_in_wishlist";s:1:"0";}i:7;a:26:{s:2:"id";s:3:"678";s:5:"title";s:14:"Spor Ayakkabı";s:4:"slug";s:17:"spor-ayakkabi-678";s:12:"product_type";s:8:"physical";s:12:"listing_type";s:12:"sell_on_site";s:11:"category_id";s:3:"488";s:5:"price";s:5:"15900";s:8:"currency";s:3:"TRY";s:13:"discount_rate";s:2:"10";s:7:"user_id";s:1:"1";s:11:"is_promoted";s:1:"0";s:6:"rating";s:1:"0";s:3:"hit";s:3:"430";s:15:"is_free_product";s:1:"0";s:16:"promote_end_date";s:19:"2023-02-20 09:28:11";s:11:"description";s:44:"Üstün kaliteli, suya dayanıklı ürünler";s:17:"product_condition";s:0:"";s:10:"created_at";s:19:"2022-05-25 11:12:13";s:13:"user_username";s:13:"utopiayazilim";s:9:"shop_name";s:16:"Utopia Yazılım";s:9:"user_role";s:5:"admin";s:9:"user_slug";s:6:"utopia";s:5:"image";s:27:"local::1653466333310734.jpg";s:12:"image_second";N;s:14:"wishlist_count";s:1:"1";s:14:"is_in_wishlist";s:1:"1";}}}

@@ -184,7 +184,7 @@ error_reporting(0);
                                         endforeach;
                                     endif; ?>
                                 </div>
-                                <a href="<?php echo lang_base_url(); ?>" class="btn btn-lg btn-custom m-t-15"><i
+                                <a href="<?php echo lang_base_url(); ?>" class="btn btn-block m-t-15"><i
                                             class="icon-arrow-left m-r-2"></i><?php echo trans("keep_shopping") ?></a>
                             </div>
                             <div class="col-sm-12 col-lg-4">

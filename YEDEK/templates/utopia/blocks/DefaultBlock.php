@@ -1,3 +1,0 @@
-{%BASLIK%}
-{%ICERIK%}
-

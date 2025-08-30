@@ -5,8 +5,8 @@
         <title><?php echo html_escape($title); ?> - <?php echo html_escape($this->general_settings->application_name); ?></title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <link rel="shortcut icon" type="image/png" href="https://mowww.utopiayazilim.com/uploads/logo/icon.png" />
-        <link rel="shortcut icon" type="image/png" href="https://mowww.utopiayazilim.com/uploads/logo/icon.png" />
+        <link rel="shortcut icon" type="image/png" href="<?php echo base_url("<?php echo base_url(); ?>assets/admin/icon.png"); ?>" />
+        <link rel="shortcut icon" type="image/png" href="<?php echo base_url("<?php echo base_url(); ?>assets/admin/icon.png"); ?>" />
         <link href="<?php echo base_url(); ?>assets/store/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/store/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/store/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
@@ -122,19 +122,19 @@
                         <div class="navbar-brand-box">
                             <a href="<?php echo admin_url(); ?>" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="https://mowww.utopiayazilim.com/uploads/logo/logo.png" height="40" alt="logo">
+                                    <img src="<?php echo base_url('uploads/logo/logo.png'); ?>" height="40" alt="logo">
                                 </span>
                                 <span class="logo-lg">
-                                   <img src="https://mowww.utopiayazilim.com/uploads/logo/logo.png" height="40" alt="logo">
+                                   <img src="<?php echo base_url('uploads/logo/logo.png'); ?>" height="40" alt="logo">
                                </span>
                            </a>
 
                            <a href="<?php echo admin_url(); ?>" class="logo logo-light">
                             <span class="logo-sm">
-                                <img src="https://mowww.utopiayazilim.com/uploads/logo/logo-light.png" height="40" alt="logo">
+                                <img src="<?php echo base_url('uploads/logo/logo-light.png'); ?>" height="40" alt="logo">
                             </span>
                             <span class="logo-lg">
-                             <img src="https://mowww.utopiayazilim.com/uploads/logo/logo-light.png" height="40" alt="logo">
+                             <img src="<?php echo base_url('uploads/logo/logo-light.png'); ?>" height="40" alt="logo">
                          </span>
                      </a>
                  </div>

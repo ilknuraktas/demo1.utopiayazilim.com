@@ -57,7 +57,7 @@ if (!empty($product_images)) {
                         <div class="item">
                             <a href="javascript:void(0)" title="">
                                 <img src="<?php echo base_url() . IMG_BG_PRODUCT_SLIDER; ?>" class="img-bg" alt="slider-bg">
-                                <img src="<?php echo IMG_BASE64_1x1; ?>" data-lazy="<?php echo base_url() . 'assets/img/no-image.jpg'; ?>" alt="<?php echo html_escape($product->title); ?>" class="img-product-slider">
+                                <img src="<?php echo IMG_BASE64_1x1; ?>" data-lazy="<?php echo base_url() . "<?php echo base_url(); ?>assets/img/no-image.jpg"; ?>" alt="<?php echo html_escape($product->title); ?>" class="img-product-slider">
                             </a>
                         </div>
                     <?php endif; ?>

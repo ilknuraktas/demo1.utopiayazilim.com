@@ -19,21 +19,33 @@
 		
       <span class="parallax__bg-shape-lg brk-parallax__bg-gradient"></span>
 <div class="col-md-7">
-	<div class="all-light text-left pt-110 pb-10">
+	<div class="all-light text-left pt-110 pb-10" style="max-width: 600px;">
 <h6 class="brk-white-font-color font__family-montserrat font__size-36 font__weight-bold line__height-36 mb-50 text-center text-sm-left">Our Info</h6>
-<p class="font__family-open-sans font__size-14 line__height-16 mb-15 brk-white-font-color opacity-50 text-center text-sm-left">Call Us or use Contact Form</p>
+<?php if ($this->settings->contact_phone): ?><p class="font__family-open-sans font__size-14 line__height-16 mb-15 brk-white-font-color opacity-50 text-center text-sm-left"><?php echo $this->settings->contact_text; ?><br></p>
 <p class="font__size-36 text-center text-sm-left">
-<a href="#" class="brk-white-font-color font__family-open-sans font__weight-light line__height-36">850 305 1 000</a>
-</p>
+<a href="#" class="brk-white-font-color font__family-open-sans font__weight-light line__height-36"><i class="icon-phone" style="color: #fff;padding: 5px;/*! border-radius: 5px; *//*! border-right: 3px solid; */margin-right: 10px;font-size: 22px;" aria-hidden="true"></i><?php echo html_escape($this->settings->contact_phone); ?></a>
+</p><?php endif; ?>
+<?php if ($this->settings->contact_whatsapp1): ?><p class="font__family-open-sans font__size-14 line__height-16 mb-15 brk-white-font-color opacity-50 text-center text-sm-left"><?php echo $this->settings->contact_text; ?><br></p>
+<p class="font__size-36 text-center text-sm-left">
+<a href="#" class="brk-white-font-color font__family-open-sans font__weight-light line__height-36"><i class="icon-whatsapp" style="color: #fff;padding: 5px;/*! border-radius: 5px; *//*! border-right: 3px solid; */margin-right: 10px;font-size: 22px;" aria-hidden="true"></i><?php echo html_escape($this->settings->contact_whatsapp1); ?></a>
+</p><?php endif; ?>
+<?php if ($this->settings->contact_whatsapp2): ?><p class="font__family-open-sans font__size-14 line__height-16 mb-15 brk-white-font-color opacity-50 text-center text-sm-left"><?php echo $this->settings->contact_text; ?><br></p>
+<p class="font__size-36 text-center text-sm-left">
+<a href="#" class="brk-white-font-color font__family-open-sans font__weight-light line__height-36"><i class="icon-whatsapp" style="color: #fff;padding: 5px;/*! border-radius: 5px; *//*! border-right: 3px solid; */margin-right: 10px;font-size: 22px;" aria-hidden="true"></i><?php echo html_escape($this->settings->contact_whatsapp2); ?></a>
+</p><?php endif; ?>
 <hr class="horiz-line mt-35 mb-40 col-md-7">
-<p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color text-center text-sm-left">
-<i class="brk-footer-icon text-middle fa fa-envelope line__height-24"></i>
-<a href="mailto:info@domain.com" class="show-inline-block">info@domain.com</a>
-</p>
-<p class="font__family-open-sans font__weight-bold font__size-14 mb-40 mb-sm-10 brk-white-font-color text-center text-sm-left">
-<i class="brk-footer-icon text-middle fa fa-map-marker line__height-24"></i>
-<span>Istanbul</span>
-</p>
+<?php if ($this->settings->contact_email): ?><p class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color text-center text-sm-left">
+<i class="icon-envelope" style="color: #fff;padding: 5px;/*! border-radius: 5px; *//*! border-right: 3px solid; */margin-right: 10px;font-size: 22px;" aria-hidden="true"></i>
+<a href="mailto:info@domain.com" class="show-inline-block"><?php echo html_escape($this->settings->contact_email); ?></a>
+</p><?php endif; ?>
+<?php if ($this->settings->contact_address): ?><p class="font__family-open-sans font__weight-bold font__size-14 mb-40 mb-sm-10 brk-white-font-color text-center text-sm-left" >
+<i class="icon-map-marker" style="color: #fff;padding: 5px;/*! border-radius: 5px; *//*! border-right: 3px solid; */margin-right: 10px;font-size: 22px;" aria-hidden="true"></i>
+<span><?php echo html_escape($this->settings->contact_address); ?></span>
+</p><?php endif; ?>
+                            <div class="col-sm-12 contact-social">
+                                <!--Include social media links-->
+                                <?php $this->load->view('partials/_social_links', ['show_rss' => null]); ?>
+                            </div>
 <hr class="horiz-line mt-35 mb-40 col-md-7">
 
 <div class="font__family-open-sans font__weight-bold font__size-14 mb-10 brk-white-font-color text-center text-sm-left">
@@ -61,60 +73,108 @@
 </div>
 <hr class="horiz-line mt-35 mb-40 col-md-7"><nav class="">
 <p class="font__family-montserrat font__size-16 font__weight-medium text-uppercase mt-15 mb-30">Language</p>
-<ul class="brk-white-font-color line__height-26">
-<div class="brk-lang brk-header__item brk-location-screen-left">
-<span class="brk-lang__selected">US <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-<span class="brk-lang__open"><i class="fa fa-language"></i> Language <span class="brk-lang__active-lang text-white brk-bg-primary">US</span></span>
-<ul class="brk-lang__option">
-<li><a href="#">UA</a></li>
-<li><a href="#">US</a></li>
-<li><a href="#">PL</a></li>
-<li><a href="#">ES</a></li>
+							<div class="brk-lang brk-header__item brk-lang-rendered brk-location-screen-left">
+								<?php if ($this->general_settings->multilingual_system == 1 && count($this->languages) > 1): ?>
+								
+<span class="brk-lang__selected"><?php echo html_escape($this->selected_lang->name); ?><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+<span class="brk-lang__open"><i class="fa fa-language"></i> Language <span class="brk-lang__active-lang text-white brk-bg-primary"><?php echo html_escape($this->selected_lang->name); ?></span></span>
+<ul class="brk-lang__option"><?php foreach ($this->languages as $language):
+                                                        $lang_url = base_url() . $language->short_form . "/";
+                                                        if ($language->id == $this->general_settings->site_lang) {
+                                                            $lang_url = base_url();
+                                                        } ?>
+<li>
+                                                        <a href="<?php echo $lang_url; ?>" class="<?php echo ($language->id == $this->selected_lang->id) ? 'selected' : ''; ?> " class="dropdown-item">
+                                                            <?php echo $language->name; ?>
+                                                        </a>
+                                                    <?php endforeach; ?></li>
+	
 </ul>
+								<?php endif; ?>
 </div>
-</ul>
 </nav></div>
 </div>
 </div>
 <div class="col-md-5">
-<div class="all-light text-left pt-110 pb-10">
+<div class="all-light text-left pt-110 pb-10" style="max-width: 600px;">
 <h6 class="brk-white-font-color font__family-montserrat font__size-36 font__weight-bold line__height-36 text-center text-sm-left pt-xs-20">Contact Us</h6>
-<form action="#" class="brk-subscribe-mail brk-form-strict brk-form-strict_footer-3 mb-90 rendered brk-library-rendered lazyloaded" data-brk-library="component__form,recaptcha">
-<div class="row">
-<div class="col-12 col-lg-6">
-<div class="brk-form-wrap"><input type="text" name="FNAME" class="rendered" id="brkin-0" placeholder=""><label class="input-label" for="brkin-0">Name</label></div>
+                            <!-- include message block -->
+                            <?php $this->load->view('partials/_messages'); ?>
+							<div class="brk-subscribe-mail brk-subscribe-mail_dark brk-form-strict pt-15 wow fadeInLeft">
+							<!-- form start -->
+                            <?php echo form_open('contact-post', ['id' => 'form_validate', 'class' => 'validate_terms']); ?>
+                            <div class="form-group" style="margin-top:10px">
+                                <input style="/*! border-bottom: 3px solid #623cea; */" type="text" class="form-control form-input" name="name" placeholder="<?php echo trans("name"); ?>" maxlength="199" minlength="1" pattern=".*\S+.*" value="<?php echo old('name'); ?>" <?php echo ($this->rtl == true) ? 'dir="rtl"' : ''; ?> required>
+                            </div>
+                            <div class="form-group">
+                                <input style="/*! border-bottom: 3px solid #623cea; */" type="email" class="form-control form-input" name="email" maxlength="199" placeholder="<?php echo trans("email_address"); ?>" value="<?php echo old('email'); ?>" <?php echo ($this->rtl == true) ? 'dir="rtl"' : ''; ?> required>
+                            </div>
+                            <div class="form-group">
+                                <textarea style="/*! border-bottom: 3px solid #623cea; */" class="form-control form-input form-textarea" name="message" placeholder="<?php echo trans("message"); ?>" maxlength="4970" minlength="5" <?php echo ($this->rtl == true) ? 'dir="rtl"' : ''; ?> required><?php echo old('message'); ?></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox custom-control-validate-input">
+                                    <input style="border-bottom: 3px solid #1a71eb;" type="checkbox" class="custom-control-input" name="terms" id="checkbox_terms" required>
+                                    <?php $page_terms_condition = get_page_by_default_name("terms_conditions", $this->selected_lang->id); ?>
+                                    <label for="checkbox_terms" class="custom-control-label"><?php echo trans("terms_conditions_exp"); ?>&nbsp;<a href="<?php echo lang_base_url() . $page_terms_condition->slug; ?>" class="link-terms" target="_blank"><strong><?php echo html_escape($page_terms_condition->title); ?></strong></a></label>
+                                </div>
+                            </div>
+
+                            <?php generate_recaptcha(); ?>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn-md btn-block" style="padding: 10px;">
+                                    <?php echo trans("submit"); ?>
+                                </button>
+                            </div>
+
+                            <?php echo form_close(); ?>
+<div class="divider-dashed mt-35 mb-40"></div>
+
+<h2 class="font__family-montserrat-alt font__size-20 font__weight-bold line__height-34">
+<div class="newsletter" style="width: 100%;border-radius: 5px; display: flex; justify-content: center;flex-wrap: wrap; justify-content: center; align-items: center;">
+                                        <div class="col-md-12" style="text-align: center;">
+                                            <h4 class="footer-title" style="padding-bottom: 20px;><?php echo trans("newsletter"); ?></h4>
+                                        </div>
+                                        <?php echo form_open('add-to-subscribers-post', ['id' => 'form_validate_newsletter']); ?>
+                                        <div class="col-md-12">
+                                            <div class="newsletter-inner">
+                                                <div class="d-table-cell">
+                                                    <input type="email" class="form-control" name="email" style="min-width: 150px;" placeholder="<?php echo trans("enter_email"); ?>" required>
+                                                </div>
+                                                <div class="d-table-cell align-middle">
+                                                    <button class="btn-md btn-block"><?php echo trans("subscribe"); ?></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php echo form_close(); ?>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div id="newsletter" class="m-t-5">
+                                                    <?php
+                                                    if ($this->session->flashdata('news_error')):
+                                                        echo '<span class="text-danger">' . $this->session->flashdata('news_error') . '</span>';
+                                                    endif;
+
+                                                    if ($this->session->flashdata('news_success')):
+                                                        echo '<span class="text-success">' . $this->session->flashdata('news_success') . '</span>';
+                                                    endif;
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 </div>
-<div class="col-12 col-lg-6">
-<div class="brk-form-wrap"><input type="email" name="EMAIL" class="rendered" id="brkin-1"><label class="input-label" for="brkin-1">Email</label></div>
-</div>
-<div class="col-12">
-<div class="brk-form-wrap"><textarea id="footer3" name="MESSAGE" cols="30" rows="5" class="bordered-bottom rendered"></textarea><label class="input-label" for="footer3">Your message</label></div>
-</div>
-<button type="submit" class="d-flex align-items-center justify-content-center font__size-12 brk-white-font-color brk-base-bg-gradient-24">
-<i class="fal fa-envelope mr-15 font__size-14"></i>
-<span class="font__family-montserrat font__size-14 text-uppercase letter-spacing-60">submit</span>
-</button>
-</div>
-</form>
-<div class="divider-dashed mt-35 mb-40"></div><h2 class="font__family-montserrat-alt font__size-34 font__weight-bold line__height-34 text-uppercase">
-<span class="badge badge-primary font__size-13 font__weight-bold line__height-28 font__family-open-sans">Stay with us!</span>
-Subscribe now</h2><form class="subscribe-form mt-20">
-<div class="form-control">
-<input type="email" title="email" placeholder="Your mail">
-<button class="btn" type="submit">
-<i class="fas fa-paper-plane"></i>
-</button>
-</div>
-</form></div>
 </div>    </div>
   </div>
-	<div class="brk-base-bg-gradient-26 d-flex align-items-center justify-content-center pt-20 pb-20 brk-footer__border-gradient-1">
-<p class="brk-text-white-80 font__family-open-sans font__size-14">
-© 2023
-<span class="brk-white-font-color font__weight-bold pl-1 pr-1">Utopia</span>
-All rights reserved</p>
-</div>
 	</div>
+	</div><div class="brk-base-bg-gradient-26 d-flex align-items-center justify-content-center pt-20 pb-20 brk-footer__border-gradient-1">
+<p class="brk-text-white-80 font__family-open-sans font__size-14">
+<script>document.write(new Date().getFullYear())</script> &copy;
+<span class="brk-white-font-color font__weight-bold pl-1 pr-1"><?php echo html_escape($this->settings->copyright); ?></span>
+</p>
+</div>
 </footer>
 		
 	</div>

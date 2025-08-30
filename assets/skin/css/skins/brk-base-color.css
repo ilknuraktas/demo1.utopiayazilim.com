@@ -446,7 +446,8 @@
   background-image: linear-gradient(to top, var(--brk-secondary-4) 0%, var(--brk-secondary-5) 100%); }
 
 .brk-base-bg-gradient-26 {
-  background-image: linear-gradient(to top, rgba(23, 27, 38, 0.92) 0%, rgba(39, 45, 62, 0.92) 100%); }
+  background-image: linear-gradient(to top, rgba(23, 27, 38, 0.92) 0%, rgba(39, 45, 62, 0.92) 100%);
+  }
 
 .brk-base-gradient-27 {
   background-image: linear-gradient(to top, #262626 0%, #242424 100%); }

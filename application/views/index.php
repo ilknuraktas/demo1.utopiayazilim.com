@@ -30,7 +30,7 @@
 			<div id="rev_slider_15_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
 				
 				<ul>
-					<li data-index="rs-35" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+					<li data-index="rs-35" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="<?php echo base_url(); ?>assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 						<div class="tp-caption rev_group" id="slide-35-layer-16" data-x="['left','left','center','center']" data-hoffset="['15','16','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="['594','417','415','300']" data-height="['491','453','481','481']" data-whitespace="nowrap" data-type="group" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":10,"frame":"999","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 594px; max-width: 594px; max-width: 491px; max-width: 491px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 							<div class="tp-caption" id="slide-77-layer-3" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-fontsize="['26','20','20','18']" data-lineheight="['28','20','20','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 26px; line-height: 28px; font-weight: 200; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">Sürpriz Dolu Patentli Ürünümüzle</div>
 							<div class="tp-caption" id="slide-35-layer-4" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['35','30','30','30']" data-fontsize="['76','60','60','40']" data-lineheight="['78','60','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 48px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">Tanışın</div>
@@ -45,9 +45,9 @@
 
 							</div>
 							<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-35-layer-14" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":10,"frame":"999","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background:linear-gradient(110deg, rgba(15,90,224,0.96) 0%, rgba(116,0,186,0.96) 100%);"> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-35-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-35-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
 							<div class="tp-caption" id="slide-35-layer-1" data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-37','-37','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="https://njoy-softijs.nl/wp-content/uploads/2022/12/disneybekers.png" alt="" data-ww="['850px','450px','450px','450px']" data-hh="['695px','368','368px','368px']" data-no-retina> </div>
 												<div class="tp-caption tp-resizeme" id="slide-29-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-1','-1','-1','-1']" data-width="full" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137">
 					<defs>
@@ -61,8 +61,8 @@
 				</svg> </div>
 
 					</li>
-					<li data-index="rs-77" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-						<img src="assets/skin/img/home_page_5/0a8b7-brk_slide-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+					<li data-index="rs-77" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="<?php echo base_url(); ?>assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/0a8b7-brk_slide-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 						<div class="tp-caption rev_group" id="slide-77-layer-16" data-x="['left','left','center','center']" data-hoffset="['15','16','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="['594','417','415','300']" data-height="['491','453','481','481']" data-whitespace="nowrap" data-type="group" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":10,"frame":"999","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 594px; max-width: 594px; max-width: 491px; max-width: 491px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 							<div class="tp-caption" id="slide-77-layer-3" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-fontsize="['26','20','20','18']" data-lineheight="['28','20','20','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 26px; line-height: 28px; font-weight: 200; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">Ürünlerinize özel tasarım çözümleri</div>
 							<div class="tp-caption" id="slide-77-layer-4" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['35','30','30','30']" data-fontsize="['76','52','46','36']" data-lineheight="['78','52','46','36']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 48px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">Espripack farkı</div>
@@ -73,9 +73,9 @@
 								<div class="tp-caption" id="slide-77-layer-9" data-x="['left','left','center','center']" data-hoffset="['237','237','0','0']" data-y="['top','top','top','top']" data-voffset="['411','382','405','397']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap; font-size: 44px; line-height: 60px; font-weight: 200; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;">950$ </div>
 							</div>
 							<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-77-layer-14" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background:linear-gradient(110deg, rgba(15,90,224,0.96) 0%, rgba(116,0,186,0.96) 100%);"> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328px','850px','850px','850px']" data-hh="['819','524','524','524']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-77-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328px','850px','850px','850px']" data-hh="['819','524','524','524']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-77-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
 							<div class="tp-caption tp-resizeme" id="slide-77-layer-1" data-x="['right','right','right','right']" data-hoffset="['40','10','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['19','29','-37','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="https://njoy-softijs.nl/wp-content/uploads/2022/01/Funniezz2-2.png" alt="" data-ww="['850px','450px','450px','450px']" data-hh="['695px','368','368px','368px']"  data-no-retina> </div>
 						<div class="tp-caption tp-resizeme" id="slide-29-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-1','-1','-1','-1']" data-width="full" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137">
 					<defs>
@@ -1391,6 +1391,8 @@ Müşterilerimize, uygun fiyatlarla kaliteli ambalaj çözümleri sunarken, teda
 					</div>
 		</section>
 		<section class="position-relative overflow-hid mb-40 mb-lg-0" style="padding-top: 300px; margin-top: -100px; z-index: 3;">
+								<?php if ($this->general_settings->index_blog_slider == 1 && !empty($blog_slider_posts)) : ?>
+
 						<div class="brk-animated-circle brk-animated-circle-1" style="left:-70px;top:200px; right:auto; bottom:auto" data-brk-library="component__backgrounds_css">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="417" height="416" viewBox="0 0 417 416">
 					<defs>
@@ -1534,152 +1536,9 @@ Müşterilerimize, uygun fiyatlarla kaliteli ambalaj çözümleri sunarken, teda
 					</p>
 				</div>
 				<div class="container mb-140">
-					<?php if ($this->general_settings->index_blog_slider == 1 && !empty($blog_slider_posts)) : ?>
-
-					<div class="default-slider slick-loading dots-rounded-skin " data-slick="{
-  &quot;slidesToShow&quot;: 3,
-  &quot;slidesToScroll&quot;: 1,
-  &quot;dots&quot;: true,
-  &quot;responsive&quot;: [
-  {
-  &quot;breakpoint&quot;: 992,
-  &quot;settings&quot;: {&quot;slidesToShow&quot;: 2}
-  },
-  {
-  &quot;breakpoint&quot;: 576,
-  &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}
-  }
-  ]}" data-brk-library="slider__slick">
-    <div class="pl-15 pr-15">
-      <div class="post-rounded brk-base-box-shadow  brk-library-rendered" data-brk-library="component__content_slider">
-        <div class="post-rounded__thumb lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-1.jpg"><a href="#" class="btn-primary btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
-<span class="before">Read More</span>
-</a>
-						<div class="brk-animated-circle brk-animated-circle-1" style="left:-70px;top:200px; right:auto; bottom:auto" data-brk-library="component__backgrounds_css">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="417" height="416" viewBox="0 0 417 416">
-					<defs>
-						<path id="backgrounds-id-1" d="M134.56 5718.66c114.7 0 207.67 92.98 207.67 207.67 0 114.7-92.98 207.67-207.67 207.67-114.7 0-207.67-92.98-207.67-207.67 0-114.7 92.98-207.67 207.67-207.67z" />
-						<clipPath id="backgrounds-id-2">
-							<use fill="#fff" xlink:href="#backgrounds-id-1" />
-						</clipPath>
-					</defs>
-					<g>
-						<g opacity=".3" transform="translate(74 -5718)">
-							<use fill="#fff" fill-opacity="0" stroke="#000" stroke-dasharray="0 16" stroke-linecap="round" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#backgrounds-id-2&quot;)" xlink:href="#backgrounds-id-1" />
-						</g>
-					</g>
-				</svg>
-				<div class="brk-animated-circle__container">
-					<span class="brk-animated-circle__dot-1"></span>
-				</div>
-			</div>
-			<div class="brk-animated-circle brk-animated-circle-2" style="left:auto;top:30px;right:-10px; bottom:auto" data-brk-library="component__backgrounds_css">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="417" height="416" viewBox="0 0 417 416">
-					<defs>
-						<path id="backgrounds-id-13-2" d="M134.56 5718.66c114.7 0 207.67 92.98 207.67 207.67 0 114.7-92.98 207.67-207.67 207.67-114.7 0-207.67-92.98-207.67-207.67 0-114.7 92.98-207.67 207.67-207.67z" />
-						<clipPath id="backgrounds-id-13-1">
-							<use fill="#fff" xlink:href="#backgrounds-id-13-2" />
-						</clipPath>
-					</defs>
-					<g>
-						<g opacity=".3" transform="translate(74 -5718)">
-							<use fill="#fff" fill-opacity="0" stroke="#000" stroke-dasharray="0 16" stroke-linecap="round" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#backgrounds-id-13-1&quot;)" xlink:href="#backgrounds-id-13-2" />
-						</g>
-					</g>
-				</svg>
-				<div class="brk-animated-circle__container">
-					<span class="brk-animated-circle__dot-1"></span>
-				</div>
-			</div>
-			<div class="brk-animated-circle brk-animated-circle-4" style="left:auto;top:auto;right:0; bottom:50px" data-brk-library="component__backgrounds_css">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="230" viewBox="0 0 230 230">
-					<defs>
-						<path id="backgrounds-id-15-1" d="M188.02 6501c63.52 0 115.01 51.49 115.01 115s-51.49 115-115.01 115S73 6679.51 73 6616s51.5-115 115.02-115z" />
-						<clipPath id="backgrounds-id-15-2">
-							<use fill="#fff" xlink:href="#backgrounds-id-15-1" />
-						</clipPath>
-					</defs>
-					<g>
-						<g opacity=".02" transform="translate(-73 -6501)">
-							<use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="24" clip-path="url(&quot;#backgrounds-id-15-2&quot;)" xlink:href="#backgrounds-id-15-1" />
-						</g>
-					</g>
-				</svg>
-				<div class="brk-animated-circle__container">
-					<span class="brk-animated-circle__dot-1">
-						<span class="brk-animated-circle__dot-2"></span>
-						<span class="brk-animated-circle__dot-3"></span>
-					</span>
-				</div>
-			</div>
-
-</div>
-        <div class="post-rounded__text">
-          <h3 class="font__family-montserrat font__weight-bold font__size-19">Aquatic: Stock Photography</h3>
-          <p class="font__family-open-sans font__size-16 text-gray line__height-28">Deep below the ocean&apos;s surface there is a vibrant, vast ecosystem full of life: a rich diversity of marine life</p>
-        </div>
-      </div>
-    </div>
-    <div class="pl-15 pr-15">
-      <div class="post-rounded brk-base-box-shadow" data-brk-library="component__content_slider">
-        <div class="post-rounded__thumb lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg"><a href="#" class="btn-primary btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
-<span class="before">Read More</span>
-</a>
-</div>
-        <div class="post-rounded__text">
-          <h3 class="font__family-montserrat font__weight-bold font__size-19">The Lyric Video Is Trending</h3>
-          <p class="font__family-open-sans font__size-16 text-gray line__height-28">You&apos;ve just heard the newest hit song. Next step: learn the words so you don&apos;t embarrass yourself.</p>
-        </div>
-      </div>
-    </div>
-    <div class="pl-15 pr-15">
-      <div class="post-rounded brk-base-box-shadow" data-brk-library="component__content_slider">
-        <div class="post-rounded__thumb lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-3.jpg"><a href="#" class="btn-primary btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
-<span class="before">Read More</span>
-</a>
-</div>
-        <div class="post-rounded__text">
-          <h3 class="font__family-montserrat font__weight-bold font__size-19">Blossom: The Best in Floral</h3>
-          <p class="font__family-open-sans font__size-16 text-gray line__height-28">Flowers are one of Mother Nature&apos;s most beautiful gifts. Not only are they a source of natural...</p>
-        </div>
-      </div>
-    </div>
-    <div class="pl-15 pr-15">
-      <div class="post-rounded brk-base-box-shadow" data-brk-library="component__content_slider">
-        <div class="post-rounded__thumb lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg"><a href="#" class="btn-primary btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
-<span class="before">Read More</span>
-</a>
-</div>
-        <div class="post-rounded__text">
-          <h3 class="font__family-montserrat font__weight-bold font__size-19">The Lyric Video Is Trending</h3>
-          <p class="font__family-open-sans font__size-16 text-gray line__height-28">You&apos;ve just heard the newest hit song. Next step: learn the words so you don&apos;t embarrass yourself.</p>
-        </div>
-      </div>
-    </div>
-    <div class="pl-15 pr-15">
-      <div class="post-rounded brk-base-box-shadow" data-brk-library="component__content_slider">
-        <div class="post-rounded__thumb lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg"><a href="#" class="btn-primary btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
-<span class="before">Read More</span>
-</a>
-</div>
-        <div class="post-rounded__text">
-          <h3 class="font__family-montserrat font__weight-bold font__size-19">The Lyric Video Is Trending</h3>
-          <p class="font__family-open-sans font__size-16 text-gray line__height-28">You&apos;ve just heard the newest hit song. Next step: learn the words so you don&apos;t embarrass yourself.</p>
-        </div>
-      </div>
-    </div>
-	<div class="pl-15 pr-15">
-      <div class="post-rounded brk-base-box-shadow" data-brk-library="component__content_slider">
-        <div class="post-rounded__thumb lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg"><a href="#" class="btn-primary btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
-<span class="before">Read More</span>
-</a>
-</div>
-        <div class="post-rounded__text">
-          <h3 class="font__family-montserrat font__weight-bold font__size-19">The Lyric Video Is Trending</h3>
-          <p class="font__family-open-sans font__size-16 text-gray line__height-28">You&apos;ve just heard the newest hit song. Next step: learn the words so you don&apos;t embarrass yourself.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+                    <div class="row-custom">
+                        <!-- main slider -->
+                        <?php $this->load->view("blog/_blog_slider", ['blog_slider_posts' => $blog_slider_posts]); ?>
+                    </div>
 					<?php endif; ?>
 						</section>		

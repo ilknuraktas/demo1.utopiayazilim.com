@@ -1,1 +1,0 @@
-{"ip":"78.180.59.253","date":"03-07-22 01:20:15","post":{"paytr-status":null,"data_email":"","act":"satinal","op":"odeme","paytype":5,"viewPopup":"1","isAjax":"1","temp":"","t":"7c448f309c"},"url":"https:\/\/demo.utopiayazilim.com\/page.php?act=satinal&op=odeme&paytype=5&viewPopup=1&isAjax=1","log":"ProcessPaymentFinalisation"}||

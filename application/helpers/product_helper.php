@@ -174,7 +174,7 @@ if (!function_exists('get_product_item_image')) {
                 }
             }
         }
-        return base_url() . 'assets/img/no-image.jpg';
+        return base_url() . "<?php echo base_url(); ?>assets/img/no-image.jpg";
     }
 }
 

@@ -16,11 +16,11 @@ $db['default'] = array(
 
     'hostname' => 'localhost',
 
-    'username' => 'utop4129_mowwwapp',
+    'username' => 'root',
 
-    'password' => 'c0qqA,MqY9z#',
+    'password' => '',
 
-    'database' => 'utop4129_mowwwapp',
+    'database' => 'mowww',
 
     'dbdriver' => 'mysqli',
 
@@ -52,3 +52,17 @@ $db['default'] = array(
 
 );
 
+/*
+|--------------------------------------------------------------------------
+| Base Site URL
+|--------------------------------------------------------------------------
+|
+| URL to your CodeIgniter root. Typically this will be your base URL,
+| WITH a trailing slash:
+|
+|   http://example.com/
+|
+| If this is not set CodeIgniter will try to guess the protocol and path.
+|
+*/
+$config['base_url'] = 'http://localhost/mowww/';

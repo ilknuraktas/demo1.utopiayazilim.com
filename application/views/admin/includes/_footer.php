@@ -8,11 +8,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                <script>document.write(new Date().getFullYear())</script> &copy; <?php echo html_escape($this->settings->copyright); ?>
+                <script>document.write(new Date().getFullYear())</script> &copy;  © Utopia Codes Tüm Hakları Saklıdır. | www.utopiacodes.com
             </div>
             <div class="col-sm-6">
                 <div class="text-sm-end d-none d-sm-block">
-                    created by <a href="https://www.utopiayazilim.com" target="_blank" class="text-reset"> <img src="https://www.utopiayazilim.com/assets/media/utopia-logo.png" style="/*! filter: brightness(0) invert(1); */" alt="" padding="10px" height="25"></a>
+                    created by <a href="https://www.utopiacodes.com" target="_blank" class="text-reset"> <img src="<?php echo base_url('uploads/logo/logo.png'); ?>" style="/*! filter: brightness(0) invert(1); */" alt="" padding="10px" height="25"></a>
                 </div>
             </div>
         </div>

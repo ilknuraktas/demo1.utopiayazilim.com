@@ -26,8 +26,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-4 col-left  brk-header_color-white">
+                <?php if ($this->general_settings->multilingual_system == 1 && count($this->languages) > 1): ?>
 							<div class="brk-lang brk-header__item brk-lang-rendered brk-location-screen-left">
-								<?php if ($this->general_settings->multilingual_system == 1 && count($this->languages) > 1): ?>
+								
 								
 <span class="brk-lang__selected"><?php echo html_escape($this->selected_lang->name); ?><i class="fa fa-caret-down" aria-hidden="true"></i></span>
 <span class="brk-lang__open"><i class="fa fa-language"></i> Language <span class="brk-lang__active-lang text-white brk-bg-primary"><?php echo html_escape($this->selected_lang->name); ?></span></span>
@@ -43,8 +44,10 @@
                                                     <?php endforeach; ?></li>
 	
 </ul>
-								<?php endif; ?>
-</div>
+								
+</div><?php endif; ?>
+
+
 							<div class="brk-header__element brk-header__element_skin-2 brk-header__item" style="opacity: 1;">
 								<a href="tel:<?php echo html_escape($this->settings->contact_phone); ?>" class="brk-header__element--wrap">
 									<i class="fa fa-phone"></i>

@@ -268,9 +268,9 @@ website:   	http://www.themepunch.com
 .rev_slider .caption,
 .tp-simpleresponsive img {
 	-moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
 
 .rev_slider .tp-mask-wrap .tp-caption,
@@ -309,9 +309,9 @@ website:   	http://www.themepunch.com
 .tp-forcenotvisible,
 .tp-hide-revslider,
 .tp-caption.tp-hidden-caption,
-.tp-parallax-wrap.tp-hidden-caption {	
-	visibility:hidden !important; 
-	display:none !important
+.tp-parallax-wrap.tp-hidden-caption {
+	/* visibility:hidden !important; */
+	display:none !important;
 }
 
 .rev_slider embed,

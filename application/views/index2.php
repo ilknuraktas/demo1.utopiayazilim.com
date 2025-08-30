@@ -30,7 +30,7 @@
 			<div id="rev_slider_15_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
 				
 				<ul>
-					<li data-index="rs-35" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+					<li data-index="rs-35" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="<?php echo base_url(); ?>assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 						<div class="tp-caption rev_group" id="slide-35-layer-16" data-x="['left','left','center','center']" data-hoffset="['15','16','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="['594','417','415','300']" data-height="['491','453','481','481']" data-whitespace="nowrap" data-type="group" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":10,"frame":"999","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 594px; max-width: 594px; max-width: 491px; max-width: 491px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 							<div class="tp-caption" id="slide-35-layer-4" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['35','30','30','30']" data-fontsize="['76','60','60','40']" data-lineheight="['78','60','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 76px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">Your Item </div>
 							<div class="tp-caption tp-shape tp-shapewrapper" id="slide-35-layer-5" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['145','115','107','89']" data-width="['570','400','400','300']" data-height="1" data-whitespace="nowrap" data-type="shape" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1500,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;background-color:rgba(255,255,255,0.2);"> </div>
@@ -44,10 +44,10 @@
 
 							</div>
 							<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-35-layer-14" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":10,"frame":"999","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background:linear-gradient(110deg, rgba(15,90,224,0.96) 0%, rgba(116,0,186,0.96) 100%);"> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-35-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
-							<div class="tp-caption" id="slide-35-layer-1" data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-37','-37','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="assets/skin/img/home_page_5/4bf6d-brk_slide_element-1.png" alt="" data-ww="['850px','450px','450px','450px']" data-hh="['695px','368','368px','368px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-35-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-35-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524px','524px','524px']" data-no-retina> </div>
+							<div class="tp-caption" id="slide-35-layer-1" data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-37','-37','-37','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/4bf6d-brk_slide_element-1.png" alt="" data-ww="['850px','450px','450px','450px']" data-hh="['695px','368','368px','368px']" data-no-retina> </div>
 												<div class="tp-caption tp-resizeme" id="slide-29-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-1','-1','-1','-1']" data-width="full" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137">
 					<defs>
 						<path id="svg-id-2" d="M1920 8215H0v-80.78c25.76 8.63 67.3 19.24 133 29.1 144 21.64 208.92-49.01 388-50.29 179.08-1.27 262.24 117 496 61.32 215.22-51.26 328.47-96.35 483-96.35 154.53 0 339.96 98.05 420 98.05z"></path>
@@ -60,8 +60,8 @@
 				</svg> </div>
 
 					</li>
-					<li data-index="rs-77" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-						<img src="assets/skin/img/home_page_5/0a8b7-brk_slide-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+					<li data-index="rs-77" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1400" data-thumb="<?php echo base_url(); ?>assets/skin/img/home_page_5/100x50_0a8b7-brk_slide-1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/0a8b7-brk_slide-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 						<div class="tp-caption rev_group" id="slide-77-layer-16" data-x="['left','left','center','center']" data-hoffset="['15','16','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="['594','417','415','300']" data-height="['491','453','481','481']" data-whitespace="nowrap" data-type="group" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":10,"frame":"999","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 594px; max-width: 594px; max-width: 491px; max-width: 491px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 							<div class="tp-caption" id="slide-77-layer-3" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-fontsize="['26','20','20','18']" data-lineheight="['28','20','20','18']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 26px; line-height: 28px; font-weight: 200; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">Some category </div>
 							<div class="tp-caption" id="slide-77-layer-4" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['35','30','30','30']" data-fontsize="['76','52','46','36']" data-lineheight="['78','52','46','36']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 76px; line-height: 78px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">smartphone </div>
@@ -74,10 +74,10 @@
 								<div class="tp-caption" id="slide-77-layer-9" data-x="['left','left','center','center']" data-hoffset="['237','237','0','0']" data-y="['top','top','top','top']" data-voffset="['411','382','405','397']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap; font-size: 44px; line-height: 60px; font-weight: 200; color: #ffffff; letter-spacing: 0px;font-family:Montserrat;">950$ </div>
 							</div>
 							<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-77-layer-14" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":10,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;background:linear-gradient(110deg, rgba(15,90,224,0.96) 0%, rgba(116,0,186,0.96) 100%);"> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328px','850px','850px','850px']" data-hh="['819','524','524','524']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-77-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
-							<div class="tp-caption tp-resizeme" id="slide-77-layer-1" data-x="['right','right','right','right']" data-hoffset="['40','10','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['19','29','-37','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="assets/skin/img/home_page_5/e4c55-brk_slide_element-3.png" alt="" data-ww="['550px','450px','450px','450px']" data-hh="['687px','562px','368px','368px']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-11" data-x="['left','left','left','left']" data-hoffset="['-241','-230','-230','-230']" data-y="['top','top','top','top']" data-voffset="['-465','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328px','850px','850px','850px']" data-hh="['819','524','524','524']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-77-layer-12" data-x="['left','left','left','left']" data-hoffset="['-239','-230','-230','-230']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-468','-290','-290','-290']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme rs-parallaxlevel-5" id="slide-77-layer-13" data-x="['right','right','right','right']" data-hoffset="['-451','-342','-342','-342']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/97014-brk_slide_element-2.png" alt="" data-ww="['1328auto','850px','850px','850px']" data-hh="['819px','524','524','524']" data-no-retina> </div>
+							<div class="tp-caption tp-resizeme" id="slide-77-layer-1" data-x="['right','right','right','right']" data-hoffset="['40','10','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['19','29','-37','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="<?php echo base_url(); ?>assets/skin/img/home_page_5/e4c55-brk_slide_element-3.png" alt="" data-ww="['550px','450px','450px','450px']" data-hh="['687px','562px','368px','368px']" data-no-retina> </div>
 						<div class="tp-caption tp-resizeme" id="slide-29-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-1','-1','-1','-1']" data-width="full" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137">
 					<defs>
 						<path id="svg-id-2" d="M1920 8215H0v-80.78c25.76 8.63 67.3 19.24 133 29.1 144 21.64 208.92-49.01 388-50.29 179.08-1.27 262.24 117 496 61.32 215.22-51.26 328.47-96.35 483-96.35 154.53 0 339.96 98.05 420 98.05z"></path>
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 			<div class="brk-animated-circle brk-animated-circle-9" style="left:auto;top:345px;right:200px; bottom:auto" data-brk-library="component__backgrounds_css">
-				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/animated-triangle.png" alt="alt">
+				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/animated-triangle.png" alt="alt">
 				<div class="brk-animated-circle__container">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="62px">
 						<linearGradient id="backgrounds-id-3" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 			<div class="brk-animated-circle brk-animated-circle-5" style="left:10px;top:720px;right:auto; bottom:auto" data-brk-library="component__backgrounds_css">
-				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/animated-circle-1.png" alt="alt">
+				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/animated-circle-1.png" alt="alt">
 				<div class="brk-animated-circle__container">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="77px">
 						<linearGradient id="backgrounds-id-5" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -177,7 +177,7 @@
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Polo shirt
@@ -192,7 +192,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -222,7 +222,7 @@
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -241,7 +241,7 @@
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Hugo Boss
@@ -256,7 +256,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -286,7 +286,7 @@
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -305,7 +305,7 @@
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Tommy Hilfiger
@@ -328,7 +328,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="brk-sc-card-labels brk-sc-card-labels_top-labels">
@@ -366,7 +366,7 @@
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -385,7 +385,7 @@
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Long-sleeve top
@@ -400,7 +400,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -430,7 +430,7 @@
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -449,7 +449,7 @@
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Burberry
@@ -464,7 +464,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -494,7 +494,7 @@
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -513,7 +513,7 @@
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Sleeveless shirt
@@ -528,7 +528,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -558,7 +558,7 @@
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -580,34 +580,34 @@
 			<div class="container">
 				<div class="brk-brand-slider slick-loading fa-req pt-30 pt-md-0" id="about" data-brk-library="slider__slick">
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/71x69_1.png" alt="71x69_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/71x69_1.png" alt="71x69_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/71x71_1.png" alt="71x71_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/71x71_1.png" alt="71x71_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/77x69_1.png" alt="77x69_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/77x69_1.png" alt="77x69_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/79x60_1.png" alt="79x60_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/79x60_1.png" alt="79x60_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/79x75_1.png" alt="79x75_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/79x75_1.png" alt="79x75_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/83x72_1.png" alt="83x72_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/83x72_1.png" alt="83x72_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/87x66_1.png" alt="87x66_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/87x66_1.png" alt="87x66_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/88x28_1.png" alt="88x28_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/88x28_1.png" alt="88x28_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/89x64_1.png" alt="89x64_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/89x64_1.png" alt="89x64_1">
 					</div>
 					<div>
-						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/91x61_1.png" alt="91x61_1">
+						<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/91x61_1.png" alt="91x61_1">
 					</div>
 				</div>
 				<hr class="brk-hr-gradient mt-50 mb-50">
@@ -669,8 +669,8 @@
 								</div>
 								<div class="col-xl-4">
 									<div class="text-center text-xl-left mb-30">
-										<a href="assets/skin/img/320x320_1.jpg" class="frame-image image-popup img-square shadow fancybox brk-library-rendered rendered" data-brk-library="fancybox">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/320x320_1.jpg" alt="alt" class="lazyload">
+										<a href="<?php echo base_url(); ?>assets/skin/img/320x320_1.jpg" class="frame-image image-popup img-square shadow fancybox brk-library-rendered rendered" data-brk-library="fancybox">
+											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/320x320_1.jpg" alt="alt" class="lazyload">
 											<span class="square"></span>
 										</a>
 									</div>
@@ -706,7 +706,7 @@ creative <span class="after wow zoomIn" style="visibility: visible; animation-na
 <span class="full__size-absolute brk-bg-grad opacity-90"></span>
 <div class="row">
 <div class="col-sm-4">
-<img class="mb-10 lazyloaded" alt="alt" src="assets/skin/img/343x301_1.jpg" data-src="assets/skin/img/343x301_1.jpg">
+<img class="mb-10 lazyloaded" alt="alt" src="<?php echo base_url(); ?>assets/skin/img/343x301_1.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/343x301_1.jpg">
 </div>
 <div class="col-sm-8">
 <h4 class="font__family-montserrat font__weight-semibold highlight-underline font__size-28 line__height-32 mt-0">
@@ -813,8 +813,8 @@ ante, dapibus in
 								</div>
 								<div class="col-xl-4">
 									<div class="text-center text-lg-left mb-30">
-										<a href="assets/skin/img/320x320_2.jpg" class="frame-image image-popup img-square shadow fancybox brk-library-rendered rendered" data-brk-library="fancybox">
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/320x320_2.jpg" alt="alt" class="lazyload">
+										<a href="<?php echo base_url(); ?>assets/skin/img/320x320_2.jpg" class="frame-image image-popup img-square shadow fancybox brk-library-rendered rendered" data-brk-library="fancybox">
+											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/320x320_2.jpg" alt="alt" class="lazyload">
 											<span class="square"></span>
 										</a>
 									</div>
@@ -828,21 +828,21 @@ ante, dapibus in
 								<div class="col-sm-6 col-lg-4 text-center">
 									<a href="#" class="frame-image image-link angle-shadow-1 mb-40 brk-library-rendered" data-brk-library="component__image_frames">
 										<span class="brk-image-frames-icon"><i class="fas fa-plus"></i></span>
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/370x370_1.jpg" class="image-border-1 lazyload" alt="alt">
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/370x370_1.jpg" class="image-border-1 lazyload" alt="alt">
 										<span class="angle-shadow"></span>
 									</a>
 								</div>
 								<div class="col-sm-6 col-lg-4 text-center">
 									<a href="#" class="frame-image image-link angle-shadow-2 mb-40 brk-library-rendered" data-brk-library="component__image_frames">
 										<span class="brk-image-frames-icon"><i class="fas fa-plus"></i></span>
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/370x370_2.jpg" class="image-border-1 lazyload" alt="alt">
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/370x370_2.jpg" class="image-border-1 lazyload" alt="alt">
 										<span class="angle-shadow"></span>
 									</a>
 								</div>
 								<div class="col-sm-6 col-lg-4 text-center">
 									<a href="#" class="frame-image image-link angle-shadow-3 mb-40 brk-library-rendered" data-brk-library="component__image_frames">
 										<span class="brk-image-frames-icon"><i class="fas fa-plus"></i></span>
-										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/370x370_3.jpg" class="image-border-1 lazyload" alt="alt">
+										<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/370x370_3.jpg" class="image-border-1 lazyload" alt="alt">
 										<span class="angle-shadow"></span>
 									</a>
 								</div>
@@ -856,13 +856,13 @@ ante, dapibus in
 									<div class="text-center text-lg-left">
 										<a href="#" class="frame-image image-link rounded-all shadow">
 											<span class="brk-image-frames-icon"><i class="fas fa-plus"></i></span>
-											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/370x370_1.jpg" alt="alt" class="lazyload">
+											<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/370x370_1.jpg" alt="alt" class="lazyload">
 										</a>
 									</div>
 								</div>
 								<div class="col-lg-8 text-center text-lg-left mt-30 mt-lg-0">
 									<div class="show-flex align-items-center">
-										<img src="assets/skin/img/letter.png" class="mr-20" alt="alt">
+										<img src="<?php echo base_url(); ?>assets/skin/img/letter.png" class="mr-20" alt="alt">
 										<p class="font__family-open-sans font__size-16 line__height-26 brk-white-font-color">Aenean vulputate eleifend
 											tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
 											viverra quis, feugiat a, tellus.</p>
@@ -900,7 +900,7 @@ ante, dapibus in
 </div>
 <div class="brk-sc-honeycomb brk-sc-honeycomb_line brk-sc-honeycomb_nigative-line flex-column brk-library-rendered" data-brk-library="component__shop_honeycomb">
 <div class="brk-sc-honeycomb-four brk-sc-honeycomb-four_left">
-<div class="brk-sc-honeycomb-four__thumb"><img class=" lazyloaded" src="assets/skin/img/197x343_1.png" data-src="assets/skin/img/197x343_1.png" alt="alt"></div>
+<div class="brk-sc-honeycomb-four__thumb"><img class=" lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/197x343_1.png" data-src="<?php echo base_url(); ?>assets/skin/img/197x343_1.png" alt="alt"></div>
 <div class="brk-sc-honeycomb-four__content d-flex flex-column justify-content-center">
 <div class="brk-sc-honeycomb-four__sticker brk-white-font-color font__family-montserrat">
 <span class="category brk-bg-primary">Sport</span>
@@ -934,7 +934,7 @@ ante, dapibus in
 </div>
 </div>
 <div class="brk-sc-honeycomb-four brk-sc-honeycomb-four_center">
-<div class="brk-sc-honeycomb-four__thumb"><img class=" lazyloaded" src="assets/skin/img/197x343_2.png" data-src="assets/skin/img/197x343_2.png" alt="alt"></div>
+<div class="brk-sc-honeycomb-four__thumb"><img class=" lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/197x343_2.png" data-src="<?php echo base_url(); ?>assets/skin/img/197x343_2.png" alt="alt"></div>
 <div class="brk-sc-honeycomb-four__content d-flex flex-column justify-content-center">
 <div class="brk-sc-honeycomb-four__sticker brk-white-font-color font__family-montserrat">
 <span class="category brk-bg-primary">Sport</span>
@@ -968,7 +968,7 @@ ante, dapibus in
 </div>
 </div>
 <div class="brk-sc-honeycomb-four brk-sc-honeycomb-four_right">
-<div class="brk-sc-honeycomb-four__thumb"><img class=" lazyloaded" src="assets/skin/img/197x343_1.png" data-src="assets/skin/img/197x343_1.png" alt="alt"></div>
+<div class="brk-sc-honeycomb-four__thumb"><img class=" lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/197x343_1.png" data-src="<?php echo base_url(); ?>assets/skin/img/197x343_1.png" alt="alt"></div>
 <div class="brk-sc-honeycomb-four__content d-flex flex-column justify-content-center">
 <div class="brk-sc-honeycomb-four__sticker brk-white-font-color font__family-montserrat">
 <span class="category brk-bg-primary">Sport</span>
@@ -1043,7 +1043,7 @@ ante, dapibus in
 					<div class="brk-grid__item brk-grid__item_width-2 brk-grid__item_height-2" style="width: 50%; position: absolute; left: 0%; top: 0px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/570x570_1.jpg" data-src="assets/skin/img/demo_agency_fluid/570x570_1.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/570x570_1.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/570x570_1.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">Put a plan into action</a>
@@ -1056,7 +1056,7 @@ ante, dapibus in
 					<div class="brk-grid__item" style="width: 25%; position: absolute; left: 50%; top: 0px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/270x270_1.jpg" data-src="assets/skin/img/demo_agency_fluid/270x270_1.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_1.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_1.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">Stay on budget</a>
@@ -1069,7 +1069,7 @@ ante, dapibus in
 					<div class="brk-grid__item" style="width: 25%; position: absolute; left: 75%; top: 0px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/270x270_2.jpg" data-src="assets/skin/img/demo_agency_fluid/270x270_2.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_2.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_2.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">Outsource a task</a>
@@ -1082,7 +1082,7 @@ ante, dapibus in
 					<div class="brk-grid__item brk-grid__item_width-2" style="width: 50%; position: absolute; left: 50%; top: 292.5px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/570x270_2.jpg" data-src="assets/skin/img/demo_agency_fluid/570x270_2.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/570x270_2.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/570x270_2.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">According to schedule</a>
@@ -1095,7 +1095,7 @@ ante, dapibus in
 					<div class="brk-grid__item brk-grid__item_width-2" style="width: 50%; position: absolute; left: 0%; top: 585px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/570x270_1.jpg" data-src="assets/skin/img/demo_agency_fluid/570x270_1.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/570x270_1.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/570x270_1.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">Give the green light</a>
@@ -1108,7 +1108,7 @@ ante, dapibus in
 					<div class="brk-grid__item" style="width: 25%; position: absolute; left: 50%; top: 585px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/270x270_3.jpg" data-src="assets/skin/img/demo_agency_fluid/270x270_3.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_3.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_3.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">Schedule a meeting</a>
@@ -1121,7 +1121,7 @@ ante, dapibus in
 					<div class="brk-grid__item" style="width: 25%; position: absolute; left: 75%; top: 585px;">
 						<div class="brk-simple-card brk-library-rendered rendered" data-brk-library="component__portfolio_isotope">
 							<div class="brk-simple-card__animation-wrapper" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
-								<img class="brk-simple-card__img lazyloaded" src="assets/skin/img/demo_agency_fluid/270x270_4.jpg" data-src="assets/skin/img/demo_agency_fluid/270x270_4.jpg" alt="alt">
+								<img class="brk-simple-card__img lazyloaded" src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_4.jpg" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/270x270_4.jpg" alt="alt">
 								<div class="brk-simple-card__overlay brk-base-bg-gradient-10deg"></div>
 								<div class="brk-simple-card__info" style="transform: scaleX(1) scaleY(1) scaleZ(1) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);">
 									<a href="#" class="font__family-montserrat font__weight-bold font__size-24 text-uppercase text-center text-white brk-simple-card__title">Wrap up the project</a>
@@ -1155,7 +1155,7 @@ ante, dapibus in
 				</div>
 			</div>
 			<div class="brk-animated-circle brk-animated-circle-9" style="left:auto;top:345px;right:200px; bottom:auto" data-brk-library="component__backgrounds_css">
-				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/animated-triangle.png" alt="alt">
+				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/animated-triangle.png" alt="alt">
 				<div class="brk-animated-circle__container">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="62px">
 						<linearGradient id="backgrounds-id-3" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -1167,7 +1167,7 @@ ante, dapibus in
 				</div>
 			</div>
 			<div class="brk-animated-circle brk-animated-circle-5" style="left:10px;top:720px;right:auto; bottom:auto" data-brk-library="component__backgrounds_css">
-				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/animated-circle-1.png" alt="alt">
+				<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/animated-circle-1.png" alt="alt">
 				<div class="brk-animated-circle__container">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="77px">
 						<linearGradient id="backgrounds-id-5" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -1220,7 +1220,7 @@ ante, dapibus in
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Polo shirt
@@ -1235,7 +1235,7 @@ ante, dapibus in
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -1265,7 +1265,7 @@ ante, dapibus in
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -1284,7 +1284,7 @@ ante, dapibus in
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Hugo Boss
@@ -1299,7 +1299,7 @@ ante, dapibus in
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -1329,7 +1329,7 @@ ante, dapibus in
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -1348,7 +1348,7 @@ ante, dapibus in
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Tommy Hilfiger
@@ -1371,7 +1371,7 @@ ante, dapibus in
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="brk-sc-card-labels brk-sc-card-labels_top-labels">
@@ -1409,7 +1409,7 @@ ante, dapibus in
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -1428,7 +1428,7 @@ ante, dapibus in
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Long-sleeve top
@@ -1443,7 +1443,7 @@ ante, dapibus in
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_2.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -1473,7 +1473,7 @@ ante, dapibus in
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_2.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -1492,7 +1492,7 @@ ante, dapibus in
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Burberry
@@ -1507,7 +1507,7 @@ ante, dapibus in
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_1.jpg">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -1537,7 +1537,7 @@ ante, dapibus in
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_1.jpg" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -1556,7 +1556,7 @@ ante, dapibus in
 						<div class="flip-box text-center" data-brk-library="component__flip_box,component__elements,fancybox">
 							<div class="flip flip_horizontal flip-box__split">
 								<div class="flip__front">
-									<div class="flip-box__split-img lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png"></div>
+									<div class="flip-box__split-img lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png"></div>
 									<div class="pt-30 pb-30 flip-box__split-info">
 										<div class="font__family-montserrat font__weight-bold pl-20 pr-20 font__size-18">
 											Sleeveless shirt
@@ -1571,7 +1571,7 @@ ante, dapibus in
 										</div>
 									</div>
 								</div>
-								<div class="flip__back lazyload" data-bg="assets/skin/img/demo_agency_animation/370x370_3.png">
+								<div class="flip__back lazyload" data-bg="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png">
 									<div class="flip-box__split-overlay brk-base-bg-gradient-10deg"></div>
 									<div class="flip-box__split-content">
 										<div class="pt-lg-30 pb-lg-30 pt-sm-20 pb-sm-20 pt-xs-40 pb-xs-40 pt-20 pb-20 position-relative z-index-5">
@@ -1601,7 +1601,7 @@ ante, dapibus in
 											<a href="#" class="add-cart d-flex align-items-center justify-content-center">
 												<i class="fas fa-shopping-cart"></i>
 											</a>
-											<a href="assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
+											<a href="<?php echo base_url(); ?>assets/skin/img/demo_agency_animation/370x370_3.png" class="add-search d-flex align-items-center justify-content-center fancybox">
 												<i class="fas fa-search"></i>
 											</a>
 											<a href="#" class="add-wishlist d-flex align-items-center justify-content-center">
@@ -1620,7 +1620,7 @@ ante, dapibus in
 			</div>
 		</section>
 		<section style="margin-top: -30px;">
-			<div class="filmstrip-slider slider--scroll brk-sc-row-two position-relative pt-30 pb-30 pt-70 pt-md-100 pt-lg-170" data-perwiew="1" data-bg="assets/skin/img/bg-1920_1.jpg" data-brk-library="component__shop_product_row,slider__swiper,component__svg_pattern,component__content_slider" data-brk-swiper='{"autoplay": {"delay": 8000}}'>
+			<div class="filmstrip-slider slider--scroll brk-sc-row-two position-relative pt-30 pb-30 pt-70 pt-md-100 pt-lg-170" data-perwiew="1" data-bg="<?php echo base_url(); ?>assets/skin/img/bg-1920_1.jpg" data-brk-library="component__shop_product_row,slider__swiper,component__svg_pattern,component__content_slider" data-brk-swiper='{"autoplay": {"delay": 8000}}'>
 				<span class="brk-svg-pattern-container brk-svg-pattern-container-7-top brk-svg-pattern-container_top" data-brk-library="component__svg_pattern">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 144">
 						<defs>
@@ -1642,13 +1642,13 @@ ante, dapibus in
 									<div class="layer-content-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-top.png)"></div>
 								</div>
 								<div class="brk-sc-row-two__thumb">
-									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/brk-sc-row-2.png" alt="alt">
+									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/brk-sc-row-2.png" alt="alt">
 								</div>
 								<div class="brk-sc-row-two__desc">
 									<div class="brk-sc-row-two__desc-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-bottom.png)"></div>
 									<div class="brk-sc-row-two__decor-layer">
 										<div class="brk-sc-row-two__decor-layer--col-l">
-											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/brk-sc-row-2.png" alt="alt">
+											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/brk-sc-row-2.png" alt="alt">
 										</div>
 										<div class="brk-sc-row-two__decor-layer--col-r">
 											<div class="brk-sc-row-two__title">
@@ -1697,13 +1697,13 @@ ante, dapibus in
 									<div class="layer-content-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-top.png)"></div>
 								</div>
 								<div class="brk-sc-row-two__thumb">
-									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/341x486_1.png" alt="alt">
+									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/341x486_1.png" alt="alt">
 								</div>
 								<div class="brk-sc-row-two__desc">
 									<div class="brk-sc-row-two__desc-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-bottom.png)"></div>
 									<div class="brk-sc-row-two__decor-layer">
 										<div class="brk-sc-row-two__decor-layer--col-l">
-											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/341x486_1.png" alt="alt">
+											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/341x486_1.png" alt="alt">
 										</div>
 										<div class="brk-sc-row-two__decor-layer--col-r">
 											<div class="brk-sc-row-two__title">
@@ -1752,13 +1752,13 @@ ante, dapibus in
 									<div class="layer-content-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-top.png)"></div>
 								</div>
 								<div class="brk-sc-row-two__thumb">
-									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/brk-sc-row-2.png" alt="alt">
+									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/brk-sc-row-2.png" alt="alt">
 								</div>
 								<div class="brk-sc-row-two__desc">
 									<div class="brk-sc-row-two__desc-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-bottom.png)"></div>
 									<div class="brk-sc-row-two__decor-layer">
 										<div class="brk-sc-row-two__decor-layer--col-l">
-											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/brk-sc-row-2.png" alt="alt">
+											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/brk-sc-row-2.png" alt="alt">
 										</div>
 										<div class="brk-sc-row-two__decor-layer--col-r">
 											<div class="brk-sc-row-two__title">
@@ -1806,13 +1806,13 @@ ante, dapibus in
 									<div class="layer-content-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-top.png)"></div>
 								</div>
 								<div class="brk-sc-row-two__thumb">
-									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/341x486_1.png" alt="alt">
+									<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/341x486_1.png" alt="alt">
 								</div>
 								<div class="brk-sc-row-two__desc">
 									<div class="brk-sc-row-two__desc-before" style="background-image: url(assets/skin/img/brk-sc-row-layer-bottom.png)"></div>
 									<div class="brk-sc-row-two__decor-layer">
 										<div class="brk-sc-row-two__decor-layer--col-l">
-											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/341x486_1.png" alt="alt">
+											<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/341x486_1.png" alt="alt">
 										</div>
 										<div class="brk-sc-row-two__decor-layer--col-r">
 											<div class="brk-sc-row-two__title">
@@ -1881,7 +1881,7 @@ ante, dapibus in
 					<div class="timeline__wrapper">
 						<div class="timeline__item">
 							<div class="timeline__box">
-								<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/370x280_1.jpg" alt="alt">
+								<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/370x280_1.jpg" alt="alt">
 								<div class="timeline__content text-left brk-dark-font-color">
 									<div class="timeline__date">
 										<div class="timeline__date-year font__family-montserrat font__weight-semibold font__size-18 brk-base-font-color line__height-16">
@@ -1926,7 +1926,7 @@ ante, dapibus in
 						</div>
 						<div class="timeline__item">
 							<div class="timeline__box">
-								<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/370x280_2.jpg" alt="alt">
+								<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/370x280_2.jpg" alt="alt">
 								<div class="timeline__content text-left brk-dark-font-color">
 									<div class="timeline__date">
 										<div class="timeline__date-year font__family-montserrat font__weight-semibold font__size-18 brk-base-font-color line__height-16">
@@ -1944,7 +1944,7 @@ ante, dapibus in
 						</div>
 						<div class="timeline__item">
 							<div class="timeline__box">
-								<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/skin/img/demo_agency_fluid/370x400_1.jpg" alt="alt">
+								<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo base_url(); ?>assets/skin/img/demo_agency_fluid/370x400_1.jpg" alt="alt">
 								<div class="timeline__content text-left brk-dark-font-color">
 									<div class="timeline__date">
 										<div class="timeline__date-year font__family-montserrat font__weight-semibold font__size-18 brk-base-font-color line__height-16">
@@ -2173,7 +2173,7 @@ ante, dapibus in
      	]}" data-brk-library="slider__slick">
 <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4290px; transform: translate3d(-1170px, 0px, 0px);"><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-2.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2187,7 +2187,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-3.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-3.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2201,7 +2201,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-2.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2215,7 +2215,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 390px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloaded" data-bg="assets/skin/img/rounded-1.jpg" style="background-image: url(&quot;assets/skin/img/rounded-1.jpg&quot;);">
+<div class="post-rounded__thumb lazyloaded" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-1.jpg" style="background-image: url(&quot;assets/skin/img/rounded-1.jpg&quot;);">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="0">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2229,7 +2229,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 390px;" tabindex="0" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloaded" data-bg="assets/skin/img/rounded-2.jpg" style="background-image: url(&quot;assets/skin/img/rounded-2.jpg&quot;);">
+<div class="post-rounded__thumb lazyloaded" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg" style="background-image: url(&quot;assets/skin/img/rounded-2.jpg&quot;);">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="0">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2243,7 +2243,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 390px;" tabindex="0" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control12">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloaded" data-bg="assets/skin/img/rounded-3.jpg" style="background-image: url(&quot;assets/skin/img/rounded-3.jpg&quot;);">
+<div class="post-rounded__thumb lazyloaded" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-3.jpg" style="background-image: url(&quot;assets/skin/img/rounded-3.jpg&quot;);">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="0">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 
@@ -2258,7 +2258,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide" data-slick-index="3" aria-hidden="true" style="width: 390px;" tabindex="-1" role="tabpanel" id="slick-slide13" aria-describedby="slick-slide-control13">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloaded" data-bg="assets/skin/img/rounded-2.jpg" style="background-image: url(&quot;assets/skin/img/rounded-2.jpg&quot;);">
+<div class="post-rounded__thumb lazyloaded" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg" style="background-image: url(&quot;assets/skin/img/rounded-2.jpg&quot;);">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2272,7 +2272,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-1.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-1.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2286,7 +2286,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-2.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2300,7 +2300,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-3.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-3.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>
@@ -2314,7 +2314,7 @@ ante, dapibus in
 </div>
 </div><div class="pl-15 pr-15 slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" style="width: 390px;" tabindex="-1">
 <div class="post-rounded brk-base-box-shadow brk-library-rendered" data-brk-library="component__content_slider">
-<div class="post-rounded__thumb lazyloading" data-bg="assets/skin/img/rounded-2.jpg">
+<div class="post-rounded__thumb lazyloading" data-bg="<?php echo base_url(); ?>assets/skin/img/rounded-2.jpg">
 <a href="#" class="btn btn-inside-out btn-inside-out-invert btn-lg border-radius-30 font__family-open-sans font__weight-bold letter-spacing--100 z-index-1 post-rounded__btn pl-70 pr-70 brk-library-rendered rendered" data-brk-library="component__button" tabindex="-1">
 <span class="before">Read More</span><span class="text" style="min-width: 84.9167px;">Click Me</span><span class="after">Read More</span>
 </a>

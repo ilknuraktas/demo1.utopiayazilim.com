@@ -789,17 +789,17 @@ function isSafari() {
         "vendor/jquery.scrollbar/js/jquery.scrollbar.min.js"
       ]
     },
-    "assets_particleground": {
+    "<?php echo base_url(); ?>assets_particleground": {
       "js": [
         "js/assets/jquery.particleground.min.js"
       ]
     },
-    "assets_fss": {
+    "<?php echo base_url(); ?>assets_fss": {
       "js": [
         "js/assets/fss.min.js"
       ]
     },
-    "assets_skrollr": {
+    "<?php echo base_url(); ?>assets_skrollr": {
       "js": [
         "js/assets/skrollr.min.js"
       ]
@@ -841,12 +841,12 @@ function isSafari() {
         "vendor/jqueryAutocomplete/js/jquery-ui.min.js"
       ]
     },
-    "assets__typing_rotator": {
+    "<?php echo base_url(); ?>assets__typing_rotator": {
       "js": [
         "js/assets/typing-rotator.js"
       ]
     },
-    "assets__image_caption": {
+    "<?php echo base_url(); ?>assets__image_caption": {
       "dependency": [
         "anime"
       ],
@@ -1367,9 +1367,9 @@ function isSafari() {
       "dependency": [
         "component__backgrounds_css",
         "component__backgrounds_js",
-        "assets_particleground",
-        "assets_skrollr",
-        "assets_fss",
+        "<?php echo base_url(); ?>assets_particleground",
+        "<?php echo base_url(); ?>assets_skrollr",
+        "<?php echo base_url(); ?>assets_fss",
         "paper"
       ]
     },
@@ -1381,7 +1381,7 @@ function isSafari() {
     "component__image_caption": {
       "dependency": [
         "component__image_caption_css",
-        "assets__image_caption"
+        "<?php echo base_url(); ?>assets__image_caption"
       ]
     },
     "component__tags": {
